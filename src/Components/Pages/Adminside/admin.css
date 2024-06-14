@@ -1,0 +1,134 @@
+.marr {
+  margin-left: 400px;
+  box-shadow: 5px 5px 5px 5px black;
+  width: 600px;
+  margin-top: 10px;
+}
+.maa {
+  margin-left: 50px;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.mss {
+  margin-left: 260px;
+  margin-bottom: 15px;
+}
+.card11212 {
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  padding: 2px;
+  /* border: 1px solid black; */
+  /* margin-left: ; Adjust margin as needed */
+  /* width: auto;
+  height: 340px; */
+  margin-left: 30px;
+}
+.image{
+  padding: 2px !important;
+  border-radius: 10px;
+}
+.image:hover{
+  box-shadow: 2px 2px 2px rgba(189, 188, 188, 0.5);
+  /* -webkit-box-shadow:10px 10px 10px #000; */
+  /* -moz-box-shadow: 10px 10px 10px #000; */
+}
+
+@media screen and (max-width : 478px) {
+  .col{
+    padding-left:0px !important;
+    margin-left: 0px !important;
+  }
+  /* .row{
+    padding-left:0px !important;
+    margin-left: 0px !important;
+  } */
+  .image{
+    padding: 0px !important;
+    border-radius: 3px 3px 3px 3px !important;
+  }
+  .card11212 {
+    /* background-color: #f2f2f1;
+    border-radius: 10px; */
+    padding: 2px;
+    /* margin-left: ; Adjust margin as needed */
+    /* height: auto; */
+    margin-left: 0px !important;
+  }
+  .bt2{
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+  }
+  .singleimg{
+    width: 300px !important;
+  }
+}
+/* ==============================navbar============== */
+.navbar-nav .nav-link {
+  color: #9f9c9c ;
+}
+.dropend .dropdown-toggle {
+  color: rgb(50, 48, 48) !important;
+  margin-left: 1em;
+}
+.dropdown-item:hover {
+  background-color: rgb(172, 169, 169);
+  color: #e9e4e4;
+}
+.dropdown .dropdown-menu {
+  display: none;
+}
+.dropdown:hover > .dropdown-menu,
+.dropend:hover > .dropdown-menu {
+  display: block;
+  margin-top: 0.125em;
+  margin-left: 0.125em;
+}
+@media screen and (min-width: 769px) {
+  .dropend:hover > .dropdown-menu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+  }
+  .dropend .dropdown-toggle {
+    margin-left: 0.5em;
+  }
+  
+}
+
+/* ===============Singlepage=============== */
+.mainn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 10px rgb(176, 174, 174) ;
+}
+.bt2{
+  background-color: #7EA1FD !important;
+  color: white !important;
+  margin-top: 20px;
+}
+.bt2:hover{
+  background-color: white !important;
+  color: #7EA1FD !important;
+}
+.inn{
+  background-color:#7EA1FD  !important;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border:none;
+}
+.Quabtity{
+  display: flex;
+}
+.buy{
+  width: 300px !important;
+}
+.btn1{
+  background-color: white !important;
+  color: rgb#7EA1FD !important;
+  box-shadow:  1px  1px rgb(105, 102, 102) !important;
+  margin-top: 20px;
+}
+.btn1:hover{
+  background-color:#7EA1FD  !important;
+  color: rgb(249, 238, 238) !important;
+  
+}

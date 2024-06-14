@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.slider {
+  height: 300px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  width: calc(250px * 18);
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+
+  100% {
+      transform: translateX(calc(-250px * 7));
+  }
+}
+.line{
+  width: 180px;
+}
+.date{
+  margin-left: 120px;
+  margin-top: 2px;
+  text-align: left !important;
+}
+.blog{
+  width: 750px;
+  margin-left: 110px;
+}
+@media screen and (max-width : 480px) {
+  .blog{
+  width: 280px;
+  margin-left: 0px;
+}
+.date{
+  margin-left: 0px;
+  margin-top: 2px;
+}
+
+  
+}
+.contact{
+  font-size: 25px;
+}
+.contactform{
+  margin-left: 300px;
+}
+.butto{
+  background-color: rgba(126, 161, 253, 1);
+  color: white;
+  width: 200px;
+  border: none;
+  margin-left: 300px;
+}
+@media screen and  (max-width : 480px) {
+  .contactform{
+  margin-left: 10px;
+}
+.butto{
+ 
+  width: 100px;
+  
+  margin-left: 200px;
+}
+}
+@media screen and (max-width : 768px) {
+  .contactform{
+  margin-left: 10px;
+}
+.butto{
+ 
+  width: 100px;
+  
+  margin-left: 220px;
+}
+.freedd{
+display: none !important;
+}
+}
+.Map{
+  width: 600px;
+}
+.About{
+  width: 1120px;
+}
+@media screen and (max-width : 480px){
+  .img{
+  width: 200px;
+}
+.img1{
+  width: 300px;
+}
+}
+.line{
+  width: 180px;
+}
+.text{
+  margin-left: 170px;
+}
+.export1{
+  width: 360px;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+.com{
+  margin-left: 28px;
+  
+}
+.expor{
+  border-radius: 5px;
+}
+@media screen and   (max-width : 480px)  {
+  .expor{
+      width: 300px;
+      border-radius: 5px;
+      margin-left: 24px;
+  }
+  .text{
+  margin-left: 0px;
+  margin-top: 5px;
+}
+.export1{
+  width: 280px;
+  margin-left: 30px;
+  margin-top: 3px;
+}
+.icone{
+  align-items: center;
+  margin-left: 30px;
+}
+.com{
+  margin-left: 60px;
+  
+  
+}
+.freedd{
+display: none !important;
+}
+}
+.ADDTOCART{
+  display: flex;
+}
