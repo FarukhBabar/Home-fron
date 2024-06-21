@@ -260,7 +260,23 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listladder">Ladder </Link></li> 
                   <li><Link className="dropdown-item" to="/listlocktile">Locktile </Link></li>
                   <li><Link className="dropdown-item" to="/listlynwood">Lynwood </Link></li>
-                  <li><Link className="dropdown-item" to="/listmisc">Misc </Link></li>
+                  <li><Link className="dropdown-item" to="/listmisc">Misc </Link></li> 
+                  <li><Link className="dropdown-item" to="/listoxford">Oxford </Link></li>
+                  <li><Link className="dropdown-item" to="/listpestco">Pest Control </Link></li>
+                  <li><Link className="dropdown-item" to="/listplasplug">Plas Plugs </Link></li>
+                  <li><Link className="dropdown-item" to="/listprimacar">Prima Car Product </Link></li>
+                  <li><Link className="dropdown-item" to="/listrolson">Rolson  </Link></li>
+                  <li><Link className="dropdown-item" to="/listronseal">Ronseal </Link></li>
+                  <li><Link className="dropdown-item" to="/listrustins">Rustins </Link></li>
+                  <li><Link className="dropdown-item" to="/listsecureit">Secureit </Link></li>
+                  <li><Link className="dropdown-item" to="/listsecrup">Secruplumb </Link></li>
+                  <li><Link className="dropdown-item" to="/listshortage">Shortage </Link></li>
+                  <li><Link className="dropdown-item" to="/listsoudal">Soudal </Link></li> 
+                  <li><Link className="dropdown-item" to="/liststarpak">Starpak </Link></li>
+                  <li><Link className="dropdown-item" to="/liststerling">Sterling </Link></li>
+                  <li><Link className="dropdown-item" to="/listtableaue">Tableaue </Link></li>
+                  <li><Link className="dropdown-item" to="/listsoudal">Soudal </Link></li>
+                  <li><Link className="dropdown-item" to="/listsoudal">Soudal </Link></li>
                 </ul>
               </li>
               <li className="nav-item dropend">

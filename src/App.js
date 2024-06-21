@@ -695,6 +695,76 @@ import Miscsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Mi
 import Miscform from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Miscform';
 import Misclist from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Misclist';
 import Miscupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Miscupdate';
+import Oxford from './Components/Pages/Adminside/deparmentbathrom/Diy/Oxford Product/Oxford';
+import Oxfordsing from './Components/Pages/Adminside/deparmentbathrom/Diy/Oxford Product/Oxfordsing';
+import Oxfordform from './Components/Pages/Adminside/deparmentbathrom/Diy/Oxford Product/Oxfordform';
+import Oxfordlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Oxford Product/Oxfordlist';
+import Oxfordupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Oxford Product/Oxfordupdtae';
+import Pestconsing from './Components/Pages/Adminside/deparmentbathrom/Diy/Pestcon/Pestconsing';
+import Pestcoform from './Components/Pages/Adminside/deparmentbathrom/Diy/Pestcon/Pestcoform';
+import Pestcolist from './Components/Pages/Adminside/deparmentbathrom/Diy/Pestcon/Pestcolist';
+import Pestcoupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Pestcon/Pestcoupdate';
+import Pestco from './Components/Pages/Adminside/deparmentbathrom/Diy/Pestcon/Pestco';
+import Plasplug from './Components/Pages/Adminside/deparmentbathrom/Diy/Plasplugs/Plasplug';
+import Plasplugsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Plasplugs/Plasplugsingl';
+import Plasplugform from './Components/Pages/Adminside/deparmentbathrom/Diy/Plasplugs/Plasplugform';
+import Plaspluglist from './Components/Pages/Adminside/deparmentbathrom/Diy/Plasplugs/Plaspluglist';
+import Plasplugupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Plasplugs/Plasplugupdate';
+import Primacarform from './Components/Pages/Adminside/deparmentbathrom/Diy/Prima car product/Primacarform';
+import Primacarlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Prima car product/Primacarlist';
+import Primacarupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Prima car product/Primacarupdate';
+import Primacar from './Components/Pages/Adminside/deparmentbathrom/Diy/Prima car product/Primacar';
+import Primacarsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Prima car product/Primacarsingl';
+import Rolson from './Components/Pages/Adminside/deparmentbathrom/Diy/Rolson tools/Rolson';
+import Rolsonsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Rolson tools/Rolsonsingl';
+import Rolsonform from './Components/Pages/Adminside/deparmentbathrom/Diy/Rolson tools/Rolsonform';
+import Rolsonlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Rolson tools/Rolsonlist';
+import Rolsonupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Rolson tools/Rolsonupdate';
+import Ronsealform from './Components/Pages/Adminside/deparmentbathrom/Diy/Ronseal/Ronsealform';
+import Ronseallist from './Components/Pages/Adminside/deparmentbathrom/Diy/Ronseal/Ronseallist';
+import Ronsealupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Ronseal/Ronsealupdate';
+import Ronseal from './Components/Pages/Adminside/deparmentbathrom/Diy/Ronseal/Ronseal';
+import Ronsealsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Ronseal/Ronsealsingl';
+import Rustinsltd from './Components/Pages/Adminside/deparmentbathrom/Diy/Rustinsltd/Rustinsltd';
+import Rustinsltdsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Rustinsltd/Rustinsltdsingl';
+import Rustinsltdform from './Components/Pages/Adminside/deparmentbathrom/Diy/Rustinsltd/Rustinsltdform';
+import Rustinsltdlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Rustinsltd/Rustinsltdlist';
+import Rustinsltdupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Rustinsltd/Rustinsltdupdate';
+import Secureitform from './Components/Pages/Adminside/deparmentbathrom/Diy/Secureit/Secureitform';
+import Secureitlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Secureit/Secureitlist';
+import Secureitupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Secureit/Secureitupdate';
+import Secureit from './Components/Pages/Adminside/deparmentbathrom/Diy/Secureit/Secureit';
+import Secureitsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Secureit/Secureitsingl';
+import Secrup from './Components/Pages/Adminside/deparmentbathrom/Diy/Secruplumb/Secrup';
+import Secrupsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Secruplumb/Secrupsingl';
+import Secrupform from './Components/Pages/Adminside/deparmentbathrom/Diy/Secruplumb/Secrupform';
+import Secruplist from './Components/Pages/Adminside/deparmentbathrom/Diy/Secruplumb/Secruplist';
+import Secrupupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Secruplumb/Secrupupdate';
+import Shortageform from './Components/Pages/Adminside/deparmentbathrom/Diy/Shortage/Shortageform';
+import Shortagelist from './Components/Pages/Adminside/deparmentbathrom/Diy/Shortage/Shortagelist';
+import Shortageupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Shortage/Shortageupdate';
+import Shortage from './Components/Pages/Adminside/deparmentbathrom/Diy/Shortage/Shortage';
+import Shortagesingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Shortage/Shortagesingl';
+import Soudal from './Components/Pages/Adminside/deparmentbathrom/Diy/Soudal/Soudal';
+import Soudalsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Soudal/Soudalsingl';
+import Soudalform from './Components/Pages/Adminside/deparmentbathrom/Diy/Soudal/Soudalform';
+import Soudallist from './Components/Pages/Adminside/deparmentbathrom/Diy/Soudal/Soudallist';
+import Soudalupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Soudal/Soudalupdate';
+import Starpackform from './Components/Pages/Adminside/deparmentbathrom/Diy/Starpack/Starpackform';
+import Starpacklist from './Components/Pages/Adminside/deparmentbathrom/Diy/Starpack/Starpacklist';
+import Starpackupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Starpack/Starpackupdate';
+import Starpack from './Components/Pages/Adminside/deparmentbathrom/Diy/Starpack/Starpack';
+import Starpacksingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Starpack/Starpacksingl';
+import Sterling from './Components/Pages/Adminside/deparmentbathrom/Diy/Sterling/Sterling';
+import Sterlingsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Sterling/Sterlingsingl';
+import Sterlingform from './Components/Pages/Adminside/deparmentbathrom/Diy/Sterling/Sterlingform';
+import Sterlinglist from './Components/Pages/Adminside/deparmentbathrom/Diy/Sterling/Sterlinglist';
+import Sterlingupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Sterling/Sterlingupdate';
+import Tableaueform from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableaueform';
+import Tableauelist from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableauelist';
+import Tableaueupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableaueupdate';
+import Tableaue from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableaue';
+import Tableauesingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableauesingl';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1223,6 +1293,62 @@ const App = () => {
         <Route path='/miscform' element={<AdminLayout><Miscform/></AdminLayout>}/>
         <Route path='/listmisc' element={<AdminLayout><Misclist/></AdminLayout>}/>
         <Route path='/listmisc/:id' element={<AdminLayout><Miscupdate/></AdminLayout>}/>
+          
+        <Route path='/oxfordform' element={<AdminLayout><Oxfordform/></AdminLayout>}/>
+        <Route path='/listoxford' element={<AdminLayout><Oxfordlist/></AdminLayout>}/>
+        <Route path='/listoxford/:id' element={<AdminLayout><Oxfordupdtae/></AdminLayout>}/>
+           
+        <Route path='/pestcoform' element={<AdminLayout><Pestcoform/></AdminLayout>}/>
+        <Route path='/listpestco' element={<AdminLayout><Pestcolist/></AdminLayout>}/>
+        <Route path='/listpestco/:id' element={<AdminLayout><Pestcoupdtae/></AdminLayout>}/> 
+            
+        <Route path='/plasplugform' element={<AdminLayout><Plasplugform/></AdminLayout>}/>
+        <Route path='/listplasplug' element={<AdminLayout><Plaspluglist/></AdminLayout>}/>
+        <Route path='/listplasplug/:id' element={<AdminLayout><Plasplugupdtae/></AdminLayout>}/>
+         
+        <Route path='/primacarform' element={<AdminLayout><Primacarform/></AdminLayout>}/>
+        <Route path='/listprimacar' element={<AdminLayout><Primacarlist/></AdminLayout>}/>
+        <Route path='/listprimacar/:id' element={<AdminLayout><Primacarupdtae/></AdminLayout>}/>
+         
+        <Route path='/rolsonform' element={<AdminLayout><Rolsonform/></AdminLayout>}/>
+        <Route path='/listrolson' element={<AdminLayout><Rolsonlist/></AdminLayout>}/>
+        <Route path='/listrolson/:id' element={<AdminLayout><Rolsonupdtae/></AdminLayout>}/>
+        
+        <Route path='/ronsealform' element={<AdminLayout><Ronsealform/></AdminLayout>}/>
+        <Route path='/listronseal' element={<AdminLayout><Ronseallist/></AdminLayout>}/>
+        <Route path='/listronseal/:id' element={<AdminLayout><Ronsealupdtae/></AdminLayout>}/>
+        
+        <Route path='/rustinsform' element={<AdminLayout><Rustinsltdform/></AdminLayout>}/>
+        <Route path='/listrustins' element={<AdminLayout><Rustinsltdlist/></AdminLayout>}/>
+        <Route path='/listrustins/:id' element={<AdminLayout><Rustinsltdupdtae/></AdminLayout>}/>
+        
+        <Route path='/secureitform' element={<AdminLayout><Secureitform/></AdminLayout>}/>
+        <Route path='/listsecureit' element={<AdminLayout><Secureitlist/></AdminLayout>}/>
+        <Route path='/listsecureit/:id' element={<AdminLayout><Secureitupdtae/></AdminLayout>}/> 
+
+        <Route path='/secrupform' element={<AdminLayout><Secrupform/></AdminLayout>}/>
+        <Route path='/listsecrup' element={<AdminLayout><Secruplist/></AdminLayout>}/>
+        <Route path='/listsecrup/:id' element={<AdminLayout><Secrupupdtae/></AdminLayout>}/> 
+        
+        <Route path='/shortageform' element={<AdminLayout><Shortageform/></AdminLayout>}/>
+        <Route path='/listshortage' element={<AdminLayout><Shortagelist/></AdminLayout>}/>
+        <Route path='/listshortage/:id' element={<AdminLayout><Shortageupdtae/></AdminLayout>}/> 
+        
+        <Route path='/soudalform' element={<AdminLayout><Soudalform/></AdminLayout>}/>
+        <Route path='/listsoudal' element={<AdminLayout><Soudallist/></AdminLayout>}/>
+        <Route path='/listsoudal/:id' element={<AdminLayout><Soudalupdtae/></AdminLayout>}/>
+        
+        <Route path='/starpakform' element={<AdminLayout><Starpackform/></AdminLayout>}/>
+        <Route path='/liststarpak' element={<AdminLayout><Starpacklist/></AdminLayout>}/>
+        <Route path='/liststarpak/:id' element={<AdminLayout><Starpackupdtae/></AdminLayout>}/>
+        
+        <Route path='/sterlingform' element={<AdminLayout><Sterlingform/></AdminLayout>}/>
+        <Route path='/liststerling' element={<AdminLayout><Sterlinglist/></AdminLayout>}/>
+        <Route path='/liststerling/:id' element={<AdminLayout><Sterlingupdtae/></AdminLayout>}/>
+        
+        <Route path='/tableaueform' element={<AdminLayout><Tableaueform/></AdminLayout>}/>
+        <Route path='/listtableaue' element={<AdminLayout><Tableauelist/></AdminLayout>}/>
+        <Route path='/listtableaue/:id' element={<AdminLayout><Tableaueupdtae/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -1668,12 +1794,47 @@ const App = () => {
         <Route path='/misc' element={<MainLayout><Misc/></MainLayout>}/>
         <Route path='/miscsinglepage/:id' element={<MainLayout><Miscsingl/></MainLayout>}/>
 
+        <Route path='/oxford' element={<MainLayout><Oxford/></MainLayout>}/>
+        <Route path='/oxfordsinglepage/:id' element={<MainLayout><Oxfordsing/></MainLayout>}/>
 
+        <Route path='/pestco' element={<MainLayout><Pestco/></MainLayout>}/>
+        <Route path='/pestcosinglepage/:id' element={<MainLayout><Pestconsing/></MainLayout>}/>
 
+        <Route path='/plasplug' element={<MainLayout><Plasplug/></MainLayout>}/>
+        <Route path='/plasplugsinglepage/:id' element={<MainLayout><Plasplugsingl/></MainLayout>}/>
 
+        <Route path='/primacar' element={<MainLayout><Primacar/></MainLayout>}/>
+        <Route path='/primacarsinglepage/:id' element={<MainLayout><Primacarsingl/></MainLayout>}/>
 
+        <Route path='/rolson' element={<MainLayout><Rolson/></MainLayout>}/>
+        <Route path='/rolsonsinglepage/:id' element={<MainLayout><Rolsonsingl/></MainLayout>}/>
 
+        <Route path='/ronseal' element={<MainLayout><Ronseal/></MainLayout>}/>
+        <Route path='/ronsealsinglepage/:id' element={<MainLayout><Ronsealsingl/></MainLayout>}/>
 
+        <Route path='/rustins' element={<MainLayout><Rustinsltd/></MainLayout>}/>
+        <Route path='/rustinssinglepage/:id' element={<MainLayout><Rustinsltdsingl/></MainLayout>}/> 
+
+        <Route path='/secureit' element={<MainLayout><Secureit/></MainLayout>}/>
+        <Route path='/secureitsinglepage/:id' element={<MainLayout><Secureitsingl/></MainLayout>}/>
+
+        <Route path='/secrup' element={<MainLayout><Secrup/></MainLayout>}/>
+        <Route path='/secrupsinglepage/:id' element={<MainLayout><Secrupsingl/></MainLayout>}/>
+
+        <Route path='/shortage' element={<MainLayout><Shortage/></MainLayout>}/>
+        <Route path='/shortagesinglepage/:id' element={<MainLayout><Shortagesingl/></MainLayout>}/>
+        
+        <Route path='/soudal' element={<MainLayout><Soudal/></MainLayout>}/>
+        <Route path='/soudalsinglepage/:id' element={<MainLayout><Soudalsingl/></MainLayout>}/> 
+        
+        <Route path='/starpak' element={<MainLayout><Starpack/></MainLayout>}/>
+        <Route path='/starpaksinglepage/:id' element={<MainLayout><Starpacksingl/></MainLayout>}/> 
+        
+        <Route path='/sterling' element={<MainLayout><Sterling/></MainLayout>}/>
+        <Route path='/sterlingsinglepage/:id' element={<MainLayout><Sterlingsingl/></MainLayout>}/>  
+        
+        <Route path='/tableaue' element={<MainLayout><Tableaue/></MainLayout>}/>
+        <Route path='/tableauesinglepage/:id' element={<MainLayout><Tableauesingl/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>
