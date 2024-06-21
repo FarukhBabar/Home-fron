@@ -50,7 +50,7 @@ const Adminnavbar = () => {
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
-                  <li className="nav-item dropend">
+                  {/* <li className="nav-item dropend">
                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Dropdown
                     </a>
@@ -74,7 +74,7 @@ const Adminnavbar = () => {
                         </ul>
                       </li>
                     </ul>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -256,6 +256,11 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listhilka">Hilka </Link></li> 
                   <li><Link className="dropdown-item" to="/listhumnrol">Humnrol </Link></li>
                   <li><Link className="dropdown-item" to="/listjbwel">Jbwel </Link></li>
+                  <li><Link className="dropdown-item" to="/listkilrock">Kilrock </Link></li>
+                  <li><Link className="dropdown-item" to="/listladder">Ladder </Link></li> 
+                  <li><Link className="dropdown-item" to="/listlocktile">Locktile </Link></li>
+                  <li><Link className="dropdown-item" to="/listlynwood">Lynwood </Link></li>
+                  <li><Link className="dropdown-item" to="/listmisc">Misc </Link></li>
                 </ul>
               </li>
               <li className="nav-item dropend">

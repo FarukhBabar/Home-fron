@@ -670,6 +670,31 @@ import Jbweldlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Jbweld
 import Jbweldupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Jbweld/Jbweldupdte';
 import Jbweldsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Jbweld/Jbweldsingl';
 import Jbweld from './Components/Pages/Adminside/deparmentbathrom/Diy/Jbweld/Jbweld';
+import Kilrok from './Components/Pages/Adminside/deparmentbathrom/Diy/Kilrock/Kilrok';
+import Kilroksingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Kilrock/Kilroksingl';
+import Kilrokform from './Components/Pages/Adminside/deparmentbathrom/Diy/Kilrock/Kilrokform';
+import Kilroklist from './Components/Pages/Adminside/deparmentbathrom/Diy/Kilrock/Kilroklist';
+import Kilrokupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Kilrock/Kilrokupdate';
+import Ladderform from './Components/Pages/Adminside/deparmentbathrom/Diy/Ladders/Ladderform';
+import Ladderlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Ladders/Ladderlist';
+import Ladderupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Ladders/Ladderupdate';
+import Ladder from './Components/Pages/Adminside/deparmentbathrom/Diy/Ladders/Ladder';
+import Laddersingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Ladders/Laddersingl';
+import Locktile from './Components/Pages/Adminside/deparmentbathrom/Diy/Locktile/Locktile';
+import Locktilesingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Locktile/Locktilesingl';
+import Locktileform from './Components/Pages/Adminside/deparmentbathrom/Diy/Locktile/Locktileform';
+import Locktilelist from './Components/Pages/Adminside/deparmentbathrom/Diy/Locktile/Locktilelist';
+import Locktileupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Locktile/Locktileupdate';
+import Lynwood from './Components/Pages/Adminside/deparmentbathrom/Diy/Lynwood/Lynwood';
+import Lynwoodsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Lynwood/Lynwoodsingl';
+import Lynwoodform from './Components/Pages/Adminside/deparmentbathrom/Diy/Lynwood/Lynwoodform';
+import Lynwoodlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Lynwood/Lynwoodlist';
+import Lynwoodupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Lynwood/Lynwoodupdate';
+import Misc from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Misc';
+import Miscsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Miscsingl';
+import Miscform from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Miscform';
+import Misclist from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Misclist';
+import Miscupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Misc/Miscupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1178,6 +1203,26 @@ const App = () => {
         <Route path='/jbwelform' element={<AdminLayout><Jbweldform/></AdminLayout>}/>
         <Route path='/listjbwel' element={<AdminLayout><Jbweldlist/></AdminLayout>}/>
         <Route path='/listjbwel/:id' element={<AdminLayout><Jbweldupdate/></AdminLayout>}/>
+            
+        <Route path='/kilrockform' element={<AdminLayout><Kilrokform/></AdminLayout>}/>
+        <Route path='/listkilrock' element={<AdminLayout><Kilroklist/></AdminLayout>}/>
+        <Route path='/listkilrock/:id' element={<AdminLayout><Kilrokupdate/></AdminLayout>}/>
+            
+        <Route path='/ladderform' element={<AdminLayout><Ladderform/></AdminLayout>}/>
+        <Route path='/listladder' element={<AdminLayout><Ladderlist/></AdminLayout>}/>
+        <Route path='/listladder/:id' element={<AdminLayout><Ladderupdate/></AdminLayout>}/>
+         
+        <Route path='/locktileform' element={<AdminLayout><Locktileform/></AdminLayout>}/>
+        <Route path='/listlocktile' element={<AdminLayout><Locktilelist/></AdminLayout>}/>
+        <Route path='/listlocktile/:id' element={<AdminLayout><Locktileupdate/></AdminLayout>}/>
+          
+        <Route path='/lynwoodform' element={<AdminLayout><Lynwoodform/></AdminLayout>}/>
+        <Route path='/listlynwood' element={<AdminLayout><Lynwoodlist/></AdminLayout>}/>
+        <Route path='/listlynwood/:id' element={<AdminLayout><Lynwoodupdate/></AdminLayout>}/>
+           
+        <Route path='/miscform' element={<AdminLayout><Miscform/></AdminLayout>}/>
+        <Route path='/listmisc' element={<AdminLayout><Misclist/></AdminLayout>}/>
+        <Route path='/listmisc/:id' element={<AdminLayout><Miscupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -1607,6 +1652,28 @@ const App = () => {
         
         <Route path='/jbwel' element={<MainLayout><Jbweld/></MainLayout>}/>
         <Route path='/jbwelsinglepage/:id' element={<MainLayout><Jbweldsingl/></MainLayout>}/> 
+        
+        <Route path='/kilrock' element={<MainLayout><Kilrok/></MainLayout>}/>
+        <Route path='/kilrocksinglepage/:id' element={<MainLayout><Kilroksingl/></MainLayout>}/> 
+        
+        <Route path='/ladder' element={<MainLayout><Ladder/></MainLayout>}/>
+        <Route path='/laddersinglepage/:id' element={<MainLayout><Laddersingl/></MainLayout>}/>
+        
+        <Route path='/locktile' element={<MainLayout><Locktile/></MainLayout>}/>
+        <Route path='/locktilesinglepage/:id' element={<MainLayout><Locktilesingl/></MainLayout>}/>
+
+        <Route path='/lynwood' element={<MainLayout><Lynwood/></MainLayout>}/>
+        <Route path='/lynwoodsinglepage/:id' element={<MainLayout><Lynwoodsingl/></MainLayout>}/>
+
+        <Route path='/misc' element={<MainLayout><Misc/></MainLayout>}/>
+        <Route path='/miscsinglepage/:id' element={<MainLayout><Miscsingl/></MainLayout>}/>
+
+
+
+
+
+
+
       </Routes>
       </CartProvider>
     </>

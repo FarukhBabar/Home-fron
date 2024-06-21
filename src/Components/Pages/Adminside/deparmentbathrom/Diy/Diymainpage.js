@@ -174,29 +174,30 @@ const Diymainpage = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/poundline"> <img src="./Images/Diy/DIY-31.png" alt className="img2" /></Link>
+        <Link to="/kilrock"> <img src="./Images/Diy/DIY-31.png" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentbathroom'><img src="./Images/Diy/DIY-32.png" alt className="img3" /></Link>   
+        <Link to='/ladder'><img src="./Images/Diy/DIY-32.png" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Diy/DIY-33.png" alt className="img" /></Link>
+        <Link to='/locktile'><img src="./Images/Diy/DIY-33.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/kitechenwear'> <img src="./Images/Diy/DIY-34.png" alt className="img1" /></Link>
+        <Link to='/lynwood'> <img src="./Images/Diy/DIY-34.png" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/cleaning'><img src="./Images/Diy/DIY-35.png" alt className="img2" /></Link>
+        <Link to='/misc
+        '><img src="./Images/Diy/DIY-35.png" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
