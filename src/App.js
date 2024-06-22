@@ -765,6 +765,62 @@ import Tableauelist from './Components/Pages/Adminside/deparmentbathrom/Diy/Tabl
 import Tableaueupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableaueupdate';
 import Tableaue from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableaue';
 import Tableauesingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Tableaue/Tableauesingl';
+import Tricycle from './Components/Pages/Adminside/deparmentbathrom/Diy/Tri cycle/Tricycle';
+import Tricyclesingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Tri cycle/Tricyclesingl';
+import Tricycleform from './Components/Pages/Adminside/deparmentbathrom/Diy/Tri cycle/Tricycleform';
+import Tricyclelist from './Components/Pages/Adminside/deparmentbathrom/Diy/Tri cycle/Tricyclelist';
+import Tricycleupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Tri cycle/Tricycleupdate';
+import Ultratrape from './Components/Pages/Adminside/deparmentbathrom/Diy/Ultratrape/Ultratrape';
+import Ultratrapesingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Ultratrape/Ultratrapesingl';
+import Ultratrapeform from './Components/Pages/Adminside/deparmentbathrom/Diy/Ultratrape/Ultratrapeform';
+import Ultratrapelist from './Components/Pages/Adminside/deparmentbathrom/Diy/Ultratrape/Ultratrapelist';
+import Ultratrapeupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Ultratrape/Ultratrapeupdate';
+import Vacuum from './Components/Pages/Adminside/deparmentbathrom/Diy/Vacuum/Vacuum';
+import Vacuumsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Vacuum/Vacuumsingl';
+import Vacuumform from './Components/Pages/Adminside/deparmentbathrom/Diy/Vacuum/Vacuumform';
+import Vacuumlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Vacuum/Vacuumlist';
+import Vacuumupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Vacuum/Vacuumupdate';
+import Velcroform from './Components/Pages/Adminside/deparmentbathrom/Diy/Velcro/Velcroform';
+import Velcrolist from './Components/Pages/Adminside/deparmentbathrom/Diy/Velcro/Velcrolist';
+import Velcroupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Velcro/Velcroupdate';
+import Velcro from './Components/Pages/Adminside/deparmentbathrom/Diy/Velcro/Velcro';
+import Velcrosingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Velcro/Velcrosingl';
+import VfmPaints from './Components/Pages/Adminside/deparmentbathrom/Diy/Vfm Paints/VfmPaints';
+import VfmPaintssingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Vfm Paints/VfmPaintssingl';
+import VfmPaintsform from './Components/Pages/Adminside/deparmentbathrom/Diy/Vfm Paints/VfmPaintsform';
+import VfmPaintslist from './Components/Pages/Adminside/deparmentbathrom/Diy/Vfm Paints/VfmPaintslist';
+import VfmPaintsupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Vfm Paints/VfmPaintsupdate';
+import Wd40form from './Components/Pages/Adminside/deparmentbathrom/Diy/Wd40/Wd40form';
+import Wd40list from './Components/Pages/Adminside/deparmentbathrom/Diy/Wd40/Wd40list';
+import Wd40updtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Wd40/Wd40update';
+import Wd40 from './Components/Pages/Adminside/deparmentbathrom/Diy/Wd40/Wd40';
+import Wd40singl from './Components/Pages/Adminside/deparmentbathrom/Diy/Wd40/Wd40singl';
+import Werner from './Components/Pages/Adminside/deparmentbathrom/Diy/Werner/Werner';
+import Wernersingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Werner/Wernersingl';
+import Wernerform from './Components/Pages/Adminside/deparmentbathrom/Diy/Werner/Wernerform';
+import Wernerlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Werner/Wernerlist';
+import Wernerupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Werner/Wernerupdate';
+import Yelelock from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele lock/Yelelock';
+import Yelelocksingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele lock/Yelelocksingal';
+import Yelelockform from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele lock/Yelelockform';
+import Yelelocklist from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele lock/Yelelocklist';
+import Yelelockupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele lock/Yelelockupdate';
+import Uniconform from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconform';
+import Uniconcard from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconcard';
+import Uniconlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconlist';
+import Uniconupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconupdate';
+import Amtechform from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech tools/Amtechform';
+import Amtechlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech tools/Amtechlist';
+import Amtechupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech tools/Amtechupdate';
+import Antiquxform from './Components/Pages/Adminside/deparmentbathrom/Diy/Antiqux/Antiquxform';
+import Antiquxlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Antiqux/Antiquxlist';
+import Antiquxupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Antiqux/Antiquxupdate';
+import Unicon from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Unicon';
+import Uniconsingl from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconsingl';
+import Amtech from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech tools/Amtech';
+import Amtechsingle from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech tools/Amtechsingl';
+import Antiqux from './Components/Pages/Adminside/deparmentbathrom/Diy/Antiqux/Antiqux';
+import Antiquxsingle from './Components/Pages/Adminside/deparmentbathrom/Diy/Antiqux/Antiquxsingl';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1349,6 +1405,50 @@ const App = () => {
         <Route path='/tableaueform' element={<AdminLayout><Tableaueform/></AdminLayout>}/>
         <Route path='/listtableaue' element={<AdminLayout><Tableauelist/></AdminLayout>}/>
         <Route path='/listtableaue/:id' element={<AdminLayout><Tableaueupdtae/></AdminLayout>}/>
+        
+        <Route path='/tricycleform' element={<AdminLayout><Tricycleform/></AdminLayout>}/>
+        <Route path='/listtricycle' element={<AdminLayout><Tricyclelist/></AdminLayout>}/>
+        <Route path='/listtricycle/:id' element={<AdminLayout><Tricycleupdtae/></AdminLayout>}/>
+        
+        <Route path='/ultratrapform' element={<AdminLayout><Ultratrapeform/></AdminLayout>}/>
+        <Route path='/listultratrap' element={<AdminLayout><Ultratrapelist/></AdminLayout>}/>
+        <Route path='/listultratrap/:id' element={<AdminLayout><Ultratrapeupdtae/></AdminLayout>}/>
+
+        <Route path='/vacuumform' element={<AdminLayout><Vacuumform/></AdminLayout>}/>
+        <Route path='/listvacuum' element={<AdminLayout><Vacuumlist/></AdminLayout>}/>
+        <Route path='/listvacuum/:id' element={<AdminLayout><Vacuumupdtae/></AdminLayout>}/>
+
+        <Route path='/velcroform' element={<AdminLayout><Velcroform/></AdminLayout>}/>
+        <Route path='/listvelcro' element={<AdminLayout><Velcrolist/></AdminLayout>}/>
+        <Route path='/listvelcro/:id' element={<AdminLayout><Velcroupdtae/></AdminLayout>}/>
+
+        <Route path='/vfmpaintform' element={<AdminLayout><VfmPaintsform/></AdminLayout>}/>
+        <Route path='/listvfmpaint' element={<AdminLayout><VfmPaintslist/></AdminLayout>}/>
+        <Route path='/listvfmpaint/:id' element={<AdminLayout><VfmPaintsupdtae/></AdminLayout>}/>
+
+        <Route path='/wd40form' element={<AdminLayout><Wd40form/></AdminLayout>}/>
+        <Route path='/listwd40' element={<AdminLayout><Wd40list/></AdminLayout>}/>
+        <Route path='/listwd40/:id' element={<AdminLayout><Wd40updtae/></AdminLayout>}/>
+
+        <Route path='/wernerform' element={<AdminLayout><Wernerform/></AdminLayout>}/>
+        <Route path='/listwerner' element={<AdminLayout><Wernerlist/></AdminLayout>}/>
+        <Route path='/listwerner/:id' element={<AdminLayout><Wernerupdtae/></AdminLayout>}/>
+        
+        <Route path='/yelelockform' element={<AdminLayout><Yelelockform/></AdminLayout>}/>
+        <Route path='/listyelelock' element={<AdminLayout><Yelelocklist/></AdminLayout>}/>
+        <Route path='/listyelelock/:id' element={<AdminLayout><Yelelockupdtae/></AdminLayout>}/>
+        
+        <Route path='/uniconform' element={<AdminLayout><Uniconform/></AdminLayout>}/>
+        <Route path='/listunicon' element={<AdminLayout><Uniconlist/></AdminLayout>}/>
+        <Route path='/listunicon/:id' element={<AdminLayout><Uniconupdtae/></AdminLayout>}/>
+        
+        <Route path='/amtechform' element={<AdminLayout><Amtechform/></AdminLayout>}/>
+        <Route path='/listamtech' element={<AdminLayout><Amtechlist/></AdminLayout>}/>
+        <Route path='/listamtech/:id' element={<AdminLayout><Amtechupdate/></AdminLayout>}/>
+        
+        <Route path='/antiquxform' element={<AdminLayout><Antiquxform/></AdminLayout>}/>
+        <Route path='/listantiqux' element={<AdminLayout><Antiquxlist/></AdminLayout>}/>
+        <Route path='/listantiqux/:id' element={<AdminLayout><Antiquxupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -1835,6 +1935,39 @@ const App = () => {
         
         <Route path='/tableaue' element={<MainLayout><Tableaue/></MainLayout>}/>
         <Route path='/tableauesinglepage/:id' element={<MainLayout><Tableauesingl/></MainLayout>}/>
+        
+        <Route path='/tricycle' element={<MainLayout><Tricycle/></MainLayout>}/>
+        <Route path='/tricyclesinglepage/:id' element={<MainLayout><Tricyclesingl/></MainLayout>}/>
+         
+        <Route path='/ultratrap' element={<MainLayout><Ultratrape/></MainLayout>}/>
+        <Route path='/ultratrapsinglepage/:id' element={<MainLayout><Ultratrapesingl/></MainLayout>}/>
+        
+        <Route path='/vacuum' element={<MainLayout><Vacuum/></MainLayout>}/>
+        <Route path='/vacuumsinglepage/:id' element={<MainLayout><Vacuumsingl/></MainLayout>}/> 
+        
+        <Route path='/velcro' element={<MainLayout><Velcro/></MainLayout>}/>
+        <Route path='/velcrosinglepage/:id' element={<MainLayout><Velcrosingl/></MainLayout>}/>
+        
+        <Route path='/vfmpaint' element={<MainLayout><VfmPaints/></MainLayout>}/>
+        <Route path='/vfmpaintsinglepage/:id' element={<MainLayout><VfmPaintssingl/></MainLayout>}/>
+        
+        <Route path='/wd40' element={<MainLayout><Wd40/></MainLayout>}/>
+        <Route path='/wd40singlepage/:id' element={<MainLayout><Wd40singl/></MainLayout>}/>
+        
+        <Route path='/werner' element={<MainLayout><Werner/></MainLayout>}/>
+        <Route path='/wernersinglepage/:id' element={<MainLayout><Wernersingl/></MainLayout>}/>
+        
+        <Route path='/yelelock' element={<MainLayout><Yelelock/></MainLayout>}/>
+        <Route path='/yelelocksinglepage/:id' element={<MainLayout><Yelelocksingl/></MainLayout>}/>
+        
+        <Route path='/unicon' element={<MainLayout><Unicon/></MainLayout>}/>
+        <Route path='/uniconsinglepage/:id' element={<MainLayout><Uniconsingl/></MainLayout>}/>
+        
+        <Route path='/amtech' element={<MainLayout><Amtech/></MainLayout>}/>
+        <Route path='/amtechsinglepage/:id' element={<MainLayout><Amtechsingle/></MainLayout>}/>
+        
+        <Route path='/antiqux' element={<MainLayout><Antiqux/></MainLayout>}/>
+        <Route path='/antiquxsinglepage/:id' element={<MainLayout><Antiquxsingle/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>

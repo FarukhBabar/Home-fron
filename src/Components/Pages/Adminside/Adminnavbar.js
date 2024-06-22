@@ -275,8 +275,18 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/liststarpak">Starpak </Link></li>
                   <li><Link className="dropdown-item" to="/liststerling">Sterling </Link></li>
                   <li><Link className="dropdown-item" to="/listtableaue">Tableaue </Link></li>
-                  <li><Link className="dropdown-item" to="/listsoudal">Soudal </Link></li>
-                  <li><Link className="dropdown-item" to="/listsoudal">Soudal </Link></li>
+                  <li><Link className="dropdown-item" to="/listtricycle">Tricycle </Link></li>
+                  <li><Link className="dropdown-item" to="/listultratrap">Ultratape </Link></li>
+                  <li><Link className="dropdown-item" to="/listvacuum">Vacuum </Link></li>
+                  <li><Link className="dropdown-item" to="/listvelcro">Velcro </Link></li>
+                  <li><Link className="dropdown-item" to="/listvfmpaint">Vfmpaint </Link></li>
+                  <li><Link className="dropdown-item" to="/listwd40">Wd40 </Link></li>
+                  <li><Link className="dropdown-item" to="/listwerner">Werner </Link></li>
+                  <li><Link className="dropdown-item" to="/listyelelock">Yelelock </Link></li>
+                  <li><Link className="dropdown-item" to="/listunicon">Unicon </Link></li>
+                  <li><Link className="dropdown-item" to="/listamtech">Amtech Tools </Link></li>
+                  <li><Link className="dropdown-item" to="/listantiqux">Antiqux </Link></li>
+                  <li><Link className="dropdown-item" to="/listultratrap">Ultratape </Link></li>
                 </ul>
               </li>
               <li className="nav-item dropend">

@@ -280,51 +280,51 @@ const Diymainpage = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href> <img src="./Images/Diy/DIY-50.png" alt className="img1" /></a> 
+        <Link to='/tricycle'> <img src="./Images/Diy/DIY-50.png" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href>  <img src="./Images/Diy/DIY-51.png" alt className="img2" /></a> 
+        <Link to='/ultratrap'>  <img src="./Images/Diy/DIY-51.png" alt className="img2" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href> <img src="./Images/Diy/DIY-52.png" alt className="img3" /></a> 
-      </div>
-    </div>
-  </div>
-  <div className="row justify-content-center mt-3">
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <a href><img src="./Images/Diy/DIY-53.png" alt className="img" /></a>
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <a href> <img src="./Images/Diy/DIY-54.png" alt className="img1" /></a>
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <a href>  <img src="./Images/Diy/DIY-55.png" alt className="img2" /></a>
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <a href> <img src="./Images/Diy/DIY-56.png" alt className="img3" /></a>
+        <Link to='/vacuum'> <img src="./Images/Diy/DIY-52.png" alt className="img3" /></Link> 
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/Diy/DIY-57.png" alt className="img" /></a>
+        <Link to='/velcro'><img src="./Images/Diy/DIY-53.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href> <img src="./Images/Diy/DIY-58.png" alt className="img1" /></a>
+        <Link to='/vfmpaint'> <img src="./Images/Diy/DIY-54.png" alt className="img1" /></Link>
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/wd40'>  <img src="./Images/Diy/DIY-55.png" alt className="img2" /></Link>
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/werner'> <img src="./Images/Diy/DIY-56.png" alt className="img3" /></Link>
+      </div>
+    </div>
+  </div>
+  <div className="row justify-content-center mt-3">
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/yelelock'><img src="./Images/Diy/DIY-57.png" alt className="img" /></Link>
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/unicon'> <img src="./Images/Diy/DIY-58.png" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -341,12 +341,12 @@ const Diymainpage = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/DIY (2).png" alt className="img" /></a>
+        <Link to='/amtech'><img src="./Images/DIY (2).png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href> <img src="./Images/DIY (3).png" alt className="img1" /></a>
+        <Link to='/antiqux'> <img src="./Images/DIY (3).png" alt className="img1" /></Link>
       </div>
     </div>
     
