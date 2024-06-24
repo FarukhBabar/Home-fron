@@ -821,6 +821,91 @@ import Amtech from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech too
 import Amtechsingle from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech tools/Amtechsingl';
 import Antiqux from './Components/Pages/Adminside/deparmentbathrom/Diy/Antiqux/Antiqux';
 import Antiquxsingle from './Components/Pages/Adminside/deparmentbathrom/Diy/Antiqux/Antiquxsingl';
+import Chrome from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Chrome/Chrome';
+import Chromesingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Chrome/Chromesingl';
+import Chromeform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Chrome/Chromeform';
+import Chromelist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Chrome/Chromelist';
+import Chromeupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Chrome/Chromeupdtae';
+import Cookwar from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cookware/Cookwar';
+import Cookwarsingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cookware/Cookwaresingl';
+import Cookwarform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cookware/Cookwareform';
+import Cookwarlist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cookware/Cookwarelist';
+import Cookwarupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cookware/Cookwareupdate';
+import Kettles from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kettles/Kettles';
+import Kettlessingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kettles/Kettlessingl';
+import Kettlesform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kettles/Kettlesform';
+import Kettleslist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kettles/Kettleslist';
+import Kettlesupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kettles/Kettlesupdate';
+import Cutlery from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cutlery/Cutlery';
+import Cutlerysingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cutlery/Cutlerysingl';
+import Cutleryform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cutlery/Cutleryform';
+import Cutlerylist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cutlery/Cutlerylist';
+import Cutleryupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Cutlery/Cutleryupdate';
+import KitchenACCform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitchenACC/KitchenACCform';
+import KitchenACClist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitchenACC/KitchenACClist';
+import KitchenACCupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitchenACC/KitchenACCupdate';
+import KitchenACC from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitchenACC/KitchenACC';
+import KitchenACCsingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitchenACC/KitchenACCsingl';
+import Kitechenbin from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechenbin/Kitechenbin';
+import Kitechenbinsingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechenbin/Kitechenbinsingl';
+import Kitechenbinform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechenbin/Kitechenbinform';
+import Kitechenbinlist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechenbin/Kitechenbinlist';
+import Kitechenbinupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechenbin/Kitechenbinupdate';
+import Kitechengaform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengaform';
+import Kitechengalist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengalist';
+import Kitechengaupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengaupdtae';
+import Kitechenga from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechenga';
+import Kitechengasingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengasingl';
+import KitechenKniform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKniform';
+import KitechenKnilist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKnilist';
+import KitechenKniupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKniupdtae';
+import KitechenKni from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKni';
+import KitechenKnisingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKnisingl';
+import Scaleskiform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitechenScales/Scaleskiform';
+import Scaleskilist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitechenScales/Scaleskilist';
+import Scaleskiupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitechenScales/Scaleskiupdate';
+import Scaleski from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitechenScales/Scaleski';
+import Scaleskisingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/KitechenScales/Scaleskisingl';
+import Plastickiform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Plastickitechenware/Plastickiform';
+import Plastickilist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Plastickitechenware/Plastickilist';
+import Plastickiupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Plastickitechenware/Plastickiupdtae';
+import Plasticki from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Plastickitechenware/Plasticki';
+import Plastickisingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Plastickitechenware/Plastickisingl';
+import Simplehu from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Simple Human/Simplehu';
+import Simplehusingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Simple Human/Simplehusingl';
+import Simplehuform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Simple Human/Simplehuform';
+import Simplehulist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Simple Human/Simplehulist';
+import Simplehuupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Simple Human/Simplehuupdate';
+import Breadform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Breadbeans/Breadform';
+import Breadlist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Breadbeans/Breadlist';
+import Breadupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Breadbeans/Breadupdate';
+import Bread from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Breadbeans/Bread';
+import Breadsingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Breadbeans/Breadsingl';
+import Tea from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Tea/Tea';
+import Teasingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Tea/Teasingl';
+import Teaform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Tea/Teaform';
+import Tealist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Tea/Tealist';
+import Teaupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Tea/Teaupdate';
+import Traysform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Trays/Traysform';
+import Trayslist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Trays/Trayslist';
+import Traysupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Trays/Traysupdate';
+import Trays from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Trays/Trays';
+import Trayssingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Trays/Trayssingl';
+import Water from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Waterfilter/Water';
+import Watersingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Waterfilter/Watersingl';
+import Waterform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Waterfilter/Waterform';
+import Waterlist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Waterfilter/Waterlist';
+import Waterupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Waterfilter/Waterupdate';
+import Woodenform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Wooden/Woodenform';
+import Woodenlist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Wooden/Woodenlist';
+import Woodenupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Wooden/Woodenupdte';
+import Wooden from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Wooden/Wooden';
+import Woodensingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Wooden/Woodensingl';
+import Catering from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Catering';
+import Cateringsingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Cateringsingl';
+import Cateringform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Cateringform';
+import Cateringlist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Cateringlist';
+import Cateringupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Cateringupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1449,6 +1534,74 @@ const App = () => {
         <Route path='/antiquxform' element={<AdminLayout><Antiquxform/></AdminLayout>}/>
         <Route path='/listantiqux' element={<AdminLayout><Antiquxlist/></AdminLayout>}/>
         <Route path='/listantiqux/:id' element={<AdminLayout><Antiquxupdate/></AdminLayout>}/>
+         
+        <Route path='/chromform' element={<AdminLayout><Chromeform/></AdminLayout>}/>
+        <Route path='/listchrom' element={<AdminLayout><Chromelist/></AdminLayout>}/>
+        <Route path='/listchrom/:id' element={<AdminLayout><Chromeupdate/></AdminLayout>}/>
+        
+        <Route path='/cookwarform' element={<AdminLayout><Cookwarform/></AdminLayout>}/>
+        <Route path='/listcookwar' element={<AdminLayout><Cookwarlist/></AdminLayout>}/>
+        <Route path='/listcookwar/:id' element={<AdminLayout><Cookwarupdate/></AdminLayout>}/>
+        
+        <Route path='/kettlesform' element={<AdminLayout><Kettlesform/></AdminLayout>}/>
+        <Route path='/listkettles' element={<AdminLayout><Kettleslist/></AdminLayout>}/>
+        <Route path='/listkettles/:id' element={<AdminLayout><Kettlesupdate/></AdminLayout>}/>
+        
+        <Route path='/culteryform' element={<AdminLayout><Cutleryform/></AdminLayout>}/>
+        <Route path='/listcultery' element={<AdminLayout><Cutlerylist/></AdminLayout>}/>
+        <Route path='/listcultery/:id' element={<AdminLayout><Cutleryupdate/></AdminLayout>}/>
+        
+        <Route path='/kitechenaccform' element={<AdminLayout><KitchenACCform/></AdminLayout>}/>
+        <Route path='/listkitechenacc' element={<AdminLayout><KitchenACClist/></AdminLayout>}/>
+        <Route path='/listkitechenacc/:id' element={<AdminLayout><KitchenACCupdate/></AdminLayout>}/> 
+        
+        <Route path='/kitechenbinform' element={<AdminLayout><Kitechenbinform/></AdminLayout>}/>
+        <Route path='/listkitechenbin' element={<AdminLayout><Kitechenbinlist/></AdminLayout>}/>
+        <Route path='/listkitechenbin/:id' element={<AdminLayout><Kitechenbinupdate/></AdminLayout>}/> 
+        
+        <Route path='/Kitechengaform' element={<AdminLayout><Kitechengaform/></AdminLayout>}/>
+        <Route path='/listKitechenga' element={<AdminLayout><Kitechengalist/></AdminLayout>}/>
+        <Route path='/listKitechenga/:id' element={<AdminLayout><Kitechengaupdate/></AdminLayout>}/>  
+        
+        <Route path='/kitechenkniform' element={<AdminLayout><KitechenKniform/></AdminLayout>}/>
+        <Route path='/listkitechenkni' element={<AdminLayout><KitechenKnilist/></AdminLayout>}/>
+        <Route path='/listkitechenkni/:id' element={<AdminLayout><KitechenKniupdate/></AdminLayout>}/>  
+        
+        <Route path='/scalekitechenform' element={<AdminLayout><Scaleskiform/></AdminLayout>}/>
+        <Route path='/listscalekitechen' element={<AdminLayout><Scaleskilist/></AdminLayout>}/>
+        <Route path='/listscalekitechen/:id' element={<AdminLayout><Scaleskiupdate/></AdminLayout>}/>  
+        
+        <Route path='/plastickitechenform' element={<AdminLayout><Plastickiform/></AdminLayout>}/>
+        <Route path='/listplastickitechen' element={<AdminLayout><Plastickilist/></AdminLayout>}/>
+        <Route path='/listplastickitechen/:id' element={<AdminLayout><Plastickiupdate/></AdminLayout>}/>  
+        
+        <Route path='/simplehumanform' element={<AdminLayout><Simplehuform/></AdminLayout>}/>
+        <Route path='/listsimplehuman' element={<AdminLayout><Simplehulist/></AdminLayout>}/>
+        <Route path='/listsimplehuman/:id' element={<AdminLayout><Simplehuupdate/></AdminLayout>}/>  
+        
+        <Route path='/breadform' element={<AdminLayout><Breadform/></AdminLayout>}/>
+        <Route path='/listbread' element={<AdminLayout><Breadlist/></AdminLayout>}/>
+        <Route path='/listbread/:id' element={<AdminLayout><Breadupdate/></AdminLayout>}/>  
+        
+        <Route path='/teaform' element={<AdminLayout><Teaform/></AdminLayout>}/>
+        <Route path='/listtea' element={<AdminLayout><Tealist/></AdminLayout>}/>
+        <Route path='/listtea/:id' element={<AdminLayout><Teaupdate/></AdminLayout>}/> 
+          
+        <Route path='/trayform' element={<AdminLayout><Traysform/></AdminLayout>}/>
+        <Route path='/listtray' element={<AdminLayout><Trayslist/></AdminLayout>}/>
+        <Route path='/listtray/:id' element={<AdminLayout><Traysupdate/></AdminLayout>}/> 
+        
+        <Route path='/waterform' element={<AdminLayout><Waterform/></AdminLayout>}/>
+        <Route path='/listwater' element={<AdminLayout><Waterlist/></AdminLayout>}/>
+        <Route path='/listwater/:id' element={<AdminLayout><Waterupdate/></AdminLayout>}/> 
+        
+        <Route path='/woodenform' element={<AdminLayout><Woodenform/></AdminLayout>}/>
+        <Route path='/listwooden' element={<AdminLayout><Woodenlist/></AdminLayout>}/>
+        <Route path='/listwooden/:id' element={<AdminLayout><Woodenupdate/></AdminLayout>}/> 
+        
+        <Route path='/cateringform' element={<AdminLayout><Cateringform/></AdminLayout>}/>
+        <Route path='/listcatering' element={<AdminLayout><Cateringlist/></AdminLayout>}/>
+        <Route path='/listcatering/:id' element={<AdminLayout><Cateringupdate/></AdminLayout>}/> 
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -1968,6 +2121,54 @@ const App = () => {
         
         <Route path='/antiqux' element={<MainLayout><Antiqux/></MainLayout>}/>
         <Route path='/antiquxsinglepage/:id' element={<MainLayout><Antiquxsingle/></MainLayout>}/>
+        
+        <Route path='/chrom' element={<MainLayout><Chrome/></MainLayout>}/>
+        <Route path='/chromsinglepage/:id' element={<MainLayout><Chromesingl/></MainLayout>}/>
+        
+        <Route path='/cookwar' element={<MainLayout><Cookwar/></MainLayout>}/>
+        <Route path='/cookwarsinglepage/:id' element={<MainLayout><Cookwarsingl/></MainLayout>}/>
+        
+        <Route path='/kettles' element={<MainLayout><Kettles/></MainLayout>}/>
+        <Route path='/kettlessinglepage/:id' element={<MainLayout><Kettlessingl/></MainLayout>}/>
+        
+        <Route path='/cultery' element={<MainLayout><Cutlery/></MainLayout>}/>
+        <Route path='/culterysinglepage/:id' element={<MainLayout><Cutlerysingl/></MainLayout>}/>
+        
+        <Route path='/kitechenacc' element={<MainLayout><KitchenACC/></MainLayout>}/>
+        <Route path='/kitechenaccsinglepage/:id' element={<MainLayout><KitchenACCsingl/></MainLayout>}/>
+        
+        <Route path='/kitechenbin' element={<MainLayout><Kitechenbin/></MainLayout>}/>
+        <Route path='/kitechenbinsinglepage/:id' element={<MainLayout><Kitechenbinsingl/></MainLayout>}/>
+        
+        <Route path='/kitechenkni' element={<MainLayout><KitechenKni/></MainLayout>}/>
+        <Route path='/kitechenknisinglepage/:id' element={<MainLayout><KitechenKnisingl/></MainLayout>}/>
+        
+        <Route path='/scalekitechen' element={<MainLayout><Scaleski/></MainLayout>}/>
+        <Route path='/scalekitechensinglepage/:id' element={<MainLayout><Scaleskisingl/></MainLayout>}/>
+        
+        <Route path='/plastickitechen' element={<MainLayout><Plasticki/></MainLayout>}/>
+        <Route path='/plastickitechensinglepage/:id' element={<MainLayout><Plastickisingl/></MainLayout>}/>
+        
+        <Route path='/simplehuman' element={<MainLayout><Simplehu/></MainLayout>}/>
+        <Route path='/simplehumansinglepage/:id' element={<MainLayout><Simplehusingl/></MainLayout>}/>
+        
+        <Route path='/bread' element={<MainLayout><Bread/></MainLayout>}/>
+        <Route path='/breadsinglepage/:id' element={<MainLayout><Breadsingl/></MainLayout>}/>
+        
+        <Route path='/tea' element={<MainLayout><Tea/></MainLayout>}/>
+        <Route path='/teasinglepage/:id' element={<MainLayout><Teasingl/></MainLayout>}/>  
+        
+        <Route path='/tray' element={<MainLayout><Trays/></MainLayout>}/>
+        <Route path='/traysinglepage/:id' element={<MainLayout><Trayssingl/></MainLayout>}/>
+        
+        <Route path='/water' element={<MainLayout><Water/></MainLayout>}/>
+        <Route path='/watersinglepage/:id' element={<MainLayout><Watersingl/></MainLayout>}/> 
+        
+        <Route path='/wooden' element={<MainLayout><Wooden/></MainLayout>}/>
+        <Route path='/woodensinglepage/:id' element={<MainLayout><Woodensingl/></MainLayout>}/> 
+        
+        <Route path='/catering' element={<MainLayout><Catering/></MainLayout>}/>
+        <Route path='/cateringsinglepage/:id' element={<MainLayout><Cateringsingl/></MainLayout>}/> 
       </Routes>
       </CartProvider>
     </>

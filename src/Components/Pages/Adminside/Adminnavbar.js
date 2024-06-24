@@ -499,6 +499,24 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listbakeware">Bakeware</Link></li>
                   <li><Link className="dropdown-item" to="/listbareware">Barewear</Link></li>
+                  <li><Link className="dropdown-item" to="/listchrom">Chrome</Link></li>
+                  <li><Link className="dropdown-item" to="/listcookwar">Cookwear</Link></li>
+                  <li><Link className="dropdown-item" to="/listkettles">Kettles</Link></li>
+                  <li><Link className="dropdown-item" to="/listcultery">Cultery</Link></li>
+                  <li><Link className="dropdown-item" to="/listkitechenacc">Kitechenacc</Link></li>
+                  <li><Link className="dropdown-item" to="/listkitechenbin">Kitechenbin</Link></li>
+                  <li><Link className="dropdown-item" to="/listkitechenga">Kitechenga</Link></li>
+                  <li><Link className="dropdown-item" to="/listkitechenkni">Kitechen Knife</Link></li>
+                  <li><Link className="dropdown-item" to="/listscalekitechen">Scale kitechen</Link></li> 
+                  <li><Link className="dropdown-item" to="/listplastickitechen">Plastic kitechen</Link></li> 
+                  <li><Link className="dropdown-item" to="/listsimplehuman">Simple Human</Link></li>
+                  <li><Link className="dropdown-item" to="/listbread">Bread</Link></li>
+                  <li><Link className="dropdown-item" to="/listtea">Tea/Coffee</Link></li>
+                  <li><Link className="dropdown-item" to="/listtray">Tray</Link></li>
+                  <li><Link className="dropdown-item" to="/listwater">Water Filter</Link></li>
+                  <li><Link className="dropdown-item" to="/listwooden">Wooden</Link></li>
+                  <li><Link className="dropdown-item" to="/listcatering">Catering</Link></li>
+                 
                 </ul>
               </li>
               <li className="nav-item dropend">
