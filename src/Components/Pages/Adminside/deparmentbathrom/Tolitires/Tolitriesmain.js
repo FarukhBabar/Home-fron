@@ -21,19 +21,19 @@ const Tolitriesmain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/poundline"> <img src="./Images/Toiletries (2).png" alt className="img2" /></Link>
+        <Link to="/giftsets"> <img src="./Images/Toiletries (2).png" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentbathroom'><img src="./Images/Toiletries (3).png" alt className="img3" /></Link>   
+        <Link to='/hair'><img src="./Images/Toiletries (3).png" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Toiletries (4).png" alt className="img" /></Link>
+        <Link to='/hand'><img src="./Images/Toiletries (4).png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">

@@ -410,7 +410,14 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listcotton">Cotton</Link></li>
                   <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
-                  
+                  <li><Link className="dropdown-item" to="/listgiftsets">Gift Sets</Link></li>
+                  <li><Link className="dropdown-item" to="/listhair">Hair Products</Link></li>
+                  <li><Link className="dropdown-item" to="/listhand">Hand Wash</Link></li>
+                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
+                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
+                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
+                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
+                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>
@@ -547,8 +554,16 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listbbq">BBQ</Link></li>
                   <li><Link className="dropdown-item" to="/listbird">Birds Care</Link></li>
-                 
-                
+                  <li><Link className="dropdown-item" to="/listcamping">Camping</Link></li>
+                  <li><Link className="dropdown-item" to="/listfertilizer">Fertilizer</Link></li>
+                  <li><Link className="dropdown-item" to="/listfuritur">Furniture</Link></li>
+                  <li><Link className="dropdown-item" to="/listgiftware">Giftware</Link></li>
+                  <li><Link className="dropdown-item" to="/listgrowing">Growing Media</Link></li>
+                  <li><Link className="dropdown-item" to="/listlightening">Lightening</Link></li>
+                  <li><Link className="dropdown-item" to="/listplanters">Planters</Link></li>
+                  <li><Link className="dropdown-item" to="/listtools">Tools & Accessories</Link></li>
+                  <li><Link className="dropdown-item" to="/listwatering">Watering</Link></li>
+                  <li><Link className="dropdown-item" to="/listwinterfules">Winterfules</Link></li>
                 </ul>
               </li>
               <li className="nav-item dropend">

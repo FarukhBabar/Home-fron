@@ -906,6 +906,71 @@ import Cateringsingl from './Components/Pages/Adminside/deparmentbathrom/Kiteche
 import Cateringform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Cateringform';
 import Cateringlist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Cateringlist';
 import Cateringupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Catering/Cateringupdate';
+import Campingform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Camping/Campingform';
+import Campinglist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Camping/Campinglist';
+import Campingupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Camping/Campingupdate';
+import Camping from './Components/Pages/Adminside/deparmentbathrom/Gardening/Camping/Camping';
+import Campingsingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Camping/Campingsingl';
+import Fertilizer from './Components/Pages/Adminside/deparmentbathrom/Gardening/Fertilizer/Fertilizer';
+import Fertilizersingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Fertilizer/Fertilizersingl';
+import Furnitur from './Components/Pages/Adminside/deparmentbathrom/Gardening/Furniture/Furnitur';
+import Furnituresingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Furniture/Furnituresingl';
+import Giftware from './Components/Pages/Adminside/deparmentbathrom/Gardening/Giftware/Giftware';
+import Giftwaresingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Giftware/Giftwaresingl';
+import Fertilizerform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Fertilizer/Fertilizerform';
+import Fertilizerlist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Fertilizer/Fertilizerlist';
+import Fertilizerupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Fertilizer/Fertilizerupdate';
+import Furniturform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Furniture/Furniturform';
+import Furniturlist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Furniture/Furniturlist';
+import Furniturupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Furniture/Furniturupdate';
+import Giftwareform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Giftware/Giftwareform';
+import Giftwarelist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Giftware/Giftwarelist';
+import Giftwareupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Giftware/Giftwareupdate';
+import Growingform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Growing Media/Growingform';
+import Growinglist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Growing Media/Growinglist';
+import Growingupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Growing Media/Growingupdate';
+import Lighteningform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Lightening/Lighteningform';
+import Lighteninglist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Lightening/Lighteninglist';
+import Lighteningupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Lightening/Lighteningupdate';
+import Plantersform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Planters/Plantersform';
+import Planterslist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Planters/Planterslist';
+import Plantersupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Planters/Plantersupdate';
+import Growing from './Components/Pages/Adminside/deparmentbathrom/Gardening/Growing Media/Growing';
+import Growingsingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Growing Media/Growingsingl';
+import Lightening from './Components/Pages/Adminside/deparmentbathrom/Gardening/Lightening/Lightening';
+import Lighteningsingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Lightening/Lighteningsingl';
+import Planters from './Components/Pages/Adminside/deparmentbathrom/Gardening/Planters/Planters';
+import Planterssingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Planters/Planterssingl';
+import Toolsacceform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Tools&Accessories/Toolsacceform';
+import Toolsaccelist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Tools&Accessories/Toolsaccelist';
+import Toolsacceupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Tools&Accessories/Toolsaccepdate';
+import Wateringform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Watering/Wateringform';
+import Wateringlist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Watering/Wateringlist';
+import Wateringupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Watering/Wateringupdate';
+import Winterfulesform from './Components/Pages/Adminside/deparmentbathrom/Gardening/Winterfules/Winterfulesform';
+import Winterfuleslist from './Components/Pages/Adminside/deparmentbathrom/Gardening/Winterfules/Winterfuleslist';
+import Winterfulesupdate from './Components/Pages/Adminside/deparmentbathrom/Gardening/Winterfules/Winterfulesupdate';
+import Toolsacce from './Components/Pages/Adminside/deparmentbathrom/Gardening/Tools&Accessories/Toolsacce';
+import Toolsaccesingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Tools&Accessories/Toolsaccesingl';
+import Watering from './Components/Pages/Adminside/deparmentbathrom/Gardening/Watering/Watering';
+import Wateringsingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Watering/Wateringsingl';
+import Winterfules from './Components/Pages/Adminside/deparmentbathrom/Gardening/Winterfules/Winterfules';
+import Winterfulessingle from './Components/Pages/Adminside/deparmentbathrom/Gardening/Winterfules/Winterfulessingl';
+import Giftsets from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Gift sets/Giftsets';
+import Giftsetssingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Gift sets/Giftsetssingl';
+import Hair from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hair';
+import Hairsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hairsingl';
+import Hand from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Handwash/Hand';
+import Handsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Handwash/Handsingl';
+import Giftsetsform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Gift sets/Giftsetsform';
+import Giftsetslist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Gift sets/Giftsetslist';
+import Giftsetsupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Gift sets/Giftsetsupdate';
+import Handform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Handwash/Handform';
+import Handlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Handwash/Handlist';
+import Handupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Handwash/Handupdate';
+import Hairform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hairform';
+import Hairlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hairlist';
+import Hairupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hairupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1602,6 +1667,58 @@ const App = () => {
         <Route path='/cateringform' element={<AdminLayout><Cateringform/></AdminLayout>}/>
         <Route path='/listcatering' element={<AdminLayout><Cateringlist/></AdminLayout>}/>
         <Route path='/listcatering/:id' element={<AdminLayout><Cateringupdate/></AdminLayout>}/> 
+        
+        <Route path='/campingform' element={<AdminLayout><Campingform/></AdminLayout>}/>
+        <Route path='/listcamping' element={<AdminLayout><Campinglist/></AdminLayout>}/>
+        <Route path='/listcamping/:id' element={<AdminLayout><Campingupdate/></AdminLayout>}/> 
+        
+        <Route path='/fertilizerform' element={<AdminLayout><Fertilizerform/></AdminLayout>}/>
+        <Route path='/listfertilizer' element={<AdminLayout><Fertilizerlist/></AdminLayout>}/>
+        <Route path='/listfertilizer/:id' element={<AdminLayout><Fertilizerupdate/></AdminLayout>}/> 
+        
+        <Route path='/furiturform' element={<AdminLayout><Furniturform/></AdminLayout>}/>
+        <Route path='/listfuritur' element={<AdminLayout><Furniturlist/></AdminLayout>}/>
+        <Route path='/listfuritur/:id' element={<AdminLayout><Furniturupdate/></AdminLayout>}/> 
+        
+        <Route path='/giftwareform' element={<AdminLayout><Giftwareform/></AdminLayout>}/>
+        <Route path='/listgiftware' element={<AdminLayout><Giftwarelist/></AdminLayout>}/>
+        <Route path='/listgiftware/:id' element={<AdminLayout><Giftwareupdate/></AdminLayout>}/> 
+        
+        <Route path='/growingform' element={<AdminLayout><Growingform/></AdminLayout>}/>
+        <Route path='/listgrowing' element={<AdminLayout><Growinglist/></AdminLayout>}/>
+        <Route path='/listgrowing/:id' element={<AdminLayout><Growingupdate/></AdminLayout>}/> 
+        
+        <Route path='/lighteningform' element={<AdminLayout><Lighteningform/></AdminLayout>}/>
+        <Route path='/listlightening' element={<AdminLayout><Lighteninglist/></AdminLayout>}/>
+        <Route path='/listlightening/:id' element={<AdminLayout><Lighteningupdate/></AdminLayout>}/> 
+        
+        <Route path='/plantersform' element={<AdminLayout><Plantersform/></AdminLayout>}/>
+        <Route path='/listplanters' element={<AdminLayout><Planterslist/></AdminLayout>}/>
+        <Route path='/listplanters/:id' element={<AdminLayout><Plantersupdate/></AdminLayout>}/> 
+        
+        <Route path='/toolsform' element={<AdminLayout><Toolsacceform/></AdminLayout>}/>
+        <Route path='/listtools' element={<AdminLayout><Toolsaccelist/></AdminLayout>}/>
+        <Route path='/listtools/:id' element={<AdminLayout><Toolsacceupdate/></AdminLayout>}/> 
+        
+        <Route path='/wateringform' element={<AdminLayout><Wateringform/></AdminLayout>}/>
+        <Route path='/listwatering' element={<AdminLayout><Wateringlist/></AdminLayout>}/>
+        <Route path='/listwatering/:id' element={<AdminLayout><Wateringupdate/></AdminLayout>}/> 
+        
+        <Route path='/winterfulesform' element={<AdminLayout><Winterfulesform/></AdminLayout>}/>
+        <Route path='/listwinterfules' element={<AdminLayout><Winterfuleslist/></AdminLayout>}/>
+        <Route path='/listwinterfules/:id' element={<AdminLayout><Winterfulesupdate/></AdminLayout>}/> 
+        
+        <Route path='/giftsetsform' element={<AdminLayout><Giftsetsform/></AdminLayout>}/>
+        <Route path='/listgiftsets' element={<AdminLayout><Giftsetslist/></AdminLayout>}/>
+        <Route path='/listgiftsets/:id' element={<AdminLayout><Giftsetsupdate/></AdminLayout>}/> 
+        
+        <Route path='/handform' element={<AdminLayout><Handform/></AdminLayout>}/>
+        <Route path='/listhand' element={<AdminLayout><Handlist/></AdminLayout>}/>
+        <Route path='/listhand/:id' element={<AdminLayout><Handupdate/></AdminLayout>}/> 
+        
+        <Route path='/hairform' element={<AdminLayout><Hairform/></AdminLayout>}/>
+        <Route path='/listhair' element={<AdminLayout><Hairlist/></AdminLayout>}/>
+        <Route path='/listhair/:id' element={<AdminLayout><Hairupdate/></AdminLayout>}/> 
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -2169,6 +2286,45 @@ const App = () => {
         
         <Route path='/catering' element={<MainLayout><Catering/></MainLayout>}/>
         <Route path='/cateringsinglepage/:id' element={<MainLayout><Cateringsingl/></MainLayout>}/> 
+        
+        <Route path='/camping' element={<MainLayout><Camping/></MainLayout>}/>
+        <Route path='/campingsinglepage/:id' element={<MainLayout><Campingsingle/></MainLayout>}/> 
+        
+        <Route path='/fertilizer' element={<MainLayout><Fertilizer/></MainLayout>}/>
+        <Route path='/fertilizersinglepage/:id' element={<MainLayout><Fertilizersingle/></MainLayout>}/> 
+        
+        <Route path='/furnitur' element={<MainLayout><Furnitur/></MainLayout>}/>
+        <Route path='/furnitursinglepage/:id' element={<MainLayout><Furnituresingle/></MainLayout>}/> 
+        
+        <Route path='/giftware' element={<MainLayout><Giftware/></MainLayout>}/>
+        <Route path='/giftwaresinglepage/:id' element={<MainLayout><Giftwaresingle/></MainLayout>}/>  
+        
+        <Route path='/growing' element={<MainLayout><Growing/></MainLayout>}/>
+        <Route path='/growingsinglepage/:id' element={<MainLayout><Growingsingle/></MainLayout>}/>
+        
+        <Route path='/lightening' element={<MainLayout><Lightening/></MainLayout>}/>
+        <Route path='/lighteningsinglepage/:id' element={<MainLayout><Lighteningsingle/></MainLayout>}/>
+        
+        <Route path='/planters' element={<MainLayout><Planters/></MainLayout>}/>
+        <Route path='/planterssinglepage/:id' element={<MainLayout><Planterssingle/></MainLayout>}/>
+        
+        <Route path='/tools' element={<MainLayout><Toolsacce/></MainLayout>}/>
+        <Route path='/toolssinglepage/:id' element={<MainLayout><Toolsaccesingle/></MainLayout>}/>
+        
+        <Route path='/watering' element={<MainLayout><Watering/></MainLayout>}/>
+        <Route path='/wateringsinglepage/:id' element={<MainLayout><Wateringsingle/></MainLayout>}/>
+        
+        <Route path='/winterfules' element={<MainLayout><Winterfules/></MainLayout>}/>
+        <Route path='/winterfulessinglepage/:id' element={<MainLayout><Winterfulessingle/></MainLayout>}/>
+        
+        <Route path='/giftsets' element={<MainLayout><Giftsets/></MainLayout>}/>
+        <Route path='/giftsetssinglepage/:id' element={<MainLayout><Giftsetssingle/></MainLayout>}/>
+        
+        <Route path='/hair' element={<MainLayout><Hair/></MainLayout>}/>
+        <Route path='/hairsinglepage/:id' element={<MainLayout><Hairsingle/></MainLayout>}/>
+        
+        <Route path='/hand' element={<MainLayout><Hand/></MainLayout>}/>
+        <Route path='/handsinglepage/:id' element={<MainLayout><Handsingle/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>
