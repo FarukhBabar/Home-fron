@@ -413,11 +413,18 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listgiftsets">Gift Sets</Link></li>
                   <li><Link className="dropdown-item" to="/listhair">Hair Products</Link></li>
                   <li><Link className="dropdown-item" to="/listhand">Hand Wash</Link></li>
-                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
-                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
-                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
-                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
-                  <li><Link className="dropdown-item" to="/listbabay">Babycare</Link></li>
+                  <li><Link className="dropdown-item" to="/listhealth">Health Care</Link></li>
+                  <li><Link className="dropdown-item" to="/listmouthwash">Mouthwash</Link></li>
+                  <li><Link className="dropdown-item" to="/listperfume">Perfumes</Link></li>
+                  <li><Link className="dropdown-item" to="/listsanitary">Sanitary</Link></li>
+                  <li><Link className="dropdown-item" to="/listsaving">Saving</Link></li>
+                  <li><Link className="dropdown-item" to="/listshampo">Shampo</Link></li>
+                  <li><Link className="dropdown-item" to="/listshowerge">Shower Gel</Link></li>
+                  <li><Link className="dropdown-item" to="/listskincare">Saving</Link></li>
+                  <li><Link className="dropdown-item" to="/listsaving">Saving</Link></li>
+                  <li><Link className="dropdown-item" to="/listsaving">Saving</Link></li>
+
+
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>

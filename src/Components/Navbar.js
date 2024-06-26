@@ -406,7 +406,7 @@ useEffect(() => {
 )
 }
     </div>
-   < div className="cart scart mt-1 ms-4 text-decoration-none text-white position-relative">
+   <div className="cart scart mt-1 ms-4 text-decoration-none text-white position-relative">
         <Link to="/addtocart" className="text-decoration-none text-white">
          <h5><i className="bi bi-cart" />  ({cartCount})</h5> 
         </Link>

@@ -971,6 +971,46 @@ import Handupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/
 import Hairform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hairform';
 import Hairlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hairlist';
 import Hairupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Hair Product/Hairupdate';
+import Healthcareform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Healthcare/Healthcareform';
+import Healthcarelist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Healthcare/Healthcarelist';
+import Healthcareupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Healthcare/Healthcareupdate';
+import Mouthwashform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Mouthwash/Mouthwashform';
+import Mouthwashlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Mouthwash/Mouthwashlist';
+import Mouthwashupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Mouthwash/Mouthwashupdate';
+import Perfumesform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Perfumes/Perfumesform';
+import Perfumeslist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Perfumes/Perfumeslist';
+import Perfumesupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Perfumes/Perfumesupdate';
+import Sanitaryform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Sanitary/Sanitaryform';
+import Sanitarylist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Sanitary/Sanitarylist';
+import Sanitaryupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Sanitary/Sanitaryupdate';
+import Healthcare from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Healthcare/Healthcare';
+import Healthcaresingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Healthcare/Healthcaresingl';
+import Mouthwash from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Mouthwash/Mouthwash';
+import Mouthwashsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Mouthwash/Mouthwashsingl';
+import Perfumes from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Perfumes/Perfumes';
+import Perfumessingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Perfumes/Perfumessingl';
+import Sanitary from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Sanitary/Sanitary';
+import Sanitarysingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Sanitary/Sanitarysingl';
+import Saving from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Saving/Saving';
+import Savingsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Saving/Savingsingl';
+import Skincare from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincare';
+import Skincaresingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincaresingl';
+import Shampo from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Shampo/Shampo';
+import Shamposingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Shampo/Shamposingl';
+import Showergel from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Showergel/Showergel';
+import Showergelsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Showergel/Showergelsingl';
+import Savingform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Saving/Savingform';
+import Savinglist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Saving/Savinglist';
+import Savingupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Saving/Savingupdat';
+import Shampoform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Shampo/Shampoform';
+import Shampolist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Shampo/Shampolist';
+import Shampoupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Shampo/Shampoupdate';
+import Showergelform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Showergel/Showergelform';
+import Showergellist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Showergel/Showergellist';
+import Showergelupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Showergel/Showergelupdate';
+import Skincareform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincareform';
+import Skincarelist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincarelist';
+import Skincareupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincareupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1719,6 +1759,38 @@ const App = () => {
         <Route path='/hairform' element={<AdminLayout><Hairform/></AdminLayout>}/>
         <Route path='/listhair' element={<AdminLayout><Hairlist/></AdminLayout>}/>
         <Route path='/listhair/:id' element={<AdminLayout><Hairupdate/></AdminLayout>}/> 
+        
+        <Route path='/healthform' element={<AdminLayout><Healthcareform/></AdminLayout>}/>
+        <Route path='/listhealth' element={<AdminLayout><Healthcarelist/></AdminLayout>}/>
+        <Route path='/listhealth/:id' element={<AdminLayout><Healthcareupdate/></AdminLayout>}/> 
+        
+        <Route path='/mouthwashform' element={<AdminLayout><Mouthwashform/></AdminLayout>}/>
+        <Route path='/listmouthwash' element={<AdminLayout><Mouthwashlist/></AdminLayout>}/>
+        <Route path='/listmouthwash/:id' element={<AdminLayout><Mouthwashupdate/></AdminLayout>}/> 
+        
+        <Route path='/perfumeform' element={<AdminLayout><Perfumesform/></AdminLayout>}/>
+        <Route path='/listperfume' element={<AdminLayout><Perfumeslist/></AdminLayout>}/>
+        <Route path='/listperfume/:id' element={<AdminLayout><Perfumesupdate/></AdminLayout>}/> 
+        
+        <Route path='/sanitaryform' element={<AdminLayout><Sanitaryform/></AdminLayout>}/>
+        <Route path='/listsanitary' element={<AdminLayout><Sanitarylist/></AdminLayout>}/>
+        <Route path='/listsanitary/:id' element={<AdminLayout><Sanitaryupdate/></AdminLayout>}/> 
+        
+        <Route path='/savingform' element={<AdminLayout><Savingform/></AdminLayout>}/>
+        <Route path='/listsaving' element={<AdminLayout><Savinglist/></AdminLayout>}/>
+        <Route path='/listsaving/:id' element={<AdminLayout><Savingupdate/></AdminLayout>}/> 
+        
+        <Route path='/shampoform' element={<AdminLayout><Shampoform/></AdminLayout>}/>
+        <Route path='/listshampo' element={<AdminLayout><Shampolist/></AdminLayout>}/>
+        <Route path='/listshampo/:id' element={<AdminLayout><Shampoupdate/></AdminLayout>}/> 
+        
+        <Route path='/showergeform' element={<AdminLayout><Showergelform/></AdminLayout>}/>
+        <Route path='/listshowerge' element={<AdminLayout><Showergellist/></AdminLayout>}/>
+        <Route path='/listshowerge/:id' element={<AdminLayout><Showergelupdate/></AdminLayout>}/> 
+        
+        <Route path='/skincareform' element={<AdminLayout><Skincareform/></AdminLayout>}/>
+        <Route path='/listskincare' element={<AdminLayout><Skincarelist/></AdminLayout>}/>
+        <Route path='/listskincare/:id' element={<AdminLayout><Skincareupdate/></AdminLayout>}/> 
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -2325,6 +2397,30 @@ const App = () => {
         
         <Route path='/hand' element={<MainLayout><Hand/></MainLayout>}/>
         <Route path='/handsinglepage/:id' element={<MainLayout><Handsingle/></MainLayout>}/>
+        
+        <Route path='/health' element={<MainLayout><Healthcare/></MainLayout>}/>
+        <Route path='/healthsinglepage/:id' element={<MainLayout><Healthcaresingle/></MainLayout>}/>
+        
+        <Route path='/mouthwash' element={<MainLayout><Mouthwash/></MainLayout>}/>
+        <Route path='/mouthwashsinglepage/:id' element={<MainLayout><Mouthwashsingle/></MainLayout>}/>
+        
+        <Route path='/perfumes' element={<MainLayout><Perfumes/></MainLayout>}/>
+        <Route path='/perfumessinglepage/:id' element={<MainLayout><Perfumessingle/></MainLayout>}/>
+        
+        <Route path='/sanitary' element={<MainLayout><Sanitary/></MainLayout>}/>
+        <Route path='/sanitarysinglepage/:id' element={<MainLayout><Sanitarysingle/></MainLayout>}/>
+        
+        <Route path='/saving' element={<MainLayout><Saving/></MainLayout>}/>
+        <Route path='/savingsinglepage/:id' element={<MainLayout><Savingsingle/></MainLayout>}/>
+        
+        <Route path='/skincare' element={<MainLayout><Skincare/></MainLayout>}/>
+        <Route path='/skincaresinglepage/:id' element={<MainLayout><Skincaresingle/></MainLayout>}/>
+        
+        <Route path='/shampo' element={<MainLayout><Shampo/></MainLayout>}/>
+        <Route path='/shamposinglepage/:id' element={<MainLayout><Shamposingle/></MainLayout>}/>
+        
+        <Route path='/showerge' element={<MainLayout><Showergel/></MainLayout>}/>
+        <Route path='/showergesinglepage/:id' element={<MainLayout><Showergelsingle/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>
