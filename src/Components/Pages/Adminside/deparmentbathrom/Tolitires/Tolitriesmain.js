@@ -82,17 +82,17 @@ const Tolitriesmain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/Toiletries (13).png" alt className="img1" /></a>
+        <Link to='/soapbar'><img src="./Images/Toiletries (13).png" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/Toiletries (14).png" alt className="img2" /></a> 
+        <Link to='/toothbrush'><img src="./Images/Toiletries (14).png" alt className="img2" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/Toiletries (15).png" alt className="img3" /></a>
+        <Link to='/toothpast'><img src="./Images/Toiletries (15).png" alt className="img3" /></Link>
       </div>
     </div>
   </div>

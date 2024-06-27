@@ -97,6 +97,9 @@ code {
 .freedd{
 display: none !important;
 }
+.Map{
+  width: 360px !important;
+}
 }
 .Map{
   width: 600px;
@@ -105,6 +108,9 @@ display: none !important;
   width: 1120px;
 }
 @media screen and (max-width : 480px){
+  .About{
+    width: 355px !important;
+  }
   .img{
   width: 200px;
 }

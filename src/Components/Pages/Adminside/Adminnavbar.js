@@ -420,9 +420,11 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listsaving">Saving</Link></li>
                   <li><Link className="dropdown-item" to="/listshampo">Shampo</Link></li>
                   <li><Link className="dropdown-item" to="/listshowerge">Shower Gel</Link></li>
-                  <li><Link className="dropdown-item" to="/listskincare">Saving</Link></li>
-                  <li><Link className="dropdown-item" to="/listsaving">Saving</Link></li>
-                  <li><Link className="dropdown-item" to="/listsaving">Saving</Link></li>
+                  <li><Link className="dropdown-item" to="/listskincare">Skin Care</Link></li>
+                  <li><Link className="dropdown-item" to="/listsoapbar">Soap Bar</Link></li>
+                  <li><Link className="dropdown-item" to="/listtoothbrush">Tooth Brush</Link></li> 
+                  <li><Link className="dropdown-item" to="/listtoothpast">Tooth Past</Link></li> 
+                 
 
 
                   {/* <li>

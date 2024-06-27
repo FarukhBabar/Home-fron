@@ -1011,6 +1011,21 @@ import Showergelupdate from './Components/Pages/Adminside/deparmentbathrom/Tolit
 import Skincareform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincareform';
 import Skincarelist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincarelist';
 import Skincareupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Skincare/Skincareupdate';
+import Soapbar from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Soapbar/Soapbar';
+import Soapbarsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Soapbar/Soapbarsingl';
+import Soapbarform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Soapbar/Soapbarform';
+import Soapbarlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Soapbar/Soapbarlist';
+import Soapbarupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Soapbar/Soapbarupdate';
+import Toothbrush from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothbrush.js/Toothbrush';
+import Toothbrushsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothbrush.js/Toothbrushsingl';
+import Toothbrushform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothbrush.js/Toothbrushform';
+import Toothbrushlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothbrush.js/Toothbrushlist';
+import Toothbrushupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothbrush.js/Toothbrushupdate';
+import Toothpastform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpastform';
+import Toothpastlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpastlist';
+import Toothpastupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpastupdate';
+import Toothpast from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpast';
+import Toothpastsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpastsingl';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1791,6 +1806,18 @@ const App = () => {
         <Route path='/skincareform' element={<AdminLayout><Skincareform/></AdminLayout>}/>
         <Route path='/listskincare' element={<AdminLayout><Skincarelist/></AdminLayout>}/>
         <Route path='/listskincare/:id' element={<AdminLayout><Skincareupdate/></AdminLayout>}/> 
+        
+        <Route path='/soapbarform' element={<AdminLayout><Soapbarform/></AdminLayout>}/>
+        <Route path='/listsoapbar' element={<AdminLayout><Soapbarlist/></AdminLayout>}/>
+        <Route path='/listsoapbar/:id' element={<AdminLayout><Soapbarupdate/></AdminLayout>}/>
+        
+        <Route path='/toothbrushform' element={<AdminLayout><Toothbrushform/></AdminLayout>}/>
+        <Route path='/listtoothbrush' element={<AdminLayout><Toothbrushlist/></AdminLayout>}/>
+        <Route path='/listtoothbrush/:id' element={<AdminLayout><Toothbrushupdate/></AdminLayout>}/>
+        
+        <Route path='/toothpastform' element={<AdminLayout><Toothpastform/></AdminLayout>}/>
+        <Route path='/listtoothpast' element={<AdminLayout><Toothpastlist/></AdminLayout>}/>
+        <Route path='/listtoothpast/:id' element={<AdminLayout><Toothpastupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -2421,6 +2448,15 @@ const App = () => {
         
         <Route path='/showerge' element={<MainLayout><Showergel/></MainLayout>}/>
         <Route path='/showergesinglepage/:id' element={<MainLayout><Showergelsingle/></MainLayout>}/>
+        
+        <Route path='/soapbar' element={<MainLayout><Soapbar/></MainLayout>}/>
+        <Route path='/soapbarsinglepage/:id' element={<MainLayout><Soapbarsingle/></MainLayout>}/>
+        
+        <Route path='/toothbrush' element={<MainLayout><Toothbrush/></MainLayout>}/>
+        <Route path='/toothbrushsinglepage/:id' element={<MainLayout><Toothbrushsingle/></MainLayout>}/>
+         
+        <Route path='/toothpast' element={<MainLayout><Toothpast/></MainLayout>}/>
+        <Route path='/toothpastsinglepage/:id' element={<MainLayout><Toothpastsingle/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>
