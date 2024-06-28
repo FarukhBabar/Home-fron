@@ -424,6 +424,8 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listsoapbar">Soap Bar</Link></li>
                   <li><Link className="dropdown-item" to="/listtoothbrush">Tooth Brush</Link></li> 
                   <li><Link className="dropdown-item" to="/listtoothpast">Tooth Past</Link></li> 
+                  <li><Link className="dropdown-item" to="/listafrica">West Africa</Link></li> 
+                  <li><Link className="dropdown-item" to="/listdeodrant">Deodorant</Link></li>
                  
 
 

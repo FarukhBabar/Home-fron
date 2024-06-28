@@ -1026,6 +1026,16 @@ import Toothpastlist from './Components/Pages/Adminside/deparmentbathrom/Tolitir
 import Toothpastupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpastupdate';
 import Toothpast from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpast';
 import Toothpastsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Toothpast/Toothpastsingl';
+import Africaform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/west Africa/Africaform';
+import Africalist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/west Africa/Africalist';
+import Africaupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/west Africa/Africaupdate';
+import Africa from './Components/Pages/Adminside/deparmentbathrom/Tolitires/west Africa/Africa';
+import Africasingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/west Africa/Africasingl';
+import Deodrant from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrant';
+import Deodrantsingle from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrantsingl';
+import Deodrantform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrantform';
+import Deodrantlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrantlist';
+import Deodrantupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrantupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1818,6 +1828,14 @@ const App = () => {
         <Route path='/toothpastform' element={<AdminLayout><Toothpastform/></AdminLayout>}/>
         <Route path='/listtoothpast' element={<AdminLayout><Toothpastlist/></AdminLayout>}/>
         <Route path='/listtoothpast/:id' element={<AdminLayout><Toothpastupdate/></AdminLayout>}/>
+        
+        <Route path='/africaform' element={<AdminLayout><Africaform/></AdminLayout>}/>
+        <Route path='/listafrica' element={<AdminLayout><Africalist/></AdminLayout>}/>
+        <Route path='/listafrica/:id' element={<AdminLayout><Africaupdate/></AdminLayout>}/>
+          
+        <Route path='/deodrantform' element={<AdminLayout><Deodrantform/></AdminLayout>}/>
+        <Route path='/listdeodrant' element={<AdminLayout><Deodrantlist/></AdminLayout>}/>
+        <Route path='/listdeodrant/:id' element={<AdminLayout><Deodrantupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -2457,6 +2475,12 @@ const App = () => {
          
         <Route path='/toothpast' element={<MainLayout><Toothpast/></MainLayout>}/>
         <Route path='/toothpastsinglepage/:id' element={<MainLayout><Toothpastsingle/></MainLayout>}/>
+         
+        <Route path='/deodrant' element={<MainLayout><Deodrant/></MainLayout>}/>
+        <Route path='/deodrantsinglepage/:id' element={<MainLayout><Deodrantsingle/></MainLayout>}/>
+
+        <Route path='/africa' element={<MainLayout><Africa/></MainLayout>}/>
+        <Route path='/africasinglepage/:id' element={<MainLayout><Africasingle/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>

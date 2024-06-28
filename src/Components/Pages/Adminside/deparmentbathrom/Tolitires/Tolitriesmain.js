@@ -99,13 +99,13 @@ const Tolitriesmain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/Toiletries (16).png" alt className="img" /></a>
+        <Link to='/africa'><img src="./Images/Toiletries (16).png" alt className="img" /></Link>
       </div>
     </div>
     
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-      <Link to="/smoking"><img src="./Images/Toiletries (1).png" alt className="img1" /></Link> 
+      <Link to="/deodrant"><img src="./Images/Toiletries (1).png" alt className="img1" /></Link> 
       </div>
     </div>
     
