@@ -35,17 +35,7 @@ const Home = () => {
 </div>
 
    <div className="container">
-  {/* <div className="row ">
-    <div className="col-lg-4 col-md-3 col-sm-12">
-      <img src="https://www.efghousewares.co.uk/Content/14/images/homebanner/d933897ad6e74cd38b9a1deb550590b8.jpg" alt className="Home" />
-    </div>
-    <div className="col-lg-4 col-md-3 col-sm-12">
-      <img src="https://www.efghousewares.co.uk/Content/14/images/homebanner/5ebeebd9814446248f57ebc0b6845f93.jpg" alt className="Home" />
-    </div>
-    <div className="col-lg-4 col-md-3 col-sm-12">
-      <img src="https://www.efghousewares.co.uk/Content/14/images/homebanner/960a07b2eac5487f90acf4a04f2a1f82.jpg" alt className="Home" />
-    </div>
-  </div> */}
+  
   <div className="row ">
     <div className="col-lg-6 col-md-6 col-sm-12"><img src="/Images/Homepag/Super Sunday.webp" alt className="banner" /></div>
     <div className="col-lg-6 col-md-6 col-sm-12"><img src="/Images/Homepag/Pallet Deals.webp" alt className="banner" /></div>
@@ -77,7 +67,7 @@ const Home = () => {
             <input type="radio" id="star2" name="rating" defaultValue={2} /><label htmlFor="star2" title="2 stars">☆</label>
             <input type="radio" id="star1" name="rating" defaultValue={1} /><label htmlFor="star1" title="1 star">☆</label>
           </div>
-          <div className="card-body">
+          <div  className="card-body">
             <h6 className="card-title">It was a really pleasant experiance</h6>
             <h6 className="card-subtitle mb-2 text-muted">It was a really pleasant experiance</h6>
             <br />
