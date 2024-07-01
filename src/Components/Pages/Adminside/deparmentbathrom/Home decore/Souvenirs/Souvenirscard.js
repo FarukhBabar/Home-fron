@@ -7,7 +7,7 @@ const Souvenirscard = ({ user }) => {
       <div className="card11212 ">
         <h5 className='image'>
        
-          <Link to={`/memorialsinglepage/${user._id}`} className="btn">
+          <Link to={`/souvenirssinglepage/${user._id}`} className="btn">
             {user.image && (
               <a href=''>
               <img

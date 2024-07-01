@@ -8,7 +8,7 @@ const Adminnavbar = () => {
   const Logout=()=>{
     localStorage.clear("user")
     alert("Logout Sucessfully")
-    navigate("/log")
+    navigate("/")
   }
   return (
     <div>

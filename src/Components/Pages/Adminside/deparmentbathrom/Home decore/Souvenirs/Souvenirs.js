@@ -8,7 +8,7 @@ const Souvenirs = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/memorialfreedelivery")
+    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/souvenirsfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

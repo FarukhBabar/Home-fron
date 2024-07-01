@@ -40,14 +40,14 @@ const Souvenirsform = () => {
       return;
     }
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/memorialproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/souvenirsproducts" , {
         method: "post",
         body :formdata
       
       })
       result = await result.json();
       if(result){
-        nevigate("/listmemorial")
+        nevigate("/listsouvenirs")
         alert("Product added sucessfully")
         }
         else{
@@ -62,7 +62,7 @@ const Souvenirsform = () => {
 
     <div>
       
-      <Link to="/listmemorial" className="btn btn-success mss mt-2" >Product-list</Link>
+      <Link to="/listsouvenirs" className="btn btn-success mss mt-2" >Product-list</Link>
       <form className='marr '>
   <div className="mb-3 maa ">
     <label  className="form-label mt-2">ITem Name</label>
