@@ -15,7 +15,7 @@ const Termscondition = () => {
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
-      <p>Terms of Business</p>
+      <b><p>Business terms</p></b>
     </div>
   </div>
   <div className="row">
@@ -24,134 +24,62 @@ const Termscondition = () => {
         <p>1. GENERAL</p>
       </b>
       <p>
-        "The Company" means EFG Housewares, "The Customer" means the buying party and "The Contract" means
-        the contract between the Company and the Customer.</p>
+        The company stands for Home Essentials Hive, the customer stands for purchaser, and the contract stands for an agreement between the company and the customer. </p>
       <b>
         <p>2. THE CONTRACT</p>
       </b>
-      <p>" The contract shall be subject to the following conditions which the Customer shall be taken to have
-        accepted unless otherwise agreed in writing.
+      <p>" The contract shall stand to following conditions which the customer will have to accept or agree to in writing.
         <br /><br />
-        No contract shall exist until the Company has received from the Customer an order and has agreed in
-        writing to accept it, unless the Company otherwise agrees. Where the Customer's order is not in
-        writing, the Company's acceptance shall be deemed to be correct in all respects unless within seven
-        days of its date the Customer notifies the Company in writing in what respect it is incorrect.
+        No contract shall be validated unless a customer places an order or submits a contract in writing. The company’s contract will be automatically validated if the customer does not mention the amendments in written form within seven days of its issuance. 
         <br /><br />
-        No statement representation or promise whether oral or in writing made by any employee or agent of
-        the company shall be treated as authorised or binding nor shall it have any contractual effect
-        unless it is incorporated into the Company's acceptance of order.
+       No communication by a company employee or agent, whether oral or written, shall be the official word, nor will it affect the contract unless it is embodied in the company’s acceptance of the order. 
         <br /><br />
-        The contract shall be subject to and construed in accordance with the English Law.
+       The contract shall be conditioned according to English law. 
       </p>
       <b>
         <p>3. PRICE</p>
       </b>
       <p>
-        Unless a quotation has been given in writing the price will be that ruling on the date of despatch.
-        The Customer shall be liable for any tax and/or duty levied upon the goods</p>
+       The price of the product shall be applicable at the rates on the dispatch date except when the quotation is given prior. The customer shall be responsible for paying any duties or taxes that are imposed on goods </p>
       <b>
         <p>4. TERMS OF PAYMENT</p>
       </b>
-      <p>No goods will be picked, stored or released unless paid in full beforehand.
-        <br /><br />
-        Payment will be taken once goods have been invoiced and a final total is determined, the company
-        uses a preauth system
+      <p> No order shall be delivered, nor shall it be kept stored for the customer unless full payment is made. The company will also authorize payments made through debit or credit cards. If the customer fails to pay the price, the company will suspend all further deliveries unless he clears all the previous payments. If packages are returned in improper condition, the customer has to pay for them. The company will provide a replacement product similar to that product. 
       </p>
-      <br /><br />
-      <p>
-        Authorization hold (also card authorization, preauthorization, or preauth) is the practice within
-        the banking industry of authorizing electronic transactions done with a debit card or credit card
-        and holding this balance as unavailable until the merchant clears the transaction
-        <br /><br />
-        No sum payable by the Customer is subject to any discount unless there is express provision
-        therefore in writing.
-        <br /><br />
-        If the Customer fails to make any payment that is due under this or any other contract with the
-        Company, the Company may suspend all further deliveries until all such payments with interest
-        thereon have been made in full and the price of items ready for delivery by the Company but not
-        delivered has been paid.
-        <br /><br />
-        If packages are not returned to the Company in good condition, the cost of replacing the same at the
-        Company's premise shall be paid by the Customer.
-        <br /><br />
-        The company may replace certain items when not available with a like for like item
-      </p>
+      
       <b>
-        <p> 5. PASSING OF PROPERTY AND RISK</p>
+        <p> 5. TRANSFER OF PROPERTY AND RISKS</p>
       </b>
-      <p>All goods shall be and remain the property of the Company until the full price including any interest
-        due for late payment has been paid.
-        <br /><br />
-        The risk in any load of goods delivered shall pass to the Customer when all the items have been
-        offloaded at the point of delivery or, if the goods are collected by or on behalf of the Customer
-        from the Company's premises, at the moment when all the items forming a load have been loaded on the
-        vehicle or any other container
+      <p>No product shall be handed over to the customer unless the full payment is made. After the customer receives the product in proper condition, the company will not be liable for any damage claim made against that product. 
       </p>
       <br /><br />
       <b>
-        <p> 6. DELAY AND FAILURE IN DELIVERY</p>
+        <p> 6. Failures and Delays IN PRODUCT  DELIVERY</p>
       </b>
       <p>
-        The Company shall not be liable for any delay in fulfilling or any failure to fulfil any obligation
-        of the contract if any such delay or failure is caused or contributed to by any:
+       . The company will not be responsible for the delay in delivery due to the following reasons 
         <br /><br />
-        Cause beyond the Company's control;
+       . Cause below the company’s access;
         <br /><br />
-        Industrial action of any kind by any person whether employed by the Company or by anybody else;
+       .   If any person, whether a company’s employee or any other person, takes industrial action;
         <br /><br />
-        Accident to or injury or death to any person;
+       .   Accident, injury or casualty of any person;
         <br /><br />
-        Breakdown of or damage to any equipment, machinery or vehicle.
+       .  Fault in any machinery, tool or   vehicle;
         <br /><br />
-        Any delay by the Company shall not entitle the Customer to rescind the contract or refuse to accept
-        delivery of any items delivered there under.
+       .  The customer does not have the right to refuse his order in case if the company delays the product  due to the reasons mentioned above
       </p>
       <b>
-        <p>7. CLAIMS AND COMPLAINTS</p>
+        <p>7.  FILING COMPLAINS AND CLAIMS </p>
       </b>
       <p>
-        Notification in writing of loss or damage to or non-delivery of goods shall be made to the Company
-        by the customer:
-        <br /><br />
-        In the event of partial loss, damage or non-delivery of any separate part of any consignment, within
-        seven days of date of delivery and in addition where the goods are carried by any carrier other than
-        the Company the Customer shall give notice to the carrier in accordance with the terms of the
-        contract of that carrier;
-        <br /><br />
-        In the event of non-delivery of a whole consignment, within seven days of the date of the invoice
-        thereafter.
-        <br /><br />
-        In the absence of any such notification required under sub-paragraph i hereof the goods which were
-        delivered or should have been delivered shall be deemed to be in all respects in accordance with the
-        contract and the Customer shall be bound to accept and pay for the same in full accordingly and
-        shall have no claim whatsoever against the Company.
-        <br /><br />
-        Notwithstanding that the customer has a claim whether or not under the provisions of sub-paragraph
-        (i) (a) hereof for partial loss, damage or non-delivery of any separate part of any consignment he
-        shall in any event be liable and pay for part of the consignment for which he has no claim.
+        The customer can claim damages within seven days of receiving the product. Suppose the product is delivered by another carrier service rather than the company. In that case, the customer has to give written notice to that carrier about the loss or damage of that particular product or a part of it. If the customer fails to file a complaint in written form, then the customer shall have to pay the full amount of that product, irrespective of whether it is damaged. 
       </p>
       <b>
-        <p>8. CONDITIONS AND WARRANTIES</p>
+        <p>8. WARRANTIES AND CONDITIONS</p>
       </b>
       <p>
-        If any fault in the goods is due to bad workmanship or material is proved and the faulty goods are
-        returned to the Company within fourteen days of delivery thereof the Company will at it own cost and
-        its own option replace the faulty goods or credit the Customer with the price thereof.
-        <br /><br />
-        No warranty conditions or other terms as to quality, quantity or fitness for any purpose of the
-        goods delivered under this contract with the Company is given or accepted and so far as the Company
-        may lawfully do so any warranty condition or other term whether express or implied in statute, at
-        common law or otherwise is hereby excluded from this contract notwithstanding that the purpose for
-        which the goods are to be used are known or made known to the Company. In any event the liability of
-        the Company shall not exceed the total contract price.
-        <br /><br />
-        Neither the Company nor its servants or agents upon whose behalf the company hereby contracts shall
-        be liable to the Customer for any loss, injury, damage or claim of any kind whatsoever arising out
-        of or in connection with the execution of this contract or arising out of or in connection with the
-        use of the goods supplied by the Company whether or not such loss, injury, damage or claim be
-        occasioned by the negligence of the Company or by any person for whom the Company may be
-        responsible. Where notwithstanding this paragraph there is liability upon the Company that liability
-        shall not exceed the total contract price
+        If it is proved that the fault is in product manufacturing, customers have the right to return it within 14 days of receiving the product. The company will provide the replacement product at its own cost, and if the product is unavailable, it will return the credit to the customer, which can be used for the next order placed. No warranty is given under the provision of this contract; however, a company can provide a warranty for a specific product if it is mentioned in common law. If the damage occurs by the company or any company employees, then the customer shall not be subjected to paying the penalty. Stay in touch with us for the latest updates. Subscribe to our newsletter. 
       </p>
     </div>
   </div>

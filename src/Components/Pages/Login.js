@@ -21,7 +21,7 @@ const Login = () => {
   const registeruser = async (e) => {
     e.preventDefault();
     try {
-      let result = await fetch('http://localhost:8001/login', {
+      let result = await fetch('https://homeessential-fdca5e469865.herokuapp.com/login', {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

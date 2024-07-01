@@ -40,7 +40,7 @@ const Bathroomformde = () => {
       return;
     }
     try {
-      let result = await fetch("http://localhost:8001/api/v1/auth/bathromdeproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/bathromdeproducts" , {
         method: "post",
         body :formdata
       

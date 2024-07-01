@@ -47,7 +47,7 @@ const Homedecoremain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/gardening'><img src="./Images/Home & Decor (7).png" alt className="img3" /></Link>
+        <Link to='/souvenirs'><img src="./Images/Home & Decor (7).png" alt className="img3" /></Link>
       </div>
     </div>
   </div>

@@ -110,7 +110,7 @@ const Addtocart = () => {
                 onError={(e) => { e.target.onerror = null; e.target.src = 'fallback-image-url.jpg'; }}
               /> */}
                <img
-                    src={`http://localhost:8001/${item.image.replace(/\\/g, '/')}`}
+                    src={`https://homeessential-fdca5e469865.herokuapp.com/${item.image.replace(/\\/g, '/')}`}
                     alt={item.name}
                     className='singleimg'
                     style={{ width: '80px', height: '80px' }}

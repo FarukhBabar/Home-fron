@@ -40,7 +40,7 @@ const KitchenACCform = () => {
       return;
     }
     try {
-      let result = await fetch("http://localhost:8001/api/v1/auth/kitechenaccproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/kitechenaccproducts" , {
         method: "post",
         body :formdata
       

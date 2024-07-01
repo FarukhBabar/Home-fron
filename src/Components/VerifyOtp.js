@@ -14,7 +14,7 @@ function VerifyOtp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:8001/verifyotp', { email, otp, password });
+      const response = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/verifyotp', { email, otp, password });
       alert(response.data.Message);
         navigate('/log')
     } catch (error) {

@@ -23,7 +23,7 @@ const Register = () => {
 
     const register = async (e)=>{
         e.preventDefault() 
-        let result = await fetch("http://localhost:8001/register-user",{
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/register-user",{
             method:'post',
             body :JSON.stringify({Companynname , CompanyRegistration, CompanyVat,Address1,Address2,Address3,Postcode,City,County,Country,Title,FirstName,LastName,PhoneNumber, email , password }),
             headers:{

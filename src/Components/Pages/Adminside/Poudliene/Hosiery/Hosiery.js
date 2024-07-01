@@ -7,7 +7,7 @@ const  Hosiery = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8001/api/v1/data/hoiserypfreedelivery")
+    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/hoiserypfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

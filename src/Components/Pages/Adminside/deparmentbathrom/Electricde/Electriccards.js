@@ -11,7 +11,7 @@ const  Electriccards = ({ user }) => {
             {user.image && (
               <a href=''>
               <img
-                src={`http://localhost:8001/${user.image}`}
+                src={`https://homeessential-fdca5e469865.herokuapp.com/${user.image}`}
                 alt={user.name}
                 className="img-fluid border"
                 style={{ height: '60%', width: '99%' }}

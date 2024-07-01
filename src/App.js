@@ -1061,6 +1061,11 @@ import Memorialssingl from './Components/Pages/Adminside/deparmentbathrom/Home d
 import Memorialsform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorialsform';
 import Memorialslist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorialslist';
 import Memorialsupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorialsupdate';
+import Souvenirs from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirs';
+import Souvenirssingl from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirssingl';
+import Souvenirsform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirsfrom';
+import Souvenirslist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirslist';
+import Souvenirsupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirsupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1881,6 +1886,10 @@ const App = () => {
         <Route path='/memorialform' element={<AdminLayout><Memorialsform/></AdminLayout>}/>
         <Route path='/listmemorial' element={<AdminLayout><Memorialslist/></AdminLayout>}/>
         <Route path='/listmemorial/:id' element={<AdminLayout><Memorialsupdate/></AdminLayout>}/>
+        
+        <Route path='/souvenirsform' element={<AdminLayout><Souvenirsform/></AdminLayout>}/>
+        <Route path='/listsouvenirs' element={<AdminLayout><Souvenirslist/></AdminLayout>}/>
+        <Route path='/listsouvenirs/:id' element={<AdminLayout><Souvenirsupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -2541,6 +2550,9 @@ const App = () => {
         
         <Route path='/memorial' element={<MainLayout><Memorials/></MainLayout>}/>
         <Route path='/memorialsinglepage/:id' element={<MainLayout><Memorialssingl/></MainLayout>}/>
+        
+        <Route path='/souvenirs' element={<MainLayout><Souvenirs/></MainLayout>}/>
+        <Route path='/souvenirssinglepage/:id' element={<MainLayout><Souvenirssingl/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>

@@ -40,7 +40,7 @@ const Householdclform = () => {
       return;
     }
     try {
-      let result = await fetch("http://localhost:8001/api/v1/auth/householclproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/householclproducts" , {
         method: "post",
         body :formdata
       

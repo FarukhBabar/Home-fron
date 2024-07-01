@@ -648,7 +648,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listgiftwareh">Gift Ware</Link></li>
                   <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
                   <li><Link className="dropdown-item" to="/listmemorial">Memorial</Link></li>
-                  <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
+                  <li><Link className="dropdown-item" to="/listsouvenirs">Souvenirs</Link></li>
                   <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
                   <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
                   <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>

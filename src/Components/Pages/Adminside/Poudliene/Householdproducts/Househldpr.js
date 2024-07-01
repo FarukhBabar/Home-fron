@@ -7,7 +7,7 @@ const  Househldpr = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8001/api/v1/data/householdprfreedelivery")
+    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/householdprfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

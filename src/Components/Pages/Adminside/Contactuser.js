@@ -8,7 +8,7 @@ const[usersData,setUsersData] = useState([])
 
 
 const getUsersList = async() =>{
-        let result = await fetch("http://localhost:8001/api/v1/data/userlist")
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/userlist")
         result = await result.json()       
         setUsersData(result)        
         console.log(result)
@@ -21,7 +21,7 @@ console.log("usres", usersData)
 
     const deleteUser = async(id) =>{
         // console.log(id)
-     let result = await fetch(`http://localhost:8001/api/v1/data/deluser/${id}`,{
+     let result = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/deluser/${id}`,{
         method: 'delete'
      })
      result = await result.json()

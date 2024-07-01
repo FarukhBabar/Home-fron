@@ -40,7 +40,7 @@ const Flaskform = () => {
       return;
     }
     try {
-      let result = await fetch("http://localhost:8001/api/v1/auth/flaskproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/flaskproducts" , {
         method: "post",
         body :formdata
       

@@ -7,7 +7,7 @@ const Healthcarelist = () => {
     
 
     const setUsersData = async() =>{
-        let result = await fetch("http://localhost:8001/api/v1/data/healthuser")
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/healthuser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Healthcarelist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`http://localhost:8001/api/v1/data/healthuserid/${id}`,{
+              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/healthuserid/${id}`,{
             method:"delete"
          
           })
@@ -66,7 +66,7 @@ const Healthcarelist = () => {
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 
-                            src={`http://localhost:8001/${ele.image}`} 
+                            src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
                                      alt={ele.name} 
                                          className='img-fluid' 
                                     style={{ height: '70px', width: '100px' }}

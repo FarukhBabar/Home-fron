@@ -40,7 +40,7 @@ const Kidsplasform= () => {
       return;
     }
     try {
-      let result = await fetch("http://localhost:8001/api/v1/auth/kidsplasproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/kidsplasproducts" , {
         method: "post",
         body :formdata
       

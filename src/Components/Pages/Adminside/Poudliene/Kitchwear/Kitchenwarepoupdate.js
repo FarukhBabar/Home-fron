@@ -15,7 +15,7 @@ const Kitchenwarepoupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:8001/api/v1/auth/kitchenpoundsingle/${params.id}`);
+                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/kitchenpoundsingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(result.title);
@@ -38,7 +38,7 @@ const Kitchenwarepoupdate = () => {
                 formdata.append('title' , title)
                 formdata.append('image' , image)
                 try {
-                    let result = await fetch(`http://localhost:8001/api/v1/auth/kitchenpoundsingle/${params.id}` , {
+                    let result = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/kitchenpoundsingle/${params.id}` , {
         method: "put",
         body :formdata
       

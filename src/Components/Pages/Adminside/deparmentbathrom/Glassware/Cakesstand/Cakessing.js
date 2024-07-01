@@ -14,7 +14,7 @@ const Cakessingl = () => {
 
   const GetSingleData = async () => {
     try {
-      const response = await fetch(`http://localhost:8001/api/v1/data/cakessingle/${params.id}`);
+      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/cakessingle/${params.id}`);
       const result = await response.json();
       setProduct(result);
     } catch (error) {
@@ -84,7 +84,7 @@ const Cakessingl = () => {
               <div className="white-box text-center mt-3">
                 {product.image && (
                   <img
-                    src={`http://localhost:8001/${product.image.replace(/\\/g, '/')}`}
+                    src={`https://homeessential-fdca5e469865.herokuapp.com/${product.image.replace(/\\/g, '/')}`}
                     alt={product.name}
                     className='singleimg'
                   />

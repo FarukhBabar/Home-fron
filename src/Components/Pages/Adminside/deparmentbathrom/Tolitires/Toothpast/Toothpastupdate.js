@@ -14,7 +14,7 @@ const Toothpastupdate= () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:8001/api/v1/auth/toothpastsingle/${params.id}`);
+                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/toothpastsingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(result.title);
@@ -37,7 +37,7 @@ const Toothpastupdate= () => {
                 formdata.append('title' , title)
                 formdata.append('image' , image)
                 try {
-                    let result = await fetch(`http://localhost:8001/api/v1/auth/toothpastsingle/${params.id}` , {
+                    let result = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/toothpastsingle/${params.id}` , {
         method: "put",
         body :formdata
       

@@ -7,7 +7,7 @@ const Trayslist = () => {
     
 
     const setUsersData = async() =>{
-        let result = await fetch("http://localhost:8001/api/v1/data/trayuser")
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/trayuser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Trayslist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`http://localhost:8001/api/v1/data/trayuserid/${id}`,{
+              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/trayuserid/${id}`,{
             method:"delete"
          
           })
@@ -66,7 +66,7 @@ const Trayslist = () => {
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 
-                            src={`http://localhost:8001/${ele.image}`} 
+                            src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
                                      alt={ele.name} 
                                          className='img-fluid' 
                                     style={{ height: '70px', width: '100px' }}

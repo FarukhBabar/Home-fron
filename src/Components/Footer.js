@@ -16,7 +16,7 @@ const Footer = () => {
                 <li><Link className="tex text-black text-opacity-75" to="/contact">Contact Us</Link></li>
                 <li><Link className="tex text-black text-opacity-75" to="/aboutus">About Us</Link></li>
                 <li><Link className="tex text-black text-opacity-75" to="/delivery">Delivery</Link></li>
-                <li><Link className="tex text-black text-opacity-75" to="/export">Export</Link></li>
+                {/* <li><Link className="tex text-black text-opacity-75" to="/export">Export</Link></li> */}
                 <li><Link className="tex text-black text-opacity-75" to="/faq">Help / FAQ</Link></li>
               </ul>
             </div>
@@ -25,7 +25,7 @@ const Footer = () => {
               <ul className="list-unstyled footer-link-01 m-0">
                 <li><Link className="tex text-black text-opacity-75" to="/blog">Blog</Link></li>
                 <li><a className="tex text-black text-opacity-75" href="/privacy">Privacy Policy</a></li>
-                <li><a className="tex text-black text-opacity-75" href="/cookies">Cookie Policy</a></li>
+                {/* <li><a className="tex text-black text-opacity-75" href="/cookies">Cookie Policy</a></li> */}
                 <li><a className="tex text-black text-opacity-75" href="/termscondition">Terms &amp; Conditions</a></li>
               </ul>
             </div>
@@ -55,15 +55,15 @@ const Footer = () => {
     <div className="container">
       <div className="row">
         <div className="col-md-6 text-center text-md-start py-1">
-          <p className="m-0 text-black text-opacity-75">© 2022 copyright by <a className="text-reset" href="#">bootdey.com</a></p>
+          <p className="m-0 text-black text-opacity-75">© 2022 copyright by <a className="text-reset" href="#">homeessentialhive.co.uk</a></p>
         </div>
-        <div className="col-md-6 text-center text-md-end py-1">
+        {/* <div className="col-md-6 text-center text-md-end py-1">
           <ul className="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0">
             <li className="p-0 mx-3 ms-md-0 me-md-3"><a href="#" className="tex text-black text-opacity-75">Privace &amp; Policy</a></li>
             <li className="p-0 mx-3 ms-md-0 me-md-3"><a href="#" className="tex text-black text-opacity-75">Faq's</a></li>
             <li className="p-0 mx-3 ms-md-0 me-md-3"><a href="#" className="tex text-black text-opacity-75">Get a Quote</a></li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>

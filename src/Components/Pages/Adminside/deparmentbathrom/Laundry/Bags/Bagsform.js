@@ -40,7 +40,7 @@ const Bagsform = () => {
       return;
     }
     try {
-      let result = await fetch("http://localhost:8001/api/v1/auth/bagslproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/bagslproducts" , {
         method: "post",
         body :formdata
       
