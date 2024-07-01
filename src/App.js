@@ -1036,6 +1036,31 @@ import Deodrantsingle from './Components/Pages/Adminside/deparmentbathrom/Toliti
 import Deodrantform from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrantform';
 import Deodrantlist from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrantlist';
 import Deodrantupdate from './Components/Pages/Adminside/deparmentbathrom/Tolitires/Deodrant/Deodrantupdate';
+import Fatherdaysform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Fatherdays/Fatherdaysform';
+import Fatherdayslist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Fatherdays/Fatherdayslist';
+import Fatherdaysupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Fatherdays/Fatherdaysupdate';
+import Fatherdays from './Components/Pages/Adminside/deparmentbathrom/Home decore/Fatherdays/Fatherdays';
+import Fatherdayssingl from './Components/Pages/Adminside/deparmentbathrom/Home decore/Fatherdays/Fatherdayssingl';
+import Framsmirrorform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Frams&mirror/Framsmirrorform';
+import Framsmirrorlist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Frams&mirror/Framsmirrorlist';
+import Framsmirrorupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Frams&mirror/Framsmirrorupdate';
+import Framsmirror from './Components/Pages/Adminside/deparmentbathrom/Home decore/Frams&mirror/Framsmirror';
+import Framsmirrorsingl from './Components/Pages/Adminside/deparmentbathrom/Home decore/Frams&mirror/Framsmirrorsingl';
+import Giftwarehomeform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Giftwarehome/Giftwarehomeform';
+import Giftwarehomelist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Giftwarehome/Giftwarehomelist';
+import Giftwarehomeupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Giftwarehome/Giftwarehomeupdate';
+import Giftwarehome from './Components/Pages/Adminside/deparmentbathrom/Home decore/Giftwarehome/Giftwarehome';
+import Giftwarehomesingl from './Components/Pages/Adminside/deparmentbathrom/Home decore/Giftwarehome/Giftwarehomesingl';
+import Incense from './Components/Pages/Adminside/deparmentbathrom/Home decore/Incense/Incense';
+import Incensesingl from './Components/Pages/Adminside/deparmentbathrom/Home decore/Incense/Incensesingl';
+import Incenseform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Incense/Incenseform';
+import Incenselist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Incense/Incenselist';
+import Incenseupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Incense/Incenseupdate';
+import Memorials from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorials';
+import Memorialssingl from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorialssingl';
+import Memorialsform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorialsform';
+import Memorialslist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorialslist';
+import Memorialsupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Memorials/Memorialsupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1836,6 +1861,26 @@ const App = () => {
         <Route path='/deodrantform' element={<AdminLayout><Deodrantform/></AdminLayout>}/>
         <Route path='/listdeodrant' element={<AdminLayout><Deodrantlist/></AdminLayout>}/>
         <Route path='/listdeodrant/:id' element={<AdminLayout><Deodrantupdate/></AdminLayout>}/>
+        
+        <Route path='/fathersdayform' element={<AdminLayout><Fatherdaysform/></AdminLayout>}/>
+        <Route path='/listfathersday' element={<AdminLayout><Fatherdayslist/></AdminLayout>}/>
+        <Route path='/listfathersday/:id' element={<AdminLayout><Fatherdaysupdate/></AdminLayout>}/>
+        
+        <Route path='/framsmirrorform' element={<AdminLayout><Framsmirrorform/></AdminLayout>}/>
+        <Route path='/listframsmirror' element={<AdminLayout><Framsmirrorlist/></AdminLayout>}/>
+        <Route path='/listframsmirror/:id' element={<AdminLayout><Framsmirrorupdate/></AdminLayout>}/>
+        
+        <Route path='/giftwarehform' element={<AdminLayout><Giftwarehomeform/></AdminLayout>}/>
+        <Route path='/listgiftwareh' element={<AdminLayout><Giftwarehomelist/></AdminLayout>}/>
+        <Route path='/listgiftwareh/:id' element={<AdminLayout><Giftwarehomeupdate/></AdminLayout>}/>
+        
+        <Route path='/incenseform' element={<AdminLayout><Incenseform/></AdminLayout>}/>
+        <Route path='/listincense' element={<AdminLayout><Incenselist/></AdminLayout>}/>
+        <Route path='/listincense/:id' element={<AdminLayout><Incenseupdate/></AdminLayout>}/>
+        
+        <Route path='/memorialform' element={<AdminLayout><Memorialsform/></AdminLayout>}/>
+        <Route path='/listmemorial' element={<AdminLayout><Memorialslist/></AdminLayout>}/>
+        <Route path='/listmemorial/:id' element={<AdminLayout><Memorialsupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<MainLayout><Home /></MainLayout>} />
@@ -2481,6 +2526,21 @@ const App = () => {
 
         <Route path='/africa' element={<MainLayout><Africa/></MainLayout>}/>
         <Route path='/africasinglepage/:id' element={<MainLayout><Africasingle/></MainLayout>}/>
+        
+        <Route path='/fathersday' element={<MainLayout><Fatherdays/></MainLayout>}/>
+        <Route path='/fathersdaysinglepage/:id' element={<MainLayout><Fatherdayssingl/></MainLayout>}/> 
+        
+        <Route path='/framsmirror' element={<MainLayout><Framsmirror/></MainLayout>}/>
+        <Route path='/framsmirrorsinglepage/:id' element={<MainLayout><Framsmirrorsingl/></MainLayout>}/> 
+        
+        <Route path='/giftwareh' element={<MainLayout><Giftwarehome/></MainLayout>}/>
+        <Route path='/giftwarehsinglepage/:id' element={<MainLayout><Giftwarehomesingl/></MainLayout>}/> 
+        
+        <Route path='/incense' element={<MainLayout><Incense/></MainLayout>}/>
+        <Route path='/incensesinglepage/:id' element={<MainLayout><Incensesingl/></MainLayout>}/>
+        
+        <Route path='/memorial' element={<MainLayout><Memorials/></MainLayout>}/>
+        <Route path='/memorialsinglepage/:id' element={<MainLayout><Memorialssingl/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 
-const Candelupdate = () => {
+const Giftwarehomeupdate = () => {
     const [name, setName] = useState('');
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
@@ -14,7 +14,7 @@ const Candelupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:8001/api/v1/auth/candelsingle/${params.id}`);
+                const response = await fetch(`http://localhost:8001/api/v1/auth/giftwarehsingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(result.title);
@@ -37,7 +37,7 @@ const Candelupdate = () => {
                 formdata.append('title' , title)
                 formdata.append('image' , image)
                 try {
-                    let result = await fetch(`http://localhost:8001/api/v1/auth/candelsingle/${params.id}` , {
+                    let result = await fetch(`http://localhost:8001/api/v1/auth/giftwarehsingle/${params.id}` , {
         method: "put",
         body :formdata
       
@@ -84,4 +84,4 @@ const Candelupdate = () => {
     );
 }
 
-export default Candelupdate;
+export default Giftwarehomeupdate;

@@ -81,7 +81,7 @@ const Department = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/Group 28.png" alt className="img1" /></a>
+        <Link to='/phoneaccessories'><img src="./Images/Group 28.png" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
