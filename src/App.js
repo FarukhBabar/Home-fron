@@ -1076,6 +1076,7 @@ import Garlandslist from './Components/Pages/Adminside/deparmentbathrom/Artifica
 import Garlandsupdate from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlandsupdate';
 import Garlands from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlands';
 import Garlandssingl from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlandssingl';
+import Checkout from './Components/Checkout';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -2577,6 +2578,7 @@ const App = () => {
         
         <Route path='/garland' element={<MainLayout><Garlands/></MainLayout>}/>
         <Route path='/garlandsinglepage/:id' element={<MainLayout><Garlandssingl/></MainLayout>}/> 
+        <Route path='/checkout' element={<MainLayout><Checkout/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>
