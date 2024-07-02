@@ -1066,6 +1066,16 @@ import Souvenirssingl from './Components/Pages/Adminside/deparmentbathrom/Home d
 import Souvenirsform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirsfrom';
 import Souvenirslist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirslist';
 import Souvenirsupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Souvenirs/Souvenirsupdate';
+import Weeding from './Components/Pages/Adminside/deparmentbathrom/Home decore/Weeding/Weeding';
+import Weedingsingal from './Components/Pages/Adminside/deparmentbathrom/Home decore/Weeding/Weedingsingl';
+import Weedingform from './Components/Pages/Adminside/deparmentbathrom/Home decore/Weeding/Weedingform';
+import Weedinglist from './Components/Pages/Adminside/deparmentbathrom/Home decore/Weeding/Weedinglist';
+import Weedingupdate from './Components/Pages/Adminside/deparmentbathrom/Home decore/Weeding/Weedingupdate';
+import Garlandsform from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlandsform';
+import Garlandslist from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlandslist';
+import Garlandsupdate from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlandsupdate';
+import Garlands from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlands';
+import Garlandssingl from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlandssingl';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1890,9 +1900,17 @@ const App = () => {
         <Route path='/souvenirsform' element={<AdminLayout><Souvenirsform/></AdminLayout>}/>
         <Route path='/listsouvenirs' element={<AdminLayout><Souvenirslist/></AdminLayout>}/>
         <Route path='/listsouvenirs/:id' element={<AdminLayout><Souvenirsupdate/></AdminLayout>}/>
+        
+        <Route path='/weddingform' element={<AdminLayout><Weedingform/></AdminLayout>}/>
+        <Route path='/listwedding' element={<AdminLayout><Weedinglist/></AdminLayout>}/>
+        <Route path='/listwedding/:id' element={<AdminLayout><Weedingupdate/></AdminLayout>}/>
+        
+        <Route path='/garlandform' element={<AdminLayout><Garlandsform/></AdminLayout>}/>
+        <Route path='/listgarland' element={<AdminLayout><Garlandslist/></AdminLayout>}/>
+        <Route path='/listgarland/:id' element={<AdminLayout><Garlandsupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
-        <Route path='/' element={<MainLayout><Home /></MainLayout>} />
+        <Route path='/' element={<Home />} />
         <Route path='/deparments' element={<MainLayout><Department /></MainLayout>} />
         <Route path='/foodanddrinks' element={<MainLayout><FoodandDrink /></MainLayout>} />
         <Route path='/foods' element={<MainLayout><Foodsproduct /></MainLayout>} />
@@ -2553,6 +2571,12 @@ const App = () => {
         
         <Route path='/souvenirs' element={<MainLayout><Souvenirs/></MainLayout>}/>
         <Route path='/souvenirssinglepage/:id' element={<MainLayout><Souvenirssingl/></MainLayout>}/>
+        
+        <Route path='/wedding' element={<MainLayout><Weeding/></MainLayout>}/>
+        <Route path='/weddingsinglepage/:id' element={<MainLayout><Weedingsingal/></MainLayout>}/>  
+        
+        <Route path='/garland' element={<MainLayout><Garlands/></MainLayout>}/>
+        <Route path='/garlandsinglepage/:id' element={<MainLayout><Garlandssingl/></MainLayout>}/> 
       </Routes>
       </CartProvider>
     </>

@@ -54,7 +54,7 @@ const Homedecoremain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <a href><img src="./Images/Home & Decor (8).png" alt className="img" /></a> 
+        <Link to='/wedding'><img src="./Images/Home & Decor (8).png" alt className="img" /></Link> 
       </div>
     </div>
   

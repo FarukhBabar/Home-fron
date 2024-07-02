@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./admin.css"
 import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
@@ -8,7 +8,9 @@ const Adminnavbar = () => {
   const Logout=()=>{
     localStorage.clear("user")
     alert("Logout Sucessfully")
-    navigate("/")
+     useEffect(()=>{
+        navigate('/')
+    },[])
   }
   return (
     <div>
@@ -649,9 +651,8 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
                   <li><Link className="dropdown-item" to="/listmemorial">Memorial</Link></li>
                   <li><Link className="dropdown-item" to="/listsouvenirs">Souvenirs</Link></li>
-                  <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
-                  <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
-                  <li><Link className="dropdown-item" to="/listincense">Incense</Link></li>
+                  <li><Link className="dropdown-item" to="/listwedding">wedding</Link></li>
+                  
 
                 </ul>
               </li>
@@ -815,8 +816,12 @@ const Adminnavbar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listartifical">Artifical Trees</Link></li>
-                  <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li>
-                  
+                  <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
+                   <li><Link className="dropdown-item" to="/listgarland">Garland</Link></li> 
+                    <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
+                     <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
+                      <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
+                       <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>
