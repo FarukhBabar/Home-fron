@@ -1,9 +1,9 @@
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
-import './Checkout.css'
+import axios from 'axios';
+import './Checkout.css';
 
 const Checkout = () => {
   const location = useLocation();
@@ -28,8 +28,21 @@ const Checkout = () => {
       zip: Yup.string().required('Required'),
       country: Yup.string().required('Required'),
     }),
-    onSubmit: values => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: async values => {
+      const totalAmount = parseFloat(calculateTotal()) + 25 + 18.20;
+      try {
+        const response = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/order', {
+          ...values,
+          cartItems,
+          quantities,
+          totalAmount
+        });
+        alert('Order placed successfully');
+        console.log(response.data);
+      } catch (error) {
+        console.error('Error placing order:');
+        alert('There was an error placing your order.');
+      }
     },
   });
 
@@ -80,7 +93,7 @@ const Checkout = () => {
                               </div>
                             </div>
                             <div className="col-lg-4">
-                              <div className="mb-3">
+                              <div className="mb3">
                                 <label className="form-label" htmlFor="billing-email-address">Email Address</label>
                                 <input
                                   type="email"
@@ -138,8 +151,7 @@ const Checkout = () => {
                             <div className="col-lg-4">
                               <div className="mb-4 mb-lg-0">
                                 <label className="form-label">Country</label>
-                               <input type='address' className="form-control" placeholder='Enter  Country' value={formik.values.city} />
-                                 
+                                <input type='text' className="form-control" placeholder='Enter Country' name='country' value={formik.values.country} onChange={formik.handleChange} onBlur={formik.handleBlur} />
                                 {formik.touched.country && formik.errors.country ? (
                                   <div className="error">{formik.errors.country}</div>
                                 ) : null}
@@ -184,13 +196,16 @@ const Checkout = () => {
                               </div>
                             </div>
                           </div>
-                          
+
+                          <div className="text-end mt-4">
+                            <button type="submit" className="btn btn-primary">Place Order</button>
+                          </div>
                         </form>
                       </div>
                     </div>
                   </div>
                 </li>
-               
+
                 <li className="checkout-item">
                   <div className="avatar checkout-icon p-1">
                     <div className="avatar-title rounded-circle bg-primary">
@@ -200,18 +215,14 @@ const Checkout = () => {
                   <div className="feed-item-list">
                     <div>
                       <h5 className="font-size-16 mb-1">Payment Info</h5>
-                     
                     </div>
                     <div>
                       <h5 className="font-size-14 mb-3">Payment method :</h5>
                       <div className="row">
-                      
-
                         <div className="col-lg-3 col-sm-6">
                           <div>
                             <label className="card-radio-label">
-                              <input type="radio" name="pay-method" id="pay-methodoption2" classname="card-radio-input" />
-
+                              <input type="radio" name="pay-method" id="pay-methodoption2" className="card-radio-input" />
                               <span className="card-radio py-3 text-center text-truncate">
                                 <i className="bx bxl-paypal d-block h2 mb-3"></i>
                                 Paypal
@@ -223,8 +234,7 @@ const Checkout = () => {
                         <div className="col-lg-3 col-sm-6">
                           <div>
                             <label className="card-radio-label">
-                             <input type="radio" name="pay-method" id="pay-methodoption3" classname="card-radio-input" defaultChecked />
-
+                              <input type="radio" name="pay-method" id="pay-methodoption3" className="card-radio-input" defaultChecked />
                               <span className="card-radio py-3 text-center text-truncate">
                                 <i className="bx bx-money d-block h2 mb-3"></i>
                                 <span>Cash on Delivery</span>
@@ -273,14 +283,18 @@ const Checkout = () => {
                   <tbody>
                     {cartItems.map(item => (
                       <tr key={item.id}>
-                        <th scope="row"> <img
-              src={`https://homeessential-fdca5e469865.herokuapp.com/${item.image.replace(/\\/g, '/')}`}
-              alt={item.name}
-              className='singleimg'
-              style={{ width: '80px', height: '80px' }}
-            /></th>
+                        <th scope="row">
+                          <img
+                            src={`https://homeessential-fdca5e469865.herokuapp.com/${item.image.replace(/\\/g, '/')}`}
+                            alt={item.name}
+                            className="singleimg"
+                            style={{ width: '80px', height: '80px' }}
+                          />
+                        </th>
                         <td>
-                          <h5 className="font-size-16 text-truncate"><a href="#" className="text-dark">{item.name}</a></h5>
+                          <h5 className="font-size-16 text-truncate">
+                            <a href="#" className="text-dark">{item.name}</a>
+                          </h5>
                           <p className="text-muted mb-0">
                             <i className="bx bxs-star text-warning"></i>
                             <i className="bx bxs-star text-warning"></i>
@@ -299,7 +313,7 @@ const Checkout = () => {
                       </td>
                       <td>$ {calculateTotal()}</td>
                     </tr>
-                   
+
                     <tr>
                       <td colSpan="2">
                         <h5 className="font-size-14 m-0">Shipping Charge :</h5>
@@ -316,7 +330,7 @@ const Checkout = () => {
                       <td colSpan="2">
                         <h5 className="font-size-14 m-0">Total:</h5>
                       </td>
-                      <td>$ {(parseFloat(calculateTotal()) - 78 + 25 + 18.20).toFixed(2)}</td>
+                      <td>$ {(parseFloat(calculateTotal()) + 25 + 18.20).toFixed(2)}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -330,5 +344,3 @@ const Checkout = () => {
 };
 
 export default Checkout;
-
-
