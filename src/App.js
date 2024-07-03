@@ -1087,6 +1087,11 @@ import Wreathssingl from './Components/Pages/Adminside/deparmentbathrom/Artifica
 import Wreathsform from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreathsform';
 import Wreathslist from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreathslist';
 import Wreathsupdate from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreathsupdate';
+import Diaries from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diaries';
+import Diariessingle from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diariessingl';
+import Diariesform from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diariesform';
+import Diarieslist from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diarieslist';
+import Diariesupdate from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diariesupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1927,6 +1932,10 @@ const App = () => {
         <Route path='/wreathsform' element={<AdminLayout><Wreathsform/></AdminLayout>}/>
         <Route path='/listwreaths' element={<AdminLayout><Wreathslist/></AdminLayout>}/>
         <Route path='/listwreaths/:id' element={<AdminLayout><Wreathsupdate/></AdminLayout>}/>
+        
+        <Route path='/diariesform' element={<AdminLayout><Diariesform/></AdminLayout>}/>
+        <Route path='/listdiaries' element={<AdminLayout><Diarieslist/></AdminLayout>}/>
+        <Route path='/listdiaries/:id' element={<AdminLayout><Diariesupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<Home />} />
@@ -2604,6 +2613,9 @@ const App = () => {
         
         <Route path='/wreaths' element={<MainLayout><Wreaths/></MainLayout>}/>
         <Route path='/wreathssinglepage/:id' element={<MainLayout><Wreathssingl/></MainLayout>}/> 
+        
+        <Route path='/diaries' element={<MainLayout><Diaries/></MainLayout>}/>
+        <Route path='/diariessinglepage/:id' element={<MainLayout><Diariessingle/></MainLayout>}/> 
       </Routes>
       </CartProvider>
     </>

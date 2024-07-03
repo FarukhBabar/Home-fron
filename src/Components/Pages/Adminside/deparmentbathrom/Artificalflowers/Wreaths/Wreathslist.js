@@ -41,7 +41,7 @@ const Wreathslist = () => {
     <div>
         
     <div className='container w-75'>
-           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Garland Products </h4>
+           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Wreaths Products </h4>
            <Link to="/wreathsform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
            <table class="table table-striped table-hover">
                  <thead>

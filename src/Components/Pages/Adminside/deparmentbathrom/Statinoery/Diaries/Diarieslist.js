@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const Singlestemlist = () => {
+const Diarieslist = () => {
     const [user, setUsers] = useState([]);
     
 
     const setUsersData = async() =>{
-        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/singlestemuser")
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/diariesuser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Singlestemlist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/singlestemuserid/${id}`,{
+              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/diariesuserid/${id}`,{
             method:"delete"
          
           })
@@ -41,8 +41,8 @@ const Singlestemlist = () => {
     <div>
         
     <div className='container w-75'>
-           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Singlestem Products </h4>
-           <Link to="/singlestemform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
+           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Diaries Products</h4>
+           <Link to="/diariesform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
            <table class="table table-striped table-hover">
                  <thead>
                      <tr className='btn-dark text-light text-center'>
@@ -73,7 +73,7 @@ const Singlestemlist = () => {
                                           />
                                )}</td>
                                          <td>
-                                             <Link to={`/listsinglestem/${ele._id}`} className='btn btn-success'>Edit</Link>
+                                             <Link to={`/listdiaries/${ele._id}`} className='btn btn-success'>Edit</Link>
                                              <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger ms-2'>Delete</a>
                                          </td>
                                      </tr>
@@ -93,4 +93,4 @@ const Singlestemlist = () => {
   )
 }
 
-export default Singlestemlist; 
+export default Diarieslist; 
