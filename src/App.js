@@ -1077,6 +1077,16 @@ import Garlandsupdate from './Components/Pages/Adminside/deparmentbathrom/Artifi
 import Garlands from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlands';
 import Garlandssingl from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Garlands/Garlandssingl';
 import Checkout from './Components/Checkout';
+import Singlestem from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Singlestem/Singlestem';
+import Singlestemsingl from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Singlestem/Singlestemsingl';
+import Singlestemform from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Singlestem/Singlestemform';
+import Singlestemlist from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Singlestem/Singlestemlist';
+import Singlestemupdate from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Singlestem/Singlestemupdate';
+import Wreaths from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreaths';
+import Wreathssingl from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreathssingl';
+import Wreathsform from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreathsform';
+import Wreathslist from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreathslist';
+import Wreathsupdate from './Components/Pages/Adminside/deparmentbathrom/Artificalflowers/Wreaths/Wreathsupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1909,6 +1919,14 @@ const App = () => {
         <Route path='/garlandform' element={<AdminLayout><Garlandsform/></AdminLayout>}/>
         <Route path='/listgarland' element={<AdminLayout><Garlandslist/></AdminLayout>}/>
         <Route path='/listgarland/:id' element={<AdminLayout><Garlandsupdate/></AdminLayout>}/>
+        
+        <Route path='/singlestemform' element={<AdminLayout><Singlestemform/></AdminLayout>}/>
+        <Route path='/listsinglestem' element={<AdminLayout><Singlestemlist/></AdminLayout>}/>
+        <Route path='/listsinglestem/:id' element={<AdminLayout><Singlestemupdate/></AdminLayout>}/>
+        
+        <Route path='/wreathsform' element={<AdminLayout><Wreathsform/></AdminLayout>}/>
+        <Route path='/listwreaths' element={<AdminLayout><Wreathslist/></AdminLayout>}/>
+        <Route path='/listwreaths/:id' element={<AdminLayout><Wreathsupdate/></AdminLayout>}/>
         </Route>
         {/* Main Routes */}
         <Route path='/' element={<Home />} />
@@ -2578,7 +2596,14 @@ const App = () => {
         
         <Route path='/garland' element={<MainLayout><Garlands/></MainLayout>}/>
         <Route path='/garlandsinglepage/:id' element={<MainLayout><Garlandssingl/></MainLayout>}/> 
+
         <Route path='/checkout' element={<MainLayout><Checkout/></MainLayout>}/>
+        
+        <Route path='/singlestem' element={<MainLayout><Singlestem/></MainLayout>}/>
+        <Route path='/singlestemsinglepage/:id' element={<MainLayout><Singlestemsingl/></MainLayout>}/> 
+        
+        <Route path='/wreaths' element={<MainLayout><Wreaths/></MainLayout>}/>
+        <Route path='/wreathssinglepage/:id' element={<MainLayout><Wreathssingl/></MainLayout>}/> 
       </Routes>
       </CartProvider>
     </>

@@ -25,14 +25,14 @@ const Artificalmain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentbathroom'><img src="./Images/Artificial Flowers-3.png" alt className="img3" /></Link>   
+        <Link to='/singlestem'><img src="./Images/Artificial Flowers-3.png" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Artificial Flowers-4.png" alt className="img" /></Link>
+        <Link to='/wreaths'><img src="./Images/Artificial Flowers-4.png" alt className="img" /></Link>
       </div>
     </div>
   </div>

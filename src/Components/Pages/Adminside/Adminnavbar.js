@@ -818,8 +818,8 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listartifical">Artifical Trees</Link></li>
                   <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
                    <li><Link className="dropdown-item" to="/listgarland">Garland</Link></li> 
-                    <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
-                     <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
+                    <li><Link className="dropdown-item" to="/listsinglestem">Singlestem</Link></li> 
+                     <li><Link className="dropdown-item" to="/listwreaths">Wreaths</Link></li> 
                       <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
                        <li><Link className="dropdown-item" to="/listbouquet">Bouquets</Link></li> 
                   {/* <li>

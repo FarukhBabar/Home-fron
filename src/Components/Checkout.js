@@ -345,7 +345,6 @@
 
 // export default Checkout;
 
-
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useFormik } from 'formik';
@@ -355,7 +354,7 @@ import { loadStripe } from '@stripe/stripe-js';
 import { Elements, CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import './Checkout.css';
 
-const stripePromise = loadStripe('your_publishable_key'); // Replace with your Stripe publishable key
+const stripePromise = loadStripe('pk_test_51PYLCyRrKUSfNnmkEnMx3BB1lHJc1V9qAiXFMjFsha5jbN8rSKOFd1YJFb6wj88zPxY5VpZKzz4Re6rubztuSeCh00O0C7585R'); // Replace with your Stripe publishable key
 
 const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
   const stripe = useStripe();
@@ -383,7 +382,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
       const totalAmount = parseFloat(calculateTotal()) + 25 + 18.20;
       try {
         // Create payment intent on the server
-        const paymentIntentResponse = await axios.post('http://localhost:5000/api/payment_intents', {
+        const paymentIntentResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/payment_intents', {
           amount: totalAmount
         });
         const { clientSecret } = paymentIntentResponse.data;
@@ -411,7 +410,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
           alert(`Payment failed: ${paymentResult.error.message}`);
         } else if (paymentResult.paymentIntent.status === 'succeeded') {
           // Save the order in the database
-          const orderResponse = await axios.post('http://localhost:5000/api/orders', {
+          const orderResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/order', {
             ...values,
             cartItems,
             quantities,
@@ -507,7 +506,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
         <div className="col-lg-4">
           <div className="mb-4 mb-lg-0">
             <label className="form-label">Country</label>
-            <input type='text' className="form-control" placeholder='Enter Country' value={formik.values.country} onChange={formik.handleChange} onBlur={formik.handleBlur} />
+            <input type='text' className="form-control" placeholder='Enter Country' name='country' value={formik.values.country} onChange={formik.handleChange} onBlur={formik.handleBlur} />
             {formik.touched.country && formik.errors.country ? (
               <div className="error">{formik.errors.country}</div>
             ) : null}
@@ -679,3 +678,4 @@ const Checkout = () => {
 };
 
 export default Checkout;
+
