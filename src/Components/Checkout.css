@@ -272,3 +272,23 @@ a {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
 }
+.homelogin{
+      display: block;
+    width: 100%;
+    padding: 0.47rem 0.75rem;
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: .05;
+    color: #545965;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #e2e5e8;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.75rem;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+}

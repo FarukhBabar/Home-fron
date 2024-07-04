@@ -74,7 +74,7 @@ const Login = () => {
           <label htmlFor="exampleInputPassword1" className="form-label ">Password</label>
           <input type="password"  name='password' value={password} onChange={(e)=>setpassword(e.target.value)} className="form-control loginform" id="exampleInputPassword1" />
         </div>
-        <button type="submit" onClick={registeruser}  className="btn btn-primary forw loginbuton">Login To Your Account</button>
+        <button type="submit" onClick={registeruser}  className="btn btn-primary forw loginbuton ">Login To Your Account</button>
         <div className="mt-2 forgotpas ">
           <Link to="/forget">Forgot Password?</Link></div>
       </form>

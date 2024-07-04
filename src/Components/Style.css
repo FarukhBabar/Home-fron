@@ -321,11 +321,11 @@
     background-color: rgba(126, 161, 253, 1);
     border: 1px;
     border-radius: 2px;
-    margin-top: 40px
+    margin-top: 20px
    
 }
 .forgot{
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .logi{
     margin-left: 300px;
@@ -1107,12 +1107,13 @@ padding-bottom: 5px;
         background-color: rgba(126, 161, 253, 1);
         border: 1px;
         border-radius: 2px;
-        margin-top: 40px
+        margin-top: 20px
+        
         
         
         }
         .forgot{
-        margin-top: 40px;
+        margin-top: 20px;
         }
         
         .input{
