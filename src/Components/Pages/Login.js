@@ -83,7 +83,7 @@ const Login = () => {
       <center><u> <p className="creatacc  ">CREATE AN ACCOUNT</p></u></center>
       <p className="ms-5 mt-4"> &nbsp;PLEASE CLICK ON THE REGISTER BUTTON <br /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BELOW TO CREATE AN ACCOUNT</p>
       <p className="below " />
-      <center><Link to="/Register"><button type="submit" className="btn btn-primary mt-3 registerbuton">REGISTER</button></Link></center>   
+      <center><Link to="/Register"><button type="submit" className="btn btn-primary mt-3 registerbuton  form-control">REGISTER</button></Link></center>   
     </div>
   </div>
 </div>
