@@ -180,7 +180,7 @@ const Home = () => {
     <div className="col-lg-4 col-md-6 col-sm-12 form1">
       <center><h3 className="registerform text-white">CREATE AN ACCOUNT</h3></center>
       <p className="te ms-3">PLEASE CLICK ON THE REGISTER BUTTON BELOW TO CREATE AN ACCOUNT</p>
-      <center><button className="sizebutton mb-3 registerbuton ">REGISTER</button></center>
+      <center><button className=" mb-3 registerbuton ">REGISTER</button></center>
     </div>
     <div className="col-lg-4 col-md-6 col-sm-12  homeage ">
       <center><h3 className="registerform text-white">EMAIL</h3></center>
@@ -197,7 +197,7 @@ const Home = () => {
       <div className=" d-flex">
         <div className="forgot mb-3"> <a href>FORGOT PASSWORD</a></div>
         <div>
-          <button className="mb-3 sizebutton1 ms-2 registerbuton ">LOGIN</button>
+          <button className="mb-3 sizebutton1 ms-2 registerbuto ">LOGIN</button>
         </div>
       </div>
     </div>
