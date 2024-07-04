@@ -1092,6 +1092,66 @@ import Diariessingle from './Components/Pages/Adminside/deparmentbathrom/Statino
 import Diariesform from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diariesform';
 import Diarieslist from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diarieslist';
 import Diariesupdate from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Diaries/Diariesupdate';
+import Kidsform from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Kids/Kidsform';
+import Kidslist from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Kids/Kidslist';
+import Kidsupdate from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Kids/Kidsupdate';
+import Kids from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Kids/Kids';
+import Kidssingle from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Kids/Kidssingl';
+import Mailing from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Mailing&packing/Mailing';
+import Mailingsingle from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Mailing&packing/Mailingsingl';
+import Mailingform from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Mailing&packing/Mailingform';
+import Mailinglist from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Mailing&packing/Mailinglist';
+import Mailingupdate from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Mailing&packing/Mailingupdate';
+import Officeform from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Office/Home/Officeform';
+import Officelist from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Office/Home/Officelist';
+import Officeupdate from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Office/Home/Officeupdate';
+import Office from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Office/Home/Office';
+import Officesingle from './Components/Pages/Adminside/deparmentbathrom/Statinoery/Office/Home/Officesingl';
+import Curtainssingle from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Curtains/Curtainssingl';
+import Curtainsform from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Curtains/Curtainsform';
+import Curtainslist from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Curtains/Curtainslist';
+import Curtainsupdate from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Curtains/Curtainsupdate';
+import Curtains from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Curtains/Curtains';
+import Tablecover from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Tablecover/Tablecover';
+import Tablecoversingle from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Tablecover/Tablecoversingl';
+import Tablecoverform from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Tablecover/Tablecoverform';
+import Tablecoverlist from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Tablecover/Tablecoverlist';
+import Tablecoverupdate from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Tablecover/Tablecoverupdate';
+import Teactowelform from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Teac&towel/Teactowelform';
+import Teactowellist from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Teac&towel/Teactowellist';
+import Teactowelupdate from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Teac&towel/Teactowelupdate';
+import Teactowel from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Teac&towel/Teactowel';
+import Teactowelsingle from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Teac&towel/Teactowelsingl';
+import Towelaccess from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Towel&accessories/Towelaccess';
+import Towelaccesssingle from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Towel&accessories/Towelaccesssingl';
+import Towelaccessform from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Towel&accessories/Towelaccessform';
+import Towelaccesslist from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Towel&accessories/Towelaccesslist';
+import Towelaccessupdate from './Components/Pages/Adminside/deparmentbathrom/Textileaccessories/Towel&accessories/Towelaccessupdate';
+import MelamineOutdoor from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/MelamineOutdoor/MelamineOutdoor';
+import MelamineOutdoorsingl from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/MelamineOutdoor/MelamineOutdoorsingl';
+import MelamineOutdoorform from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/MelamineOutdoor/MelamineOutdoorform';
+import MelamineOutdoorlist from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/MelamineOutdoor/MelamineOutdoorlist';
+import MelamineOutdoorupdate from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/MelamineOutdoor/MelamineOutdoorupdate';
+import Kidsbathromform from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Bathroom Products/Kidsbathromform';
+import Kidsbathromlist from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Bathroom Products/Kidsbathromlist';
+import Kidsbathromupdate from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Bathroom Products/Kidsbathromupdate';
+import Kidsbathrom from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Bathroom Products/Kidsbathrom';
+import Kidsbathromsingl from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Bathroom Products/Kidsbathromsingl';
+import Plasticcabnit from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Drawer Cabinet/Plasticcabnit';
+import Plasticcabnitsingl from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Drawer Cabinet/Plasticcabnitsingl';
+import Plasticcabnitform from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Drawer Cabinet/Plasticcabnitform';
+import Plasticcabnitlist from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Drawer Cabinet/Plasticcabnitlist';
+import Plasticcabnitupdate from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Plastic Drawer Cabinet/Plasticcabnitupdate';
+import Handwash from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Handwash/Handwash';
+import Handwashsingl from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Handwash/Handwashsingl';
+import Handwashform from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Handwash/Handwashform';
+import Handwashlist from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Handwash/Handwashlist';
+import Handwashupdate from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Handwash/Handwashupdate';
+import Healthcareeform from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcareeform';
+import Healthcareelist from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcareelist';
+import Healthcareeupdate from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcareeupdate';
+import Healthcaree from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcaree';
+import Healthcareesingl from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcareesingl';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1936,7 +1996,60 @@ const App = () => {
         <Route path='/diariesform' element={<AdminLayout><Diariesform/></AdminLayout>}/>
         <Route path='/listdiaries' element={<AdminLayout><Diarieslist/></AdminLayout>}/>
         <Route path='/listdiaries/:id' element={<AdminLayout><Diariesupdate/></AdminLayout>}/>
-        </Route>
+        
+        <Route path='/kidsform' element={<AdminLayout><Kidsform/></AdminLayout>}/>
+        <Route path='/listkids' element={<AdminLayout><Kidslist/></AdminLayout>}/>
+        <Route path='/listkids/:id' element={<AdminLayout><Kidsupdate/></AdminLayout>}/>
+        
+        <Route path='/mailingform' element={<AdminLayout><Mailingform/></AdminLayout>}/>
+        <Route path='/listmailing' element={<AdminLayout><Mailinglist/></AdminLayout>}/>
+        <Route path='/listmailing/:id' element={<AdminLayout><Mailingupdate/></AdminLayout>}/>
+        
+        <Route path='/office/homeform' element={<AdminLayout><Officeform/></AdminLayout>}/>
+        <Route path='/listoffice/home' element={<AdminLayout><Officelist/></AdminLayout>}/>
+        <Route path='/listoffice/home/:id' element={<AdminLayout><Officeupdate/></AdminLayout>}/>
+        
+        <Route path='/curtainsform' element={<AdminLayout><Curtainsform/></AdminLayout>}/>
+        <Route path='/listcurtains' element={<AdminLayout><Curtainslist/></AdminLayout>}/>
+        <Route path='/listcurtains/:id' element={<AdminLayout><Curtainsupdate/></AdminLayout>}/> 
+        
+        <Route path='/tablecoverform' element={<AdminLayout><Tablecoverform/></AdminLayout>}/>
+        <Route path='/listtablecover' element={<AdminLayout><Tablecoverlist/></AdminLayout>}/>
+        <Route path='/listtablecover/:id' element={<AdminLayout><Tablecoverupdate/></AdminLayout>}/> 
+        
+        <Route path='/teatowelform' element={<AdminLayout><Teactowelform/></AdminLayout>}/>
+        <Route path='/listteatowel' element={<AdminLayout><Teactowellist/></AdminLayout>}/>
+        <Route path='/listteatowel/:id' element={<AdminLayout><Teactowelupdate/></AdminLayout>}/>  
+        
+        <Route path='/towelaccessoriesform' element={<AdminLayout><Towelaccessform/></AdminLayout>}/>
+        <Route path='/listtowelaccessories' element={<AdminLayout><Towelaccesslist/></AdminLayout>}/>
+        <Route path='/listtowelaccessories/:id' element={<AdminLayout><Towelaccessupdate/></AdminLayout>}/>  
+        
+        <Route path='/melmanioutdoorform' element={<AdminLayout><MelamineOutdoorform/></AdminLayout>}/>
+        <Route path='/listmelmanioutdoor' element={<AdminLayout><MelamineOutdoorlist/></AdminLayout>}/>
+        <Route path='/listmelmanioutdoor/:id' element={<AdminLayout><MelamineOutdoorupdate/></AdminLayout>}/> 
+
+         <Route path='/kidsbathroomform' element={<AdminLayout><Kidsbathromform/></AdminLayout>}/>
+        <Route path='/listkidsbathroom' element={<AdminLayout><Kidsbathromlist/></AdminLayout>}/>
+        <Route path='/listkidsbathroom/:id' element={<AdminLayout><Kidsbathromupdate/></AdminLayout>}/>  
+
+         <Route path='/plasticcabnitform' element={<AdminLayout><Plasticcabnitform/></AdminLayout>}/>
+        <Route path='/listplasticcabnit' element={<AdminLayout><Plasticcabnitlist/></AdminLayout>}/>
+        <Route path='/listplasticcabnit/:id' element={<AdminLayout><Plasticcabnitupdate/></AdminLayout>}/> 
+
+         <Route path='/handwashform' element={<AdminLayout><Handwashform/></AdminLayout>}/>
+        <Route path='/listhandwash' element={<AdminLayout><Handwashlist/></AdminLayout>}/>
+        <Route path='/listhandwash/:id' element={<AdminLayout><Handwashupdate/></AdminLayout>}/> 
+
+         <Route path='/healthcareeform' element={<AdminLayout><Healthcareeform/></AdminLayout>}/>
+        <Route path='/listhealthcaree' element={<AdminLayout><Healthcareelist/></AdminLayout>}/>
+        <Route path='/listhealthcaree/:id' element={<AdminLayout><Healthcareeupdate/></AdminLayout>}/> 
+
+
+
+
+        
+        </Route>      
         {/* Main Routes */}
         <Route path='/' element={<Home />} />
         <Route path='/deparments' element={<MainLayout><Department /></MainLayout>} />
@@ -2616,6 +2729,43 @@ const App = () => {
         
         <Route path='/diaries' element={<MainLayout><Diaries/></MainLayout>}/>
         <Route path='/diariessinglepage/:id' element={<MainLayout><Diariessingle/></MainLayout>}/> 
+        
+        <Route path='/kids' element={<MainLayout><Kids/></MainLayout>}/>
+        <Route path='/kidssinglepage/:id' element={<MainLayout><Kidssingle/></MainLayout>}/> 
+        
+        <Route path='/mailing' element={<MainLayout><Mailing/></MainLayout>}/>
+        <Route path='/mailingsinglepage/:id' element={<MainLayout><Mailingsingle/></MainLayout>}/>
+        
+        <Route path='/office/home' element={<MainLayout><Office/></MainLayout>}/>
+        <Route path='/office/homesinglepage/:id' element={<MainLayout><Officesingle/></MainLayout>}/>
+        
+        <Route path='/curtains' element={<MainLayout><Curtains/></MainLayout>}/>
+        <Route path='/curtainssinglepage/:id' element={<MainLayout><Curtainssingle/></MainLayout>}/>
+        
+        <Route path='/tablecover' element={<MainLayout><Tablecover/></MainLayout>}/>
+        <Route path='/tablecoversinglepage/:id' element={<MainLayout><Tablecoversingle/></MainLayout>}/> 
+        
+        <Route path='/teatowel' element={<MainLayout><Teactowel/></MainLayout>}/>
+        <Route path='/teatowelsinglepage/:id' element={<MainLayout><Teactowelsingle/></MainLayout>}/> 
+        
+        <Route path='/towelaccessories' element={<MainLayout><Towelaccess/></MainLayout>}/>
+        <Route path='/towelaccessoriessinglepage/:id' element={<MainLayout><Towelaccesssingle/></MainLayout>}/> 
+        
+        <Route path='/melmanioutdoor' element={<MainLayout><MelamineOutdoor/></MainLayout>}/>
+        <Route path='/melmanioutdoorsinglepage/:id' element={<MainLayout><MelamineOutdoorsingl/></MainLayout>}/>  
+        
+        <Route path='/kidsbathroom' element={<MainLayout><Kidsbathrom/></MainLayout>}/>
+        <Route path='/kidsbathroomsinglepage/:id' element={<MainLayout><Kidsbathromsingl/></MainLayout>}/> 
+        
+        <Route path='/plasticcabnit' element={<MainLayout><Plasticcabnit/></MainLayout>}/>
+        <Route path='/plasticcabnitsinglepage/:id' element={<MainLayout><Plasticcabnitsingl/></MainLayout>}/> 
+        
+        <Route path='/handwash' element={<MainLayout><Handwash/></MainLayout>}/>
+        <Route path='/handwashsinglepage/:id' element={<MainLayout><Handwashsingl/></MainLayout>}/>  
+        
+        
+        <Route path='/healthcaree' element={<MainLayout><Healthcaree/></MainLayout>}/>
+        <Route path='/healthcareesinglepage/:id' element={<MainLayout><Healthcareesingl/></MainLayout>}/> 
       </Routes>
       </CartProvider>
     </>

@@ -191,6 +191,10 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listaprons">Aprons</Link></li>
                   <li><Link className="dropdown-item" to="/listbedding">Bedding</Link></li>
                   <li><Link className="dropdown-item" to="/listclothing">Clothing</Link></li>
+                   <li><Link className="dropdown-item" to="/listcurtains">Curtains</Link></li> 
+                    <li><Link className="dropdown-item" to="/listtablecover">Tablecover</Link></li>
+                     <li><Link className="dropdown-item" to="/listteatowel">Tea/Towel</Link></li>
+                      <li><Link className="dropdown-item" to="/listtowelaccessories">Towel/Accessories</Link></li>
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>
@@ -663,6 +667,12 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listfoodcon">Food Container</Link></li>
                   <li><Link className="dropdown-item" to="/listkidsplas">KidsPlastic</Link></li>
+                 <li><Link className="dropdown-item" to="/listmelmanioutdoor">Melmanioutdoor</Link></li>
+                  <li><Link className="dropdown-item" to="/listkidsbathroom">Kidsbathroom</Link></li>
+                  <li><Link className="dropdown-item" to="/listplasticcabnit">Plasticcabnit</Link></li>
+                  <li><Link className="dropdown-item" to="/listhandwash">Handwash</Link></li>
+                  <li><Link className="dropdown-item" to="/listhealthcaree">Healthcaree</Link></li>
+                  
                   {/* <li><Link className="dropdown-item" to="/listdigital">Camera</Link></li> */}
                   {/* <li>
                     <hr className="dropdown-divider" />
@@ -740,7 +750,9 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listart&craft">Art & Craft</Link></li>
                   <li><Link className="dropdown-item" to="/listbooks">Books</Link></li>
                     <li><Link className="dropdown-item" to="/listdiaries">Diaries</Link></li> 
-                  
+                   <li><Link className="dropdown-item" to="/listkids">Kids</Link></li> 
+                    <li><Link className="dropdown-item" to="/listmailing">Mailing</Link></li> 
+                     <li><Link className="dropdown-item" to="/listoffice/home">Office/Home</Link></li> 
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>

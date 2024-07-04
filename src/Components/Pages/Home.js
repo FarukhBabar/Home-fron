@@ -126,44 +126,44 @@ const Home = () => {
   {/* ------- */}
   <div className="row">
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/disposables.webp" className="caa" alt />
+      <img src="/Images/Homepag/disposables.png" className="caa" alt />
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Household Cleaners.webp" className="caa" alt />
+      <img src="/Images/Homepag/Household Cleaners.png" className="caa" alt />
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Cleaning Materials.webp" alt className="caa" />
+      <img src="/Images/Homepag/Cleaning Materials.png" alt className="caa" />
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Plastics.webp" alt className="caa" />
-    </div>
-  </div>
-  <div className="row  ">
-    <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Partyware.webp" className="caa " alt />
-    </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Kitchen Utensils.webp" className="caa " alt />
-    </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Cookware.webp" className="caa" alt />
-    </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Bakeware.webp" className="caa" alt />
+      <img src="/Images/Homepag/Plastics.png" alt className="caa" />
     </div>
   </div>
   <div className="row  ">
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Toiletries.webp" className="caa" alt />
+      <img src="/Images/Homepag/Partyware.png" className="caa " alt />
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Pet Products.webp" className="caa" alt />
+      <img src="/Images/Homepag/Kitchen Utensils.png" className="caa " alt />
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/Stationeries.webp" className="caa" alt />
+      <img src="/Images/Homepag/Cookware.png" className="caa" alt />
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-      <img src="/Images/Homepag/all departements.webp" className="caa" alt />
+      <img src="/Images/Homepag/Bakeware.png" className="caa" alt />
+    </div>
+  </div>
+  <div className="row  ">
+    <div className="col-lg-3 col-md-4 col-sm-12">
+      <img src="/Images/Homepag/Toiletries.png" className="caa" alt />
+    </div>
+    <div className="col-lg-3 col-md-4 col-sm-12">
+      <img src="/Images/Homepag/Pet Products.png" className="caa" alt />
+    </div>
+    <div className="col-lg-3 col-md-4 col-sm-12">
+      <img src="/Images/Homepag/Stationeries.png" className="caa" alt />
+    </div>
+    <div className="col-lg-3 col-md-4 col-sm-12">
+      <img src="/Images/Homepag/all departements.png" className="caa" alt />
     </div>
   </div>
   <div>
