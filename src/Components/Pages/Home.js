@@ -117,10 +117,10 @@ const Home = () => {
   </div>
   <div className="row mt-5">
     <div className="col-lg-6 col-md-6 col-sm-12">
-      <img src="/Images/Homepag/Diy range.webp" alt className="ca" />
+      <img src="/Images/Homepag/Diy range.png" alt className="ca" />
     </div>
     <div className="col-lg-6 col-md-6 col-sm-12">
-      <img src="/Images/Homepag/Poundlines range.webp" alt className="ca" />
+      <img src="/Images/Homepag/Poundlines range.png" alt className="ca" />
     </div>
   </div>
   {/* ------- */}
