@@ -5,7 +5,7 @@ import { useCart } from '../../../CartContext';
 import '../../../admin.css';
 import Footer from '../../../../../Footer';
 
-const Artificalsingel = () => {
+const DrinkingGlasssingel = () => {
   const [qty, setQty] = useState(1); // Initialize with 1 for a default value
   const [product, setProduct] = useState({});
   const { addToCart } = useCart();
@@ -14,7 +14,7 @@ const Artificalsingel = () => {
 
   const GetSingleData = async () => {
     try {
-      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/artificalsingle/${params.id}`);
+      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/drinkingglasssingle/${params.id}`);
       const result = await response.json();
       setProduct(result);
     } catch (error) {
@@ -93,8 +93,9 @@ const Artificalsingel = () => {
             </div>
             <div className="col-lg-7 col-md-7 col-sm-6">
               <h4 className="box-title mt-5">Product description</h4>
- <p dangerouslySetInnerHTML={{ __html: product.title }}></p>
-               <h2 className="mt-5">${product.price}</h2>
+                            <p dangerouslySetInnerHTML={{ __html: product.title }}></p>
+
+              <h2 className="mt-5">${product.price}</h2>
               <div className="ms-1 mt-4 Quabtity">
                 <div className="mt-1"><h5>Quantity:</h5></div>
                 <button onClick={decQty} className="btn btn-dark inn btn-md ms-2 h-25">-</button>
@@ -122,4 +123,4 @@ const Artificalsingel = () => {
   );
 };
 
-export default Artificalsingel;
+export default DrinkingGlasssingel;

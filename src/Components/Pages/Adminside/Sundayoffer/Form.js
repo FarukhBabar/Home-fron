@@ -1,18 +1,24 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import "../admin.css"
-
+import 'froala-editor/css/froala_style.min.css';
+import 'froala-editor/css/froala_editor.pkgd.min.css';
+import FroalaEditorComponent from 'react-froala-wysiwyg';
 
 const Form = () => {
   const [Image , setImage]=useState(null)
   const [name , setname]=useState()
-  const [title , settitle] =useState()
+  const [title , setTitle] =useState()
   const [price , setprice] = useState()
   const [ImageError , setImageError]=useState()
   const [nameError, setNameError] = useState(false);
     const [titleError, settitlteError] = useState(false);
     const [priceError, setPriceError] = useState(false);
     const nevigate = useNavigate();
+    
+  const handleDescriptionChange = (model) => {
+    setTitle(model);
+  };
     const handlesubmit = async(e)=>{
 
       e.preventDefault();
@@ -70,11 +76,15 @@ const Form = () => {
     {nameError && <div className="invalid-feedback">Please enter your name</div>}
     {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
   </div>
-  <div className="mb-3 maa ">
-    <label  className="form-label">Description</label>
-    <input type="text" className={`form-control form-control-lg ${titleError ? 'is-invalid' : ''}`}  name='title' value={title} onChange={(e)=>settitle(e.target.value)} placeholder='Enter your Item title' />
-    {titleError && <div className="invalid-feedback">Please enter your title</div>}
-  </div>
+  <div className="mb-3 maa">
+          <label className="form-label">Description</label>
+          <FroalaEditorComponent
+            tag='textarea'
+            model={title}
+            onModelChange={handleDescriptionChange}
+          />
+          {titleError && <div className="invalid-feedback">Please enter your title</div>}
+        </div>
   <div className="mb-3 maa ">
     <label  className="form-label">Price</label>
     <input type="text" className={`form-control form-control-lg ${priceError ? 'is-invalid' : ''}`} name='price' value={price} onChange={(e)=>setprice(e.target.value)} placeholder='Enter your Item title' />

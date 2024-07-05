@@ -47,7 +47,7 @@ const Batteriesform = () => {
       })
       result = await result.json();
       if(result){
-        nevigate("/airersform")
+        // nevigate("/batteriesform")
         alert("Product added sucessfully")
         }
         else{

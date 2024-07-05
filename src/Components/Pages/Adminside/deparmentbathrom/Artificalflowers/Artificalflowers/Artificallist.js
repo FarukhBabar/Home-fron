@@ -62,7 +62,7 @@ const Artificallist = () => {
                                      <tr>
                                          <th scope="row">{ind+1}</th>
                                          <td>{ele.name}</td>
-                                          <td dangerouslySetInnerHTML={{ __html: ele.title }}></td>
+                                         <td dangerouslySetInnerHTML={{ __html: ele.title }}></td>
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 

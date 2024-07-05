@@ -1,8 +1,8 @@
-   
+ 
  import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-const Artificalupdate = () => {
+const Mugscupsupdate = () => {
     const [name, setName] = useState('');
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
@@ -14,10 +14,11 @@ const Artificalupdate = () => {
         div.innerHTML = html;
         return div.textContent || div.innerText || '';
     };
+
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/artificalsingle/${params.id}`);
+                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/mugcupsingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(stripHTML(result.title)); // Strip HTML tags from title
@@ -43,7 +44,7 @@ const Artificalupdate = () => {
         }
 
         try {
-            let response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/artificalsingle/${params.id}`, {
+            let response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/mugcupsingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });
@@ -119,4 +120,4 @@ const Artificalupdate = () => {
     );
 };
 
-export default Artificalupdate;
+export default Mugscupsupdate;

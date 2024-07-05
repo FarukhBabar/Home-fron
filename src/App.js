@@ -1152,6 +1152,31 @@ import Healthcareelist from './Components/Pages/Adminside/deparmentbathrom/Plast
 import Healthcareeupdate from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcareeupdate';
 import Healthcaree from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcaree';
 import Healthcareesingl from './Components/Pages/Adminside/deparmentbathrom/Plasticshousewear/Healthcare/Healthcareesingl';
+import DrinkingGlass from './Components/Pages/Adminside/deparmentbathrom/China/DrinkingGlass/DrinkingGlass';
+import DrinkingGlasssingel from './Components/Pages/Adminside/deparmentbathrom/China/DrinkingGlass/DrinkingGlasssingl';
+import DrinkingGlassform from './Components/Pages/Adminside/deparmentbathrom/China/DrinkingGlass/DrinkingGlassform';
+import DrinkingGlasslist from './Components/Pages/Adminside/deparmentbathrom/China/DrinkingGlass/DrinkingGlasslist';
+import DrinkingGlassupdate from './Components/Pages/Adminside/deparmentbathrom/China/DrinkingGlass/DrinkingGlassupdate';
+import GlassTablewear from './Components/Pages/Adminside/deparmentbathrom/China/GlassTablewear/GlassTablewear';
+import GlassTablewearsingel from './Components/Pages/Adminside/deparmentbathrom/China/GlassTablewear/GlassTablewearsingl';
+import GlassTablewearform from './Components/Pages/Adminside/deparmentbathrom/China/GlassTablewear/GlassTablewearform';
+import GlassTablewearlist from './Components/Pages/Adminside/deparmentbathrom/China/GlassTablewear/GlassTablewearlist';
+import GlassTablewearupdate from './Components/Pages/Adminside/deparmentbathrom/China/GlassTablewear/GlassTablewearupdate';
+import HomeBakingform from './Components/Pages/Adminside/deparmentbathrom/China/HomeBaking/HomeBakingform';
+import HomeBakinglist from './Components/Pages/Adminside/deparmentbathrom/China/HomeBaking/HomeBakinglist';
+import HomeBakingupdate from './Components/Pages/Adminside/deparmentbathrom/China/HomeBaking/HomeBakingupdtae';
+import HomeBaking from './Components/Pages/Adminside/deparmentbathrom/China/HomeBaking/HomeBaking';
+import HomeBakingsingel from './Components/Pages/Adminside/deparmentbathrom/China/HomeBaking/HomeBakingsingl';
+import Mugscups from './Components/Pages/Adminside/deparmentbathrom/China/Mugscups/Mugscups';
+import Mugscupssingel from './Components/Pages/Adminside/deparmentbathrom/China/Mugscups/Mugscupssingl';
+import Mugscupsform from './Components/Pages/Adminside/deparmentbathrom/China/Mugscups/Mugscupsform';
+import Mugscupslist from './Components/Pages/Adminside/deparmentbathrom/China/Mugscups/Mugscupslist';
+import Mugscupsupdate from './Components/Pages/Adminside/deparmentbathrom/China/Mugscups/Mugscupsupdate';
+import Storageaccessories from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessories';
+import Storageaccessoriesform from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessoriesform';
+import Storageaccessorieslist from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessorieslist';
+import Storageaccessoriesupdate from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessoriesupdate';
+import Storageaccessoriessingel from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessoriessingl';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -2045,9 +2070,25 @@ const App = () => {
         <Route path='/listhealthcaree' element={<AdminLayout><Healthcareelist/></AdminLayout>}/>
         <Route path='/listhealthcaree/:id' element={<AdminLayout><Healthcareeupdate/></AdminLayout>}/> 
 
+         <Route path='/drinkingglassform' element={<AdminLayout><DrinkingGlassform/></AdminLayout>}/>
+        <Route path='/listdrinkingglass' element={<AdminLayout><DrinkingGlasslist/></AdminLayout>}/>
+        <Route path='/listdrinkingglass/:id' element={<AdminLayout><DrinkingGlassupdate/></AdminLayout>}/> 
+        
+        <Route path='/glasstablewearform' element={<AdminLayout><GlassTablewearform/></AdminLayout>}/>
+        <Route path='/listglasstablewear' element={<AdminLayout><GlassTablewearlist/></AdminLayout>}/>
+        <Route path='/listglasstablewear/:id' element={<AdminLayout><GlassTablewearupdate/></AdminLayout>}/>
 
+        <Route path='/homebakingform' element={<AdminLayout><HomeBakingform/></AdminLayout>}/>
+        <Route path='/listhomebaking' element={<AdminLayout><HomeBakinglist/></AdminLayout>}/>
+        <Route path='/listhomebaking/:id' element={<AdminLayout><HomeBakingupdate/></AdminLayout>}/>
 
-
+        <Route path='/mugcupsform' element={<AdminLayout><Mugscupsform/></AdminLayout>}/>
+        <Route path='/listmugcups' element={<AdminLayout><Mugscupslist/></AdminLayout>}/>
+        <Route path='/listmugcups/:id' element={<AdminLayout><Mugscupsupdate/></AdminLayout>}/>
+        
+        <Route path='/storageaccessoriesform' element={<AdminLayout><Storageaccessoriesform/></AdminLayout>}/>
+        <Route path='/liststorageaccessories' element={<AdminLayout><Storageaccessorieslist/></AdminLayout>}/>
+        <Route path='/liststorageaccessories/:id' element={<AdminLayout><Storageaccessoriesupdate/></AdminLayout>}/>
         
         </Route>      
         {/* Main Routes */}
@@ -2763,9 +2804,23 @@ const App = () => {
         <Route path='/handwash' element={<MainLayout><Handwash/></MainLayout>}/>
         <Route path='/handwashsinglepage/:id' element={<MainLayout><Handwashsingl/></MainLayout>}/>  
         
-        
         <Route path='/healthcaree' element={<MainLayout><Healthcaree/></MainLayout>}/>
         <Route path='/healthcareesinglepage/:id' element={<MainLayout><Healthcareesingl/></MainLayout>}/> 
+        
+        <Route path='/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
+        <Route path='/drinkingglasssinglepage/:id' element={<MainLayout><DrinkingGlasssingel/></MainLayout>}/>
+
+         <Route path='/glasstablewear' element={<MainLayout><GlassTablewear/></MainLayout>}/>
+        <Route path='/glasstablewearsinglepage/:id' element={<MainLayout><GlassTablewearsingel/></MainLayout>}/>
+        
+        <Route path='/homebaking' element={<MainLayout><HomeBaking/></MainLayout>}/>
+        <Route path='/homebakingsinglepage/:id' element={<MainLayout><HomeBakingsingel/></MainLayout>}/> 
+        
+        <Route path='/mugcups' element={<MainLayout><Mugscups/></MainLayout>}/>
+        <Route path='/mugcupssinglepage/:id' element={<MainLayout><Mugscupssingel/></MainLayout>}/> 
+        
+        <Route path='/storageaccessories' element={<MainLayout><Storageaccessories/></MainLayout>}/>
+        <Route path='/storageaccessoriessinglepage/:id' element={<MainLayout><Storageaccessoriessingel/></MainLayout>}/>   
       </Routes>
       </CartProvider>
     </>

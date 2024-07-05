@@ -1,47 +1,48 @@
 import React, { useEffect, useState } from 'react'
+import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-
-const Listofproducts = () => {
+const DrinkingGlasslist = () => {
     const [user, setUsers] = useState([]);
+    
+
     const setUsersData = async() =>{
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/user")
-      result = await result.json()       
-      setUsers(result)        
-      console.log(result)
-  }
-
-
-    useEffect(()=>{
-      setUsersData()
-  },[])
-    const deleteuser = async(id)=>{
-        // console.log(id)
-        try {
-            let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/userid/${id}`,{
-          method:"delete"
-       
-        })
-        result= await result.json()
-        if(result){
-          setUsersData()
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/drinkingglassuser")
+        result = await result.json()       
+        setUsers(result)        
+        console.log(result)
+    }
+  
+  
+      useEffect(()=>{
+        setUsersData()
+    },[])
+      const deleteuser = async(id)=>{
+          // console.log(id)
+          try {
+              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/drinkingglassuserid/${id}`,{
+            method:"delete"
+         
+          })
+          result= await result.json()
+          if(result){
+            setUsersData()
+          }
+          
+         
+      
+          } catch (error) {
+              alert("Error in deleting data")
+          }
+          
+          
         }
-        
-       
-    
-        } catch (error) {
-            alert("Error in deleting data")
-        }
-        
-        
-      }
-    
   return (
     <div>
-       
+        
     <div className='container w-75'>
-           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of SundayOffer Products</h4>
-           <Link to="/adminsunday" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link> 
+           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Artifical Trees </h4>
+           <Link to="/drinkingglassform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
            <table class="table table-striped table-hover">
                  <thead>
                      <tr className='btn-dark text-light text-center'>
@@ -72,8 +73,8 @@ const Listofproducts = () => {
                                           />
                                )}</td>
                                          <td>
-                                             <Link to={`/list/${ele._id}`} className='btn btn-success'>Edit</Link>
-                                             <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger'>Delete</a>
+                                             <Link to={`/listdrinkingglass/${ele._id}`} className='btn btn-success'>Edit</Link>
+                                             <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger ms-2'>Delete</a>
                                          </td>
                                      </tr>
                                  </>
@@ -92,4 +93,6 @@ const Listofproducts = () => {
   )
 }
 
-export default Listofproducts
+export default DrinkingGlasslist; 
+
+ 

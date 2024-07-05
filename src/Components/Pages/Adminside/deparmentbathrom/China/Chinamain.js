@@ -24,30 +24,30 @@ const Chinamain = () => {
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/deparmentbathroom'><img src="./Images/CHINA-3.png" alt className="img3" /></Link>   
+      <div> 
+        <Link to='/drinkingglass'><img src="./Images/CHINA-3.png" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/CHINA-4.png" alt className="img" /></Link>
+        <Link to='/glasstablewear'><img src="./Images/CHINA-4.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/CHINA-5.png" alt className="img" /></Link>
+        <Link to='/homebaking'><img src="./Images/CHINA-5.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/CHINA-6.png" alt className="img" /></Link>
+        <Link to='/mugcups'><img src="./Images/CHINA-6.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/CHINA-7.png" alt className="img" /></Link>
+        <Link to='/storageaccessories'><img src="./Images/CHINA-7.png" alt className="img" /></Link>
       </div>
     </div>
   </div>

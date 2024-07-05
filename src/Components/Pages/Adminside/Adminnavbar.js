@@ -340,7 +340,12 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listcookware">Cookware</Link></li>
                   <li><Link className="dropdown-item" to="/listcrockery">Crockery</Link></li>
-                  <li><Link className="dropdown-item" to="/listdinner">Dinner</Link></li>
+                  <li><Link className="dropdown-item" to="/listdinner">Dinner</Link></li> 
+                  <li><Link className="dropdown-item" to="/listdrinkingglass">Drinkingg Glass</Link></li>
+                  <li><Link className="dropdown-item" to="/listglasstablewear">Glass Tablewear</Link></li>
+                  <li><Link className="dropdown-item" to="/listhomebaking">Home Baking</Link></li>
+                  <li><Link className="dropdown-item" to="/listmugcups">Mug Cups</Link></li>
+                  <li><Link className="dropdown-item" to="/liststorageaccessories">Storage Accessories</Link></li> 
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>
