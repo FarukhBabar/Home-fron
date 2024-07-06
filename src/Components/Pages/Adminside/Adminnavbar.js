@@ -615,8 +615,8 @@ const Adminnavbar = () => {
                 </a>
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listfurniture">Furniture</Link></li>
-                  <li><Link className="dropdown-item" to="/listmats">Mats & Rugs</Link></li>
-                 
+                  <li><Link className="dropdown-item" to="/listmats">Mats & Rugs</Link></li>  
+                 <li><Link className="dropdown-item" to="/listmetalbuck">Metalbuck</Link></li>
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>

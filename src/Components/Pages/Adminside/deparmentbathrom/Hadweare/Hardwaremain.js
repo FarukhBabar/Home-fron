@@ -20,14 +20,14 @@ const Hardwaremain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/poundline"> <img src="./Images/HARDWARE-2.png" alt className="img2" /></Link>
+        <Link to="/metalbuck"> <img src="./Images/HARDWARE-2.png" alt className="img2" /></Link>
       </div>
     </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
+    {/* <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
         <Link to='/deparmentbathroom'><img src="./Images/HARDWARE-3.png" alt className="img3" /></Link>   
       </div>
-    </div>
+    </div> */}
   </div>
  
 </div>

@@ -1177,6 +1177,11 @@ import Storageaccessoriesform from './Components/Pages/Adminside/deparmentbathro
 import Storageaccessorieslist from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessorieslist';
 import Storageaccessoriesupdate from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessoriesupdate';
 import Storageaccessoriessingel from './Components/Pages/Adminside/deparmentbathrom/China/Storageaccessories/Storageaccessoriessingl';
+import Metalbuck from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbuck';
+import Metalbucksingel from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbucksingl';
+import Metalbuckform from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbuckform';
+import Metalbucklist from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbucklist';
+import Metalbuckupdate from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbuckupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -2090,6 +2095,10 @@ const App = () => {
         <Route path='/liststorageaccessories' element={<AdminLayout><Storageaccessorieslist/></AdminLayout>}/>
         <Route path='/liststorageaccessories/:id' element={<AdminLayout><Storageaccessoriesupdate/></AdminLayout>}/>
         
+        <Route path='/metalbuckform' element={<AdminLayout><Metalbuckform/></AdminLayout>}/>
+        <Route path='/listmetalbuck' element={<AdminLayout><Metalbucklist/></AdminLayout>}/>
+        <Route path='/listmetalbuck/:id' element={<AdminLayout><Metalbuckupdate/></AdminLayout>}/>
+        
         </Route>      
         {/* Main Routes */}
         <Route path='/' element={<Home />} />
@@ -2821,6 +2830,9 @@ const App = () => {
         
         <Route path='/storageaccessories' element={<MainLayout><Storageaccessories/></MainLayout>}/>
         <Route path='/storageaccessoriessinglepage/:id' element={<MainLayout><Storageaccessoriessingel/></MainLayout>}/>   
+        
+        <Route path='/metalbuck' element={<MainLayout><Metalbuck/></MainLayout>}/>
+        <Route path='/metalbucksinglepage/:id' element={<MainLayout><Metalbucksingel/></MainLayout>}/>   
       </Routes>
       </CartProvider>
     </>
