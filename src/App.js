@@ -1182,6 +1182,21 @@ import Metalbucksingel from './Components/Pages/Adminside/deparmentbathrom/Metal
 import Metalbuckform from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbuckform';
 import Metalbucklist from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbucklist';
 import Metalbuckupdate from './Components/Pages/Adminside/deparmentbathrom/Metalbuck/Metalbuckupdate';
+import Hotwaterform from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Hotwater/Hotwaterform';
+import Hotwaterlist from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Hotwater/Hotwaterlist';
+import Hotwaterupdate from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Hotwater/Hotwaterupdate';
+import Hotwatersingel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Hotwater/Hotwatersingl';
+import Hotwaterr from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Hotwater/Hotwaterr';
+import Picnic from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Picnic/Picnic';
+import Picnicsingel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Picnic/Picnicsingl';
+import Picnicform from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Picnic/Picnicform';
+import Picniclist from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Picnic/Picniclist';
+import Picnicupdate from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Picnic/Picnicupdate';
+import Sportsbottelform from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottelform';
+import Sportsbottellist from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottellist';
+import Sportsbottelupdate from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottelupdate';
+import Sportsbottel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottel';
+import Sportsbottelsingel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottelsingl';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -2099,7 +2114,20 @@ const App = () => {
         <Route path='/listmetalbuck' element={<AdminLayout><Metalbucklist/></AdminLayout>}/>
         <Route path='/listmetalbuck/:id' element={<AdminLayout><Metalbuckupdate/></AdminLayout>}/>
         
-        </Route>      
+        <Route path='/hotwaterform' element={<AdminLayout><Hotwaterform/></AdminLayout>}/>
+        <Route path='/listhotwater' element={<AdminLayout><Hotwaterlist/></AdminLayout>}/>
+        <Route path='/listhotwater/:id' element={<AdminLayout><Hotwaterupdate/></AdminLayout>}/>
+        
+        <Route path='/picnicform' element={<AdminLayout><Picnicform/></AdminLayout>}/>
+        <Route path='/listpicnic' element={<AdminLayout><Picniclist/></AdminLayout>}/>
+        <Route path='/listpicnic/:id' element={<AdminLayout><Picnicupdate/></AdminLayout>}/>
+        
+        <Route path='/sportbootelform' element={<AdminLayout><Sportsbottelform/></AdminLayout>}/>
+        <Route path='/listsportbootel' element={<AdminLayout><Sportsbottellist/></AdminLayout>}/>
+        <Route path='/listsportbootel/:id' element={<AdminLayout><Sportsbottelupdate/></AdminLayout>}/>
+        
+        </Route>
+              
         {/* Main Routes */}
         <Route path='/' element={<Home />} />
         <Route path='/deparments' element={<MainLayout><Department /></MainLayout>} />
@@ -2832,7 +2860,17 @@ const App = () => {
         <Route path='/storageaccessoriessinglepage/:id' element={<MainLayout><Storageaccessoriessingel/></MainLayout>}/>   
         
         <Route path='/metalbuck' element={<MainLayout><Metalbuck/></MainLayout>}/>
-        <Route path='/metalbucksinglepage/:id' element={<MainLayout><Metalbucksingel/></MainLayout>}/>   
+        <Route path='/metalbucksinglepage/:id' element={<MainLayout><Metalbucksingel/></MainLayout>}/> 
+        
+        <Route path='/hotwaterr' element={<MainLayout><Hotwaterr/></MainLayout>}/>
+        <Route path='/hotwatersinglepage/:id' element={<MainLayout><Hotwatersingel/></MainLayout>}/> 
+        
+        <Route path='/picnic' element={<MainLayout><Picnic/></MainLayout>}/>
+        <Route path='/picnicsinglepage/:id' element={<MainLayout><Picnicsingel/></MainLayout>}/>  
+        
+        <Route path='/sportbootel' element={<MainLayout><Sportsbottel/></MainLayout>}/>
+        <Route path='/sportbootelsinglepage/:id' element={<MainLayout><Sportsbottelsingel/></MainLayout>}/>  
+        
       </Routes>
       </CartProvider>
     </>

@@ -20,19 +20,19 @@ const Seasonalsportsmain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/poundline"> <img src="./Images/Sports/Homewares-2.png" alt className="img2" /></Link>
+        <Link to="/hotwaterr"> <img src="./Images/Sports/Homewares-2.png" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentbathroom'><img src="./Images/Sports/Homewares-3.png" alt className="img3" /></Link>   
+        <Link to='/picnic'><img src="./Images/Sports/Homewares-3.png" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Sports/Homewares-4.png" alt className="img" /></Link>
+        <Link to='/sportbootel'><img src="./Images/Sports/Homewares-4.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">

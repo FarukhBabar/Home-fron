@@ -51,7 +51,7 @@ const Electricaldemain = () => {
       </div>
     </div>
   </div>
-  <div className="row justify-content-center mt-3">
+  {/* <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
         <Link to='/toiletries'><img src="./Images/Electrical/Electrical-6.png" alt className="img" /></Link> 
@@ -112,7 +112,7 @@ const Electricaldemain = () => {
       </div>
     </div>
     
-  </div>
+  </div> */}
   
 </div>
 <Footer/>
