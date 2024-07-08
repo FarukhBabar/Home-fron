@@ -605,7 +605,15 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listcrystal">Crystal</Link></li>
                   <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
-                  
+                  <li><Link className="dropdown-item" to="/listcrokery">Crokery</Link></li>
+                  <li><Link className="dropdown-item" to="/listdrinkingglass">Drinking glass</Link></li>
+                  <li><Link className="dropdown-item" to="/listglassdecorative">Glass Decorative</Link></li>
+                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
+                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
+                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
+                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
+                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
+                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
                   
                 </ul>
               </li>
@@ -720,7 +728,8 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listhotwater">Hotwater</Link></li> 
                   <li><Link className="dropdown-item" to="/listpicnic">Picnic</Link></li> 
                   <li><Link className="dropdown-item" to="/listsportbootel">Sportbootel</Link></li> 
-                  <li><Link className="dropdown-item" to="/listdinner">Dinner</Link></li> 
+                  <li><Link className="dropdown-item" to="/listumbrella">Umbrella</Link></li>
+                  <li><Link className="dropdown-item" to="/listtowelssport">Towelssport</Link></li> 
                   {/* <li>
                     <hr className="dropdown-divider" />
                   </li>

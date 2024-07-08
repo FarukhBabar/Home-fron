@@ -7,7 +7,7 @@ const Sportsbottel = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/mugcupfreedelivery")
+    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/sportbottelfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

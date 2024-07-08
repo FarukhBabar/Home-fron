@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Sportsbottelcards = ({ user }) => {
+const Crokerycard = ({ user }) => {
   return (
     <div className="col-6 col-sm-2 col-md-4 col-lg-3 mt-4">
       <div className="card11212 ">
         <h5 className='image'>
        
-          <Link to={`/sportbootelsinglepage/${user._id}`} className="btn">
+          <Link to={`/crokerysinglepage/${user._id}`} className="btn">
             {user.image && (
               <a href=''>
               <img
@@ -21,8 +21,8 @@ const Sportsbottelcards = ({ user }) => {
          
         </h5>
         <h5 className='ms-2'>{user.name.slice(0, 25)}</h5>
- <p dangerouslySetInnerHTML={{ __html: user.title.slice(0, 25) }}></p>
-         {/* <div className="d-flex">
+        <p className='ms-2'>{user.title.slice(0, 35)}...</p>
+        {/* <div className="d-flex">
           <h6>${user.price}</h6>
             <small className="text-danger">(36% off)</small>
           </div> */}
@@ -34,6 +34,4 @@ const Sportsbottelcards = ({ user }) => {
   );
 };
 
-export default Sportsbottelcards; 
-
- 
+export default Crokerycard; 

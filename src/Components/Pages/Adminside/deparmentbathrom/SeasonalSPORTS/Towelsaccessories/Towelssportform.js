@@ -5,7 +5,7 @@ import 'froala-editor/css/froala_editor.pkgd.min.css';
 import FroalaEditorComponent from 'react-froala-wysiwyg';
 import "../../../admin.css";
 
-const Hotwaterform = () => {
+const Towelssportform = () => {
   const [Image, setImage] = useState(null);
   const [name, setName] = useState('');
   const [title, setTitle] = useState('');
@@ -38,13 +38,13 @@ const Hotwaterform = () => {
     }
 
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/hotwaterproducts", {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/umbrellaproducts", {
         method: "POST",
         body: formData,
       });
       result = await result.json();
       if (result) {
-        navigate("/listhotwater");
+        navigate("/listumbrella");
         alert("Product added successfully");
       } else {
         alert("Error in connection");
@@ -56,7 +56,7 @@ const Hotwaterform = () => {
 
   return (
     <div>
-      <Link to="/listhotwater" className="btn btn-success mss mt-2">Product-list</Link>
+      <Link to="/listumbrella" className="btn btn-success mss mt-2">Product-list</Link>
       <form className='marr'>
         <div className="mb-3 maa">
           <label className="form-label mt-2">Item Name</label>
@@ -108,4 +108,4 @@ const Hotwaterform = () => {
   );
 };
 
-export default Hotwaterform;
+export default Towelssportform;

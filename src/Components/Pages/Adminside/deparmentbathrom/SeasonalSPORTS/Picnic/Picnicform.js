@@ -38,13 +38,13 @@ const Picnicform = () => {
     }
 
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/mugcupproducts", {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/picnicproducts", {
         method: "POST",
         body: formData,
       });
       result = await result.json();
       if (result) {
-        navigate("/listmugcups");
+        navigate("/listpicnic");
         alert("Product added successfully");
       } else {
         alert("Error in connection");
@@ -56,7 +56,7 @@ const Picnicform = () => {
 
   return (
     <div>
-      <Link to="/listmugcups" className="btn btn-success mss mt-2">Product-list</Link>
+      <Link to="/listpicnic" className="btn btn-success mss mt-2">Product-list</Link>
       <form className='marr'>
         <div className="mb-3 maa">
           <label className="form-label mt-2">Item Name</label>

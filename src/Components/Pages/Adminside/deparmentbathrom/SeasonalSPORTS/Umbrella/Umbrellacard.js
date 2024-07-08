@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Sportsbottelcards = ({ user }) => {
+const Umbrellacards = ({ user }) => {
   return (
     <div className="col-6 col-sm-2 col-md-4 col-lg-3 mt-4">
       <div className="card11212 ">
@@ -34,6 +34,6 @@ const Sportsbottelcards = ({ user }) => {
   );
 };
 
-export default Sportsbottelcards; 
+export default Umbrellacards; 
 
  

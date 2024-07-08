@@ -5,7 +5,7 @@ import { useCart } from '../../../CartContext';
 import '../../../admin.css';
 import Footer from '../../../../../Footer';
 
-const Sportsbottelsingel = () => {
+const Umbrellasingel = () => {
   const [qty, setQty] = useState(1); // Initialize with 1 for a default value
   const [product, setProduct] = useState({});
   const { addToCart } = useCart();
@@ -14,7 +14,7 @@ const Sportsbottelsingel = () => {
 
   const GetSingleData = async () => {
     try {
-      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/sportbottelsingle/${params.id}`);
+      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/umbrella2single/${params.id}`);
       const result = await response.json();
       setProduct(result);
     } catch (error) {
@@ -122,4 +122,4 @@ const Sportsbottelsingel = () => {
   );
 };
 
-export default Sportsbottelsingel;
+export default Umbrellasingel;

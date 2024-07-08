@@ -7,7 +7,7 @@ const Hotwatercards = ({ user }) => {
       <div className="card11212 ">
         <h5 className='image'>
        
-          <Link to={`/mugcupssinglepage/${user._id}`} className="btn">
+          <Link to={`/hotwaterrsinglepage/${user._id}`} className="btn">
             {user.image && (
               <a href=''>
               <img

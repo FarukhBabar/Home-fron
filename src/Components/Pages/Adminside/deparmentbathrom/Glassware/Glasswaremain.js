@@ -15,7 +15,7 @@ const Glasswaremain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/smoking"><img src="./Images/Glassware/Glassware-1.png" alt className="img1" /></Link> 
+        <Link to="/crokery"><img src="./Images/Glassware/Glassware-1.png" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -25,14 +25,14 @@ const Glasswaremain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentbathroom'><img src="./Images/Glassware/Glassware-3.png" alt className="img3" /></Link>   
+        <Link to='/drinkingglass'><img src="./Images/Glassware/Glassware-3.png" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Glassware/Glassware-4.png" alt className="img" /></Link>
+        <Link to='/glassdecorative'><img src="./Images/Glassware/Glassware-4.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">

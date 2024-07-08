@@ -18,7 +18,7 @@ const Hotwaterupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/mugcupsingle/${params.id}`);
+                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/hotwatersingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(stripHTML(result.title)); // Strip HTML tags from title
@@ -44,7 +44,7 @@ const Hotwaterupdate = () => {
         }
 
         try {
-            let response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/mugcupsingle/${params.id}`, {
+            let response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/hotwatersingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

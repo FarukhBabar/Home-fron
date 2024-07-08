@@ -1197,6 +1197,26 @@ import Sportsbottellist from './Components/Pages/Adminside/deparmentbathrom/Seas
 import Sportsbottelupdate from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottelupdate';
 import Sportsbottel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottel';
 import Sportsbottelsingel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Sportsbottel/Sportsbottelsingl';
+import Umbrellaform from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Umbrella/Umbrellaform';
+import Umbrellalist from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Umbrella/Umbrellalist';
+import Umbrellaupdate from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Umbrella/Umbrellaupdate';
+import Umbrella from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Umbrella/Umbrella';
+import Umbrellasingel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Umbrella/Umbrellasingl';
+import Towelssport from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Towelsaccessories/Towelssport';
+import Towelssportsingel from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Towelsaccessories/Towelssportsingl';
+import Towelssportform from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Towelsaccessories/Towelssportform';
+import Towelssportlist from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Towelsaccessories/Towelssportlist';
+import Towelssportupdate from './Components/Pages/Adminside/deparmentbathrom/SeasonalSPORTS/Towelsaccessories/Towelssportupdate';
+import Crokeryform from './Components/Pages/Adminside/deparmentbathrom/Glassware/Crokery/Crokeryform';
+import Crokerylist from './Components/Pages/Adminside/deparmentbathrom/Glassware/Crokery/Crokerylist';
+import Crokeryupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/Crokery/Crokeryupdate';
+import Crokerysingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/Crokery/Crokerysingl';
+import Crokery from './Components/Pages/Adminside/deparmentbathrom/Glassware/Crokery/Crokery';
+import GlassDecorative from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorative';
+import GlassDecorativesingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorativesingl';
+import GlassDecorativeform from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorativeform';
+import GlassDecorativelist from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorativelist';
+import GlassDecorativeupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorativeupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -2125,6 +2145,22 @@ const App = () => {
         <Route path='/sportbootelform' element={<AdminLayout><Sportsbottelform/></AdminLayout>}/>
         <Route path='/listsportbootel' element={<AdminLayout><Sportsbottellist/></AdminLayout>}/>
         <Route path='/listsportbootel/:id' element={<AdminLayout><Sportsbottelupdate/></AdminLayout>}/>
+         
+        <Route path='/umbrellaform' element={<AdminLayout><Umbrellaform/></AdminLayout>}/>
+        <Route path='/listumbrella' element={<AdminLayout><Umbrellalist/></AdminLayout>}/>
+        <Route path='/listumbrella/:id' element={<AdminLayout><Umbrellaupdate/></AdminLayout>}/>
+
+        <Route path='/towelssportform' element={<AdminLayout><Towelssportform/></AdminLayout>}/>
+        <Route path='/listtowelssport' element={<AdminLayout><Towelssportlist/></AdminLayout>}/>
+        <Route path='/listtowelssport/:id' element={<AdminLayout><Towelssportupdate/></AdminLayout>}/>
+        
+        <Route path='/crokeryform' element={<AdminLayout><Crokeryform/></AdminLayout>}/>
+        <Route path='/listcrokery' element={<AdminLayout><Crokerylist/></AdminLayout>}/>
+        <Route path='/listcrokery/:id' element={<AdminLayout><Crokeryupdate/></AdminLayout>}/>
+
+        <Route path='/glassdecorativeform' element={<AdminLayout><GlassDecorativeform/></AdminLayout>}/>
+        <Route path='/listglassdecorative' element={<AdminLayout><GlassDecorativelist/></AdminLayout>}/>
+        <Route path='/listglassdecorative/:id' element={<AdminLayout><GlassDecorativeupdate/></AdminLayout>}/>
         
         </Route>
               
@@ -2863,7 +2899,7 @@ const App = () => {
         <Route path='/metalbucksinglepage/:id' element={<MainLayout><Metalbucksingel/></MainLayout>}/> 
         
         <Route path='/hotwaterr' element={<MainLayout><Hotwaterr/></MainLayout>}/>
-        <Route path='/hotwatersinglepage/:id' element={<MainLayout><Hotwatersingel/></MainLayout>}/> 
+        <Route path='/hotwaterrsinglepage/:id' element={<MainLayout><Hotwatersingel/></MainLayout>}/> 
         
         <Route path='/picnic' element={<MainLayout><Picnic/></MainLayout>}/>
         <Route path='/picnicsinglepage/:id' element={<MainLayout><Picnicsingel/></MainLayout>}/>  
@@ -2871,6 +2907,17 @@ const App = () => {
         <Route path='/sportbootel' element={<MainLayout><Sportsbottel/></MainLayout>}/>
         <Route path='/sportbootelsinglepage/:id' element={<MainLayout><Sportsbottelsingel/></MainLayout>}/>  
         
+        <Route path='/umbrella' element={<MainLayout><Umbrella/></MainLayout>}/>
+        <Route path='/umbrellasinglepage/:id' element={<MainLayout><Umbrellasingel/></MainLayout>}/> 
+        
+        <Route path='/towelssport' element={<MainLayout><Towelssport/></MainLayout>}/>
+        <Route path='/towelssportsinglepage/:id' element={<MainLayout><Towelssportsingel/></MainLayout>}/> 
+        
+        <Route path='/crokery' element={<MainLayout><Crokery/></MainLayout>}/>
+        <Route path='/crokerysinglepage/:id' element={<MainLayout><Crokerysingl/></MainLayout>}/>
+           
+        <Route path='/glassdecorative' element={<MainLayout><GlassDecorative/></MainLayout>}/>
+        <Route path='/glassdecorativesinglepage/:id' element={<MainLayout><GlassDecorativesingl/></MainLayout>}/>
       </Routes>
       </CartProvider>
     </>

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const Picniclist = () => {
+const GlassDecorativelist = () => {
     const [user, setUsers] = useState([]);
     
 
     const setUsersData = async() =>{
-        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/picnicuser")
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glassdecorativeuser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Picniclist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/picnicuserid/${id}`,{
+              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glassdecorativeuserid/${id}`,{
             method:"delete"
          
           })
@@ -41,8 +41,8 @@ const Picniclist = () => {
     <div>
         
     <div className='container w-75'>
-           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Picnic </h4>
-           <Link to="/picnicform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
+           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Glass Decorative Products</h4>
+           <Link to="/glassdecorativeform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
            <table class="table table-striped table-hover">
                  <thead>
                      <tr className='btn-dark text-light text-center'>
@@ -62,7 +62,7 @@ const Picniclist = () => {
                                      <tr>
                                          <th scope="row">{ind+1}</th>
                                          <td>{ele.name}</td>
-                                         <td dangerouslySetInnerHTML={{ __html: ele.title }}></td>
+                                         <td>{ele.title}</td>
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 
@@ -73,7 +73,7 @@ const Picniclist = () => {
                                           />
                                )}</td>
                                          <td>
-                                             <Link to={`/listpicnic/${ele._id}`} className='btn btn-success'>Edit</Link>
+                                             <Link to={`/listglassdecorative/${ele._id}`} className='btn btn-success'>Edit</Link>
                                              <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger ms-2'>Delete</a>
                                          </td>
                                      </tr>
@@ -93,6 +93,4 @@ const Picniclist = () => {
   )
 }
 
-export default Picniclist; 
-
- 
+export default GlassDecorativelist; 

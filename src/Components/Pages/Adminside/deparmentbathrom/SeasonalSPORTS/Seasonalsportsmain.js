@@ -37,12 +37,12 @@ const Seasonalsportsmain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Sports/Homewares-5.png" alt className="img" /></Link>
+        <Link to='/umbrella'><img src="./Images/Sports/Homewares-5.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Textiles & Accessories-6.png" alt className="img" /></Link>
+        <Link to='/towelssport'><img src="./Images/Textiles & Accessories-6.png" alt className="img" /></Link>
       </div>
     </div>
   </div>

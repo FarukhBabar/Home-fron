@@ -39,8 +39,8 @@ const Home = () => {
    <div className="container">
   
   <div className="row ">
-    <div className="col-lg-6 col-md-6 col-sm-12"><img src="/Images/Homepag/Super Sunday.webp" alt className="banner" /></div>
-    <div className="col-lg-6 col-md-6 col-sm-12"><img src="/Images/Homepag/Pallet Deals.webp" alt className="banner" /></div>
+    <div className="col-lg-6 col-md-6 col-sm-12"><img src="/Images/Homepag/Super Sunday.jpg" alt className="banner" /></div>
+    <div className="col-lg-6 col-md-6 col-sm-12"><img src="/Images/Homepag/Pallet Deals.jpg" alt className="banner" /></div>
   </div>
   <div className="row mt-3 revie">
     <div className="col-lg-12 col-md-12 col-sm-12 reviews">

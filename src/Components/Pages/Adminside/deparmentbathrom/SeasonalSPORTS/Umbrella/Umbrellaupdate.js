@@ -2,7 +2,7 @@
  import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-const Sportsbottelupdate = () => {
+const Umbrellaupdate = () => {
     const [name, setName] = useState('');
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
@@ -18,7 +18,7 @@ const Sportsbottelupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/sportbottelsingle/${params.id}`);
+                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/umbrella2single/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(stripHTML(result.title)); // Strip HTML tags from title
@@ -44,7 +44,7 @@ const Sportsbottelupdate = () => {
         }
 
         try {
-            let response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/sportbottelsingle/${params.id}`, {
+            let response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/umbrella2single/${params.id}`, {
                 method: "PUT",
                 body: formData
             });
@@ -120,4 +120,4 @@ const Sportsbottelupdate = () => {
     );
 };
 
-export default Sportsbottelupdate;
+export default Umbrellaupdate;
