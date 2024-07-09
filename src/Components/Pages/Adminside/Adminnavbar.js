@@ -52,31 +52,7 @@ const Adminnavbar = () => {
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
-                  {/* <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -127,34 +103,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listbathmate">Bathmates</Link></li>
                   <li><Link className="dropdown-item" to="/listbathacess">Bathroom Acessories</Link></li>
                   <li><Link className="dropdown-item" to="/listshowhead">Shower Heads</Link></li>
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -195,34 +144,7 @@ const Adminnavbar = () => {
                     <li><Link className="dropdown-item" to="/listtablecover">Tablecover</Link></li>
                      <li><Link className="dropdown-item" to="/listteatowel">Tea/Towel</Link></li>
                       <li><Link className="dropdown-item" to="/listtowelaccessories">Towel/Accessories</Link></li>
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -303,34 +225,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listclock">Clock</Link></li>
                   <li><Link className="dropdown-item" to="/listcamera">Camera</Link></li>
                   <li><Link className="dropdown-item" to="/listdigital">Camera</Link></li>
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -346,34 +241,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listhomebaking">Home Baking</Link></li>
                   <li><Link className="dropdown-item" to="/listmugcups">Mug Cups</Link></li>
                   <li><Link className="dropdown-item" to="/liststorageaccessories">Storage Accessories</Link></li> 
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -384,34 +252,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listrentokil">Rentokils</Link></li>
                   <li><Link className="dropdown-item" to="/liststv">STV International</Link></li>
                   
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                  
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -437,37 +278,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listtoothpast">Tooth Past</Link></li> 
                   <li><Link className="dropdown-item" to="/listafrica">West Africa</Link></li> 
                   <li><Link className="dropdown-item" to="/listdeodrant">Deodorant</Link></li>
-                 
 
-
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -478,34 +289,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listfreshn">Airfreshner</Link></li>
                   <li><Link className="dropdown-item" to="/listcar">Car Care</Link></li>
                   <li><Link className="dropdown-item" to="/listbleech">Bleech</Link></li>
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
               
@@ -516,8 +300,7 @@ const Adminnavbar = () => {
              Department
             </a>
             <ul className="dropdown-menu adminside">
-              {/* <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li> */}
+              
               <li>
                
               </li>
@@ -608,12 +391,12 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listcrokery">Crokery</Link></li>
                   <li><Link className="dropdown-item" to="/listdrinkingglass">Drinking glass</Link></li>
                   <li><Link className="dropdown-item" to="/listglassdecorative">Glass Decorative</Link></li>
-                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
-                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
-                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
-                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
-                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
-                  <li><Link className="dropdown-item" to="/listcakes">Cakes Stands</Link></li>
+                  <li><Link className="dropdown-item" to="/listglasstumbler">Glasstumbler</Link></li>
+                  <li><Link className="dropdown-item" to="/listglassvass">Glassvass</Link></li>
+                  <li><Link className="dropdown-item" to="/listglassstorage">Glassstorage</Link></li>
+                  <li><Link className="dropdown-item" to="/listglasstableware">Glasstableware</Link></li>
+                  <li><Link className="dropdown-item" to="/listpyrex">Pyrex</Link></li>
+                  <li><Link className="dropdown-item" to="/listkliner">Kliner</Link></li>
                   
                 </ul>
               </li>
@@ -625,34 +408,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listfurniture">Furniture</Link></li>
                   <li><Link className="dropdown-item" to="/listmats">Mats & Rugs</Link></li>  
                  <li><Link className="dropdown-item" to="/listmetalbuck">Metalbuck</Link></li>
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -686,35 +442,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listhandwash">Handwash</Link></li>
                   <li><Link className="dropdown-item" to="/listhealthcaree">Healthcaree</Link></li>
                   
-                  {/* <li><Link className="dropdown-item" to="/listdigital">Camera</Link></li> */}
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -730,34 +458,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listsportbootel">Sportbootel</Link></li> 
                   <li><Link className="dropdown-item" to="/listumbrella">Umbrella</Link></li>
                   <li><Link className="dropdown-item" to="/listtowelssport">Towelssport</Link></li> 
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -771,34 +472,7 @@ const Adminnavbar = () => {
                    <li><Link className="dropdown-item" to="/listkids">Kids</Link></li> 
                     <li><Link className="dropdown-item" to="/listmailing">Mailing</Link></li> 
                      <li><Link className="dropdown-item" to="/listoffice/home">Office/Home</Link></li> 
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -811,34 +485,7 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listgloves">Gloves</Link></li>
                   <li><Link className="dropdown-item" to="/listmops">Mops</Link></li>
                   <li><Link className="dropdown-item" to="/listsponge">Sponge</Link></li>
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -851,34 +498,7 @@ const Adminnavbar = () => {
                    <li><Link className="dropdown-item" to="/listgarland">Garland</Link></li> 
                     <li><Link className="dropdown-item" to="/listsinglestem">Singlestem</Link></li> 
                      <li><Link className="dropdown-item" to="/listwreaths">Wreaths</Link></li> 
-                  {/* <li>
-                    <hr className="dropdown-divider" />
-                  </li>
-                  <li className="nav-item dropend">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li><a className="dropdown-item" href="#">Action</a></li>
-                      <li><a className="dropdown-item" href="#">Another action</a></li>
-                      <li>
-                        <hr className="dropdown-divider" />
-                      </li>
-                      <li className="nav-item dropend">
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Dropdown
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li><a className="dropdown-item" href="#">Action</a></li>
-                          <li><a className="dropdown-item" href="#">Another action</a></li>
-                          <li>
-                            <hr className="dropdown-divider" />
-                          </li>
-                          <li><a className="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li> */}
+                 
                 </ul>
               </li>
             </ul>

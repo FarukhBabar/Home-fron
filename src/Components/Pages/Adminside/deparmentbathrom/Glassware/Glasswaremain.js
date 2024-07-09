@@ -37,41 +37,41 @@ const Glasswaremain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/kitechenwear'> <img src="./Images/Glassware/Glassware-5.png" alt className="img1" /></Link>
+        <Link to='/glasstumbler'> <img src="./Images/Glassware/Glassware-5.png" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/cleaning'><img src="./Images/Glassware/Glassware-6.png" alt className="img2" /></Link>
+        <Link to='/glassvass'><img src="./Images/Glassware/Glassware-6.png" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/gardening'><img src="./Images/Glassware/Glassware-7.png" alt className="img3" /></Link>
+        <Link to='/glassstorage'><img src="./Images/Glassware/Glassware-7.png" alt className="img3" /></Link>
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/toiletries'><img src="./Images/Glassware/Glassware-8.png" alt className="img" /></Link> 
+        <Link to='/glasstableware'><img src="./Images/Glassware/Glassware-8.png" alt className="img" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentdisposible'><img src="./Images/Glassware/Glassware-9.png" alt className="img1" /></Link> 
+        <Link to='/pyrex'><img src="./Images/Glassware/Glassware-9.png" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/homedecore' ><img src="./Images/Glassware/Group 26.png" alt className="img2" /></Link>
+        <Link to='/kliner' ><img src="./Images/Glassware/Group 26.png" alt className="img2" /></Link>
       </div>
     </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
+    {/* <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
         <Link to='/flowers'><img src="./Images/Glassware/Glassware1.png" alt className="img2" /></Link> 
       </div>
-    </div>
+    </div> */}
   </div>
  
 </div>

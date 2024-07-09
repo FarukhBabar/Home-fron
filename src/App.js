@@ -1217,6 +1217,36 @@ import GlassDecorativesingl from './Components/Pages/Adminside/deparmentbathrom/
 import GlassDecorativeform from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorativeform';
 import GlassDecorativelist from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorativelist';
 import GlassDecorativeupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassDecorative/GlassDecorativeupdate';
+import GlassTumbler from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassTumbler/GlassTumbler';
+import GlassTumblerform from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassTumbler/GlassTumblerform';
+import GlassTumblerlist from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassTumbler/GlassTumblerlist';
+import GlassTumblerupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassTumbler/GlassTumblerupdate';
+import GlassTumblersingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassTumbler/GlassTumblersingl';
+import Glassvass from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glassvass/Glassvass';
+import Glassvasssingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glassvass/Glassvasssingl';
+import Glassvassform from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glassvass/Glassvassform';
+import Glassvasslist from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glassvass/Glassvasslist';
+import Glassvassupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glassvass/Glassvassupdate';
+import GlassStorageform from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassStorage/GlassStorageform';
+import GlassStoragesingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassStorage/GlassStoragesingl';
+import GlassStoragelist from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassStorage/GlassStoragelist';
+import GlassStorageupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassStorage/GlassStorageupdate';
+import GlassStorage from './Components/Pages/Adminside/deparmentbathrom/Glassware/GlassStorage/GlassStorage';
+import Glasstableware from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glasstableware/Glasstableware';
+import Glasstablewaresingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glasstableware/Glasstablewaresingl';
+import Glasstablewareform from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glasstableware/Glasstablewareform';
+import Glasstablewarelist from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glasstableware/Glasstablewarelist';
+import Glasstablewareupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/Glasstableware/Glasstablewareupdtae';
+import Klinerform from './Components/Pages/Adminside/deparmentbathrom/Glassware/Kliner/Klinerform';
+import Klinerlist from './Components/Pages/Adminside/deparmentbathrom/Glassware/Kliner/Klinerlist';
+import Klinerupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/Kliner/Klinerupdate';
+import Kliner from './Components/Pages/Adminside/deparmentbathrom/Glassware/Kliner/Kliner';
+import Klinersingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/Kliner/Klinersingl';
+import Pyrex from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrex';
+import Pyrexsingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrexsingl';
+import Pyrexform from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrexform';
+import Pyrexlist from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrexlist';
+import Pyrexupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrexupdate';
 // Admin Layout without Navbar
 const AdminLayout = ({ children }) => (
   <>
@@ -1242,7 +1272,7 @@ const App = () => {
         <Route element={<ProtectedRoutes/>}>
         <Route path='/adminpanal' element={<AdminLayout><Adminside /></AdminLayout>} />
         <Route path='/adminsunday' element={<AdminLayout><Form /></AdminLayout>} />
-        <Route path='/list' element={<AdminLayout><Listofproducts/></AdminLayout>} />
+        <Route path='/adminpanal' element={<AdminLayout><Listofproducts/></AdminLayout>} />
         <Route path='/list/:id' element={<AdminLayout><Update /></AdminLayout>} />
         <Route path='/pallet' element={<AdminLayout><Form1 /></AdminLayout>} />
         <Route path='/listpal' element={<AdminLayout><Listofpallet/></AdminLayout>} />
@@ -2162,6 +2192,32 @@ const App = () => {
         <Route path='/listglassdecorative' element={<AdminLayout><GlassDecorativelist/></AdminLayout>}/>
         <Route path='/listglassdecorative/:id' element={<AdminLayout><GlassDecorativeupdate/></AdminLayout>}/>
         
+        <Route path='/glasstumblerform' element={<AdminLayout><GlassTumblerform/></AdminLayout>}/>
+        <Route path='/listglasstumbler' element={<AdminLayout><GlassTumblerlist/></AdminLayout>}/>
+        <Route path='/listglasstumbler/:id' element={<AdminLayout><GlassTumblerupdate/></AdminLayout>}/>
+        
+        <Route path='/glassvassform' element={<AdminLayout><Glassvassform/></AdminLayout>}/>
+        <Route path='/listglassvass' element={<AdminLayout><Glassvasslist/></AdminLayout>}/>
+        <Route path='/listglassvass/:id' element={<AdminLayout><Glassvassupdate/></AdminLayout>}/>
+        
+        <Route path='/glassstorageform' element={<AdminLayout><GlassStorageform/></AdminLayout>}/>
+        <Route path='/listglassstorage' element={<AdminLayout><GlassStoragelist/></AdminLayout>}/>
+        <Route path='/listglassstorage/:id' element={<AdminLayout><GlassStorageupdate/></AdminLayout>}/>
+        
+        <Route path='/glasstablewareform' element={<AdminLayout><Glasstablewareform/></AdminLayout>}/>
+        <Route path='/listglasstableware' element={<AdminLayout><Glasstablewarelist/></AdminLayout>}/>
+        <Route path='/listglasstableware/:id' element={<AdminLayout><Glasstablewareupdate/></AdminLayout>}/>
+        
+        <Route path='/klinerform' element={<AdminLayout><Klinerform/></AdminLayout>}/>
+        <Route path='/listkliner' element={<AdminLayout><Klinerlist/></AdminLayout>}/>
+        <Route path='/listkliner/:id' element={<AdminLayout><Klinerupdate/></AdminLayout>}/>
+        
+        <Route path='/pyrexform' element={<AdminLayout><Pyrexform/></AdminLayout>}/>
+        <Route path='/listpyrex' element={<AdminLayout><Pyrexlist/></AdminLayout>}/>
+        <Route path='/listpyrex/:id' element={<AdminLayout><Pyrexupdate/></AdminLayout>}/>
+        
+        
+        
         </Route>
               
         {/* Main Routes */}
@@ -2917,7 +2973,25 @@ const App = () => {
         <Route path='/crokerysinglepage/:id' element={<MainLayout><Crokerysingl/></MainLayout>}/>
            
         <Route path='/glassdecorative' element={<MainLayout><GlassDecorative/></MainLayout>}/>
-        <Route path='/glassdecorativesinglepage/:id' element={<MainLayout><GlassDecorativesingl/></MainLayout>}/>
+        <Route path='/glassdecorativesinglepage/:id' element={<MainLayout><GlassDecorativesingl/></MainLayout>}/> 
+
+         <Route path='/glasstumbler' element={<MainLayout><GlassTumbler/></MainLayout>}/>
+        <Route path='/glasstumblersinglepage/:id' element={<MainLayout><GlassTumblersingl/></MainLayout>}/> 
+        
+         <Route path='/glassvass' element={<MainLayout><Glassvass/></MainLayout>}/>
+        <Route path='/glassvasssinglepage/:id' element={<MainLayout><Glassvasssingl/></MainLayout>}/> 
+
+         <Route path='/glassstorage' element={<MainLayout><GlassStorage/></MainLayout>}/>
+        <Route path='/glassstoragesinglepage/:id' element={<MainLayout><GlassStoragesingl/></MainLayout>}/> 
+
+   <Route path='/glasstableware' element={<MainLayout><Glasstableware/></MainLayout>}/>
+        <Route path='/glasstablewaresinglepage/:id' element={<MainLayout><Glasstablewaresingl/></MainLayout>}/> 
+
+   <Route path='/kliner' element={<MainLayout><Kliner/></MainLayout>}/>
+        <Route path='/klinersinglepage/:id' element={<MainLayout><Klinersingl/></MainLayout>}/> 
+
+   <Route path='/pyrex' element={<MainLayout><Pyrex/></MainLayout>}/>
+        <Route path='/pyrexsinglepage/:id' element={<MainLayout><Pyrexsingl/></MainLayout>}/> 
       </Routes>
       </CartProvider>
     </>
