@@ -1,96 +1,114 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import "../admin.css"
-
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import '../admin.css';
 
 const NewForm = () => {
-  const [Image , setImage]=useState(null)
-  const [name , setname]=useState()
-  const [title , settitle] =useState()
-  const [price , setprice] = useState()
-  const [ImageError , setImageError]=useState()
+  const [name, setName] = useState('');
+  const [title, setTitle] = useState('');
+  const [price, setPrice] = useState('');
+  const [image, setImage] = useState(null);
+
   const [nameError, setNameError] = useState(false);
-    const [titleError, settitlteError] = useState(false);
-    const [priceError, setPriceError] = useState(false);
-    const nevigate = useNavigate();
-    const handlesubmit = async(e)=>{
+  const [titleError, setTitleError] = useState(false);
+  const [priceError, setPriceError] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
-      e.preventDefault();
+  const navigate = useNavigate();
 
-      let formdata = new FormData()
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-      formdata.append('name', name)
-
-      formdata.append('title', title)
-
-      formdata.append('price', price)
-
-      formdata.append('image', Image)
-
-      if(!name || !title || !price){
-
-      if (!name) setNameError(true);
-
-      if (!title) settitlteError(true);
-
-      if (!price) setPriceError(true);
-
-      if(!Image) setImageError(true)
-      
+    // Form validation
+    if (!name || !title || !price || !image) {
+      setNameError(!name);
+      setTitleError(!title);
+      setPriceError(!price);
+      setImageError(!image);
       return;
     }
+
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/Newarrivals" , {
-        method: "post",
-        body :formdata
-      
-      })
-      result = await result.json();
-      if(result){
-        nevigate("/newarrivals")
-        alert("Product added sucessfully")
-        }
-        else{
-          alert("Error in connection")
-        }
+      const formData = new FormData();
+      formData.append('name', name);
+      formData.append('title', title);
+      formData.append('price', price);
+      formData.append('image', image);
+
+      const response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/Newarrivals', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await response.json();
+      if (result) {
+        navigate('/newarrivals');
+        alert('Product added successfully');
+      } else {
+        alert('Error in connection');
+      }
     } catch (error) {
-      console.log("ERROR IN DB")
+      console.error('Error in DB:', error);
+      alert('Error in connection');
     }
-    
-    }
+  };
+
   return (
-    <div>
-      
-      <Link to="/listarr" className="btn btn-success mss" >Product-list</Link>
-      <form className='marr '>
-  <div className="mb-3 maa ">
-    <label  className="form-label mt-2">ITem Name</label>
-    <input type="text" className={`form-control ${nameError ? 'is-invalid' : ''}`}  name='name' value={name} onChange={(e)=>setname(e.target.value)}  placeholder='Enter your Item name' />
-    {nameError && <div className="invalid-feedback">Please enter your name</div>}
-    {/* <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div> */}
-  </div>
-  <div className="mb-3 maa ">
-    <label  className="form-label">Description</label>
-    <input type="text" className={`form-control form-control-lg ${titleError ? 'is-invalid' : ''}`}  name='title' value={title} onChange={(e)=>settitle(e.target.value)} placeholder='Enter your Item title' />
-    {titleError && <div className="invalid-feedback">Please enter your title</div>}
-  </div>
-  <div className="mb-3 maa ">
-    <label  className="form-label">Price</label>
-    <input type="text" className={`form-control form-control-lg ${priceError ? 'is-invalid' : ''}`} name='price' value={price} onChange={(e)=>setprice(e.target.value)} placeholder='Enter your Item title' />
-    {priceError && <div className="invalid-feedback">Please enter your price</div>}
-  </div>
-  <div className="mb-3 maa ">
-    <label  className="form-label">Image</label>
-    <input type="file" className={`form-control form-control-lg ${ImageError ? 'is-invalid' : ''}`} name='Image'  onChange={(e)=>setImage(e.target.files[0])} placeholder='Enter your Item title' />
-    {ImageError && <div className="invalid-feedback">Please enter your price</div>}
-  </div>
-  
-  <button type="submit" className="btn btn-success mss" onClick={handlesubmit}>Add Product</button>
-</form>
-
-     
+    <div className="container mt-5">
+      <Link to="/listarr" className="btn btn-success mb-4">Product List</Link>
+      <div className="card shadow p-4 bg-white rounded">
+        <h2 className="mb-4 text-center">Add New Product</h2>
+        <form onSubmit={handleSubmit}>
+          <div className="mb-3">
+            <label className="form-label">Item Name</label>
+            <input
+              type="text"
+              className={`form-control ${nameError ? 'is-invalid' : ''}`}
+              name="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              placeholder="Enter Item Name"
+            />
+            {nameError && <div className="invalid-feedback">Please enter the item name</div>}
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Description</label>
+            <input
+              type="text"
+              className={`form-control ${titleError ? 'is-invalid' : ''}`}
+              name="title"
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder="Enter Description"
+            />
+            {titleError && <div className="invalid-feedback">Please enter the description</div>}
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Price</label>
+            <input
+              type="text"
+              className={`form-control ${priceError ? 'is-invalid' : ''}`}
+              name="price"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+              placeholder="Enter Price"
+            />
+            {priceError && <div className="invalid-feedback">Please enter the price</div>}
+          </div>
+          <div className="mb-3">
+            <label className="form-label">Image</label>
+            <input
+              type="file"
+              className={`form-control ${imageError ? 'is-invalid' : ''}`}
+              name="image"
+              onChange={(e) => setImage(e.target.files[0])}
+            />
+            {imageError && <div className="invalid-feedback">Please upload an image</div>}
+          </div>
+          <button type="submit" className="btn btn-primary w-100">Add Product</button>
+        </form>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default NewForm
+export default NewForm;

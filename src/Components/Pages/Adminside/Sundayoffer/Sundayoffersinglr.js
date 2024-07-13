@@ -92,7 +92,7 @@ const Sundayoffersinglr = () => {
             </div>
             <div className="col-lg-7 col-md-7 col-sm-6">
               <h4 className="box-title mt-5">Product description</h4>
-              <p>{product.title}</p>
+              <p dangerouslySetInnerHTML={{ __html: product.title }}></p>
               <h2 className="mt-5">${product.price}</h2>
               <div className="ms-1 mt-4 Quabtity">
                 <div className="mt-1"><h5>Quantity:</h5></div>

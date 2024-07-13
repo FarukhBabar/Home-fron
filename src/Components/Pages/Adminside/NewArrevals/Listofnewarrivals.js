@@ -1,107 +1,115 @@
-// import React from 'react'
-
-// const Listofnewarrivals = () => {
-//   return (
-//     <div>Listofnewarrivals</div>
-//   )
-// }
-
-// export default Listofnewarrivals
-import React, { useEffect, useState } from 'react'
-
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import { Container, Table, Button, Modal } from 'react-bootstrap';
 
 const Listofnewarrivals = () => {
-    const [user, setUsers] = useState([]);
-    
-     
-    const setUsersData = async() =>{
-        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/newuser")
-        result = await result.json()       
-        setUsers(result)        
-        console.log(result)
-    }
-  
-  
-      useEffect(()=>{
-        setUsersData()
-    },[])
-      const deleteuser = async(id)=>{
-          // console.log(id)
-          try {
-              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/newuserid/${id}`,{
-            method:"delete"
-         
-          })
-          result= await result.json()
-          if(result){
-            setUsersData()
-          }
-          
-         
-      
-          } catch (error) {
-              alert("Error in deleting data")
-          }
-          
-          
+    const [users, setUsers] = useState([]);
+    const [showDeleteModal, setShowDeleteModal] = useState(false);
+    const [selectedUserId, setSelectedUserId] = useState(null);
+
+    const setUsersData = async () => {
+        try {
+            let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/newuser");
+            result = await result.json();
+            setUsers(result);
+        } catch (error) {
+            console.error("Error fetching data:", error);
         }
-      
-  return (
-    <div>
-       
-    <div className='container w-75'>
-           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of New Arrivals Products</h4>
-           <Link to="/newarrivals" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
-           <table class="table table-striped table-hover">
-                 <thead>
-                     <tr className='btn-dark text-light text-center'>
-                         <th scope="col">#</th>
-                         <th scope="col">Name</th>
-                         <th scope="col">Title</th>
-                         <th scope="col">Price</th>
-                         <th scope="col">Image</th>
-                         <th scope="col">Operations</th>
-                     </tr>
-                 </thead>
-                 <tbody>
-                     {
-                         user.map((ele,ind)=>{
-                             return(
-                                 <>
-                                     <tr>
-                                         <th scope="row">{ind+1}</th>
-                                         <td>{ele.name}</td>
-                                         <td>{ele.title}</td>
-                                         <td>{ele.price}</td>
-                                         <td> {ele.image && (
-                              <img 
-                            src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
-                                     alt={ele.name} 
-                                         className='img-fluid' 
-                                    style={{ height: '70px', width: '100px' }}
-                                          />
-                               )}</td>
-                                         <td>
-                                             <Link to={`/listarr/${ele._id}`} className='btn btn-success'>Edit</Link>
-                                             <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger ms-2'>Delete</a>
-                                         </td>
-                                     </tr>
-                                 </>
-                             )
-                         })
-                     }
-     
-                 </tbody>
-         </table>
-     
-     
-         </div>
+    };
 
+    useEffect(() => {
+        setUsersData();
+    }, []);
 
-</div>
-  )
-}
+    const deleteProduct = async (id) => {
+        try {
+            let result = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/newuserid/${id}`, {
+                method: "DELETE"
+            });
+            result = await result.json();
+            if (result) {
+                setUsersData();
+                setShowDeleteModal(false);
+            }
+        } catch (error) {
+            console.error("Error deleting product:", error);
+            alert("Error in deleting product");
+        }
+    };
 
-export default Listofnewarrivals
+    const handleShowDeleteModal = (id) => {
+        setSelectedUserId(id);
+        setShowDeleteModal(true);
+    };
+
+    const handleCloseDeleteModal = () => setShowDeleteModal(false);
+
+    return (
+        <Container className="my-5">
+            <h4 className="my-4 text-center text-warning display-4 fw-bold">List of New Arrivals Products</h4>
+            <Link to="/newarrivals">
+                <Button variant="success" className="mb-2">+ Add New Product</Button>
+            </Link>
+            <div className="table-responsive">
+                <Table striped bordered hover responsive className="text-center">
+                    <thead className="table-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                            <th>Operations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {users.map((user, index) => (
+                            <tr key={user._id}>
+                                <td>{index + 1}</td>
+                                <td>{user.name}</td>
+                                <td>{user.title}</td>
+                                <td>{user.price}</td>
+                                <td>
+                                    {user.image && (
+                                        <img
+                                            src={`https://homeessential-fdca5e469865.herokuapp.com/${user.image}`}
+                                            alt={user.name}
+                                            className="img-fluid"
+                                            style={{ height: '70px', width: '100px' }}
+                                        />
+                                    )}
+                                </td>
+                                <td>
+                                    <Link to={`/listarr/${user._id}`} className="btn btn-success me-2">
+                                        Edit
+                                    </Link>
+                                    <Button variant="danger" onClick={() => handleShowDeleteModal(user._id)}>
+                                        Delete
+                                    </Button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </Table>
+            </div>
+
+            {/* Delete confirmation modal */}
+            <Modal show={showDeleteModal} onHide={handleCloseDeleteModal}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Confirm Deletion</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>Are you sure you want to delete this product?</Modal.Body>
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleCloseDeleteModal}>
+                        Cancel
+                    </Button>
+                    <Button variant="danger" onClick={() => deleteProduct(selectedUserId)}>
+                        Delete
+                    </Button>
+                </Modal.Footer>
+            </Modal>
+        </Container>
+    );
+};
+
+export default Listofnewarrivals;

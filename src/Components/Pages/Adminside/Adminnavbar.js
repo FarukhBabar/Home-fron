@@ -515,28 +515,52 @@ const Adminnavbar = () => {
               </li>
             </ul>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/" >UserPanal</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/userdata" >Users </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/listcontact" >Contact Users</Link>
-
-          </li>
-          <li className='mt-2 ms-2'>
-          {userlogin?(
-
-<Link to=""  onClick={Logout} className=" snavl   text-decoration-none text-white"><i className="bi bi-person" />LOGOUT</Link>
-
-):(
-
-<Link to="/log" className=" snavl mt-3  text-decoration-none text-white"><i className="bi bi-person" />LOGIN</Link>
-)
-}
-</li>
+          
         </ul>
+         <ul className="navbar-nav mb-2 mb-lg-0 ">
+            <li className="nav-item dropdown me-5">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                User Panel
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                 <li>
+                  <Link className="dropdown-item" to="/listcontact">
+                    Contact Users
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/">
+                    User Panel
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/userdata">
+                    Users
+                  </Link>
+                </li>
+               <li className="nav-item">
+              {userlogin ? (
+                <Link to="/" onClick={Logout} className="nav-link text-decoration-none text-dark">
+                  <i className="bi bi-person" /> Logout
+                </Link>
+              ) : (
+                <Link to="/log" className="nav-link text-decoration-none text-dark">
+                  <i className="bi bi-person" /> Login
+                </Link>
+              )}
+            </li>
+                
+              </ul>
+            </li>
+           
+          </ul>
       </div>
     </div>
   </nav>

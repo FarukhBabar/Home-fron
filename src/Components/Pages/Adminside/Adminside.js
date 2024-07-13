@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Modal, Button, Table, Container } from 'react-bootstrap';
-import axios from 'axios';
 import './admin.css';
 
 
@@ -65,7 +64,7 @@ const Listofproducts = () => {
             <tr key={ele._id}>
               <td>{ind + 1}</td>
               <td>{ele.name}</td>
-              <td>{ele.title}</td>
+              <td dangerouslySetInnerHTML={{ __html: ele.title }}></td>
               <td>{ele.price}</td>
               <td>
                 {ele.image && (

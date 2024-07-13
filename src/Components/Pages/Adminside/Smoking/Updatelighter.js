@@ -59,27 +59,60 @@ const Updatelighter = () => {
             }    
 
     return (
-        <div>
-          
-            <form className='marr'>
-                <div className="mb-3 maa">
+         <div className="container mt-5">
+            <form className="p-4 shadow-lg rounded" onSubmit={updateuser}>
+                <h2 className="mb-4 text-center">Update Product</h2>
+                <div className="mb-3">
                     <label className="form-label mt-2">Item Name</label>
-                    <input type="text" className={`form-control form-control-lg `}  name='name' value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter your Item name' />
+                    <input 
+                        type="text" 
+                        className={`form-control ${!name ? 'is-invalid' : ''}`} 
+                        name="name" 
+                        value={name} 
+                        onChange={(e) => setName(e.target.value)} 
+                        placeholder="Enter your Item name" 
+                    />
                 </div>
-                <div className="mb-3 maa">
+                <div className="mb-3">
                     <label className="form-label">Title</label>
-                    <input type="text" className={`form-control form-control-lg `}  name='title' value={title} onChange={(e) => setTitle(e.target.value)} placeholder='Enter your Item title' />
+                    <input 
+                        type="text" 
+                        className={`form-control ${!title ? 'is-invalid' : ''}`} 
+                        name="title" 
+                        value={title} 
+                        onChange={(e) => setTitle(e.target.value)} 
+                        placeholder="Enter your Item title" 
+                    />
                 </div>
-                <div className="mb-3 maa">
+                <div className="mb-3">
                     <label className="form-label">Price</label>
-                    <input type="text" className={`form-control form-control-lg `}  name='price' value={price} onChange={(e) => setPrice(e.target.value)} placeholder='Enter your Item Price' />
+                    <input 
+                        type="text" 
+                        className={`form-control ${!price ? 'is-invalid' : ''}`} 
+                        name="price" 
+                        value={price} 
+                        onChange={(e) => setPrice(e.target.value)} 
+                        placeholder="Enter your Item price" 
+                    />
                 </div>
-                <div className="mb-3 maa">
+                <div className="mb-3">
                     <label className="form-label">Image</label>
-                    <input type="text" className={`form-control form-control-lg `} name='Image' value={image} onChange={(e) => setImage(e.target.value)} placeholder='Enter your Item image path or name' />
-                    <input type="file" className={`form-control form-control-lg `} name='Image'  onChange={(e)=>setImage(e.target.files[0])} placeholder='Enter your Item title' />
+                    <input 
+                        type="text" 
+                        className="form-control mb-2" 
+                        name="image" 
+                        value={image} 
+                        onChange={(e) => setImage(e.target.value)} 
+                        placeholder="Enter your Item image path or name" 
+                    />
+                    <input 
+                        type="file" 
+                        className="form-control" 
+                        name="imageFile" 
+                        onChange={(e) => setImage(e.target.files[0])} 
+                    />
                 </div>
-                <button type="submit" onClick={updateuser} className="btn btn-success mss">Update Product</button>
+                <button type="submit" className="btn btn-success w-100">Update Product</button>
             </form>
         </div>
     );
