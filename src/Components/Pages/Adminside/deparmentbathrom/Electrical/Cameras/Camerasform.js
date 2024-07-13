@@ -47,7 +47,7 @@ const Camerasform = () => {
       })
       result = await result.json();
       if(result){
-        nevigate("/listobstical")
+        nevigate("/listcamera")
         alert("Product added sucessfully")
         }
         else{

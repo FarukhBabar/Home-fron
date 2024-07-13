@@ -472,8 +472,6 @@ import Kitchenwarepoupdate from './Components/Pages/Adminside/Poudliene/Kitchwea
 import Hosieryform from './Components/Pages/Adminside/Poudliene/Hosiery/Hosieryform';
 import Hosierylist from './Components/Pages/Adminside/Poudliene/Hosiery/Hosierylist';
 import Hosieryupdate from './Components/Pages/Adminside/Poudliene/Hosiery/Hosieryupdate';
-import Hosiery from './Components/Pages/Adminside/Poudliene/Hosiery/Hosiery';
-import Hosierysingl from './Components/Pages/Adminside/Poudliene/Hosiery/Hosierysingl';
 import Householdcl from './Components/Pages/Adminside/Poudliene/Householdcleaning/Householdcl';
 import Householdclform from './Components/Pages/Adminside/Poudliene/Householdcleaning/Householdclform';
 import Householdcllist from './Components/Pages/Adminside/Poudliene/Householdcleaning/Householdcllist';
@@ -609,8 +607,6 @@ import Edcolist from './Components/Pages/Adminside/deparmentbathrom/Diy/Edco/Edc
 import Edcoupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Edco/Edcoupdate';
 import Edcosingle from './Components/Pages/Adminside/deparmentbathrom/Diy/Edco/Edcosingl';
 import Edco from './Components/Pages/Adminside/deparmentbathrom/Diy/Edco/Edco';
-import Ever from './Components/Pages/Adminside/deparmentbathrom/Diy/Everbuild/Ever';
-import Eversingle from './Components/Pages/Adminside/deparmentbathrom/Diy/Everbuild/Eversingl';
 import Everform from './Components/Pages/Adminside/deparmentbathrom/Diy/Everbuild/Everform';
 import Everlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Everbuild/Everlist';
 import Everupdate from './Components/Pages/Adminside/deparmentbathrom/Diy/Everbuild/Everupdate';
@@ -854,8 +850,6 @@ import Kitechenbinupdate from './Components/Pages/Adminside/deparmentbathrom/Kit
 import Kitechengaform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengaform';
 import Kitechengalist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengalist';
 import Kitechengaupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengaupdtae';
-import Kitechenga from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechenga';
-import Kitechengasingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengasingl';
 import KitechenKniform from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKniform';
 import KitechenKnilist from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKnilist';
 import KitechenKniupdate from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/kitechenKnife/KitechenKniupdtae';
@@ -1247,15 +1241,93 @@ import Pyrexsingl from './Components/Pages/Adminside/deparmentbathrom/Glassware/
 import Pyrexform from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrexform';
 import Pyrexlist from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrexlist';
 import Pyrexupdate from './Components/Pages/Adminside/deparmentbathrom/Glassware/Pyrex/Pyrexupdate';
-// Admin Layout without Navbar
+import ElectricalAccessform from './Components/Pages/Adminside/deparmentbathrom/Electrical/ElectricalAccess/ElectricalAccessform';
+import ElectricalAccesslist from './Components/Pages/Adminside/deparmentbathrom/Electrical/ElectricalAccess/ElectricalAccesslist';
+import ElectricalAccessupdate from './Components/Pages/Adminside/deparmentbathrom/Electrical/ElectricalAccess/ElectricalAccessupdate';
+import ElectricalAccess from './Components/Pages/Adminside/deparmentbathrom/Electrical/ElectricalAccess/ElectricalAccess';
+import ElectricalAccesssingle from './Components/Pages/Adminside/deparmentbathrom/Electrical/ElectricalAccess/ElectricalAccesssingl';
+import Ironele from './Components/Pages/Adminside/deparmentbathrom/Electrical/Ironele/Ironele';
+import Ironelesingle from './Components/Pages/Adminside/deparmentbathrom/Electrical/Ironele/Ironelesingl';
+import Ironeleform from './Components/Pages/Adminside/deparmentbathrom/Electrical/Ironele/Ironeleform';
+import Ironelelist from './Components/Pages/Adminside/deparmentbathrom/Electrical/Ironele/Ironelelist';
+import Ironeleupdate from './Components/Pages/Adminside/deparmentbathrom/Electrical/Ironele/Ironeleupdate';
+import Dorbellsform from './Components/Pages/Adminside/deparmentbathrom/Electrical/Dorbells/Dorbellsform';
+import Dorbellslist from './Components/Pages/Adminside/deparmentbathrom/Electrical/Dorbells/Dorbellslist';
+import Dorbellsupdate from './Components/Pages/Adminside/deparmentbathrom/Electrical/Dorbells/Dorbellsupdate';
+import Dorbells from './Components/Pages/Adminside/deparmentbathrom/Electrical/Dorbells/Dorbells';
+import Dorbellssingle from './Components/Pages/Adminside/deparmentbathrom/Electrical/Dorbells/Dorbellssingl';
+import Earphone from './Components/Pages/Adminside/deparmentbathrom/Electrical/Earphone/Earphone';
+import Earphonesingle from './Components/Pages/Adminside/deparmentbathrom/Electrical/Earphone/Earphonesingl';
+import Earphoneform from './Components/Pages/Adminside/deparmentbathrom/Electrical/Earphone/Earphoneform';
+import Earphonelist from './Components/Pages/Adminside/deparmentbathrom/Electrical/Earphone/Earphonelist';
+import Earphoneupdate from './Components/Pages/Adminside/deparmentbathrom/Electrical/Earphone/Earphoneupdate';
+import Hairbodyform from './Components/Pages/Adminside/deparmentbathrom/Electrical/Hairbody/Hairbodyform';
+import Hairbodylist from './Components/Pages/Adminside/deparmentbathrom/Electrical/Hairbody/Hairbodylist';
+import Hairbodyupdate from './Components/Pages/Adminside/deparmentbathrom/Electrical/Hairbody/Hairbodyupdate';
+import Hairbody from './Components/Pages/Adminside/deparmentbathrom/Electrical/Hairbody/Hairbody';
+import Hairbodysingle from './Components/Pages/Adminside/deparmentbathrom/Electrical/Hairbody/Hairbodysingl';
+import Badge from './Components/Pages/Adminside/deparmentbathrom/Partyware/Badge/Badge';
+import Badgesigle from './Components/Pages/Adminside/deparmentbathrom/Partyware/Badge/Badgesingl';
+import Badgeform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Badge/Badgeform';
+import Badgelist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Badge/Badgelist';
+import Badgeupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Badge/Badgeupdate';
+import Bowsribbonform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Bowsribbon/Bowsribbonform';
+import Bowsribbonlist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Bowsribbon/Bowsribbonlist';
+import Bowsribbonupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Bowsribbon/Bowsribbonupdate';
+import Bowsribbon from './Components/Pages/Adminside/deparmentbathrom/Partyware/Bowsribbon/Bowsribbon';
+import Bowsribbonsingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Bowsribbon/Bowsribbonsingl';
+import Fancydress from './Components/Pages/Adminside/deparmentbathrom/Partyware/Fancydress/Fancydress';
+import Fancydresssingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Fancydress/Fancydresssingl';
+import Fancydressform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Fancydress/Fancydressform';
+import Fancydresslist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Fancydress/Fancydresslist';
+import Fancydressupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Fancydress/Fancydressupdate';
+import Tissuepaperform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Tissuepaper/Tissuepaperform';
+import Tissuepaperlist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Tissuepaper/Tissuepaperlist';
+import Tissuepaperupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Tissuepaper/Tissuepaperupdate';
+import Tissuepaper from './Components/Pages/Adminside/deparmentbathrom/Partyware/Tissuepaper/Tissuepaper';
+import Tissuepapersingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Tissuepaper/Tissuepapersingl';
+import Candles from './Components/Pages/Adminside/deparmentbathrom/Partyware/Candles/Candles';
+import Candlessingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Candles/Candlessingl';
+import Candlesform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Candles/Candlesform';
+import Candleslist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Candles/Candleslist';
+import Candlesupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Candles/Candlesupdate';
+import Giftbags from './Components/Pages/Adminside/deparmentbathrom/Partyware/Giftbags/Giftbags';
+import Giftbagssingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Giftbags/Giftbagssingl';
+import Giftbagsform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Giftbags/Giftbagsform';
+import Giftbagslist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Giftbags/Giftbagslist';
+import Giftbagsupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Giftbags/Giftbagsupdate';
+import Wedingform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Weeding/Weedingform';
+import Wedinglist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Weeding/Weedinglist';
+import Wedingupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Weeding/Weedingupdate';
+import Weding from './Components/Pages/Adminside/deparmentbathrom/Partyware/Weeding/Weeding';
+import Wedingsingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Weeding/Weedingsingl';
+import Pcards from './Components/Pages/Adminside/deparmentbathrom/Partyware/Pcards/Pcards';
+import Pcardssingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Pcards/Pcardssingl';
+import Pcardsform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Pcards/Pcardsform';
+import Pcardslist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Pcards/Pcardslist';
+import Pcardsupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Pcards/Pcardsupdate';
+import Partyaccessoriesform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partyaccessories/Partyaccessoriesform';
+import Partyaccessorieslist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partyaccessories/Partyaccessorieslist';
+import Partyaccessoriessingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partyaccessories/Partyaccessoriessingl';
+import Partyaccessoriesupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partyaccessories/Partyaccessoriesupdate';
+import Partyaccessories from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partyaccessories/Partyaccessories';
+import Cellowrap from './Components/Pages/Adminside/deparmentbathrom/Partyware/Cellowrap/Cellowrap';
+import Cellowrapsingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Cellowrap/Cellowrapsingl';
+import Cellowrapform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Cellowrap/Cellowrapform';
+import Cellowraplist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Cellowrap/Cellowraplist';
+import Cellowrapupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Cellowrap/Cellowrapupdate';
+import Partypopperform from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypopperform';
+import Partypopperlist from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypopperlist';
+import Partypopperupdate from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypopperupdate';
+import Partypopper from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypopper';
+import Partypoppersingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypoppersingl';
+import UsersTable from './Components/Pages/UsersTable';
 const AdminLayout = ({ children }) => (
   <>
   <Adminnavbar/>
   <div>{children}</div>
   </>
 );
-
-// Main Layout with Navbar
 const MainLayout = ({ children }) => (
   <>
     <Navbar />
@@ -1268,7 +1340,6 @@ const App = () => {
     <>
      <CartProvider>
       <Routes>
-        {/* Admin Routes */}
         <Route element={<ProtectedRoutes/>}>
         <Route path='/adminpanal' element={<AdminLayout><Adminside /></AdminLayout>} />
         <Route path='/adminsunday' element={<AdminLayout><Form /></AdminLayout>} />
@@ -2216,8 +2287,72 @@ const App = () => {
         <Route path='/listpyrex' element={<AdminLayout><Pyrexlist/></AdminLayout>}/>
         <Route path='/listpyrex/:id' element={<AdminLayout><Pyrexupdate/></AdminLayout>}/>
         
+        <Route path='/electricalaccessoform' element={<AdminLayout><ElectricalAccessform/></AdminLayout>}/>
+        <Route path='/listelectricalaccesso' element={<AdminLayout><ElectricalAccesslist/></AdminLayout>}/>
+        <Route path='/listelectricalaccesso/:id' element={<AdminLayout><ElectricalAccessupdate/></AdminLayout>}/>
+
+        <Route path='/ironeleform' element={<AdminLayout><Ironeleform/></AdminLayout>}/>
+        <Route path='/listironele' element={<AdminLayout><Ironelelist/></AdminLayout>}/>
+        <Route path='/listironele/:id' element={<AdminLayout><Ironeleupdate/></AdminLayout>}/>
         
+        <Route path='/dorbellsform' element={<AdminLayout><Dorbellsform/></AdminLayout>}/>
+        <Route path='/listdorbells' element={<AdminLayout><Dorbellslist/></AdminLayout>}/>
+        <Route path='/listdorbells/:id' element={<AdminLayout><Dorbellsupdate/></AdminLayout>}/>
+
+        <Route path='/earephoneform' element={<AdminLayout><Earphoneform/></AdminLayout>}/>
+        <Route path='/listearephone' element={<AdminLayout><Earphonelist/></AdminLayout>}/>
+        <Route path='/listearephone/:id' element={<AdminLayout><Earphoneupdate/></AdminLayout>}/>
+
+        <Route path='/hairbodyform' element={<AdminLayout><Hairbodyform/></AdminLayout>}/>
+        <Route path='/listhairbody' element={<AdminLayout><Hairbodylist/></AdminLayout>}/>
+        <Route path='/listhairbody/:id' element={<AdminLayout><Hairbodyupdate/></AdminLayout>}/>
+
+        <Route path='/birthdaybadgeform' element={<AdminLayout><Badgeform/></AdminLayout>}/>
+        <Route path='/listbirthdaybadge' element={<AdminLayout><Badgelist/></AdminLayout>}/>
+        <Route path='/listbirthdaybadge/:id' element={<AdminLayout><Badgeupdate/></AdminLayout>}/>
+
+        <Route path='/bowsribbonform' element={<AdminLayout><Bowsribbonform/></AdminLayout>}/>
+        <Route path='/listbowsribbon' element={<AdminLayout><Bowsribbonlist/></AdminLayout>}/>
+        <Route path='/listbowsribbon/:id' element={<AdminLayout><Bowsribbonupdate/></AdminLayout>}/>
+
+        <Route path='/fancydressform' element={<AdminLayout><Fancydressform/></AdminLayout>}/>
+        <Route path='/listfancydress' element={<AdminLayout><Fancydresslist/></AdminLayout>}/>
+        <Route path='/listfancydress/:id' element={<AdminLayout><Fancydressupdate/></AdminLayout>}/>
+
+        <Route path='/tissuepaperform' element={<AdminLayout><Tissuepaperform/></AdminLayout>}/>
+        <Route path='/listtissuepaper' element={<AdminLayout><Tissuepaperlist/></AdminLayout>}/>
+        <Route path='/listtissuepaper/:id' element={<AdminLayout><Tissuepaperupdate/></AdminLayout>}/>
+
+        <Route path='/candelesform' element={<AdminLayout><Candlesform/></AdminLayout>}/>
+        <Route path='/listcandeles' element={<AdminLayout><Candleslist/></AdminLayout>}/>
+        <Route path='/listcandeles/:id' element={<AdminLayout><Candlesupdate/></AdminLayout>}/>
+
+        <Route path='/giftbagsform' element={<AdminLayout><Giftbagsform/></AdminLayout>}/>
+        <Route path='/listgiftbags' element={<AdminLayout><Giftbagslist/></AdminLayout>}/>
+        <Route path='/listgiftbags/:id' element={<AdminLayout><Giftbagsupdate/></AdminLayout>}/>
         
+        <Route path='/wedingform' element={<AdminLayout><Wedingform/></AdminLayout>}/>
+        <Route path='/listweding' element={<AdminLayout><Wedinglist/></AdminLayout>}/>
+        <Route path='/listweding/:id' element={<AdminLayout><Wedingupdate/></AdminLayout>}/>
+ 
+        <Route path='/partycardsform' element={<AdminLayout><Pcardsform/></AdminLayout>}/>
+        <Route path='/listpartycards' element={<AdminLayout><Pcardslist/></AdminLayout>}/>
+        <Route path='/listpartycards/:id' element={<AdminLayout><Pcardsupdate/></AdminLayout>}/>
+
+        <Route path='/partyaccessoriesform' element={<AdminLayout><Partyaccessoriesform/></AdminLayout>}/>
+        <Route path='/listpartyaccessories' element={<AdminLayout><Partyaccessorieslist/></AdminLayout>}/>
+        <Route path='/listpartyaccessories/:id' element={<AdminLayout><Partyaccessoriesupdate/></AdminLayout>}/>
+
+        <Route path='/cellowrapform' element={<AdminLayout><Cellowrapform/></AdminLayout>}/>
+        <Route path='/listcellowrap' element={<AdminLayout><Cellowraplist/></AdminLayout>}/>
+        <Route path='/listcellowrap/:id' element={<AdminLayout><Cellowrapupdate/></AdminLayout>}/>
+        
+        <Route path='/partypoppersform' element={<AdminLayout><Partypopperform/></AdminLayout>}/>
+        <Route path='/listpartypoppers' element={<AdminLayout><Partypopperlist/></AdminLayout>}/>
+        <Route path='/listpartypoppers/:id' element={<AdminLayout><Partypopperupdate/></AdminLayout>}/>
+
+        <Route path='/userdata' element={<AdminLayout><UsersTable/></AdminLayout>}/>
+        <Route path='/userdata/:id' element={<AdminLayout><UsersTable/></AdminLayout>}/>
         </Route>
               
         {/* Main Routes */}
@@ -2418,9 +2553,9 @@ const App = () => {
         <Route path='/birds' element={<MainLayout><Birds/></MainLayout>}/>
         <Route path='/birdssinglepage/:id' element={<MainLayout><Birdssingl/></MainLayout>}/>
 
-        <Route path='/household Cleaners' element={<MainLayout><Houseclenermain/></MainLayout>}/>
+        <Route path='/householdcleaners' element={<MainLayout><Houseclenermain/></MainLayout>}/>
 
-        <Route path='/plastic Housewares' element={<MainLayout><Plastichousewearmain/></MainLayout>}/>
+        <Route path='/plastichousewares' element={<MainLayout><Plastichousewearmain/></MainLayout>}/>
 
         <Route path='/petproducts' element={<MainLayout><Petproductsmain/></MainLayout>}/>
 
@@ -2930,10 +3065,10 @@ const App = () => {
         <Route path='/plasticcabnit' element={<MainLayout><Plasticcabnit/></MainLayout>}/>
         <Route path='/plasticcabnitsinglepage/:id' element={<MainLayout><Plasticcabnitsingl/></MainLayout>}/> 
         
-        <Route path='/handwash' element={<MainLayout><Handwash/></MainLayout>}/>
+        <Route path='/plastickitechenware' element={<MainLayout><Handwash/></MainLayout>}/>
         <Route path='/handwashsinglepage/:id' element={<MainLayout><Handwashsingl/></MainLayout>}/>  
         
-        <Route path='/healthcaree' element={<MainLayout><Healthcaree/></MainLayout>}/>
+        <Route path='/plastistoragebox' element={<MainLayout><Healthcaree/></MainLayout>}/>
         <Route path='/healthcareesinglepage/:id' element={<MainLayout><Healthcareesingl/></MainLayout>}/> 
         
         <Route path='/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
@@ -2992,6 +3127,57 @@ const App = () => {
 
    <Route path='/pyrex' element={<MainLayout><Pyrex/></MainLayout>}/>
         <Route path='/pyrexsinglepage/:id' element={<MainLayout><Pyrexsingl/></MainLayout>}/> 
+
+     <Route path='/electricalaccesso' element={<MainLayout><ElectricalAccess/></MainLayout>}/>
+        <Route path='/electricalaccessosinglepage/:id' element={<MainLayout><ElectricalAccesssingle/></MainLayout>}/> 
+
+     <Route path='/ironele' element={<MainLayout><Ironele/></MainLayout>}/>
+        <Route path='/ironelesinglepage/:id' element={<MainLayout><Ironelesingle/></MainLayout>}/> 
+
+     <Route path='/dorbells' element={<MainLayout><Dorbells/></MainLayout>}/>
+     <Route path='/dorbellssinglepage/:id' element={<MainLayout><Dorbellssingle/></MainLayout>}/> 
+   
+     <Route path='/earephone' element={<MainLayout><Earphone/></MainLayout>}/>
+     <Route path='/earephonesinglepage/:id' element={<MainLayout><Earphonesingle/></MainLayout>}/> 
+   
+     <Route path='/hairbody' element={<MainLayout><Hairbody/></MainLayout>}/>
+     <Route path='/hairbodysinglepage/:id' element={<MainLayout><Hairbodysingle/></MainLayout>}/> 
+
+     <Route path='/birthdaybadge' element={<MainLayout><Badge/></MainLayout>}/>
+     <Route path='/birthdaybadgesinglepage/:id' element={<MainLayout><Badgesigle/></MainLayout>}/>
+
+     <Route path='/bowsribbon' element={<MainLayout><Bowsribbon/></MainLayout>}/>
+     <Route path='/bowsribbonsinglepage/:id' element={<MainLayout><Bowsribbonsingl/></MainLayout>}/>
+
+     <Route path='/fancydress' element={<MainLayout><Fancydress/></MainLayout>}/>
+     <Route path='/fancydresssinglepage/:id' element={<MainLayout><Fancydresssingl/></MainLayout>}/>
+
+     <Route path='/tissuepaper' element={<MainLayout><Tissuepaper/></MainLayout>}/>
+     <Route path='/tissuepapersinglepage/:id' element={<MainLayout><Tissuepapersingl/></MainLayout>}/>
+
+     <Route path='/candeles' element={<MainLayout><Candles/></MainLayout>}/>
+     <Route path='/candelessinglepage/:id' element={<MainLayout><Candlessingl/></MainLayout>}/>
+     
+     <Route path='/giftbags' element={<MainLayout><Giftbags/></MainLayout>}/>
+     <Route path='/giftbagssinglepage/:id' element={<MainLayout><Giftbagssingl/></MainLayout>}/>
+     
+     <Route path='/weding' element={<MainLayout><Weding/></MainLayout>}/>
+     <Route path='/wedingsinglepage/:id' element={<MainLayout><Wedingsingl/></MainLayout>}/>
+     
+     <Route path='/partycards' element={<MainLayout><Pcards/></MainLayout>}/>
+     <Route path='/partycardssinglepage/:id' element={<MainLayout><Pcardssingl/></MainLayout>}/>
+    
+     <Route path='/partyaccessories' element={<MainLayout><Partyaccessories/></MainLayout>}/>
+     <Route path='/partyaccessoriessinglepage/:id' element={<MainLayout><Partyaccessoriessingl/></MainLayout>}/>
+
+     <Route path='/cellowrap' element={<MainLayout><Cellowrap/></MainLayout>}/>
+     <Route path='/cellowrapsinglepage/:id' element={<MainLayout><Cellowrapsingl/></MainLayout>}/>
+
+     <Route path='/partypoppers' element={<MainLayout><Partypopper/></MainLayout>}/>
+     <Route path='/partypopperssinglepage/:id' element={<MainLayout><Partypoppersingl/></MainLayout>}/>
+
+
+
       </Routes>
       </CartProvider>
     </>

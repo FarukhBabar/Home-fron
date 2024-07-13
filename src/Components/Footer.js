@@ -44,7 +44,7 @@ const Footer = () => {
         <div className="col-lg-4">
           <h5 className="text-black footer-title-01 fs-5">Subscribe to our newsletter and get 15% off your next order.</h5>
           <div>
-            <form className="d-flex flex-row mb-2 p-1 bg-black input-group"><input type="email" className="form-control rounded border-0" placeholder="Your Email" /> <button className="btn btn-secondary flex-shrink-0" type="submit">Subscribe</button></form>
+            <form className="d-flex flex-row mb-2 p-1  input-group"><input type="email" className="form-control rounded border-0" placeholder="Your Email" /> <button className="btn btn-secondary flex-shrink-0" type="submit">Subscribe</button></form>
             <p className="fs-sm text-black text-opacity-75">I agree to receive Absolution newsletters</p>
           </div>
         </div>

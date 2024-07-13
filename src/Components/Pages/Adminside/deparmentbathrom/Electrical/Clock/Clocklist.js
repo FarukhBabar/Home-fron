@@ -73,7 +73,7 @@ const Clocklist = () => {
                                           />
                                )}</td>
                                          <td>
-                                             <Link to={`/listakonobol/${ele._id}`} className='btn btn-success'>Edit</Link>
+                                             <Link to={`/listclock/${ele._id}`} className='btn btn-success'>Edit</Link>
                                              <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger ms-2'>Delete</a>
                                          </td>
                                      </tr>

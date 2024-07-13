@@ -10,17 +10,17 @@ const  Leaning = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/sponge"><img src="./Images/Cleaing1.png" alt className="img" /></Link>   
+        <Link to="/sponge"><img src="./Images/child catagory/cleaning/133.jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/mops"><img src="/Images/Cleaning2.png" alt className="img1" /></Link> 
+        <Link to="/mops"><img src="/Images/child catagory/cleaning/134.jpg" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/gloves"> <img src="./Images/Cleaning3.png" alt className="img2" /></Link>
+        <Link to="/gloves"> <img src="./Images/child catagory/cleaning/132.jpg" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -32,7 +32,7 @@ const  Leaning = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/brushware'><img src="./Images/Cleaning5.png" alt className="img" /></Link>
+        <Link to='/brushware'><img src="./Images/child catagory/cleaning/131.jpg" alt className="img" /></Link>
       </div>
     </div>
   </div>

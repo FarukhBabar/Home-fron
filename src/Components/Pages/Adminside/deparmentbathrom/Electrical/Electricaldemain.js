@@ -10,12 +10,12 @@ const Electricaldemain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/foodanddrinks"><img src="./Images/Electrical/Electrical (1).png" alt className="img" /></Link>   
+        <Link to="/electricalaccesso"><img src="./Images/Electrical/Electrical (1).png" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/smoking"><img src="./Images/Electrical/Electrical (2).png" alt className="img1" /></Link> 
+        <Link to="/ironele"><img src="./Images/Electrical/Electrical (2).png" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -32,7 +32,7 @@ const Electricaldemain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentloundry'><img src="./Images/Electrical/Electrical-2.png" alt className="img" /></Link>
+        <Link to='/dorbells'><img src="./Images/Electrical/Electrical-2.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -42,12 +42,12 @@ const Electricaldemain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/cleaning'><img src="./Images/Electrical/Electrical-4.png" alt className="img2" /></Link>
+        <Link to='/earephone'><img src="./Images/Electrical/Electrical-4.png" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/gardening'><img src="./Images/Electrical/Electrical-5.png" alt className="img3" /></Link>
+        <Link to='/hairbody'><img src="./Images/Electrical/Electrical-5.png" alt className="img3" /></Link>
       </div>
     </div>
   </div>

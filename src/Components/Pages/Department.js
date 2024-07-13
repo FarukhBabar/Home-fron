@@ -20,7 +20,7 @@ const Department = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/poundline"> <img src="./Images/Group 17.png" alt className="img2" /></Link>
+        <Link to="/poundline"> <img src="./Images/Department/pound lines.webp" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -42,12 +42,12 @@ const Department = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/cleaning'><img src="./Images/Group 21.png" alt className="img2" /></Link>
+        <Link to='/cleaning'><img src="./Images/Department/Cleaning Materials.webp" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/gardening'><img src="./Images/Group 22.png" alt className="img3" /></Link>
+        <Link to='/gardening'><img src="./Images/Department/Gardening.webp" alt className="img3" /></Link>
       </div>
     </div>
   </div>
@@ -59,7 +59,7 @@ const Department = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/deparmentdisposible'><img src="./Images/Group 24.png" alt className="img1" /></Link> 
+        <Link to='/deparmentdisposible'><img src="./Images/Department/disposable bags & Tableware.webp" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -76,7 +76,7 @@ const Department = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/flowers'><img src="./Images/Group 27.png" alt className="img" /></Link> 
+        <Link to='/flowers'><img src="./Images/Department/artifical flowers.webp" alt className="img" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -98,12 +98,12 @@ const Department = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/household Cleaners'><img src="./Images/Group 31.png" alt className="img" /></Link>
+        <Link to='/householdcleaners'><img src="./Images/Group 31.png" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/plastic Housewares'> <img src="./Images/Group 32.png" alt className="img1" /></Link>
+        <Link to='/plastichousewares'> <img src="./Images/Group 32.png" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">

@@ -10,12 +10,12 @@ const Plastichousewearmain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/foodcon"><img src="./Images/Plastic Housewares.png" alt className="img" /></Link>   
+        <Link to="/foodcon"><img src="./Images/child catagory/plastic/135.jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/kidsplas"><img src="./Images/Plastic Housewares (1).png" alt className="img1" /></Link> 
+        <Link to="/kidsplas"><img src="./Images/child catagory/plastic/136.jpg" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
@@ -25,24 +25,24 @@ const Plastichousewearmain = () => {
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/kidsbathroom'><img src="./Images/Plastic Housewares (3).png" alt className="img3" /></Link>   
+        <Link to='/kidsbathroom'><img src="./Images/child catagory/plastic/137.jpg" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/plasticcabnit'><img src="./Images/Plastic Housewares (4).png" alt className="img" /></Link>
+        <Link to='/plasticcabnit'><img src="./Images/child catagory/plastic/140.jpg" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/handwash'><img src="./Images/Plastic Housewares (5).png" alt className="img" /></Link>
+        <Link to='/plastickitechenware'><img src="./Images/child catagory/plastic/139.jpg" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/healthcaree'><img src="./Images/Plastic Housewares (6).png" alt className="img" /></Link>
+        <Link to='/plastistoragebox'><img src="./Images/child catagory/plastic/138.jpg" alt className="img" /></Link>
       </div>
     </div>
   </div>

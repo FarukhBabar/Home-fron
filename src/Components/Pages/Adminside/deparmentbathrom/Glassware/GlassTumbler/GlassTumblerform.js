@@ -40,14 +40,14 @@ const GlassTumblerform = () => {
       return;
     }
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/glassdecorativeproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/glasstablewareproducts" , {
         method: "post",
         body :formdata
       
       })
       result = await result.json();
       if(result){
-        nevigate("/listglassdecorative")
+        nevigate("/listglasstumbler")
         alert("Product added sucessfully")
         }
         else{
@@ -62,7 +62,7 @@ const GlassTumblerform = () => {
 
     <div>
       
-      <Link to="/listglassdecorative" className="btn btn-success mss mt-2" >Product-list</Link>
+      <Link to="/listglasstumbler" className="btn btn-success mss mt-2" >Product-list</Link>
       <form className='marr '>
   <div className="mb-3 maa ">
     <label  className="form-label mt-2">ITem Name</label>

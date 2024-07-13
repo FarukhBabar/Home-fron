@@ -22,7 +22,7 @@ const Aboutus = () => {
 
           </div>
           <div className="col-lg-6 col-md-6 col-sm-12 mt-3">
-            <img src="./Images/Map.png" alt className="Map" />
+            <img src="./Images/Map.jpg" alt className="Map" />
             <h4 className="mt-2">Our warehouse opening times are as follows:</h4>
             <p>
               Monday: &nbsp;07:30 - 17:30</p>
@@ -43,7 +43,7 @@ const Aboutus = () => {
         </div>
         <div className="row">
           <div className="col-lg-12 col-md-12 col-sm-12">
-            <img src="./Images/Pic.png" alt className="About" />
+            <img src="./Images/Pic.jpg" alt className="About" />
           </div>
         </div>
       </div>

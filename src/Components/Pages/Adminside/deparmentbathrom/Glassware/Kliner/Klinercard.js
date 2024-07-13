@@ -7,7 +7,7 @@ const Klinercard = ({ user }) => {
       <div className="card11212 ">
         <h5 className='image'>
        
-          <Link to={`/glassdecorativesinglepage/${user._id}`} className="btn">
+          <Link to={`/klinersinglepage/${user._id}`} className="btn">
             {user.image && (
               <a href=''>
               <img

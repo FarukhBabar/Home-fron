@@ -14,7 +14,7 @@ const GlassTumblersingl = () => {
 
   const GetSingleData = async () => {
     try {
-      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glassdecorativesingle/${params.id}`);
+      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glasstablewaresingle/${params.id}`);
       const result = await response.json();
       setProduct(result);
     } catch (error) {

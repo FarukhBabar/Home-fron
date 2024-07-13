@@ -37,8 +37,7 @@ const Adminnavbar = () => {
              Department
             </a>
             <ul className="dropdown-menu adminside">
-              {/* <li><a className="dropdown-item" href="#">Action</a></li>
-              <li><a className="dropdown-item" href="#">Another action</a></li> */}
+              
               <li>
                
               </li>
@@ -224,8 +223,12 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listclock">Clock</Link></li>
                   <li><Link className="dropdown-item" to="/listcamera">Camera</Link></li>
-                  <li><Link className="dropdown-item" to="/listdigital">Camera</Link></li>
-                
+                  <li><Link className="dropdown-item" to="/listdigital">Digital Accessories</Link></li>
+                <li><Link className="dropdown-item" to="/listelectricalaccesso">Electrical Accessories</Link></li>
+                <li><Link className="dropdown-item" to="/listironele">Iron</Link></li>
+                <li><Link className="dropdown-item" to="/listdorbells">Dorbells</Link></li>
+                <li><Link className="dropdown-item" to="/listearephone">Earephone</Link></li>
+                <li><Link className="dropdown-item" to="/listhairbody">Hairbody</Link></li>
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -379,6 +382,15 @@ const Adminnavbar = () => {
                   <li><Link className="dropdown-item" to="/listbaloon">Baloons Weight</Link></li>
                   <li><Link className="dropdown-item" to="/listpumps">Pumps</Link></li>
                   <li><Link className="dropdown-item" to="/listbanner">Banner</Link></li>
+                  <li><Link className="dropdown-item" to="/listbirthdaybadge">Birthdaybadge</Link></li>
+                  <li><Link className="dropdown-item" to="/listbowsribbon">Bowsribbon</Link></li>
+                  <li><Link className="dropdown-item" to="/listfancydress">Fancydress</Link></li>
+                  <li><Link className="dropdown-item" to="/listtissuepaper">Tissuepaper</Link></li>
+                  <li><Link className="dropdown-item" to="/listcandeles">Candles</Link></li>
+                  <li><Link className="dropdown-item" to="/listgiftbags">Giftbags</Link></li>
+                   <li><Link className="dropdown-item" to="/listweding">Weding</Link></li>
+                   <li><Link className="dropdown-item" to="/listpartycards">Partycards</Link></li> <li><Link className="dropdown-item" to="/listpartyaccessories">Partyaccessories</Link></li> 
+                   <li><Link className="dropdown-item" to="/listcellowrap">Cellowrap</Link></li>  <li><Link className="dropdown-item" to="/listpartypoppers">Partypoppers</Link></li> 
                 </ul>
               </li>
               <li className="nav-item dropend">
@@ -505,6 +517,9 @@ const Adminnavbar = () => {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/" >UserPanal</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/userdata" >Users </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/listcontact" >Contact Users</Link>

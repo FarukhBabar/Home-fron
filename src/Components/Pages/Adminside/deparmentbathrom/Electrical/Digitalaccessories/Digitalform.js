@@ -47,7 +47,7 @@ const Digitalform = () => {
       })
       result = await result.json();
       if(result){
-        nevigate("/listobstical")
+        nevigate("/listdigital")
         alert("Product added sucessfully")
         }
         else{

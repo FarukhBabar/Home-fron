@@ -50,7 +50,7 @@
   width: 400px;
   height: 400px;
   padding-bottom: 10px;
-margin-left: 150px !important;
+margin-left: 80px !important;
 background-color: white;
 
 }
@@ -113,9 +113,7 @@ background-color: white;
     margin-top: 10px;
     width: 300px;
   }
-  .phone{
-    margin-right:   0px;
-  }
+ 
   .ti{
     margin-left: 0px !important;
   }
@@ -239,9 +237,7 @@ background-color: white;
   width: 300px;
   margin-top: 10px;
 }
-.phone{
-  margin-right: 30px;
-}
+
 .title{
   margin-left: 55px;
 }
@@ -274,7 +270,7 @@ background-color: white;
   width: 400px;
   height: 400px;
   padding-bottom: 10px;
-margin-left: 150px !important;
+margin-left: 80px !important;
 background-color: white;
 
 }
@@ -337,9 +333,7 @@ background-color: white;
     margin-top: 10px;
     width: 300px;
   }
-  .phone{
-    margin-right:   0px;
-  }
+
   .ti{
     margin-left: 0px !important;
   }
@@ -403,6 +397,16 @@ background-color: white;
   }
    
 }
+
+@media (max-width:768px) {
+   .phone{
+  margin-right: 0px !important;
+  margin-left: 10px !important;
+}  
+}
+
+
+
 .buttom{
   background-color: rgba(126, 161, 253, 1);
   border: none;
@@ -465,8 +469,11 @@ background-color: white;
   margin-right: 15px;
 }
 .phone{
-  margin-right: 30px;
+  margin-right: 0px !important;
+  margin-left: 500px ;
 }
+
+
 .title{
   margin-left: 55px;
 }

@@ -40,14 +40,14 @@ const GlassStorageform = () => {
       return;
     }
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/glassdecorativeproducts" , {
+      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth//glassstoragesproducts" , {
         method: "post",
         body :formdata
       
       })
       result = await result.json();
       if(result){
-        nevigate("/listglassdecorative")
+        nevigate("/listglassstorage")
         alert("Product added sucessfully")
         }
         else{

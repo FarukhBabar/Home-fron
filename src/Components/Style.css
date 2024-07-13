@@ -11,7 +11,7 @@
     margin-bottom: 1450px !important;
 }
 
-@media screen and  (max-width : 480px) {
+@media  (max-width : 768px) {
     .ligh{
         display: none;
     }
@@ -40,10 +40,11 @@
     margin-top: 5px !important;
    }
    .banner{
-    width: 340px !important;
+    width: auto !important;
     margin-top: 5px !important;
     margin-right: 20px !important;
     margin-left: 0px !important;
+    height: 62px !important;
    }
    .title{
     text-align: center !important;
@@ -77,9 +78,10 @@
    
    }
    .ca{
-        width: 345px !important;
+        width: auto !important;
         margin-left: 0px !important;
         margin-top: 15px !important;
+        height: 92px !important;
     }
     .title1::before{
         content:"" !important;
@@ -168,10 +170,13 @@
    .rating{
     margin-left: 0px !important;
    }
-   .phone{
-    margin-left: 40px !important;
-    margin-top: 15px;
- }
+ .pallet{
+   
+        width: 370px !important;
+        margin-left: 10px;
+        margin-top: 8px;
+        padding-left: 0px !important;
+    }
  .search-container{
     display: none;
  }
@@ -180,22 +185,23 @@
 .lax{
     margin-bottom:  620px !important;
 }
-.logo{
+/* .logo{
     width: 100px;
     height: 10px;
     align-items: center;
-    /* margin-left: 350px; */
+    /* margin-left: 350px;
+    
     margin-top: 7px;
-}
+} */
 .login{
     margin-top: 7.3px;
     font-size: 14px;
     margin-left: 35px !important;
 }
-.phone{
-   margin-left: 100px;
+/* .phone{
+   margin-left: 0px;
    margin-top: 15px;
-}
+} */
 .search-container {
     position: relative;
 }
@@ -342,7 +348,7 @@
    
 }
 .form1{
-    width:500px;
+    width:500px !important;
     background-color:  rgba(247, 247, 247, 1);
 }
 .form11{
@@ -806,7 +812,7 @@ padding-bottom: 5px;
 }
 }
 /* --------------Supersunday----------------- */
-@media screen and (max-width : 480px){
+@media  (max-width : 768px){
 .icon{
     margin-left: 0px;
     margin-top: 30px;
@@ -850,7 +856,7 @@ padding-bottom: 5px;
 }
 .sunday{
         width: 370px;
-        margin-left: 0px;
+        margin-left: 10px;
         margin-top: 8px;
         padding-left: 0px !important;
     }
@@ -872,8 +878,10 @@ padding-bottom: 5px;
         margin-top: 20px;
     }
     .caa{
-        margin-left: 35px !important;
+        margin-left: 5px !important;
         margin-top: 15px;
+        width: auto !important;
+        height: 180px !important;
         }
     .rrr{
         margin-top: 30px; 
@@ -972,18 +980,28 @@ padding-bottom: 5px;
         width: 130px;
         height: 60px;
         align-items: center;
-        margin-left: 400px;
+        margin-left: 500px ;
         margin-top: 7px;
         margin-bottom: 3px !important;
         }
+        @media (max-width : 768px) {
+       .logo{
+        width: 150px;
+        height: 70px;
+        align-items: center;
+        /* margin-left: 350px !important; */
+        margin-top: 7px;
+        }
+        }
+
         /* .login{
         margin-top: 15px;
         font-size: 14px;
         } */
-        .phone{
-        margin-left: 100px;
+        /* .phone{
+        margin-left: 0px;
         margin-top: 15px;
-        }
+        } */
         .search-container {
         position: relative;
         }
@@ -1303,7 +1321,7 @@ padding-bottom: 5px;
         
         }
         .homeage{
-            width: 550px;
+            width: 550px !important;
         background-color: rgba(247, 247, 247, 1);
         margin-left: 20px;
         }

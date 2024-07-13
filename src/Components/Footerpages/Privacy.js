@@ -38,16 +38,7 @@ const Privacy = () => {
 </p>
     </div>
   </div>
-  {/* <div className="row">
-    <div className="col-lg-12 col-md-12 col-sm-12">
-      <p>
-        EFG believe it is important to protect your Personal Data (as defined in the Data Protection Act
-        1998) and we are committed to giving you a personalised service that meets your needs in a way that
-        also protects your privacy. This policy explains how we may collect Personal Data about you. It also
-        explains some of the security measures we take to protect your Personal Data, and tells you certain
-        things we will do and not do. You should read this policy in conjunction with the Website Terms.</p>
-    </div>
-  </div> */}
+ 
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <u><b>

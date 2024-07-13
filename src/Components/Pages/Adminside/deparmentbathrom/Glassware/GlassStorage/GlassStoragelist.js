@@ -7,7 +7,7 @@ const GlassStoragelist = () => {
     
 
     const setUsersData = async() =>{
-        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glassdecorativeuser")
+        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glassstorageuser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const GlassStoragelist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glassdecorativeuserid/${id}`,{
+              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/glassstorageuserid/${id}`,{
             method:"delete"
          
           })
@@ -41,8 +41,8 @@ const GlassStoragelist = () => {
     <div>
         
     <div className='container w-75'>
-           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Glass Decorative Products</h4>
-           <Link to="/glassdecorativeform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
+           <h4 className='my-4 text-center text-warning display-4 fw-bold'>List of Glass Storage Products</h4>
+           <Link to="/glassstorageform" ><button className='btn btn-success mb-2 w-10'>+ Add New Product </button></Link>  
            <table class="table table-striped table-hover">
                  <thead>
                      <tr className='btn-dark text-light text-center'>
@@ -73,7 +73,7 @@ const GlassStoragelist = () => {
                                           />
                                )}</td>
                                          <td>
-                                             <Link to={`/listglassdecorative/${ele._id}`} className='btn btn-success'>Edit</Link>
+                                             <Link to={`/listglassstorage/${ele._id}`} className='btn btn-success'>Edit</Link>
                                              <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger ms-2'>Delete</a>
                                          </td>
                                      </tr>

@@ -30,28 +30,15 @@ useEffect(() => {
     </center>
   </div>
   <div className="d-flex">
-    {/* <div className="ms-3 login">
-      <Link to="/Register" className="mt-2 text-decoration-none text-black"><i className="bi bi-person" />REGISTER &nbsp;|&nbsp;</Link>
-      {userlogin?(
-
-<Link to=""  onClick={Logout} className=" snavl mt-3  text-decoration-none text-black"><i className="bi bi-person" />LOGOUT</Link>
-
-):(
-
-<Link to="/log" className=" snavl mt-3  text-decoration-none text-black"><i className="bi bi-person" />LOGIN</Link>
-)
-}
-    </div> */}
+   
     <div className>
     
       <img src="/Images/logo.png" alt className="logo" />
     </div>
-    <div className="phone">
-      <p><i className="bi bi-telephone" />0208 805 5756</p>
+    <div className="phone ">
+      <a href=''><i className="bi bi-telephone" />0208 805 5756</a>
     </div>
-    <div className="search-container">
-      <input type="text" className="search-input" placeholder="Search..." /><i className="bi bi-search" />
-    </div>
+   
   </div>
   <nav className="navbar navbar-expand-lg navbar-light ">
     <div className="container-fluid">
@@ -61,7 +48,7 @@ useEffect(() => {
       <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div className="navbar-nav">
           <a className="nav-link ms-5 text-white " aria-current="page" href="/">HOME</a>
-          {/* <Link className="nav-link ms-5 text-white" to="/deparments">DEPARTMENTS</Link> */}
+       
           <div className="dropdown">
  <Link to="/deparments"><button
     className="btn navbarsa dropdown-toggle text-white"
@@ -146,9 +133,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/akonobol">
             Akzonobel
           </Link>
-          {/* <Link className="dropdown-item" to="/showermain">
-            AMTECH TOOLS
-          </Link> */}
+          
           <Link className="dropdown-item" to="/diye">
             view all
           </Link>
@@ -194,9 +179,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/cotton">
             Cotton Wool
           </Link>
-          {/* <Link className="dropdown-item" to="/showermain">
-            AMTECH TOOLS
-          </Link> */}
+         
           <Link className="dropdown-item" to="/toiletries">
             view all
           </Link>
@@ -216,7 +199,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/bleech">
             Bleach
           </Link>
-          <Link className="dropdown-item" to="/household Cleaners">
+          <Link className="dropdown-item" to="/householdcleaners">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Kitchenware</p>
@@ -226,9 +209,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/bareware">
            Bareware
           </Link>
-          {/* <Link className="dropdown-item" to="/mirrormain">
-           Chrome
-          </Link> */}
+          
           <Link className="dropdown-item" to="/kitechenwear">
            View all
           </Link>
@@ -261,9 +242,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/bird">
            Birdcare
           </Link>
-          {/* <Link className="dropdown-item" to="/mirrormain">
-           Chrome
-          </Link> */}
+         
           <Link className="dropdown-item" to="/gardening">
            View all
           </Link>
@@ -335,10 +314,8 @@ useEffect(() => {
           <Link className="dropdown-item" to="/kidsplas">
            Kids Plastic Products
           </Link>
-          {/* <Link className="dropdown-item" to="/mirrormain">
-           Chrome
-          </Link> */}
-          <Link className="dropdown-item" to="/plastic Housewares">
+          
+          <Link className="dropdown-item" to="/plastichousewares">
            View all
           </Link>
 

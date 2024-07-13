@@ -73,7 +73,7 @@ const Baloonlist = () => {
                                           />
                                )}</td>
                                          <td>
-                                             <Link to={`/listphone/${ele._id}`} className='btn btn-success'>Edit</Link>
+                                             <Link to={`/listbaloon/${ele._id}`} className='btn btn-success'>Edit</Link>
                                              <a onClick={()=>deleteuser(ele._id)} className='btn btn-danger ms-2'>Delete</a>
                                          </td>
                                      </tr>

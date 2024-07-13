@@ -14,7 +14,7 @@ const Glassvassupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/glassdecorativesingle/${params.id}`);
+                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/glassvasssingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(result.title);
