@@ -434,7 +434,7 @@
 .sliimg{
     height: 151.75px;
     width: 162.5px;
-    margin-left: 7px;
+    margin-left: 40px;
 }
 
 .sunday{
@@ -1335,10 +1335,12 @@ padding-bottom: 5px;
             font-size: 15px;
             font-weight: bold;
         }
+       
         .homenavbar {
             overflow-y: scroll;
             height: 430px;
         }
+       
   @media (max-width: 768px) {
     .dropdown-menu {
       width: 100%;

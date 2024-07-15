@@ -9,8 +9,8 @@ import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 const Home = () => {
-   const[email , setemail] = useState()
-  const [ password  , setpassword]  = useState()
+  //  const[email , setemail] = useState()
+  // const [ password  , setpassword]  = useState()
   const nevigate=useNavigate()
  
   useEffect(() => {
@@ -23,34 +23,34 @@ const Home = () => {
         }
       }, [nevigate]);
     // const role = user ? JSON.parse(user).role : null
-  const registeruser = async (e) => {
-    e.preventDefault();
-    try {
-      let result = await fetch('https://homeessential-fdca5e469865.herokuapp.com/login', {
-        method: "POST",
-        body: JSON.stringify({ email, password }),
-        headers: {
-          'Content-type': 'application/json'
-        }
-      });
-      const data = await result.json();
+  // const registeruser = async (e) => {
+  //   e.preventDefault();
+  //   try {
+  //     let result = await fetch('https://homeessential-fdca5e469865.herokuapp.com/login', {
+  //       method: "POST",
+  //       body: JSON.stringify({ email, password }),
+  //       headers: {
+  //         'Content-type': 'application/json'
+  //       }
+  //     });
+  //     const data = await result.json();
       
-      if (result.ok) {
-        localStorage.setItem('user', JSON.stringify(data));
-        if (data.role === "admin") {
-          alert("Wellcome To Admin Panal");
-          nevigate("/adminpanal"); // Navigate to the form page
-        } else {
-          alert("Account Login Sucessfully")
-          nevigate('/');
-        }
-      } else {
-        alert(data.Message);
-      }
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  //     if (result.ok) {
+  //       localStorage.setItem('user', JSON.stringify(data));
+  //       if (data.role === "admin") {
+  //         alert("Wellcome To Admin Panal");
+  //         nevigate("/adminpanal"); // Navigate to the form page
+  //       } else {
+  //         alert("Account Login Sucessfully")
+  //         nevigate('/');
+  //       }
+  //     } else {
+  //       alert(data.Message);
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // }
 const reviews = [
   {
     name: "Samantha Clark",
@@ -234,17 +234,17 @@ const reviews = [
     <div className="mt-2 reviews">
       <p className="title1">Your reliable source of home supplies </p>
     </div>
-    <p className="ms-2  mt-4">Welcome to Home Essentials Hive, a one-stop hub for all your daily needs. We are your trusted partner, ensuring that you can buy all your daily needs with just a single click. We offer products from household to food and drink, kitchenware to homeware, decoration to seasonal accessories, personal care to pet care, and tech to gadgets. Our commitment is to deliver the products on time to ease your burden.
-   <br/>
+    <p className="ms-2 fs-5 mt-4">Welcome to Home Essentials Hive, a one-stop hub for all your daily needs. We are your trusted partner, ensuring that you can buy all your daily needs with just a single click. We offer products from household to food and drink, kitchenware to homeware, decoration to seasonal accessories, personal care to pet care, and tech to gadgets. Our commitment is to deliver the products on time to ease your burden.</p>
+   
     
-      <b>Years of experience</b> <br/>
-      Home Essentials Hive has years of experience serving its customers at their best. Customer satisfaction is our topmost priority because we believe that if a customer visits our store once, he should trust us in the future as well.  <br/>
-    <b>Shop with us for a better customer experience</b> <br/>
-    Choose Home Essentials Hive to buy daily-use products at budget-friendly rates. Contact our customer care officer for further guidance. 
+      <b className='h5'>Years of experience</b> <br/>
+     <p className='fs-5'> Home Essentials Hive has years of experience serving its customers at their best. Customer satisfaction is our topmost priority because we believe that if a customer visits our store once, he should trust us in the future as well.  </p>
+    <b className='h5' >Shop with us for a better customer experience</b> <br/>
+  <p className='fs-5'>  Choose Home Essentials Hive to buy daily-use products at budget-friendly rates. Contact our customer care officer for further guidance. 
 
     </p>
   </div>
-  <div className="row">
+  {/* <div className="row">
     <div className="col-lg-4 col-md-6 col-sm-12 form1">
       <center><h3 className="registerform text-white">CREATE AN ACCOUNT</h3></center>
       <p className="te ms-3">PLEASE CLICK ON THE REGISTER BUTTON BELOW TO CREATE AN ACCOUNT</p>
@@ -269,7 +269,7 @@ const reviews = [
         </div>
       </div>
     </div>
-  </div>
+  </div> */}
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 mt-2 reviews">
       <p className="title">FEATURED BRANDS</p>
@@ -279,7 +279,7 @@ const reviews = [
     <div className='col slide-track'>
      
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/655857d34d9f48f0bb57298ba4efa29c.jpg" alt className="" />
+      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/655857d34d9f48f0bb57298ba4efa29c.jpg" alt className="sliimg" />
       </div>
       <div>
       <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/142cc78ff34640d1899c77dfe0d66496.jpg" alt className="sliimg" />

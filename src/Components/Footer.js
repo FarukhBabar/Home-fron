@@ -25,12 +25,13 @@ const Footer = () => {
               <ul className="list-unstyled footer-link-01 m-0">
                 <li><Link className="tex text-black text-opacity-75" to="/blog">Blog</Link></li>
                 <li><a className="tex text-black text-opacity-75" href="/privacy">Privacy Policy</a></li>
-                {/* <li><a className="tex text-black text-opacity-75" href="/cookies">Cookie Policy</a></li> */}
+                <li><Link to='/faqs'><a className="tex text-black text-opacity-75" href="/cookies">FAQ</a></Link></li>
                 <li><a className="tex text-black text-opacity-75" href="/termscondition">Terms &amp; Conditions</a></li>
               </ul>
             </div>
             <div className="col-6 col-lg-4">
               <h5 className="text-black footer-title-01">Contact Us</h5>
+             {/* <Link to='/faqs'><h5 className="text-black footer-title-01">FAQ</h5></Link>   */}
               <ul className="list-unstyled footer-link-01 m-0">
                 <li><a className="tex text-black text-opacity-75" href="#">29 Mollison Avenue, Brimsdown, Enfield, EN3 7NL</a></li>
                 <li><a className="tex text-black text-opacity-75" href="#">E:enquiries@fdd3wea.co.uk</a></li>

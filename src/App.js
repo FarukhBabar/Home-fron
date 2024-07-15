@@ -1322,6 +1322,7 @@ import Partypopperupdate from './Components/Pages/Adminside/deparmentbathrom/Par
 import Partypopper from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypopper';
 import Partypoppersingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypoppersingl';
 import UsersTable from './Components/Pages/UsersTable';
+import FAQ from './Components/Faq';
 const AdminLayout = ({ children }) => (
   <>
   <Adminnavbar/>
@@ -3175,7 +3176,7 @@ const App = () => {
 
      <Route path='/partypoppers' element={<MainLayout><Partypopper/></MainLayout>}/>
      <Route path='/partypopperssinglepage/:id' element={<MainLayout><Partypoppersingl/></MainLayout>}/>
-
+      <Route path='/faq' element={<MainLayout><FAQ/></MainLayout>}/>
 
 
       </Routes>

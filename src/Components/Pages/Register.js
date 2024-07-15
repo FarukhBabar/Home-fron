@@ -3,17 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import '../../App.css';
 
 const Register = () => {
-  const [Companynname, setCompanyName] = useState('');
-  const [CompanyRegistration, setCompanyRegistration] = useState('');
-  const [CompanyVat, setCompanyVat] = useState('');
-  const [Address1, setAddress1] = useState('');
-  const [Address2, setAddress2] = useState('');
-  const [Address3, setAddress3] = useState('');
-  const [Postcode, setPostcode] = useState('');
-  const [City, setCity] = useState('');
-  const [County, setCounty] = useState('');
-  const [Country, setCountry] = useState('');
-  const [Title, setTitle] = useState('');
+  // const [Companynname, setCompanyName] = useState('');
+  // const [CompanyRegistration, setCompanyRegistration] = useState('');
+  // const [CompanyVat, setCompanyVat] = useState('');
+  // const [Address1, setAddress1] = useState('');
+  // const [Address2, setAddress2] = useState('');
+  // const [Address3, setAddress3] = useState('');
+  // const [Postcode, setPostcode] = useState('');
+  // const [City, setCity] = useState('');
+  // const [County, setCounty] = useState('');
+  // const [Country, setCountry] = useState('');
+  // const [Title, setTitle] = useState('');
   const [FirstName, setFirstName] = useState('');
   const [LastName, setLastName] = useState('');
   const [PhoneNumber, setPhoneNumber] = useState('');
@@ -26,17 +26,17 @@ const Register = () => {
     let result = await fetch('https://homeessential-fdca5e469865.herokuapp.com/register-user', {
       method: 'post',
       body: JSON.stringify({
-        Companynname,
-        CompanyRegistration,
-        CompanyVat,
-        Address1,
-        Address2,
-        Address3,
-        Postcode,
-        City,
-        County,
-        Country,
-        Title,
+        // Companynname,
+        // CompanyRegistration,
+        // CompanyVat,
+        // Address1,
+        // Address2,
+        // Address3,
+        // Postcode,
+        // City,
+        // County,
+        // Country,
+        // Title,
         FirstName,
         LastName,
         PhoneNumber,
@@ -63,7 +63,7 @@ const Register = () => {
             <div className="card">
               <div className="card-body">
                
-                <h4>Billing Address Details</h4>
+                {/* <h4>Billing Address Details</h4>
                 <hr />
                 <div className="form-group">
                   <label>
@@ -144,11 +144,11 @@ const Register = () => {
                     placeholder="United Kingdom"
                     disabled // Assuming this is a static value
                   />
-                </div>
+                </div> */}
                 <hr />
                 <h4>Sign Up Details</h4>
                 <hr />
-                <div className="form-group">
+                {/* <div className="form-group">
                   <label>
                     Title
                   </label>
@@ -160,7 +160,7 @@ const Register = () => {
                     className="form-control"
                     placeholder="Not Specified"
                   />
-                </div>
+                </div> */}
                 <div className="form-group">
                   <label>
                     First Name <span title="This field must be fulfilled">*</span>
