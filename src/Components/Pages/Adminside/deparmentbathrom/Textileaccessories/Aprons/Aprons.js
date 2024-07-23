@@ -1,9 +1,36 @@
 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios'
-import Apronscards from './Apronscards';
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios'
+// import Apronscards from './Apronscards';
 
-const  Aprons = () => {
+// const  Aprons = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/Apronsfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Apronscards key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Aprons;
+
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import CardNew from '../../../../../Cardsnew'; // Make sure the path is correct
+
+const Aprons = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -13,10 +40,10 @@ const  Aprons = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Apronscards key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/apronssinglepage" />
         ))}
       </div>
     </div>

@@ -1,7 +1,34 @@
 
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Soapbarcards from './Soapbarcard';
+
+// const Soapbar = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/soapbarfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Soapbarcards key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Soapbar;
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Soapbarcards from './Soapbarcard';
+import CardNew from '../../../../../Cardsnew'; // Make sure the path is correct
 
 const Soapbar = () => {
   const [users, setUsers] = useState([]);
@@ -13,10 +40,10 @@ const Soapbar = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Soapbarcards key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/soapbarsinglepage" />
         ))}
       </div>
     </div>

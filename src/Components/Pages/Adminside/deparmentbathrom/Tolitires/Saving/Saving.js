@@ -1,7 +1,35 @@
 
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Savingcards from './Savingcard';
+
+// const Saving = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/savingfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Savingcards key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Saving;
+
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Savingcards from './Savingcard';
+import CardNew from '../../../../../Cardsnew'; // Make sure the path is correct
 
 const Saving = () => {
   const [users, setUsers] = useState([]);
@@ -13,10 +41,10 @@ const Saving = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Savingcards key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/savingsinglepage" />
         ))}
       </div>
     </div>

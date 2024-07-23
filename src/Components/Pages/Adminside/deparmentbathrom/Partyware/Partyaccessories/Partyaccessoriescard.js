@@ -7,7 +7,7 @@ const  Partyaccessoriescard = ({ user }) => {
       <div className="card11212 ">
         <h5 className='image'>
        
-          <Link to={`/bannersinglepage/${user._id}`} className="btn">
+          <Link to={`/bannerfreedelivery/${user._id}`} className="btn">
             {user.image && (
               <a href=''>
               <img

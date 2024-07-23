@@ -10,39 +10,39 @@ const Seasonalsportsmain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/cooler"><img src="./Images/Sports/Homewares.png" alt className="img" /></Link>   
+        <Link to="/cooler"><img src="/Images/seasonal sport/1.jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/flask"><img src="./Images/Sports/Homewares-1.png" alt className="img1" /></Link> 
+        <Link to="/flask"><img src="/Images/seasonal sport/2.jpg" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/hotwaterr"> <img src="./Images/Sports/Homewares-2.png" alt className="img2" /></Link>
+        <Link to="/hotwaterr"> <img src="/Images/seasonal sport/3.jpg" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/picnic'><img src="./Images/Sports/Homewares-3.png" alt className="img3" /></Link>   
+        <Link to='/picnic'><img src="/Images/seasonal sport/4.jpg" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/sportbootel'><img src="./Images/Sports/Homewares-4.png" alt className="img" /></Link>
+        <Link to='/sportbootel'><img src="/Images/seasonal sport/5.jpg" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/umbrella'><img src="./Images/Sports/Homewares-5.png" alt className="img" /></Link>
+        <Link to='/umbrella'><img src="/Images/seasonal sport/7.jpg" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/towelssport'><img src="./Images/Textiles & Accessories-6.png" alt className="img" /></Link>
+        <Link to='/towelssport'><img src="/Images/seasonal sport/towe.jpg" alt className="img" /></Link>
       </div>
     </div>
   </div>

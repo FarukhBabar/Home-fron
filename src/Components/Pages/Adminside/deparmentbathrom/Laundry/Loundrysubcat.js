@@ -13,34 +13,34 @@ const Loundrysubcat = () => {
   <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/airers"><img src="/Images/Loundry1.png" alt className="img" /></Link>   
+          <Link to="/airers"><img src="/Images/laundry storage and luggage/1.jpg" alt className="img" /></Link>   
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/iorining"><img src="/Images/Loundry2.png" alt className="img1" /></Link> 
+          <Link to="/iorining"><img src="/Images/laundry storage and luggage/2.jpg" alt className="img1" /></Link> 
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/laacess"> <img src="/Images/Loundry3.png" alt className="img2" /></Link>
+          <Link to="/laacess"> <img src="/Images/laundry storage and luggage/3.jpg" alt className="img2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/bagsl"><img src="/Images/Loundry4.png" alt className="img3" /></Link>   
+          <Link to="/bagsl"><img src="/Images/laundry storage and luggage/4.jpg" alt className="img3" /></Link>   
         </div>
       </div>
     </div>
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/bascketst"><img src="/Images/Loundry5.png" alt className="img" /></Link>   
+          <Link to="/bascketst"><img src="/Images/laundry storage and luggage/5.jpg" alt className="img" /></Link>   
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/luggage"><img src="/Images/Loundry6.png" alt className="img1" /></Link> 
+          <Link to="/luggage"><img src="/Images/laundry storage and luggage/6.jpg" alt className="img1" /></Link> 
         </div>
       </div>
       

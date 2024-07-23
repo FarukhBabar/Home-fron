@@ -1,12 +1,49 @@
 
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Foodcards from './Foodcards';
+// import { Link } from 'react-router-dom';
+
+// const  Foodspage = () => {
+//   const [users, setUsers] = useState([]);
+// const [showFullText, setShowFullText] = useState(false);
+
+//   const toggleText = () => {
+//     setShowFullText(!showFullText);
+//   };
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/foodfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <>
+     
+   
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Foodcards key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//      </>
+//   );
+// }
+
+// export default  Foodspage;
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Foodcards from './Foodcards';
+import CardNew from '../../../Cardsnew'; // Make sure the path is correct
 import { Link } from 'react-router-dom';
 
-const  Foodspage = () => {
+
+const Foodspage = () => {
+  const [showFullText, setShowFullText] = useState(false);
   const [users, setUsers] = useState([]);
-const [showFullText, setShowFullText] = useState(false);
 
   const toggleText = () => {
     setShowFullText(!showFullText);
@@ -19,7 +56,14 @@ const [showFullText, setShowFullText] = useState(false);
 
   return (
     <>
-     <div className='container'>
+    <div className="container mt-1">
+      <div className="row">
+        {users.map(user => (
+          <CardNew key={user._id} user={user} baseUrl="/product/foods" />
+        ))}
+      </div>
+    </div>
+    <div className='container'>
         <div className='row'>
           <div className='col'>
             <h5>Boost your energy with a prime drink online.</h5>
@@ -50,17 +94,8 @@ const [showFullText, setShowFullText] = useState(false);
            
           </div>
         </div>
-      </div>
-   
-    <div className="container  mt-1">
-      <div className="row">
-        {users.map(user => (
-          <Foodcards key={user._id} user={user} />
-        ))}
-      </div>
-    </div>
-     </>
+      </div></>
   );
 }
 
-export default  Foodspage;
+export default Foodspage;

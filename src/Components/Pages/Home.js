@@ -9,8 +9,7 @@ import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper";
 import "swiper/css/pagination";
 const Home = () => {
-  //  const[email , setemail] = useState()
-  // const [ password  , setpassword]  = useState()
+
   const nevigate=useNavigate()
  
   useEffect(() => {
@@ -22,35 +21,7 @@ const Home = () => {
           }
         }
       }, [nevigate]);
-    // const role = user ? JSON.parse(user).role : null
-  // const registeruser = async (e) => {
-  //   e.preventDefault();
-  //   try {
-  //     let result = await fetch('https://homeessential-fdca5e469865.herokuapp.com/login', {
-  //       method: "POST",
-  //       body: JSON.stringify({ email, password }),
-  //       headers: {
-  //         'Content-type': 'application/json'
-  //       }
-  //     });
-  //     const data = await result.json();
-      
-  //     if (result.ok) {
-  //       localStorage.setItem('user', JSON.stringify(data));
-  //       if (data.role === "admin") {
-  //         alert("Wellcome To Admin Panal");
-  //         nevigate("/adminpanal"); // Navigate to the form page
-  //       } else {
-  //         alert("Account Login Sucessfully")
-  //         nevigate('/');
-  //       }
-  //     } else {
-  //       alert(data.Message);
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // }
+   
 const reviews = [
   {
     name: "Samantha Clark",
@@ -135,6 +106,7 @@ const reviews = [
                   <input type="radio" id="star3" name={`rating-${index}`} defaultValue={3} /><label htmlFor="star3" title="3 stars">☆</label>
                   <input type="radio" id="star2" name={`rating-${index}`} defaultValue={2} /><label htmlFor="star2" title="2 stars">☆</label>
                   <input type="radio" id="star1" name={`rating-${index}`} defaultValue={1} /><label htmlFor="star1" title="1 star">☆</label>
+                  <span className="verified-badge">Verified</span>
                 </div>
                 <div className="card-body">
                   <h6 className="card-title">{review.name}</h6>
@@ -149,23 +121,25 @@ const reviews = [
 
       {/* Grid layout for larger screens */}
       <div className="row rrr d-none d-md-flex">
-        {reviews.map((review, index) => (
-          <div key={index} className="col-lg-2 col-md-3 col-sm-12 card ms-3 mt-3" style={{ width: "16rem", height: 169 }}>
-            <div className="star-rating">
-              <input type="radio" id="star5" name={`rating-lg-${index}`} defaultValue={5} /><label htmlFor="star5" title="5 stars">☆</label>
-              <input type="radio" id="star4" name={`rating-lg-${index}`} defaultValue={4} /><label htmlFor="star4" title="4 stars">☆</label>
-              <input type="radio" id="star3" name={`rating-lg-${index}`} defaultValue={3} /><label htmlFor="star3" title="3 stars">☆</label>
-              <input type="radio" id="star2" name={`rating-lg-${index}`} defaultValue={2} /><label htmlFor="star2" title="2 stars">☆</label>
-              <input type="radio" id="star1" name={`rating-lg-${index}`} defaultValue={1} /><label htmlFor="star1" title="1 star">☆</label>
-            </div>
-            <div className="card-body">
-              <h6 className="card-title">{review.name}</h6>
-              <h6 className="card-subtitle mb-2 text-muted">{review.review}</h6>
-              <p className="time">{review.time}</p>
-            </div>
-          </div>
-        ))}
+  {reviews.map((review, index) => (
+    <div key={index} className="col-lg-2 col-md-3 col-sm-12 card ms-3 mt-3" style={{ width: "16rem", height: 169 }}>
+      <div className="star-rating">
+        <input type="radio" id={`star5-${index}`} name={`rating-lg-${index}`} defaultValue={5} /><label htmlFor={`star5-${index}`} title="5 stars">☆</label>
+        <input type="radio" id={`star4-${index}`} name={`rating-lg-${index}`} defaultValue={4} /><label htmlFor={`star4-${index}`} title="4 stars">☆</label>
+        <input type="radio" id={`star3-${index}`} name={`rating-lg-${index}`} defaultValue={3} /><label htmlFor={`star3-${index}`} title="3 stars">☆</label>
+        <input type="radio" id={`star2-${index}`} name={`rating-lg-${index}`} defaultValue={2} /><label htmlFor={`star2-${index}`} title="2 stars">☆</label>
+        <input type="radio" id={`star1-${index}`} name={`rating-lg-${index}`} defaultValue={1} /><label htmlFor={`star1-${index}`} title="1 star">☆</label>
+        <span className="verified-badge">Verified</span>
       </div>
+      <div className="card-body">
+        <h6 className="card-title">{review.name}</h6>
+        <h6 className="card-subtitle mb-2 text-muted">{review.review}</h6>
+        <p className="time">{review.time}</p>
+      </div>
+    </div>
+  ))}
+</div>
+
 
       <div className="row rating mt-4">
         <div className="col-lg-12 col-md-12 col-sm-12">
@@ -190,24 +164,24 @@ const reviews = [
   {/* ------- */}
   <div className="row">
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link  to='/deparmentdisposible' ><img src="/Images/Homepag/disposables.png" className="caa" alt /></Link>
+    <Link  to='/category/disposible' ><img src="/Images/Homepag/disposables.png" className="caa" alt /></Link>
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-     <Link to= '/householdcleaners'><img src="/Images/Homepag/Household Cleaners.png" className="caa" alt /></Link> 
+     <Link to= '/category/householdcleaners'><img src="/Images/Homepag/Household Cleaners.png" className="caa" alt /></Link> 
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-   <Link to= '/cleaning' ><img src="/Images/Homepag/Cleaning Materials.png" alt className="caa" /></Link>  
+   <Link to= '/category/cleaning' ><img src="/Images/Homepag/Cleaning Materials.png" alt className="caa" /></Link>  
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to= '/plastichousewares' > <img src="/Images/Homepag/Plastics.png" alt className="caa" /></Link>
+    <Link to= '/category/plastichousewares' > <img src="/Images/Homepag/Plastics.png" alt className="caa" /></Link>
     </div>
   </div>
   <div className="row  ">
     <div className="col-lg-3 col-md-4 col-sm-12">
-     <Link to='/partyware'><img src="/Images/Homepag/Partyware.png" className="caa " alt /></Link> 
+     <Link to='/category/partyware'><img src="/Images/Homepag/Partyware.png" className="caa " alt /></Link> 
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/kitechenwear' ><img src="/Images/Homepag/Kitchen Utensils.png" className="caa " alt /></Link> 
+    <Link to='/category/kitechenwear' ><img src="/Images/Homepag/Kitchen Utensils.png" className="caa " alt /></Link> 
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
     <Link to='/cookwar'><img src="/Images/Homepag/Cookware.png" className="caa" alt /></Link>  
@@ -218,18 +192,19 @@ const reviews = [
   </div>
   <div className="row  ">
     <div className="col-lg-3 col-md-4 col-sm-12">
-   <Link to = '/toiletries' ><img src="/Images/Homepag/Toiletries.png" className="caa" alt /></Link> 
+   <Link to = '/category/toiletries' ><img src="/Images/Homepag/Toiletries.png" className="caa" alt /></Link> 
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/petproducts'><img src="/Images/Homepag/Pet Products.png" className="caa" alt /></Link>  
+    <Link to='/category/petproducts'><img src="/Images/Homepag/Pet Products.png" className="caa" alt /></Link>  
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/stationery'><img src="/Images/Homepag/Stationeries.png" className="caa" alt /></Link>  
+    <Link to='/category/stationery'><img src="/Images/Homepag/Stationeries.png" className="caa" alt /></Link>  
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
     <Link to='/deparments'>  <img src="/Images/Homepag/all departements.png" className="caa" alt /></Link>
     </div>
   </div>
+  
   <div>
     <div className="mt-2 reviews">
       <p className="title1">Your reliable source of home supplies </p>
@@ -279,40 +254,46 @@ const reviews = [
     <div className='col slide-track'>
      
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/655857d34d9f48f0bb57298ba4efa29c.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/1.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/142cc78ff34640d1899c77dfe0d66496.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/2.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/02beb9a5e10c4f4a847406158222cda2.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/3.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/c8ada3393abf463fa6f2a016e80386a6.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/4.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/6436ee1233344abbbbcf90d82d69dae5.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/5.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/37f51d5132b24473906028d623d30ab5.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/6.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/2c689aaf4d9c48c990640f6c70fc55b8.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/7.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/093f9422000e4e6883be7b281ae95545.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/8.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/26cad78f12d9404cbf5c8a64fb1a888a.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/9.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/dc65ce50a7434978ab3534eb2eecae01.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/10.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/fd66e73b317d478ebd3c9c11560fa104.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/11.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="https://www.efghousewares.co.uk/Content/14/images/BrandsLogo/88b88d29caef4765be995bc32e7aa862.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/12.jpg" alt className="sliimg" />
+      </div>
+      <div>
+      <img src="/Images/featured brands/12.jpg" alt className="sliimg" />
+      </div>
+      <div>
+      <img src="/Images/featured brands/12.jpg" alt className="sliimg" />
       </div>
     </div>
   </div>

@@ -1,7 +1,34 @@
 
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Metalbuckcards from './Metalbuckcard';
+
+// const Metalbuck = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/metalbuckfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Metalbuckcards key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Metalbuck;
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Metalbuckcards from './Metalbuckcard';
+import CardNew from '../../../../Cardsnew'; // Make sure the path is correct
 
 const Metalbuck = () => {
   const [users, setUsers] = useState([]);
@@ -13,10 +40,10 @@ const Metalbuck = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Metalbuckcards key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/metalbucksinglepage" />
         ))}
       </div>
     </div>
@@ -24,3 +51,5 @@ const Metalbuck = () => {
 }
 
 export default Metalbuck;
+
+

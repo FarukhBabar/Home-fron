@@ -1,9 +1,36 @@
 
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Diariescard from './Diariescard';
+
+// const  Diaries = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/diariesfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Diariescard key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Diaries;
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Diariescard from './Diariescard';
+import CardNew from '../../../../../Cardsnew'; // Make sure the path is correct
 
-const  Diaries = () => {
+const Diaries = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -13,10 +40,10 @@ const  Diaries = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Diariescard key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/diariessinglepage" />
         ))}
       </div>
     </div>

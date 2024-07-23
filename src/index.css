@@ -167,7 +167,16 @@ display: none !important;
 .ADDTOCART{
   display: flex;
 }
-
+.verified-badge {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text color */
+  padding: 4px 8px; /* Padding */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 12px; /* Small font size */
+  position: absolute; /* Position it relative to the star-rating div */
+  top: 8px; /* Adjust top position */
+  left: 8px; /* Adjust left position */
+}
 
 
 

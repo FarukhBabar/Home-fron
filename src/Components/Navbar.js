@@ -94,7 +94,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/showermain">
             Shower Curtains
           </Link>
-          <Link className="dropdown-item" to="/deparmentbathroom">
+          <Link className="dropdown-item" to="/category/bathroom">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Pound Line</p>
@@ -107,7 +107,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/firstaid">
             First Aid/Pharmacy
           </Link>
-          <Link className="dropdown-item" to="/poundline">
+          <Link className="dropdown-item" to="/category/poundline">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Textile</p>
@@ -120,7 +120,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/clothing">
             Clothing
           </Link>
-          <Link className="dropdown-item" to="/textiles & Accessories">
+          <Link className="dropdown-item" to="/category/textiles-Accessories">
             view all
           </Link>
         </div>
@@ -134,7 +134,7 @@ useEffect(() => {
             Akzonobel
           </Link>
           
-          <Link className="dropdown-item" to="/diye">
+          <Link className="dropdown-item" to="/category/diye">
             view all
           </Link>
 
@@ -148,7 +148,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/digital">
             DIGITAL ACCESSORIES
           </Link>
-          <Link className="dropdown-item" to="/electricalde">
+          <Link className="dropdown-item" to="/category/electricalde">
             view all
           </Link>
 
@@ -162,7 +162,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/dinner">
             DINNER SETS
           </Link>
-          <Link className="dropdown-item" to="/chinaproducts">
+          <Link className="dropdown-item" to="/category/chinaproducts">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Pest Control</p>
@@ -180,7 +180,7 @@ useEffect(() => {
             Cotton Wool
           </Link>
          
-          <Link className="dropdown-item" to="/toiletries">
+          <Link className="dropdown-item" to="/category/toiletries">
             view all
           </Link>
 
@@ -188,7 +188,7 @@ useEffect(() => {
           
         </div>
         <div className="me-5 mb-3 mb-md-0">
-        <Link to='/obstical'><p className="foodsnv ms-3 d-inline">OBSOLETE</p> </Link><br/> <br/>
+        <Link to='/category/obstical'><p className="foodsnv ms-3 d-inline">OBSOLETE</p> </Link><br/> <br/>
         <p className="foodsnv ms-3 d-inline">HOUSE HOLD</p>
           <Link className="dropdown-item" to="/freshn">
             Air Freshner
@@ -199,7 +199,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/bleech">
             Bleach
           </Link>
-          <Link className="dropdown-item" to="/householdcleaners">
+          <Link className="dropdown-item" to="/category/householdcleaners">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Kitchenware</p>
@@ -210,7 +210,7 @@ useEffect(() => {
            Bareware
           </Link>
           
-          <Link className="dropdown-item" to="/kitechenwear">
+          <Link className="dropdown-item" to="/category/kitechenwear">
            View all
           </Link>
 
@@ -222,7 +222,7 @@ useEffect(() => {
             Cat Products
           </Link>
          
-          <Link className="dropdown-item" to="/petproducts">
+          <Link className="dropdown-item" to="/category/petproducts">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Kids Products</p>
@@ -232,7 +232,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/kidssto">
            Kids Storage
           </Link>
-          <Link className="dropdown-item" to="/kidsproduct">
+          <Link className="dropdown-item" to="/category/kidsproduct">
            View all
           </Link>
           <p className="foodsnv ms-3 d-inline">Gardening</p>
@@ -243,7 +243,7 @@ useEffect(() => {
            Birdcare
           </Link>
          
-          <Link className="dropdown-item" to="/gardening">
+          <Link className="dropdown-item" to="/category/gardening">
            View all
           </Link>
 
@@ -259,7 +259,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/banner">
             Banners
           </Link>
-          <Link className="dropdown-item" to="/partyware">
+          <Link className="dropdown-item" to="/category/partyware">
             view all
           </Link>
           
@@ -271,7 +271,7 @@ useEffect(() => {
             Crystal
           </Link>
          
-          <Link className="dropdown-item" to="/glassweare">
+          <Link className="dropdown-item" to="/category/glassweare">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Hardware</p>
@@ -281,7 +281,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/mats">
            Mats & Rugs
           </Link>
-          <Link className="dropdown-item" to="/hardware">
+          <Link className="dropdown-item" to="/category/hardware">
            View all
           </Link>
           <p className="foodsnv ms-3 d-inline">Home & Decore</p>
@@ -291,7 +291,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/candel">
             Candels
           </Link>
-          <Link className="dropdown-item" to="/homedecore">
+          <Link className="dropdown-item" to="/category/homedecore">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Disposable Bags</p>
@@ -301,7 +301,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/tablewear">
             Disposible Tablewear
           </Link>
-          <Link className="dropdown-item" to="/deparmentdisposible">
+          <Link className="dropdown-item" to="/category/disposible">
             view all
           </Link>
         </div>
@@ -315,7 +315,7 @@ useEffect(() => {
            Kids Plastic Products
           </Link>
           
-          <Link className="dropdown-item" to="/plastichousewares">
+          <Link className="dropdown-item" to="/category/plastichousewares">
            View all
           </Link>
 
@@ -327,7 +327,7 @@ useEffect(() => {
             Flasks
           </Link>
          
-          <Link className="dropdown-item" to="/seasonalsports">
+          <Link className="dropdown-item" to="/category/seasonalsports">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Stationery</p>
@@ -337,7 +337,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/books">
            Books
           </Link>
-          <Link className="dropdown-item" to="/stationery">
+          <Link className="dropdown-item" to="/category/stationery">
            View all
           </Link>
           <p className="foodsnv ms-3 d-inline">Cleaning Matterials</p>
@@ -347,7 +347,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/duster">
             Cloths And Dusters
           </Link>
-          <Link className="dropdown-item" to="/cleaning">
+          <Link className="dropdown-item" to="/category/cleaning">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Artifical Flower</p>
@@ -357,7 +357,7 @@ useEffect(() => {
           <Link className="dropdown-item" to="/bouquet">
             Bouquets
           </Link>
-          <Link className="dropdown-item" to="/flowers">
+          <Link className="dropdown-item" to="/category/flowers">
             view all
           </Link>
         </div>

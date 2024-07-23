@@ -10,17 +10,17 @@ const Hardwaremain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/furniture"><img src="./Images/HARDWARE.png" alt className="img" /></Link>   
+        <Link to="/furniture"><img src="/Images/hardware/1.jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/mats"><img src="./Images/HARDWARE-1.png" alt className="img1" /></Link> 
+        <Link to="/mats"><img src="/Images/hardware/2.jpg" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/metalbuck"> <img src="./Images/HARDWARE-2.png" alt className="img2" /></Link>
+        <Link to="/metalbuck"> <img src="/Images/hardware/3.jpg" alt className="img2" /></Link>
       </div>
     </div>
     {/* <div className="col-lg-3 col-md-6 col-sm-12">

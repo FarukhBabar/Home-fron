@@ -1323,7 +1323,10 @@ import Partypopper from './Components/Pages/Adminside/deparmentbathrom/Partyware
 import Partypoppersingl from './Components/Pages/Adminside/deparmentbathrom/Partyware/Partypopper/Partypoppersingl';
 import UsersTable from './Components/Pages/UsersTable';
 import FAQ from './Components/Faq';
+import Hosiery from './Components/Pages/Adminside/Poudliene/Hosiery/Hosiery';
+import Hosierysingl from './Components/Pages/Adminside/Poudliene/Hosiery/Hosierysingl';
 const AdminLayout = ({ children }) => (
+  
   <>
   <Adminnavbar/>
   <div>{children}</div>
@@ -2359,19 +2362,19 @@ const App = () => {
         {/* Main Routes */}
         <Route path='/' element={<Home />} />
         <Route path='/deparments' element={<MainLayout><Department /></MainLayout>} />
-        <Route path='/foodanddrinks' element={<MainLayout><FoodandDrink /></MainLayout>} />
-        <Route path='/foods' element={<MainLayout><Foodsproduct /></MainLayout>} />
-        <Route path='/drinks' element={<MainLayout><Drinkproduct /></MainLayout>} />
-        <Route path='/smoking' element={<MainLayout><Smoking /></MainLayout>} />
-        <Route path='/lighter' element={<MainLayout><Lighter /></MainLayout>} />
-        <Route path='/electrical' element={<MainLayout><Electricalde /></MainLayout>} />
-        <Route path='/essentional' element={<MainLayout><Smokingessentials /></MainLayout>} />
+        <Route path='/category/foodanddrinks' element={<MainLayout><FoodandDrink /></MainLayout>} />
+        <Route path='/category/foodanddrinks/foods' element={<MainLayout><Foodsproduct /></MainLayout>} />
+        <Route path='/category/foodanddrinks/drinks' element={<MainLayout><Drinkproduct /></MainLayout>} />
+        <Route path='/category/smoking' element={<MainLayout><Smoking /></MainLayout>} />
+        <Route path='/category/smoking/lighter' element={<MainLayout><Lighter /></MainLayout>} />
+        <Route path='/category/smoking/electrical' element={<MainLayout><Electricalde /></MainLayout>} />
+        <Route path='/category/smoking/essentional' element={<MainLayout><Smokingessentials /></MainLayout>} />
         <Route path='/addtocart' element={<MainLayout><Addtocart/></MainLayout>}/>
-        <Route path='/poundline' element={<MainLayout><Poundline /></MainLayout>} />
-        <Route path='/bathroombeauty' element={<MainLayout><Bathroomp /></MainLayout>} />
+        <Route path='/category/poundline' element={<MainLayout><Poundline /></MainLayout>} />
+        <Route path='/category/poundline/bathroombeauty' element={<MainLayout><Bathroomp /></MainLayout>} />
        
         
-        <Route path='/Diy' element={<MainLayout><Diytools /></MainLayout>} />
+        <Route path='/category/Diy' element={<MainLayout><Diytools /></MainLayout>} />
         <Route path='/Disposables Party Bin Liners' element={<MainLayout><Partybin /></MainLayout>} />
         
         <Route path='/Candles Air Freshner' element={<MainLayout><Candels /></MainLayout>} />
@@ -2395,18 +2398,18 @@ const App = () => {
         <Route path='/export' element={<MainLayout><Export/></MainLayout>} />
         <Route path='/faq' element={<MainLayout><Faq/></MainLayout>} />
         <Route path='/Supersunday/:id' element={<MainLayout><Sundayoffersinglr/></MainLayout>}/>
-        <Route path='/essentional/:id' element={<MainLayout><Smokingsinglepage/></MainLayout>}/>
-        <Route path='/lightersingle/:id' element={<MainLayout><Lightersinglepage/></MainLayout>}/>
-        <Route path='/bathroomsingle/:id' element={<MainLayout><Bathroomsingle/></MainLayout>}/>
+        <Route path='/product/essentional/:id' element={<MainLayout><Smokingsinglepage/></MainLayout>}/>
+        <Route path='/product/lighter/:id' element={<MainLayout><Lightersinglepage/></MainLayout>}/>
+        <Route path='/product/bathroom/:id' element={<MainLayout><Bathroomsingle/></MainLayout>}/>
         <Route path='/palletsingle/:id' element={<MainLayout><Palletsingle/></MainLayout>}/>
         <Route path='/newarrsingle/:id' element={<MainLayout><Newarrivalsingr/></MainLayout>}/>
-        <Route path='/foodssinglepage/:id' element={<MainLayout><Foodssingle/></MainLayout>}/>
-        <Route path='/electricalsinglepage/:id' element={<MainLayout><Electricalsinglepage/></MainLayout>}/>
-        <Route path='/drinkssinglepage/:id' element={<MainLayout><Drinkssingle/></MainLayout>}/>
+        <Route path='/product/foods/:id' element={<MainLayout><Foodssingle/></MainLayout>}/>
+        <Route path='/product/electrical/:id' element={<MainLayout><Electricalsinglepage/></MainLayout>}/>
+        <Route path='/product/drinks/:id' element={<MainLayout><Drinkssingle/></MainLayout>}/>
 
-        <Route path='/deparmentbathroom' element={<MainLayout><Debathroom/></MainLayout>}/>
-        <Route path='/deparmentdisposible' element={<MainLayout><Disposiblecat/></MainLayout>}/>
-        <Route path='/deparmentloundry' element={<MainLayout><Loundrysubcat/></MainLayout>}/>
+        <Route path='/category/bathroom' element={<MainLayout><Debathroom/></MainLayout>}/>
+        <Route path='/category/disposible' element={<MainLayout><Disposiblecat/></MainLayout>}/>
+        <Route path='/category/loundry' element={<MainLayout><Loundrysubcat/></MainLayout>}/>
         <Route path='/bathroommain' element={<MainLayout><Bathroommain/></MainLayout>}/>
         <Route path='/bathroomsinglepage/:id' element={<MainLayout><Bathroomsinglede/></MainLayout>}/>
 
@@ -2440,20 +2443,20 @@ const App = () => {
         <Route path='/laacess' element={<MainLayout><Laacess/></MainLayout>}/>
         <Route path='/laacesssinglepage/:id' element={<MainLayout><Laacesssingle/></MainLayout>}/>
 
-        <Route path='/batteries' element={<MainLayout><Batteriesmain/></MainLayout>}/>
-        <Route path='/batteriessinglepage/:id' element={<MainLayout><Batteriessinge/></MainLayout>}/>
+        <Route path='/category/batteries' element={<MainLayout><Batteriesmain/></MainLayout>}/>
+        <Route path='/product/batteries/:id' element={<MainLayout><Batteriessinge/></MainLayout>}/>
 
-        <Route path='/phoneaccessories' element={<MainLayout><Phone/></MainLayout>}/>
-        <Route path='/phonesinglepage/:id' element={<MainLayout><Phonesingle/></MainLayout>}/>
+        <Route path='/category/phoneaccessories' element={<MainLayout><Phone/></MainLayout>}/>
+        <Route path='/product/phone/:id' element={<MainLayout><Phonesingle/></MainLayout>}/>
 
-        <Route path='/obstical' element={<MainLayout><Obstical/></MainLayout>}/>
-        <Route path='/obsticalsinglepage/:id' element={<MainLayout><Obticalsigle/></MainLayout>}/>
+        <Route path='/category/obstical' element={<MainLayout><Obstical/></MainLayout>}/>
+        <Route path='/product/obstical/:id' element={<MainLayout><Obticalsigle/></MainLayout>}/>
 
-        <Route path='/electric' element={<MainLayout><Electric/></MainLayout>}/>
-        <Route path='/electricsinglepage/:id' element={<MainLayout><Electricsingle/></MainLayout>}/>
+        <Route path='/category/poundline/electric' element={<MainLayout><Electric/></MainLayout>}/>
+        <Route path='/product/electric/:id' element={<MainLayout><Electricsingle/></MainLayout>}/>
 
-        <Route path='/firstaid' element={<MainLayout><Firstaidmain/></MainLayout>}/>
-        <Route path='/firstaidsinglepage/:id' element={<MainLayout><Firstaidsingle/></MainLayout>}/>
+        <Route path='/category/poundline/firstaid' element={<MainLayout><Firstaidmain/></MainLayout>}/>
+        <Route path='/product/firstaid/:id' element={<MainLayout><Firstaidsingle/></MainLayout>}/>
 
         <Route path='/freshner' element={<MainLayout><Freshner/></MainLayout>}/>
         <Route path='/freshnersinglepage/:id' element={<MainLayout><Freshnersingle/></MainLayout>}/>
@@ -2503,23 +2506,23 @@ const App = () => {
         <Route path='/baloon' element={<MainLayout><Baloon/></MainLayout>}/>
         <Route path='/baloonsinglepage/:id' element={<MainLayout><Baloonsingl/></MainLayout>}/>
 
-        <Route path='/kitechenwear' element={<MainLayout><Kitechendde/></MainLayout>}/>
+        <Route path='/category/kitechenwear' element={<MainLayout><Kitechendde/></MainLayout>}/>
 
-        <Route path='/cleaning' element={<MainLayout><Leaning/></MainLayout>}/>
+        <Route path='/category/cleaning' element={<MainLayout><Leaning/></MainLayout>}/>
 
-        <Route path='/gardening' element={<MainLayout><Gardeningmain/></MainLayout>}/>
+        <Route path='/category/gardening' element={<MainLayout><Gardeningmain/></MainLayout>}/>
 
-        <Route path='/homedecore' element={<MainLayout><Homedecoremain/></MainLayout>}/>
+        <Route path='/category/homedecore' element={<MainLayout><Homedecoremain/></MainLayout>}/>
 
-        <Route path='/toiletries' element={<MainLayout><Tolitriesmain/></MainLayout>}/>
+        <Route path='/category/toiletries' element={<MainLayout><Tolitriesmain/></MainLayout>}/>
 
-        <Route path='/diye' element={<MainLayout><Diymainpage/></MainLayout>}/>
+        <Route path='/category/diye' element={<MainLayout><Diymainpage/></MainLayout>}/>
 
-        <Route path='/flowers' element={<MainLayout><Artificalmain/></MainLayout>}/>
+        <Route path='/category/flowers' element={<MainLayout><Artificalmain/></MainLayout>}/>
 
-        <Route path='/stationery' element={<MainLayout><Stationerymain/></MainLayout>}/>
+        <Route path='/category/stationery' element={<MainLayout><Stationerymain/></MainLayout>}/>
 
-        <Route path='/textiles & Accessories' element={<MainLayout><Textilesmainpage/></MainLayout>}/>
+        <Route path='/category/textiles-Accessories' element={<MainLayout><Textilesmainpage/></MainLayout>}/>
 
         <Route path='/aprons' element={<MainLayout><Aprons/></MainLayout>}/>
         <Route path='/apronssinglepage/:id' element={<MainLayout><Apronssingle/></MainLayout>}/>
@@ -2554,27 +2557,27 @@ const App = () => {
         <Route path='/birds' element={<MainLayout><Birds/></MainLayout>}/>
         <Route path='/birdssinglepage/:id' element={<MainLayout><Birdssingl/></MainLayout>}/>
 
-        <Route path='/householdcleaners' element={<MainLayout><Houseclenermain/></MainLayout>}/>
+        <Route path='/category/householdcleaners' element={<MainLayout><Houseclenermain/></MainLayout>}/>
 
-        <Route path='/plastichousewares' element={<MainLayout><Plastichousewearmain/></MainLayout>}/>
+        <Route path='/category/plastichousewares' element={<MainLayout><Plastichousewearmain/></MainLayout>}/>
 
-        <Route path='/petproducts' element={<MainLayout><Petproductsmain/></MainLayout>}/>
+        <Route path='/category/petproducts' element={<MainLayout><Petproductsmain/></MainLayout>}/>
 
-        <Route path='/chinaproducts' element={<MainLayout><Chinamain/></MainLayout>}/>
+        <Route path='/category/chinaproducts' element={<MainLayout><Chinamain/></MainLayout>}/>
 
-        <Route path='/hardware' element={<MainLayout><Hardwaremain/></MainLayout>}/>
+        <Route path='/category/hardware' element={<MainLayout><Hardwaremain/></MainLayout>}/>
 
-        <Route path='/seasonalsports' element={<MainLayout><Seasonalsportsmain/></MainLayout>}/>
+        <Route path='/category/seasonalsports' element={<MainLayout><Seasonalsportsmain/></MainLayout>}/>
 
-        <Route path='/pestcontrol' element={<MainLayout><Pestcontromain/></MainLayout>}/>
+        <Route path='/category/pestcontrol' element={<MainLayout><Pestcontromain/></MainLayout>}/>
 
-        <Route path='/kidsproduct' element={<MainLayout><Kidsmain/></MainLayout>}/>
+        <Route path='/category/kidsproduct' element={<MainLayout><Kidsmain/></MainLayout>}/>
 
-        <Route path='/glassweare' element={<MainLayout><Glasswaremain/></MainLayout>}/>
+        <Route path='/category/glassweare' element={<MainLayout><Glasswaremain/></MainLayout>}/>
 
-        <Route path='/electricalde' element={<MainLayout><Electricaldemain/></MainLayout>}/>
+        <Route path='/category/electricalde' element={<MainLayout><Electricaldemain/></MainLayout>}/>
 
-        <Route path='/partyware' element={<MainLayout><Partywaremain/></MainLayout>}/>
+        <Route path='/category/partyware' element={<MainLayout><Partywaremain/></MainLayout>}/>
 
         <Route path='/pumps' element={<MainLayout><Pumps/></MainLayout>}/>
         <Route path='/pumpssinglepage/:id' element={<MainLayout><Pumpssingl/></MainLayout>}/>
@@ -2632,53 +2635,53 @@ const App = () => {
         <Route path='/bouquet' element={<MainLayout><Bouquet/></MainLayout>}/>
         <Route path='/bouquetsinglepage/:id' element={<MainLayout><Bouquetsingl/></MainLayout>}/>
 
-        <Route path='/diytools' element={<MainLayout><Diytoolspo/></MainLayout>}/>
-        <Route path='/diytoolssinglepage/:id' element={<MainLayout><Diytoolssingl/></MainLayout>}/>
+        <Route path='/category/poundline/diytools' element={<MainLayout><Diytoolspo/></MainLayout>}/>
+        <Route path='/product/diytools/:id' element={<MainLayout><Diytoolssingl/></MainLayout>}/>
 
-        <Route path='/disposiblepo' element={<MainLayout><Disposible/></MainLayout>}/>
-        <Route path='/disposibleposinglepage/:id' element={<MainLayout><Disposbilesingle/></MainLayout>}/>
+        <Route path='/category/poundline/disposiblepo' element={<MainLayout><Disposible/></MainLayout>}/>
+        <Route path='/product/disposiblepo/:id' element={<MainLayout><Disposbilesingle/></MainLayout>}/>
 
-        <Route path='/craftpo' element={<MainLayout><Craftpo/></MainLayout>}/>
-        <Route path='/craftposinglepage/:id' element={<MainLayout><Craftsingl/></MainLayout>}/>
+        <Route path='/category/poundline/craftpo' element={<MainLayout><Craftpo/></MainLayout>}/>
+        <Route path='/product/craftpo/:id' element={<MainLayout><Craftsingl/></MainLayout>}/>
         
-        <Route path='/carpo' element={<MainLayout><Carpo/></MainLayout>}/>
-        <Route path='/carposinglepage/:id' element={<MainLayout><Carposingl/></MainLayout>}/>
+        <Route path='/category/poundline/carpo' element={<MainLayout><Carpo/></MainLayout>}/>
+        <Route path='/product/carpo/:id' element={<MainLayout><Carposingl/></MainLayout>}/>
         
-        <Route path='/candeles' element={<MainLayout><Candeles/></MainLayout>}/>
-        <Route path='/candelssinglepage/:id' element={<MainLayout><Candelessingl/></MainLayout>}/>
+        <Route path='/category/poundline/candeles' element={<MainLayout><Candeles/></MainLayout>}/>
+        <Route path='/product/candels/:id' element={<MainLayout><Candelessingl/></MainLayout>}/>
 
-        <Route path='/foodpound' element={<MainLayout><Foodpound/></MainLayout>}/>
-        <Route path='/foodpoundsinglepage/:id' element={<MainLayout><Foodposingl/></MainLayout>}/>
+        <Route path='/category/poundline/foodpound' element={<MainLayout><Foodpound/></MainLayout>}/>
+        <Route path='/product/foodpound/:id' element={<MainLayout><Foodposingl/></MainLayout>}/>
         
-        <Route path='/shoecare' element={<MainLayout><Shoecare/></MainLayout>}/>
-        <Route path='/shoecarsinglepage/:id' element={<MainLayout><Shoesingl/></MainLayout>}/>
+        <Route path='/category/poundline/shoecare' element={<MainLayout><Shoecare/></MainLayout>}/>
+        <Route path='/product/shoecare/:id' element={<MainLayout><Shoesingl/></MainLayout>}/>
 
-        <Route path='/stationerypo' element={<MainLayout><Stationerypo/></MainLayout>}/>
-        <Route path='/stationerysinglepage/:id' element={<MainLayout><Stationerysingl/></MainLayout>}/>
+        <Route path='/category/poundline/stationerypo' element={<MainLayout><Stationerypo/></MainLayout>}/>
+        <Route path='/product/stationery/:id' element={<MainLayout><Stationerysingl/></MainLayout>}/>
 
-        <Route path='/potoy' element={<MainLayout><Potoy/></MainLayout>}/>
-        <Route path='/potoysinglepage/:id' element={<MainLayout><Potoysingl/></MainLayout>}/>
+        <Route path='/category/poundline/potoy' element={<MainLayout><Potoy/></MainLayout>}/>
+        <Route path='/product/potoy/:id' element={<MainLayout><Potoysingl/></MainLayout>}/>
         
-        <Route path='/pestcon' element={<MainLayout><Pestcon/></MainLayout>}/>
-        <Route path='/pestconsinglepage/:id' element={<MainLayout><Pestconsingl/></MainLayout>}/>
+        <Route path='/category/poundline/pestcon' element={<MainLayout><Pestcon/></MainLayout>}/>
+        <Route path='/product/pestcon/:id' element={<MainLayout><Pestconsingl/></MainLayout>}/>
         
-        <Route path='/lightergas' element={<MainLayout><Lightergas/></MainLayout>}/>
-        <Route path='/lightergassinglepage/:id' element={<MainLayout><Lightergassingl/></MainLayout>}/>
+        <Route path='/category/poundline/lightergas' element={<MainLayout><Lightergas/></MainLayout>}/>
+        <Route path='/product/lightergas/:id' element={<MainLayout><Lightergassingl/></MainLayout>}/>
         
-        <Route path='/loundryiron' element={<MainLayout><Loundryiron/></MainLayout>}/>
-        <Route path='/loundryironsinglepage/:id' element={<MainLayout><Loundryirsingl/></MainLayout>}/>
+        <Route path='/category/poundline/loundryiron' element={<MainLayout><Loundryiron/></MainLayout>}/>
+        <Route path='/product/loundryiron/:id' element={<MainLayout><Loundryirsingl/></MainLayout>}/>
 
-        <Route path='/kitchenwearpound' element={<MainLayout><Kitchenwarepo/></MainLayout>}/>
-        <Route path='/kitchenwearpoundsinglepage/:id' element={<MainLayout><Kitchenwareposingl/></MainLayout>}/>
+        <Route path='/category/poundline/kitchenwearpound' element={<MainLayout><Kitchenwarepo/></MainLayout>}/>
+        <Route path='/product/kitchenwearpound/:id' element={<MainLayout><Kitchenwareposingl/></MainLayout>}/>
 
-        <Route path='/householdclpound' element={<MainLayout><Householdcl/></MainLayout>}/>
-        <Route path='/householdclpoundsinglepage/:id' element={<MainLayout><Householdclsingl/></MainLayout>}/>
+        <Route path='/category/poundline/householdclpound' element={<MainLayout><Householdcl/></MainLayout>}/>
+        <Route path='/product/householdclpound/:id' element={<MainLayout><Householdclsingl/></MainLayout>}/>
         
-        <Route path='/householdpr' element={<MainLayout><Househldpr/></MainLayout>}/>
-        <Route path='/householdprsinglepage/:id' element={<MainLayout><Househldprsingl/></MainLayout>}/>
+        <Route path='/category/poundline/householdpr' element={<MainLayout><Househldpr/></MainLayout>}/>
+        <Route path='/product/householdpr/:id' element={<MainLayout><Househldprsingl/></MainLayout>}/>
         
-        <Route path='/reading' element={<MainLayout><Reading/></MainLayout>}/>
-        <Route path='/readingsinglepage/:id' element={<MainLayout><Readingsingl/></MainLayout>}/>
+        <Route path='/category/poundline/reading' element={<MainLayout><Reading/></MainLayout>}/>
+        <Route path='/product/reading/:id' element={<MainLayout><Readingsingl/></MainLayout>}/>
         
         <Route path='/gloves' element={<MainLayout><Gloves/></MainLayout>}/>
         <Route path='/glovessinglepage/:id' element={<MainLayout><Glovessingl/></MainLayout>}/>
@@ -3178,6 +3181,8 @@ const App = () => {
      <Route path='/partypopperssinglepage/:id' element={<MainLayout><Partypoppersingl/></MainLayout>}/>
       <Route path='/faq' element={<MainLayout><FAQ/></MainLayout>}/>
 
+     <Route path='/category/poundline/hoiserypound' element={<MainLayout><Hosiery/></MainLayout>}/>
+     <Route path='/product/hoisery' element={<MainLayout><Hosierysingl/></MainLayout>}/>
 
       </Routes>
       </CartProvider>

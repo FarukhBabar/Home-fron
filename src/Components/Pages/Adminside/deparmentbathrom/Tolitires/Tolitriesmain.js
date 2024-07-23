@@ -10,102 +10,102 @@ const Tolitriesmain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/cotton"><img src="./Images/Toiletries.png" alt className="img" /></Link>   
+        <Link to="/cotton"><img src="/Images/toiletries/2.jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-      <Link to='/babay'><img src="./Images/Toiletries (18).png" alt className="img2" /></Link>
+      <Link to='/babay'><img src="/Images/toiletries/1.jpg" alt className="img2" /></Link>
         
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/giftsets"> <img src="./Images/Toiletries (2).png" alt className="img2" /></Link>
+        <Link to="/giftsets"> <img src="/Images/toiletries/4.jpg" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/hair'><img src="./Images/Toiletries (3).png" alt className="img3" /></Link>   
-      </div>
-    </div>
-  </div>
-  <div className="row justify-content-center mt-3">
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/hand'><img src="./Images/Toiletries (4).png" alt className="img" /></Link>
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/health'> <img src="./Images/Toiletries (5).png" alt className="img1" /></Link>
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/mouthwash'><img src="./Images/Toiletries (6).png" alt className="img2" /></Link>
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/perfumes'><img src="./Images/Toiletries (7).png" alt className="img3" /></Link>
+        <Link to='/hair'><img src="/Images/toiletries/5.jpg" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/sanitary'><img src="./Images/Toiletries (8).png" alt className="img" /></Link> 
+        <Link to='/hand'><img src="/Images/toiletries/6.jpg" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/shampo'><img src="./Images/Toiletries (9).png" alt className="img1" /></Link> 
+        <Link to='/health'> <img src="/Images/toiletries/7.jpg" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/saving' ><img src="./Images/Toiletries (10).png" alt className="img2" /></Link>
+        <Link to='/mouthwash'><img src="/Images/toiletries/8.jpg" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/showerge'><img src="./Images/Toiletries (11).png" alt className="img3" /></Link>
-      </div>
-    </div>
-  </div>
-  <div className="row justify-content-center mt-3">
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/skincare'><img src="./Images/Toiletries (12).png" alt className="img" /></Link> 
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/soapbar'><img src="./Images/Toiletries (13).png" alt className="img1" /></Link>
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/toothbrush'><img src="./Images/Toiletries (14).png" alt className="img2" /></Link> 
-      </div>
-    </div>
-    <div className="col-lg-3 col-md-6 col-sm-12">
-      <div>
-        <Link to='/toothpast'><img src="./Images/Toiletries (15).png" alt className="img3" /></Link>
+        <Link to='/perfumes'><img src="/Images/toiletries/9.jpg" alt className="img3" /></Link>
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/africa'><img src="./Images/Toiletries (16).png" alt className="img" /></Link>
+        <Link to='/sanitary'><img src="/Images/toiletries/10.jpg" alt className="img" /></Link> 
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/shampo'><img src="/Images/toiletries/11.jpg" alt className="img1" /></Link> 
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/saving' ><img src="/Images/toiletries/12.jpg" alt className="img2" /></Link>
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/showerge'><img src="/Images/toiletries/13.jpg" alt className="img3" /></Link>
+      </div>
+    </div>
+  </div>
+  <div className="row justify-content-center mt-3">
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/skincare'><img src="/Images/toiletries/14.jpg" alt className="img" /></Link> 
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/soapbar'><img src="/Images/toiletries/15.jpg" alt className="img1" /></Link>
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/toothbrush'><img src="/Images/toiletries/16.jpg" alt className="img2" /></Link> 
+      </div>
+    </div>
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/toothpast'><img src="/Images/toiletries/17.jpg" alt className="img3" /></Link>
+      </div>
+    </div>
+  </div>
+  <div className="row justify-content-center mt-3">
+    <div className="col-lg-3 col-md-6 col-sm-12">
+      <div>
+        <Link to='/africa'><img src="/Images/toiletries/18.jpg" alt className="img" /></Link>
       </div>
     </div>
     
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-      <Link to="/deodrant"><img src="./Images/Toiletries (1).png" alt className="img1" /></Link> 
+      <Link to="/deodrant"><img src="/Images/toiletries/3.jpg" alt className="img1" /></Link> 
       </div>
     </div>
     

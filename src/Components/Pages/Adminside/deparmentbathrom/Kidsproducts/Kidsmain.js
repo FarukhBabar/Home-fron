@@ -10,17 +10,17 @@ const Kidsmain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/babyproducts"><img src="./Images/Kids Products.png" alt className="img" /></Link>   
+        <Link to="/babyproducts"><img src="/Images/kids product/1.jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/kidssto"><img src="./Images/Kids Products-1.png" alt className="img1" /></Link> 
+        <Link to="/kidssto"><img src="/Images/kids product/3.jpg" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/smoking"><img src="./Images/Kids Products-2.png" alt className="img1" /></Link> 
+        <Link to="/simplehuman"><img src="/Images/kids product/2.jpg" alt className="img1" /></Link> 
       </div>
     </div>
    

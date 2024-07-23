@@ -1,7 +1,34 @@
 
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
+// import Toothpastcards from './Toothpastcard';
+
+// const Toothpast = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/toothpastfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Toothpastcards key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Toothpast;
+
+
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Toothpastcards from './Toothpastcard';
+import CardNew from '../../../../../Cardsnew'; // Make sure the path is correct
 
 const Toothpast = () => {
   const [users, setUsers] = useState([]);
@@ -13,10 +40,10 @@ const Toothpast = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Toothpastcards key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/toothpastsinglepage" />
         ))}
       </div>
     </div>

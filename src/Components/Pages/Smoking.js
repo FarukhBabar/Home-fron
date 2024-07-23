@@ -12,18 +12,18 @@ const Smoking = () => {
   <div className="container">
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
-        <Link to="/lighter">
-          <img src="../Images/Group 116.png" className="img" alt />
+        <Link to="/category/smoking/lighter">
+          <img src="../Images/smoking product/1.jpg" className="img" alt />
         </Link>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12 ms-3 mt-3">
-        <Link to="/electrical">
-          <img src="../Images/Group 115.png" className="img1" alt />
+        <Link to="/category/smoking/electrical">
+          <img src="../Images/smoking product/3.jpg" className="img1" alt />
         </Link>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12 ms-3 mt-3">
-        <Link to="/essentional">
-          <img src="../Images/Group 171.png" className="img1" alt />
+        <Link to="/category/smoking/essentional">
+          <img src="../Images/smoking product/2.jpg" className="img1" alt />
         </Link>
       </div>
     </div>

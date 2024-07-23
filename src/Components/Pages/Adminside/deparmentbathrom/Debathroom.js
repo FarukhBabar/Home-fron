@@ -13,34 +13,34 @@ const Debathroom = () => {
   <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/bathroommain"><img src="/Images/bathroom3.png" alt className="img" /></Link>   
+          <Link to="/bathroommain"><img src="/Images/bathroom/1.jpg" alt className="img" /></Link>   
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/mirrormain"><img src="/Images/bathroom4.png" alt className="img1" /></Link> 
+          <Link to="/mirrormain"><img src="/Images/bathroom/4.jpg" alt className="img1" /></Link> 
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/showermain"> <img src="/Images/bathroom5.png" alt className="img2" /></Link>
+          <Link to="/showermain"> <img src="/Images/bathroom/5.jpg" alt className="img2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/bathmatesmain"><img src="/Images/bathrom1.png" alt className="img3" /></Link>   
+          <Link to="/bathmatesmain"><img src="/Images/bathroom/2.jpg" alt className="img3" /></Link>   
         </div>
       </div>
     </div>
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/bathacessories"><img src="/Images/batheroom2.png" alt className="img" /></Link>   
+          <Link to="/bathacessories"><img src="/Images/bathroom/3.jpg" alt className="img" /></Link>   
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/showerhead"><img src="/Images/bathrrom6.png" alt className="img1" /></Link> 
+          <Link to="/showerhead"><img src="/Images/bathroom/6.jpg" alt className="img1" /></Link> 
         </div>
       </div>
       

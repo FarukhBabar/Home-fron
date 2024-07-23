@@ -1,9 +1,36 @@
 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios'
-import Showercards from './Showercards';
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios'
+// import Showercards from './Showercards';
 
-const  Showerpage = () => {
+// const  Showerpage = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/showerfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Showercards key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default  Showerpage;
+
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import CardNew from '../../../../Cardsnew'; // Make sure the path is correct
+
+const Showerpage = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -13,14 +40,14 @@ const  Showerpage = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Showercards key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/showersinglepage" />
         ))}
       </div>
     </div>
   );
 }
 
-export default  Showerpage;
+export default Showerpage;

@@ -1,7 +1,34 @@
 
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios'
+// import KitechenKnicard from './KitechenKnicard';
+
+// const KitechenKni = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/kitechenknifreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <KitechenKnicard key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default KitechenKni;
+
+
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'
-import KitechenKnicard from './KitechenKnicard';
+import axios from 'axios';
+import CardNew from '../../../../../Cardsnew'; // Make sure the path is correct
 
 const KitechenKni = () => {
   const [users, setUsers] = useState([]);
@@ -13,10 +40,10 @@ const KitechenKni = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <KitechenKnicard key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/kitechenknisinglepage" />
         ))}
       </div>
     </div>

@@ -1,9 +1,36 @@
 
-import React, { useState, useEffect } from 'react';
-import axios from 'axios'
-import Showheadcard from './Showheadcard';
+// import React, { useState, useEffect } from 'react';
+// import axios from 'axios'
+// import Showheadcard from './Showheadcard';
 
-const  Showheadpage = () => {
+// const  Showheadpage = () => {
+//   const [users, setUsers] = useState([]);
+
+//   useEffect(() => {
+//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/showheadfreedelivery")
+//       .then(response => setUsers(response.data))
+//       .catch(error => console.log(error));
+//   }, []);
+
+//   return (
+//     <div className="container  mt-1">
+//       <div className="row">
+//         {users.map(user => (
+//           <Showheadcard key={user._id} user={user} />
+//         ))}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default  Showheadpage;
+
+
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import CardNew from '../../../../Cardsnew'; // Make sure the path is correct
+
+const Showheadpage = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -13,14 +40,14 @@ const  Showheadpage = () => {
   }, []);
 
   return (
-    <div className="container  mt-1">
+    <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <Showheadcard key={user._id} user={user} />
+          <CardNew key={user._id} user={user} baseUrl="/showerheadsinglepage" />
         ))}
       </div>
     </div>
   );
 }
 
-export default  Showheadpage;
+export default Showheadpage;

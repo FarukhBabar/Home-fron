@@ -1,12 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const GlassTablewearcards = ({ user }) => {
+  const navigate = useNavigate();
+  const handleImageClick = () => {
+    navigate(`/glasstablewearsinglepage/id`, { state: { id: user._id } });
+  };
+
   return (
     <div className="col-6 col-sm-2 col-md-4 col-lg-3 mt-4">
       <div className="card11212">
         <h5 className="image">
-          <Link to={`/glasstablewearsinglepage/${user._id}`} className="btn">
+          <div onClick={handleImageClick} className="btn">
             {user.image && (
               <img
                 src={`https://homeessential-fdca5e469865.herokuapp.com/${user.image}`}
@@ -15,15 +20,16 @@ const GlassTablewearcards = ({ user }) => {
                 style={{ height: '60%', width: '99%' }}
               />
             )}
-          </Link>
+          </div>
         </h5>
         <h5 className="ms-2">{user.name.slice(0, 25)}</h5>
-        <p className="ms-2" dangerouslySetInnerHTML={{ __html: user.title.slice(0, 25) }} />
+        <p dangerouslySetInnerHTML={{ __html: user.title.slice(0, 25) }}></p>
         <center>
           <button className="btn btn-success mb-2 w-100">Shop now</button>
         </center>
       </div>
     </div>
+ 
   );
 };
 
