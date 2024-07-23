@@ -290,10 +290,10 @@ const reviews = [
       <img src="/Images/featured brands/12.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="/Images/featured brands/12.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/13.jpg" alt className="sliimg" />
       </div>
       <div>
-      <img src="/Images/featured brands/12.jpg" alt className="sliimg" />
+      <img src="/Images/featured brands/14.jpg" alt className="sliimg" />
       </div>
     </div>
   </div>

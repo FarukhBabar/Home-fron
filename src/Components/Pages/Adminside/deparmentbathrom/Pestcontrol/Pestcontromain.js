@@ -10,12 +10,12 @@ const Pestcontromain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/rentokil"><img src="/Images/Pest Control.png" alt className="img" /></Link>   
+        <Link to="/rentokil"><img src="/Images/Pest control/1.jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/stv"><img src="/Images/Pest Control (1).png" alt className="img1" /></Link> 
+        <Link to="/stv"><img src="/Images/Pest control/2.jpg" alt className="img1" /></Link> 
       </div>
     </div>
     

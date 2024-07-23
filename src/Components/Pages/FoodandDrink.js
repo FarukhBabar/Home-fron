@@ -12,12 +12,12 @@ const FoodandDrink = () => {
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
         <Link to="/category/foodanddrinks/foods">
-          <img src="/Images/Group 418 (1).png" className="img" alt />
+          <img src="/Images/Food/8.jpg" className="img" alt />
         </Link>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12 ms-3 mt-3">
         <Link to="/category/foodanddrinks/drinks">
-          <img src="/Images/Group 418 (2).png" className="img1" alt />
+          <img src="/Images/Food/7.jpg" className="img1" alt />
         </Link>
       </div>
     </div>
