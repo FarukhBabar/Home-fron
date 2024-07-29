@@ -7,7 +7,7 @@ const Wateringcard = ({ user }) => {
   const handleImageClick = () => {
     
     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
-    navigate(`/wateringsinglepage/${productName}`, { state: { id: user._id } });
+    navigate(`/product/watering/${productName}`, { state: { id: user._id } });
   };
 
   return (

@@ -43,7 +43,7 @@ const Office = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/office/homesinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/officehome" />
         ))}
       </div>
     </div>

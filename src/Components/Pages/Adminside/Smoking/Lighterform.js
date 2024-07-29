@@ -1,110 +1,96 @@
-import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import "../admin.css"
 
+import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import StaticForm from '../../../FormPage1';
 const Lighterform = () => {
-  const [Image, setImage] = useState(null)
-  const [name, setName] = useState('')
-  const [title, setTitle] = useState('')
-  const [price, setPrice] = useState('')
-  const [ImageError, setImageError] = useState(false)
-  const [nameError, setNameError] = useState(false)
-  const [titleError, setTitleError] = useState(false)
-  const [priceError, setPriceError] = useState(false)
-  const navigate = useNavigate()
+  const [data, setData] = useState({
+        name: '',
+        title: '',
+        price: '',
+        image: null
+    });
+    const navigate = useNavigate();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault()
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                let response = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/smokinproducts");
+                let result = await response.json();
+                setData({
+                    name: result.name,
+                    title: result.title,
+                    price: result.price,
+                    image: null
+                });
+            } catch (error) {
+                console.error("Error fetching data:", error);
+            }
+        };
 
-    let formdata = new FormData()
-    formdata.append('name', name)
-    formdata.append('title', title)
-    formdata.append('price', price)
-    formdata.append('image', Image)
+        fetchData();
+    }, []);
 
-    if (!name || !title || !price || !Image) {
-      if (!name) setNameError(true)
-      if (!title) setTitleError(true)
-      if (!price) setPriceError(true)
-      if (!Image) setImageError(true)
-      return
-    }
+    const handleNameChange = (e) => {
+        setData({ ...data, name: e.target.value });
+    };
 
-    try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/ligproducts", {
-        method: "post",
-        body: formdata
-      })
-      result = await result.json()
-      if (result) {
-        navigate("/lighterform")
-        alert("Product added successfully")
-      } else {
-        alert("Error in connection")
-      }
-    } catch (error) {
-      console.log("ERROR IN DB")
-    }
-  }
+    const handlePriceChange = (e) => {
+        setData({ ...data, price: e.target.value });
+    };
 
-  return (
-    <div className="container my-5">
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2>Add New Lighter Product</h2>
-        <Link to="/listlighter" className="btn btn-primary">Product List</Link>
-      </div>
-      <form onSubmit={handleSubmit} className="p-4 border rounded bg-light">
-        <div className="mb-3">
-          <label className="form-label">Item Name</label>
-          <input
-            type="text"
-            className={`form-control ${nameError ? 'is-invalid' : ''}`}
-            name="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Enter your Item name"
-          />
-          {nameError && <div className="invalid-feedback">Please enter the item name</div>}
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Description</label>
-          <input
-            type="text"
-            className={`form-control ${titleError ? 'is-invalid' : ''}`}
-            name="title"
-            value={title}
-            onChange={(e) => setTitle(e.target.value)}
-            placeholder="Enter your Item title"
-          />
-          {titleError && <div className="invalid-feedback">Please enter the item description</div>}
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Price</label>
-          <input
-            type="text"
-            className={`form-control ${priceError ? 'is-invalid' : ''}`}
-            name="price"
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-            placeholder="Enter your Item price"
-          />
-          {priceError && <div className="invalid-feedback">Please enter the item price</div>}
-        </div>
-        <div className="mb-3">
-          <label className="form-label">Image</label>
-          <input
-            type="file"
-            className={`form-control ${ImageError ? 'is-invalid' : ''}`}
-            name="Image"
-            onChange={(e) => setImage(e.target.files[0])}
-            placeholder="Upload your Item image"
-          />
-          {ImageError && <div className="invalid-feedback">Please upload an image</div>}
-        </div>
-        <button type="submit" className="btn btn-success">Add Product</button>
-      </form>
-    </div>
-  )
-}
+    const handleDescriptionChange = (model) => {
+        setData({ ...data, title: model });
+    };
+
+    const handleFileChange = (e) => {
+        setData({ ...data, image: e.target.files[0] });
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        let formData = new FormData();
+        formData.append('name', data.name);
+        formData.append('title', data.title);
+        formData.append('price', data.price);
+        formData.append('image', data.image);
+
+        if (!data.name || !data.title || !data.price || !data.image) {
+            alert("Please fill all fields");
+            return;
+        }
+
+        try {
+            let response = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/ligproducts", {
+                method: "POST",
+                body: formData
+            });
+            let result = await response.json();
+            if (response.ok) {
+                navigate("/listsmokigess");
+                alert("Product added successfully");
+            } else {
+                alert("Error in connection");
+            }
+        } catch (error) {
+            console.error("ERROR IN DB", error);
+            alert("Error in connection");
+        }
+    };
+
+    return (
+        <StaticForm
+            name={data.name}
+            title={data.title}
+            price={data.price}
+            onNameChange={handleNameChange}
+            onPriceChange={handlePriceChange}
+            onDescriptionChange={handleDescriptionChange}
+            onFileChange={handleFileChange}
+            onSubmit={handleSubmit}
+            listUrl="/listlighter" 
+        />
+    );
+};
 
 export default Lighterform

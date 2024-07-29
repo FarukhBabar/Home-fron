@@ -205,7 +205,9 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
         </div>
       </div>
 
-     
+      <div className="text-end mt-4">
+        <button type="submit" className="btn btn-primary">Place Order</button>
+      </div>
 
       <div className="my-4">
         <label className="form-label">Card Details</label>
@@ -241,9 +243,7 @@ const Checkout = () => {
                   <i className="mdi mdi-arrow-left me-1"></i> Continue Shopping
                 </Link>
               </div>
-              <div className="text-end mt-4">
-        <button type="submit" className="btn btn-primary">Place Order</button>
-      </div>
+             
             </div>
           </div>
           <div className="col-xl-4">

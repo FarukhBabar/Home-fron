@@ -44,7 +44,7 @@ const Clothing = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/clothingsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/clothing" />
         ))}
       </div>
     </div>

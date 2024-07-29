@@ -5,7 +5,9 @@ const  ElectricalAccesscard = ({ user }) => {
    const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/electricalaccessosinglepage/id`, { state: { id: user._id } });
+   
+     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/electricalaccesso/${productName}`, { state: { id: user._id } });
   };
 
   return (

@@ -351,6 +351,7 @@ const Adminnavbar = () => {
                 <ul className="dropdown-menu">
                   <li><Link className="dropdown-item" to="/listbaby">Baby Products</Link></li>
                   <li><Link className="dropdown-item" to="/listkidssto">Kids Storage</Link></li>
+                  <li><Link className="dropdown-item" to="/listcharater">Kids Charater</Link></li>
                 
                  
                 </ul>

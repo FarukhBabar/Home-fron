@@ -5,7 +5,9 @@ const  Ironelecard = ({ user }) => {
    const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/ironelesinglepage/id`, { state: { id: user._id } });
+       
+     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/ironele/${productName}`, { state: { id: user._id } });
   };
 
   return (

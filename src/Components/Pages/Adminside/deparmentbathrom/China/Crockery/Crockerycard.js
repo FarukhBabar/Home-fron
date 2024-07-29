@@ -5,8 +5,11 @@ const  Crockerycard = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/Supersunday/id`, { state: { id: user._id } });
+    // Replace spaces with hyphens and remove any non-alphanumeric characters to create a URL-friendly product name
+    const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/crockery/${productName}`, { state: { id: user._id } });
   };
+
 
   return (
     <div className="col-6 col-sm-2 col-md-4 col-lg-3 mt-4">

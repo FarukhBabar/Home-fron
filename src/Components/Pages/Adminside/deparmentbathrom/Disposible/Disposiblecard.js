@@ -5,7 +5,7 @@ const Disposiblecard = ({ user }) => {
     const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/disposiblesinglepage/id`, { state: { id: user._id } });
+    navigate(`/product/disposible/id`, { state: { id: user._id } });
   };
 
   return (

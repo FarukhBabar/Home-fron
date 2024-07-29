@@ -5,7 +5,7 @@ const Bathroomcard = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/Supersunday/id`, { state: { id: user._id } });
+    navigate(`/product/bathroomsinglepage/id`, { state: { id: user._id } });
   };
 
   return (

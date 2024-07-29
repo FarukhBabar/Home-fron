@@ -4,7 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 const Storageaccessoriescards = ({ user }) => {
   const navigate = useNavigate();
   const handleImageClick = () => {
-    navigate(`/storageaccessoriessinglepage/id`, { state: { id: user._id } });
+    // Replace spaces with hyphens and remove any non-alphanumeric characters to create a URL-friendly product name
+    const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/storageaccessories/${productName}`, { state: { id: user._id } });
   };
 
   return (

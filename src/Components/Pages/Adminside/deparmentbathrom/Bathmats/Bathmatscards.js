@@ -5,7 +5,7 @@ const Bathmatscards = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/Supersunday/id`, { state: { id: user._id } });
+    navigate(`/product/bathmatessinglepage/id`, { state: { id: user._id } });
   };
 
   return (

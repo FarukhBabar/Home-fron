@@ -7,7 +7,7 @@ const Fertilizercard = ({ user }) => {
   const handleImageClick = () => {
    
     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
-    navigate(`/fertilizersinglepage/${productName}`, { state: { id: user._id } });
+    navigate(`/product/fertilizer/${productName}`, { state: { id: user._id } });
   };
 
   return (

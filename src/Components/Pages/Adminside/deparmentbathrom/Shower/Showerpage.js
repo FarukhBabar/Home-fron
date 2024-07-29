@@ -43,7 +43,7 @@ const Showerpage = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/showersinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/showersinglepage" />
         ))}
       </div>
     </div>

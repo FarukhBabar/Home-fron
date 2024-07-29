@@ -43,7 +43,7 @@ const Tissuepaper = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/stvsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/stv" />
         ))}
       </div>
     </div>

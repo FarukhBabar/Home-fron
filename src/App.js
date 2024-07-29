@@ -1325,6 +1325,13 @@ import UsersTable from './Components/Pages/UsersTable';
 import FAQ from './Components/Faq';
 import Hosiery from './Components/Pages/Adminside/Poudliene/Hosiery/Hosiery';
 import Hosierysingl from './Components/Pages/Adminside/Poudliene/Hosiery/Hosierysingl';
+import Kitechenga from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechenga';
+import Kitechengasingl from './Components/Pages/Adminside/deparmentbathrom/Kitechenwear/Kitechengadgets/Kitechengasingl';
+import Kidschaform from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschaform';
+import Kidschalist from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschalist';
+import Kidschaupdate from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschaupdate';
+import Kidschar from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschar';
+import Kidschasingl from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschasingl';
 const AdminLayout = ({ children }) => (
   
   <>
@@ -2307,6 +2314,10 @@ const App = () => {
         <Route path='/listearephone' element={<AdminLayout><Earphonelist/></AdminLayout>}/>
         <Route path='/listearephone/:id' element={<AdminLayout><Earphoneupdate/></AdminLayout>}/>
 
+        <Route path='/charaterform' element={<AdminLayout><Kidschaform/></AdminLayout>}/>
+        <Route path='/listcharater' element={<AdminLayout><Kidschalist/></AdminLayout>}/>
+        <Route path='/listcharater/:id' element={<AdminLayout><Kidschaupdate/></AdminLayout>}/>
+
         <Route path='/hairbodyform' element={<AdminLayout><Hairbodyform/></AdminLayout>}/>
         <Route path='/listhairbody' element={<AdminLayout><Hairbodylist/></AdminLayout>}/>
         <Route path='/listhairbody/:id' element={<AdminLayout><Hairbodyupdate/></AdminLayout>}/>
@@ -2397,7 +2408,7 @@ const App = () => {
         <Route path='/delivery' element={<MainLayout><Delivery/></MainLayout>} />
         <Route path='/export' element={<MainLayout><Export/></MainLayout>} />
         <Route path='/faq' element={<MainLayout><Faq/></MainLayout>} />
-        <Route path='/Supersunday/:id' element={<MainLayout><Sundayoffersinglr/></MainLayout>}/>
+        <Route path='/product/Supersunday/:slug' element={<MainLayout><Sundayoffersinglr/></MainLayout>}/>
         <Route path='/product/essentional/:id' element={<MainLayout><Smokingsinglepage/></MainLayout>}/>
         <Route path='/product/lighter/:id' element={<MainLayout><Lightersinglepage/></MainLayout>}/>
         <Route path='/product/bathroom/:id' element={<MainLayout><Bathroomsingle/></MainLayout>}/>
@@ -2408,40 +2419,40 @@ const App = () => {
         <Route path='/product/drinks/:id' element={<MainLayout><Drinkssingle/></MainLayout>}/>
 
         <Route path='/category/bathroom' element={<MainLayout><Debathroom/></MainLayout>}/>
-        <Route path='/category/disposible' element={<MainLayout><Disposiblecat/></MainLayout>}/>
+        
         <Route path='/category/loundry' element={<MainLayout><Loundrysubcat/></MainLayout>}/>
-        <Route path='/bathroommain' element={<MainLayout><Bathroommain/></MainLayout>}/>
-        <Route path='/bathroomsinglepage/:id' element={<MainLayout><Bathroomsinglede/></MainLayout>}/>
+        <Route path='/category/bathroom/bathroommain' element={<MainLayout><Bathroommain/></MainLayout>}/>
+        <Route path='/product/bathroomsinglepage/:id' element={<MainLayout><Bathroomsinglede/></MainLayout>}/>
 
-        <Route path='/mirrormain' element={<MainLayout><Mirrormain/></MainLayout>}/>
-        <Route path='/mirrorsinglepage/:id' element={<MainLayout><Mirrorsinglepage/></MainLayout>}/>
+        <Route path='/category/bathroom/mirrormain' element={<MainLayout><Mirrormain/></MainLayout>}/>
+        <Route path='/product/mirrorsinglepage/:id' element={<MainLayout><Mirrorsinglepage/></MainLayout>}/>
 
-        <Route path='/showermain' element={<MainLayout><Showermain/></MainLayout>}/>
-        <Route path='/showersinglepage/:id' element={<MainLayout><Showersingle/></MainLayout>}/>
+        <Route path='/category/bathroom/showermain' element={<MainLayout><Showermain/></MainLayout>}/>
+        <Route path='/product/showersinglepage/:id' element={<MainLayout><Showersingle/></MainLayout>}/>
 
-        <Route path='/bathmatesmain' element={<MainLayout><Bathmatsmain/></MainLayout>}/>
-        <Route path='/bathmatessinglepage/:id' element={<MainLayout><Bathmatssinglr/></MainLayout>}/>
+        <Route path='/category/bathroom/bathmatesmain' element={<MainLayout><Bathmatsmain/></MainLayout>}/>
+        <Route path='/product/bathmatessinglepage/:id' element={<MainLayout><Bathmatssinglr/></MainLayout>}/>
 
-        <Route path='/bathacessories' element={<MainLayout><Bathacessories/></MainLayout>}/>
-        <Route path='/bathacesssinglepage/:id' element={<MainLayout><Bathacessoriessingle/></MainLayout>}/>
+        <Route path='/category/bathroom/bathacessories' element={<MainLayout><Bathacessories/></MainLayout>}/>
+        <Route path='/product/bathacesssinglepage/:id' element={<MainLayout><Bathacessoriessingle/></MainLayout>}/>
 
-        <Route path='/showerhead' element={<MainLayout><Showhead/></MainLayout>}/>
-        <Route path='/showerheadsinglepage/:id' element={<MainLayout><Showheadsingle/></MainLayout>}/>
+        <Route path='/category/bathroom/showerhead' element={<MainLayout><Showhead/></MainLayout>}/>
+        <Route path='/product/showerheadsinglepage/:id' element={<MainLayout><Showheadsingle/></MainLayout>}/>
+        <Route path='/category/disposible' element={<MainLayout><Disposiblecat/></MainLayout>}/>
+        <Route path='/category/disposible/disposible' element={<MainLayout><Disposiblemain/></MainLayout>}/>
+        <Route path='/product/disposible/:id' element={<MainLayout><Disposiblesingle/></MainLayout>}/>
 
-        <Route path='/disposible' element={<MainLayout><Disposiblemain/></MainLayout>}/>
-        <Route path='/disposiblesinglepage/:id' element={<MainLayout><Disposiblesingle/></MainLayout>}/>
+        <Route path='/category/disposible/tablewear' element={<MainLayout><Tablewear/></MainLayout>}/>
+        <Route path='/product/tablewear/:id' element={<MainLayout><Tablewearsingle/></MainLayout>}/>
 
-        <Route path='/tablewear' element={<MainLayout><Tablewear/></MainLayout>}/>
-        <Route path='/tablewearsinglepage/:id' element={<MainLayout><Tablewearsingle/></MainLayout>}/>
+        <Route path='/category/loundry/airers' element={<MainLayout><Airers/></MainLayout>}/>
+        <Route path='/product/airers/:id' element={<MainLayout><Airerssingle/></MainLayout>}/>
 
-        <Route path='/airers' element={<MainLayout><Airers/></MainLayout>}/>
-        <Route path='/airerssinglepage/:id' element={<MainLayout><Airerssingle/></MainLayout>}/>
+        <Route path='/category/loundry/iorining' element={<MainLayout><Iorining/></MainLayout>}/>
+        <Route path='/product/iorining/:id' element={<MainLayout><Ioriningsingle/></MainLayout>}/>
 
-        <Route path='/iorining' element={<MainLayout><Iorining/></MainLayout>}/>
-        <Route path='/ioriningsinglepage/:id' element={<MainLayout><Ioriningsingle/></MainLayout>}/>
-
-        <Route path='/laacess' element={<MainLayout><Laacess/></MainLayout>}/>
-        <Route path='/laacesssinglepage/:id' element={<MainLayout><Laacesssingle/></MainLayout>}/>
+        <Route path='/category/loundry/laacess' element={<MainLayout><Laacess/></MainLayout>}/>
+        <Route path='/product/laacess/:id' element={<MainLayout><Laacesssingle/></MainLayout>}/>
 
         <Route path='/category/batteries' element={<MainLayout><Batteriesmain/></MainLayout>}/>
         <Route path='/product/batteries/:id' element={<MainLayout><Batteriessinge/></MainLayout>}/>
@@ -2464,29 +2475,24 @@ const App = () => {
         <Route path='/akonobol' element={<MainLayout><Akonobol/></MainLayout>}/>
         <Route path='/akonobolsinglepage/:id' element={<MainLayout><Akonobolsingle/></MainLayout>}/>
         
-        <Route path='/clock' element={<MainLayout><Clock/></MainLayout>}/>
-        <Route path='/clocksinglepage/:id' element={<MainLayout><Clocksingle/></MainLayout>}/>
+        <Route path='/category/electricalde/clock' element={<MainLayout><Clock/></MainLayout>}/>
+        <Route path='/product/clock/:id' element={<MainLayout><Clocksingle/></MainLayout>}/>
 
-        <Route path='/cameras' element={<MainLayout><Cameras/></MainLayout>}/>
-        <Route path='/camerassinglepage/:id' element={<MainLayout><Camerasingle/></MainLayout>}/>
+        <Route path='/category/electricalde/cameras' element={<MainLayout><Cameras/></MainLayout>}/>
+        <Route path='/product/cameras/:id' element={<MainLayout><Camerasingle/></MainLayout>}/>
 
-        <Route path='/digital' element={<MainLayout><Digital/></MainLayout>}/>
-        <Route path='/digitalsinglepage/:id' element={<MainLayout><Digitalsingle/></MainLayout>}/>
+        <Route path='/category/electricalde/digital' element={<MainLayout><Digital/></MainLayout>}/>
+        <Route path='/product/digital/:id' element={<MainLayout><Digitalsingle/></MainLayout>}/>
 
-        <Route path='/cookware' element={<MainLayout><Cookware/></MainLayout>}/>
-        <Route path='/cookwaresinglepage/:id' element={<MainLayout><Cookwaresingle/></MainLayout>}/>
+        <Route path='/category/chinaproducts/cookware' element={<MainLayout><Cookware/></MainLayout>}/>
+        <Route path='/product/cookware/:id' element={<MainLayout><Cookwaresingle/></MainLayout>}/>
 
-        <Route path='/crockery' element={<MainLayout><Crockery/></MainLayout>}/>
-        <Route path='/crockerysinglepage/:id' element={<MainLayout><Crockerysingle/></MainLayout>}/>
+        <Route path='/category/chinaproducts/crockery' element={<MainLayout><Crockery/></MainLayout>}/>
+        <Route path='/product/crockery/:id' element={<MainLayout><Crockerysingle/></MainLayout>}/>
 
-        <Route path='/dinner' element={<MainLayout><Dinner/></MainLayout>}/>
-        <Route path='/dinnersinglepage/:id' element={<MainLayout><Dinnersingel/></MainLayout>}/>
+        <Route path='/category/chinaproducts/dinner' element={<MainLayout><Dinner/></MainLayout>}/>
+        <Route path='/product/dinner/:id' element={<MainLayout><Dinnersingel/></MainLayout>}/>
 
-        <Route path='/cotton' element={<MainLayout><Cotton/></MainLayout>}/>
-        <Route path='/cottonsinglepage/:id' element={<MainLayout><Cottonsingle/></MainLayout>}/>
-
-        <Route path='/babay' element={<MainLayout><Babycare/></MainLayout>}/>
-        <Route path='/babysinglepage/:id' element={<MainLayout><Babaysingle/></MainLayout>}/>
         
         <Route path='/freshn' element={<MainLayout><Freshn/></MainLayout>}/>
         <Route path='/freshnsinglepage/:id' element={<MainLayout><Freshnsingle/></MainLayout>}/>
@@ -2494,17 +2500,15 @@ const App = () => {
         <Route path='/bleech' element={<MainLayout><Bleech/></MainLayout>}/>
         <Route path='/bleechsinglepage/:id' element={<MainLayout><Bleechsingl/></MainLayout>}/>
 
-        <Route path='/kidssto' element={<MainLayout><Kidssto/></MainLayout>}/>
-        <Route path='/kidsstosinglepage/:id' element={<MainLayout><Kidsstosingl/></MainLayout>}/>
+        <Route path='/category/kidsproduct/kidssto' element={<MainLayout><Kidssto/></MainLayout>}/>
+        <Route path='/product/kidssto/:id' element={<MainLayout><Kidsstosingl/></MainLayout>}/>
 
-        <Route path='/bbq' element={<MainLayout><Bbq/></MainLayout>}/>
-        <Route path='/bbqsinglepage/:id' element={<MainLayout><Bbqsingle/></MainLayout>}/>
+        <Route path='/category/gardening/bbq' element={<MainLayout><Bbq/></MainLayout>}/>
+        <Route path='/product/bbq/:id' element={<MainLayout><Bbqsingle/></MainLayout>}/>
 
-        <Route path='/bird' element={<MainLayout><Bird/></MainLayout>}/>
-        <Route path='/birdinglepage/:id' element={<MainLayout><Birdsingle/></MainLayout>}/>
+        <Route path='/category/gardening/bird' element={<MainLayout><Bird/></MainLayout>}/>
+        <Route path='/product/bird/:id' element={<MainLayout><Birdsingle/></MainLayout>}/>
 
-        <Route path='/baloon' element={<MainLayout><Baloon/></MainLayout>}/>
-        <Route path='/baloonsinglepage/:id' element={<MainLayout><Baloonsingl/></MainLayout>}/>
 
         <Route path='/category/kitechenwear' element={<MainLayout><Kitechendde/></MainLayout>}/>
 
@@ -2514,7 +2518,7 @@ const App = () => {
 
         <Route path='/category/homedecore' element={<MainLayout><Homedecoremain/></MainLayout>}/>
 
-        <Route path='/category/toiletries' element={<MainLayout><Tolitriesmain/></MainLayout>}/>
+        
 
         <Route path='/category/diye' element={<MainLayout><Diymainpage/></MainLayout>}/>
 
@@ -2522,40 +2526,40 @@ const App = () => {
 
         <Route path='/category/stationery' element={<MainLayout><Stationerymain/></MainLayout>}/>
 
-        <Route path='/category/textiles-Accessories' element={<MainLayout><Textilesmainpage/></MainLayout>}/>
+        <Route path='/category/textilesaccessories' element={<MainLayout><Textilesmainpage/></MainLayout>}/>
 
-        <Route path='/aprons' element={<MainLayout><Aprons/></MainLayout>}/>
-        <Route path='/apronssinglepage/:id' element={<MainLayout><Apronssingle/></MainLayout>}/>
+        <Route path='/category/textilesaccessories/aprons' element={<MainLayout><Aprons/></MainLayout>}/>
+        <Route path='/product/aprons/:id' element={<MainLayout><Apronssingle/></MainLayout>}/>
 
-        <Route path='/bedding' element={<MainLayout><Bedding/></MainLayout>}/>
-        <Route path='/beddingsinglepage/:id' element={<MainLayout><Beddingsingle/></MainLayout>}/>
+        <Route path='/category/textilesaccessories/bedding' element={<MainLayout><Bedding/></MainLayout>}/>
+        <Route path='/product/bedding/:id' element={<MainLayout><Beddingsingle/></MainLayout>}/>
 
-        <Route path='/clothing' element={<MainLayout><Clothing/></MainLayout>}/>
-        <Route path='/clothingsinglepage/:id' element={<MainLayout><Clothingsingle/></MainLayout>}/>
+        <Route path='/category/textilesaccessories/clothing' element={<MainLayout><Clothing/></MainLayout>}/>
+        <Route path='/product/clothing/:id' element={<MainLayout><Clothingsingle/></MainLayout>}/>
 
-        <Route path='/rentokil' element={<MainLayout><Rentokil/></MainLayout>}/>
-        <Route path='/rentokilsinglepage/:id' element={<MainLayout><RentokilSingle/></MainLayout>}/>
+        <Route path='/category/pestcontrol/rentokil' element={<MainLayout><Rentokil/></MainLayout>}/>
+        <Route path='/product/rentokil/:id' element={<MainLayout><RentokilSingle/></MainLayout>}/>
 
-        <Route path='/stv' element={<MainLayout><Stv/></MainLayout>}/>
-        <Route path='/stvsinglepage/:id' element={<MainLayout><StvSingle/></MainLayout>}/>
+        <Route path='/category/pestcontrol/stv' element={<MainLayout><Stv/></MainLayout>}/>
+        <Route path='/product/stv/:id' element={<MainLayout><StvSingle/></MainLayout>}/>
 
         <Route path='/car' element={<MainLayout><Car/></MainLayout>}/>
         <Route path='/carsinglepage/:id' element={<MainLayout><Carsingle/></MainLayout>}/>
 
-        <Route path='/bakeware' element={<MainLayout><Bakeware/></MainLayout>}/>
-        <Route path='/bakewaresinglepage/:id' element={<MainLayout><Bakewaresingle/></MainLayout>}/>
+        <Route path='/category/kitechenwear/bakeware' element={<MainLayout><Bakeware/></MainLayout>}/>
+        <Route path='/product/bakeware/:id' element={<MainLayout><Bakewaresingle/></MainLayout>}/>
 
-        <Route path='/cat' element={<MainLayout><Cat/></MainLayout>}/>
-        <Route path='/catsinglepage/:id' element={<MainLayout><Catsingle/></MainLayout>}/>
+        <Route path='/category/petproducts/cat' element={<MainLayout><Cat/></MainLayout>}/>
+        <Route path='/product/cat/:id' element={<MainLayout><Catsingle/></MainLayout>}/>
 
-        <Route path='/bareware' element={<MainLayout><Barewear/></MainLayout>}/>
-        <Route path='/barewaresinglepage/:id' element={<MainLayout><Barewearsingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/bareware' element={<MainLayout><Barewear/></MainLayout>}/>
+        <Route path='/product/bareware/:id' element={<MainLayout><Barewearsingl/></MainLayout>}/>
 
-        <Route path='/babyproducts' element={<MainLayout><Baby/></MainLayout>}/>
-        <Route path='/babysinglepage/:id' element={<MainLayout><Babysingle/></MainLayout>}/>
+        <Route path='/category/kidsproduct/babyproducts' element={<MainLayout><Baby/></MainLayout>}/>
+        <Route path='/product/baby/:id' element={<MainLayout><Babysingle/></MainLayout>}/>
 
-        <Route path='/birds' element={<MainLayout><Birds/></MainLayout>}/>
-        <Route path='/birdssinglepage/:id' element={<MainLayout><Birdssingl/></MainLayout>}/>
+        <Route path='/category/petproducts/birds' element={<MainLayout><Birds/></MainLayout>}/>
+        <Route path='/product/birds/:id' element={<MainLayout><Birdssingl/></MainLayout>}/>
 
         <Route path='/category/householdcleaners' element={<MainLayout><Houseclenermain/></MainLayout>}/>
 
@@ -2579,29 +2583,26 @@ const App = () => {
 
         <Route path='/category/partyware' element={<MainLayout><Partywaremain/></MainLayout>}/>
 
-        <Route path='/pumps' element={<MainLayout><Pumps/></MainLayout>}/>
-        <Route path='/pumpssinglepage/:id' element={<MainLayout><Pumpssingl/></MainLayout>}/>
+        <Route path='/category/partyware/baloon' element={<MainLayout><Baloon/></MainLayout>}/>
+        <Route path='/product/baloon/:id' element={<MainLayout><Baloonsingl/></MainLayout>}/>
 
-        <Route path='/banner' element={<MainLayout><Banner/></MainLayout>}/>
-        <Route path='/bannersinglepage/:id' element={<MainLayout><Bannersingl/></MainLayout>}/>
+        <Route path='/category/partyware/pumps' element={<MainLayout><Pumps/></MainLayout>}/>
+        <Route path='/product/pumps/:id' element={<MainLayout><Pumpssingl/></MainLayout>}/>
 
-        <Route path='/crystal' element={<MainLayout><Crystal/></MainLayout>}/>
-        <Route path='/crystalsinglepage/:id' element={<MainLayout><Crystalsingl/></MainLayout>}/>
+        <Route path='/category/partyware/banner' element={<MainLayout><Banner/></MainLayout>}/>
+        <Route path='/product/banner/:id' element={<MainLayout><Bannersingl/></MainLayout>}/>
 
-        <Route path='/cakes' element={<MainLayout><Cakes/></MainLayout>}/>
-        <Route path='/cakessinglepage/:id' element={<MainLayout><Cakessingl/></MainLayout>}/>
+        <Route path='/category/glassweare/crystal' element={<MainLayout><Crystal/></MainLayout>}/>
+        <Route path='/product/crystalsinglepage/:id' element={<MainLayout><Crystalsingl/></MainLayout>}/>
 
-        <Route path='/furniture' element={<MainLayout><Furniture/></MainLayout>}/>
-        <Route path='/furnituresinglepage/:id' element={<MainLayout><Furnituresingl/></MainLayout>}/>
+        <Route path='/category/glassweare/cakes' element={<MainLayout><Cakes/></MainLayout>}/>
+        <Route path='/product/cakes/:id' element={<MainLayout><Cakessingl/></MainLayout>}/>
 
-        <Route path='/mats' element={<MainLayout><Mats/></MainLayout>}/>
-        <Route path='/matssinglepage/:id' element={<MainLayout><Matssingl/></MainLayout>}/>
+        <Route path='/category/hardware/furniture' element={<MainLayout><Furniture/></MainLayout>}/>
+        <Route path='/product/furniture/:id' element={<MainLayout><Furnituresingl/></MainLayout>}/>
 
-        <Route path='/candel' element={<MainLayout><Candel/></MainLayout>}/>
-        <Route path='/candelsinglepage/:id' element={<MainLayout><Candelsingl/></MainLayout>}/>
-
-        <Route path='/st' element={<MainLayout><St/></MainLayout>}/>
-        <Route path='/stsinglepage/:id' element={<MainLayout><Stsingal/></MainLayout>}/>
+        <Route path='/category/hardware/mats' element={<MainLayout><Mats/></MainLayout>}/>
+        <Route path='product/mats/:id' element={<MainLayout><Matssingl/></MainLayout>}/>
 
         <Route path='/foodcon' element={<MainLayout><Foodcon/></MainLayout>}/>
         <Route path='/foodconsinglepage/:id' element={<MainLayout><Foodconsingl/></MainLayout>}/>
@@ -2611,29 +2612,29 @@ const App = () => {
         <Route path='/forget' element={<Forgetpassword/>}  />
         <Route path='/verifyotp' element={<VerifyOtp/>}/>
         
-        <Route path='/cooler' element={<MainLayout><Coolerbags/></MainLayout>}/>
-        <Route path='/coolersinglepage/:id' element={<MainLayout><Coolersingl/></MainLayout>}/>
+        <Route path='/category/seasonalsports/cooler' element={<MainLayout><Coolerbags/></MainLayout>}/>
+        <Route path='/product/cooler/:id' element={<MainLayout><Coolersingl/></MainLayout>}/>
         
-        <Route path='/flask' element={<MainLayout><Flas/></MainLayout>}/>
-        <Route path='/flasksinglepage/:id' element={<MainLayout><Flasksingl/></MainLayout>}/>
+        <Route path='/category/seasonalsports/flask' element={<MainLayout><Flas/></MainLayout>}/>
+        <Route path='/product/flask/:id' element={<MainLayout><Flasksingl/></MainLayout>}/>
 
-        <Route path='/art&craft' element={<MainLayout><Art/></MainLayout>}/>
-        <Route path='/art&craftsinglepage/:id' element={<MainLayout><Artsingle/></MainLayout>}/>
+        <Route path='/category/stationery/artcraft' element={<MainLayout><Art/></MainLayout>}/>
+        <Route path='/product/artcraft/:id' element={<MainLayout><Artsingle/></MainLayout>}/>
 
-        <Route path='/books' element={<MainLayout><Books/></MainLayout>}/>
-        <Route path='/bookssinglepage/:id' element={<MainLayout><Bookssingle/></MainLayout>}/>
+        <Route path='/category/stationery/books' element={<MainLayout><Books/></MainLayout>}/>
+        <Route path='/product/books/:id' element={<MainLayout><Bookssingle/></MainLayout>}/>
 
-        <Route path='/brushware' element={<MainLayout><Brushware/></MainLayout>}/>
-        <Route path='/brushwaresinglepage/:id' element={<MainLayout><Brushwaresingel/></MainLayout>}/>
+        <Route path='/category/cleaning/brushware' element={<MainLayout><Brushware/></MainLayout>}/>
+        <Route path='/product/brushware/:id' element={<MainLayout><Brushwaresingel/></MainLayout>}/>
 
-        <Route path='/duster' element={<MainLayout><Duster/></MainLayout>}/>
-        <Route path='/dustersinglepage/:id' element={<MainLayout><Dustersingl/></MainLayout>}/>
+        <Route path='/category/cleaning/duster' element={<MainLayout><Duster/></MainLayout>}/>
+        <Route path='/product/duster/:id' element={<MainLayout><Dustersingl/></MainLayout>}/>
 
-        <Route path='/artifical' element={<MainLayout><Artifical/></MainLayout>}/>
-        <Route path='/artificalsinglepage/:id' element={<MainLayout><Artificalsingel/></MainLayout>}/>
+        <Route path='/category/flowers/artifical' element={<MainLayout><Artifical/></MainLayout>}/>
+        <Route path='/product/artifical/:id' element={<MainLayout><Artificalsingel/></MainLayout>}/>
         
-        <Route path='/bouquet' element={<MainLayout><Bouquet/></MainLayout>}/>
-        <Route path='/bouquetsinglepage/:id' element={<MainLayout><Bouquetsingl/></MainLayout>}/>
+        <Route path='/category/flowers/bouquet' element={<MainLayout><Bouquet/></MainLayout>}/>
+        <Route path='/product/bouquet/:id' element={<MainLayout><Bouquetsingl/></MainLayout>}/>
 
         <Route path='/category/poundline/diytools' element={<MainLayout><Diytoolspo/></MainLayout>}/>
         <Route path='/product/diytools/:id' element={<MainLayout><Diytoolssingl/></MainLayout>}/>
@@ -2683,382 +2684,404 @@ const App = () => {
         <Route path='/category/poundline/reading' element={<MainLayout><Reading/></MainLayout>}/>
         <Route path='/product/reading/:id' element={<MainLayout><Readingsingl/></MainLayout>}/>
         
-        <Route path='/gloves' element={<MainLayout><Gloves/></MainLayout>}/>
-        <Route path='/glovessinglepage/:id' element={<MainLayout><Glovessingl/></MainLayout>}/>
+        <Route path='/category/cleaning/gloves' element={<MainLayout><Gloves/></MainLayout>}/>
+        <Route path='/product/gloves/:id' element={<MainLayout><Glovessingl/></MainLayout>}/>
         
-        <Route path='/mops' element={<MainLayout><Mops/></MainLayout>}/>
-        <Route path='/mopssinglepage/:id' element={<MainLayout><Mopssingl/></MainLayout>}/>
+        <Route path='/category/cleaning/mops' element={<MainLayout><Mops/></MainLayout>}/>
+        <Route path='/product/mops/:id' element={<MainLayout><Mopssingl/></MainLayout>}/>
         
-        <Route path='/sponge' element={<MainLayout><Sponge/></MainLayout>}/>
-        <Route path='/spongesinglepage/:id' element={<MainLayout><Spongesingl/></MainLayout>}/>
+        <Route path='/category/cleaning/sponge' element={<MainLayout><Sponge/></MainLayout>}/>
+        <Route path='/product/sponge/:id' element={<MainLayout><Spongesingl/></MainLayout>}/>
 
-        <Route path='/barrettine' element={<MainLayout><Barrettine/></MainLayout>}/>
-        <Route path='/barrettinesinglepage/:id' element={<MainLayout><Barrettinesingle/></MainLayout>}/>
+        <Route path='/category/diye/barrettine' element={<MainLayout><Barrettine/></MainLayout>}/>
+        <Route path='/product/barrettine/:id' element={<MainLayout><Barrettinesingle/></MainLayout>}/>
 
-        <Route path='/bartolin' element={<MainLayout><Bartolin/></MainLayout>}/>
-        <Route path='/bartolinsinglepage/:id' element={<MainLayout><Bartolinsingle/></MainLayout>}/>
+        <Route path='/category/diye/bartolin' element={<MainLayout><Bartolin/></MainLayout>}/>
+        <Route path='/product/bartolin/:id' element={<MainLayout><Bartolinsingle/></MainLayout>}/>
 
-        <Route path='/birdbrand' element={<MainLayout><Birdbrand/></MainLayout>}/>
-        <Route path='/birdbrandsinglepage/:id' element={<MainLayout><Birdbrandsingle/></MainLayout>}/>
+        <Route path='/category/diye/birdbrand' element={<MainLayout><Birdbrand/></MainLayout>}/>
+        <Route path='/product/birdbrand/:id' element={<MainLayout><Birdbrandsingle/></MainLayout>}/>
 
-        <Route path='/black' element={<MainLayout><Black/></MainLayout>}/>
-        <Route path='/blacksinglepage/:id' element={<MainLayout><Blacksingle/></MainLayout>}/>
+        <Route path='/category/diye/black' element={<MainLayout><Black/></MainLayout>}/>
+        <Route path='/product/black/:id' element={<MainLayout><Blacksingle/></MainLayout>}/>
         
-        <Route path='/bonit' element={<MainLayout><Bonit/></MainLayout>}/>
-        <Route path='/bonitsinglepage/:id' element={<MainLayout><Bonitsingle/></MainLayout>}/>
+        <Route path='/category/diye/bonit' element={<MainLayout><Bonit/></MainLayout>}/>
+        <Route path='/product/bonit/:id' element={<MainLayout><Bonitsingle/></MainLayout>}/>
         
-        <Route path='/bagsl' element={<MainLayout><Bags/></MainLayout>}/>
-        <Route path='/bagslsinglepage/:id' element={<MainLayout><Bagssingle/></MainLayout>}/>
+        <Route path='/category/loundry/bagsl' element={<MainLayout><Bags/></MainLayout>}/>
+        <Route path='/product/bagsl/:id' element={<MainLayout><Bagssingle/></MainLayout>}/>
         
-        <Route path='/bascketst' element={<MainLayout><Basketst/></MainLayout>}/>
-        <Route path='/bascketstsinglepage/:id' element={<MainLayout><Basketstsingle/></MainLayout>}/>
+        <Route path='/category/loundry/bascketst' element={<MainLayout><Basketst/></MainLayout>}/>
+        <Route path='/product/bascketst/:id' element={<MainLayout><Basketstsingle/></MainLayout>}/>
         
-        <Route path='/luggage' element={<MainLayout><Luggage/></MainLayout>}/>
-        <Route path='/luggagesinglepage/:id' element={<MainLayout><Luggagesingl/></MainLayout>}/>
+        <Route path='/category/loundry/luggage' element={<MainLayout><Luggage/></MainLayout>}/>
+        <Route path='/product/luggage/:id' element={<MainLayout><Luggagesingl/></MainLayout>}/>
 
-        <Route path='/bostik' element={<MainLayout><Bostik/></MainLayout>}/>
-        <Route path='/bostiksinglepage/:id' element={<MainLayout><Bostiksingle/></MainLayout>}/>
+        <Route path='/category/diye/bostik' element={<MainLayout><Bostik/></MainLayout>}/>
+        <Route path='/product/bostik/:id' element={<MainLayout><Bostiksingle/></MainLayout>}/>
         
-        <Route path='/briwax' element={<MainLayout><Briwax/></MainLayout>}/>
-        <Route path='/briwaxsinglepage/:id' element={<MainLayout><Briwaxsingle/></MainLayout>}/>
+        <Route path='/category/diye/briwax' element={<MainLayout><Briwax/></MainLayout>}/>
+        <Route path='/product/briwax/:id' element={<MainLayout><Briwaxsingle/></MainLayout>}/>
         
-        <Route path='/brook' element={<MainLayout><Brook/></MainLayout>}/>
-        <Route path='/brooksinglepage/:id' element={<MainLayout><Brooksingle/></MainLayout>}/>
+        <Route path='/category/diye/brook' element={<MainLayout><Brook/></MainLayout>}/>
+        <Route path='/product/brook/:id' element={<MainLayout><Brooksingle/></MainLayout>}/>
         
-        <Route path='/carproduct' element={<MainLayout><Carpro/></MainLayout>}/>
-        <Route path='/carproductsinglepage/:id' element={<MainLayout><Carprosingle/></MainLayout>}/>
+        <Route path='/category/diye/carproduct' element={<MainLayout><Carpro/></MainLayout>}/>
+        <Route path='/product/carproduct/:id' element={<MainLayout><Carprosingle/></MainLayout>}/>
 
-        <Route path='/carplan' element={<MainLayout><Carplan/></MainLayout>}/>
-        <Route path='/carplansinglepage/:id' element={<MainLayout><Carplansingle/></MainLayout>}/>
+        <Route path='/category/diye/carplan' element={<MainLayout><Carplan/></MainLayout>}/>
+        <Route path='/product/carplan/:id' element={<MainLayout><Carplansingle/></MainLayout>}/>
         
-        <Route path='/chamois' element={<MainLayout><Chamois/></MainLayout>}/>
-        <Route path='/chamoissinglepage/:id' element={<MainLayout><Chamoissingle/></MainLayout>}/>
+        <Route path='/category/diye/chamois' element={<MainLayout><Chamois/></MainLayout>}/>
+        <Route path='/product/chamois/:id' element={<MainLayout><Chamoissingle/></MainLayout>}/>
         
-        <Route path='/command' element={<MainLayout><Command/></MainLayout>}/>
-        <Route path='/commandsinglepage/:id' element={<MainLayout><Commandsingle/></MainLayout>}/>
+        <Route path='/category/diye/command' element={<MainLayout><Command/></MainLayout>}/>
+        <Route path='/product/command/:id' element={<MainLayout><Commandsingle/></MainLayout>}/>
         
-        <Route path='/coral' element={<MainLayout><Coral/></MainLayout>}/>
-        <Route path='/coralsinglepage/:id' element={<MainLayout><Coralsingle/></MainLayout>}/>
+        <Route path='/category/diye/coral' element={<MainLayout><Coral/></MainLayout>}/>
+        <Route path='/product/coral/:id' element={<MainLayout><Coralsingle/></MainLayout>}/>
          
-        <Route path='/crown' element={<MainLayout><Crown/></MainLayout>}/>
-        <Route path='/crownsinglepage/:id' element={<MainLayout><Crownsingle/></MainLayout>}/>
+        <Route path='/category/diye/crown' element={<MainLayout><Crown/></MainLayout>}/>
+        <Route path='/product/crowns:id' element={<MainLayout><Crownsingle/></MainLayout>}/>
         
-        <Route path='/dekton' element={<MainLayout><Dekton/></MainLayout>}/>
-        <Route path='/dektonsinglepage/:id' element={<MainLayout><Dektonsingle/></MainLayout>}/>
+        <Route path='/category/diye/dekton' element={<MainLayout><Dekton/></MainLayout>}/>
+        <Route path='/product/dekton/:id' element={<MainLayout><Dektonsingle/></MainLayout>}/>
 
-        <Route path='/demsum' element={<MainLayout><Demsum/></MainLayout>}/>
-        <Route path='/demsumsinglepage/:id' element={<MainLayout><Demsumsingle/></MainLayout>}/>
+        <Route path='/category/diye/demsum' element={<MainLayout><Demsum/></MainLayout>}/>
+        <Route path='/product/demsum/:id' element={<MainLayout><Demsumsingle/></MainLayout>}/>
 
-        <Route path='/darper' element={<MainLayout><Darper/></MainLayout>}/>
-        <Route path='/darpersinglepage/:id' element={<MainLayout><Darpersingle/></MainLayout>}/>
+        <Route path='/category/diye/darper' element={<MainLayout><Darper/></MainLayout>}/>
+        <Route path='/product/darper/:id' element={<MainLayout><Darpersingle/></MainLayout>}/>
 
-        <Route path='/edco' element={<MainLayout><Edco/></MainLayout>}/>
-        <Route path='/edcosinglepage/:id' element={<MainLayout><Edcosingle/></MainLayout>}/>
+        <Route path='/category/diye/edco' element={<MainLayout><Edco/></MainLayout>}/>
+        <Route path='/product/edco/:id' element={<MainLayout><Edcosingle/></MainLayout>}/>
 
-        <Route path='/exitex' element={<MainLayout><Exitex/></MainLayout>}/>
-        <Route path='/exitexsinglepage/:id' element={<MainLayout><Exitexsingle/></MainLayout>}/>
+        <Route path='/category/diye/exitex' element={<MainLayout><Exitex/></MainLayout>}/>
+        <Route path='/product/exitex/:id' element={<MainLayout><Exitexsingle/></MainLayout>}/>
 
-        <Route path='/fitforjob' element={<MainLayout><Fit/></MainLayout>}/>
-        <Route path='/fitforjobsinglepage/:id' element={<MainLayout><Fitsingle/></MainLayout>}/>
+        <Route path='/category/diye/fitforjob' element={<MainLayout><Fit/></MainLayout>}/>
+        <Route path='/product/fitforjob/:id' element={<MainLayout><Fitsingle/></MainLayout>}/>
         
-        <Route path='/global' element={<MainLayout><Global/></MainLayout>}/>
-        <Route path='/globalsinglepage/:id' element={<MainLayout><Globalsinngl/></MainLayout>}/>
+        <Route path='/category/diye/global' element={<MainLayout><Global/></MainLayout>}/>
+        <Route path='/product/global/:id' element={<MainLayout><Globalsinngl/></MainLayout>}/>
         
-        <Route path='/gas' element={<MainLayout><Gasgo/></MainLayout>}/>
-        <Route path='/gassinglepage/:id' element={<MainLayout><Gasgosingl/></MainLayout>}/>
+        <Route path='/category/diye/gas' element={<MainLayout><Gasgo/></MainLayout>}/>
+        <Route path='/product/gas/:id' element={<MainLayout><Gasgosingl/></MainLayout>}/>
         
-        <Route path='/gorila' element={<MainLayout><Gorila/></MainLayout>}/>
-        <Route path='/gorilasinglepage/:id' element={<MainLayout><Gorilasingl/></MainLayout>}/>
+        <Route path='/category/diye/gorila' element={<MainLayout><Gorila/></MainLayout>}/>
+        <Route path='/product/gorila/:id' element={<MainLayout><Gorilasingl/></MainLayout>}/>
         
-        <Route path='/hagsen' element={<MainLayout><Hagesan/></MainLayout>}/>
-        <Route path='/hagsensinglepage/:id' element={<MainLayout><Hagesansingl/></MainLayout>}/>
+        <Route path='/category/diye/hagsen' element={<MainLayout><Hagesan/></MainLayout>}/>
+        <Route path='/product/hagsen/:id' element={<MainLayout><Hagesansingl/></MainLayout>}/>
         
-        <Route path='/hardwareto' element={<MainLayout><Hardwaretools/></MainLayout>}/>
-        <Route path='/hardwaretosinglepage/:id' element={<MainLayout><Hardwaretoolssingl/></MainLayout>}/>
+        <Route path='/category/diye/hardwareto' element={<MainLayout><Hardwaretools/></MainLayout>}/>
+        <Route path='/product/hardwareto/:id' element={<MainLayout><Hardwaretoolssingl/></MainLayout>}/>
 
-        <Route path='/harris' element={<MainLayout><Harris/></MainLayout>}/>
-        <Route path='/harrissinglepage/:id' element={<MainLayout><Harrissingl/></MainLayout>}/>
+        <Route path='/category/diye/harris' element={<MainLayout><Harris/></MainLayout>}/>
+        <Route path='/product/harris/:id' element={<MainLayout><Harrissingl/></MainLayout>}/>
         
-        <Route path='/hilka' element={<MainLayout><Hilka/></MainLayout>}/>
-        <Route path='/hilkasinglepage/:id' element={<MainLayout><Hilkasingl/></MainLayout>}/>
+        <Route path='/category/diye/hilka' element={<MainLayout><Hilka/></MainLayout>}/>
+        <Route path='/product/hilka/:id' element={<MainLayout><Hilkasingl/></MainLayout>}/>
         
-        <Route path='/humnrol' element={<MainLayout><Humnrol/></MainLayout>}/>
-        <Route path='/humnrolsinglepage/:id' element={<MainLayout><Humnrolsingl/></MainLayout>}/> 
+        <Route path='/category/diye/humnrol' element={<MainLayout><Humnrol/></MainLayout>}/>
+        <Route path='/product/humnrol/:id' element={<MainLayout><Humnrolsingl/></MainLayout>}/> 
         
-        <Route path='/jbwel' element={<MainLayout><Jbweld/></MainLayout>}/>
-        <Route path='/jbwelsinglepage/:id' element={<MainLayout><Jbweldsingl/></MainLayout>}/> 
+        <Route path='/category/diye/jbwel' element={<MainLayout><Jbweld/></MainLayout>}/>
+        <Route path='/product/jbwel/:id' element={<MainLayout><Jbweldsingl/></MainLayout>}/> 
         
-        <Route path='/kilrock' element={<MainLayout><Kilrok/></MainLayout>}/>
-        <Route path='/kilrocksinglepage/:id' element={<MainLayout><Kilroksingl/></MainLayout>}/> 
+        <Route path='/category/diye/kilrock' element={<MainLayout><Kilrok/></MainLayout>}/>
+        <Route path='/product/kilrock/:id' element={<MainLayout><Kilroksingl/></MainLayout>}/> 
         
-        <Route path='/ladder' element={<MainLayout><Ladder/></MainLayout>}/>
-        <Route path='/laddersinglepage/:id' element={<MainLayout><Laddersingl/></MainLayout>}/>
+        <Route path='/category/diye/ladder' element={<MainLayout><Ladder/></MainLayout>}/>
+        <Route path='/product/ladder/:id' element={<MainLayout><Laddersingl/></MainLayout>}/>
         
-        <Route path='/locktile' element={<MainLayout><Locktile/></MainLayout>}/>
-        <Route path='/locktilesinglepage/:id' element={<MainLayout><Locktilesingl/></MainLayout>}/>
+        <Route path='/category/diye/locktile' element={<MainLayout><Locktile/></MainLayout>}/>
+        <Route path='/product/locktile/:id' element={<MainLayout><Locktilesingl/></MainLayout>}/>
 
-        <Route path='/lynwood' element={<MainLayout><Lynwood/></MainLayout>}/>
-        <Route path='/lynwoodsinglepage/:id' element={<MainLayout><Lynwoodsingl/></MainLayout>}/>
+        <Route path='/category/diye/lynwood' element={<MainLayout><Lynwood/></MainLayout>}/>
+        <Route path='/product/lynwood/:id' element={<MainLayout><Lynwoodsingl/></MainLayout>}/>
 
-        <Route path='/misc' element={<MainLayout><Misc/></MainLayout>}/>
-        <Route path='/miscsinglepage/:id' element={<MainLayout><Miscsingl/></MainLayout>}/>
+        <Route path='/category/diye/misc' element={<MainLayout><Misc/></MainLayout>}/>
+        <Route path='/product/misc/:id' element={<MainLayout><Miscsingl/></MainLayout>}/>
 
-        <Route path='/oxford' element={<MainLayout><Oxford/></MainLayout>}/>
-        <Route path='/oxfordsinglepage/:id' element={<MainLayout><Oxfordsing/></MainLayout>}/>
+        <Route path='/category/diye/oxford' element={<MainLayout><Oxford/></MainLayout>}/>
+        <Route path='/product/oxford/:id' element={<MainLayout><Oxfordsing/></MainLayout>}/>
 
-        <Route path='/pestco' element={<MainLayout><Pestco/></MainLayout>}/>
-        <Route path='/pestcosinglepage/:id' element={<MainLayout><Pestconsing/></MainLayout>}/>
+        <Route path='/category/diye/pestco' element={<MainLayout><Pestco/></MainLayout>}/>
+        <Route path='/product/pestco/:id' element={<MainLayout><Pestconsing/></MainLayout>}/>
 
-        <Route path='/plasplug' element={<MainLayout><Plasplug/></MainLayout>}/>
-        <Route path='/plasplugsinglepage/:id' element={<MainLayout><Plasplugsingl/></MainLayout>}/>
+        <Route path='/category/diye/plasplug' element={<MainLayout><Plasplug/></MainLayout>}/>
+        <Route path='/product/plasplug/:id' element={<MainLayout><Plasplugsingl/></MainLayout>}/>
 
-        <Route path='/primacar' element={<MainLayout><Primacar/></MainLayout>}/>
-        <Route path='/primacarsinglepage/:id' element={<MainLayout><Primacarsingl/></MainLayout>}/>
+        <Route path='/category/diye/primacar' element={<MainLayout><Primacar/></MainLayout>}/>
+        <Route path='/product/primacar/:id' element={<MainLayout><Primacarsingl/></MainLayout>}/>
 
-        <Route path='/rolson' element={<MainLayout><Rolson/></MainLayout>}/>
-        <Route path='/rolsonsinglepage/:id' element={<MainLayout><Rolsonsingl/></MainLayout>}/>
+        <Route path='/category/diye/rolson' element={<MainLayout><Rolson/></MainLayout>}/>
+        <Route path='/product/rolson/:id' element={<MainLayout><Rolsonsingl/></MainLayout>}/>
 
-        <Route path='/ronseal' element={<MainLayout><Ronseal/></MainLayout>}/>
-        <Route path='/ronsealsinglepage/:id' element={<MainLayout><Ronsealsingl/></MainLayout>}/>
+        <Route path='/category/diye/ronseal' element={<MainLayout><Ronseal/></MainLayout>}/>
+        <Route path='/product/ronseal/:id' element={<MainLayout><Ronsealsingl/></MainLayout>}/>
 
-        <Route path='/rustins' element={<MainLayout><Rustinsltd/></MainLayout>}/>
-        <Route path='/rustinssinglepage/:id' element={<MainLayout><Rustinsltdsingl/></MainLayout>}/> 
+        <Route path='/category/diye/rustins' element={<MainLayout><Rustinsltd/></MainLayout>}/>
+        <Route path='/product/rustins/:id' element={<MainLayout><Rustinsltdsingl/></MainLayout>}/> 
 
-        <Route path='/secureit' element={<MainLayout><Secureit/></MainLayout>}/>
-        <Route path='/secureitsinglepage/:id' element={<MainLayout><Secureitsingl/></MainLayout>}/>
+        <Route path='/category/diye/secureit' element={<MainLayout><Secureit/></MainLayout>}/>
+        <Route path='/product/secureit/:id' element={<MainLayout><Secureitsingl/></MainLayout>}/>
 
-        <Route path='/secrup' element={<MainLayout><Secrup/></MainLayout>}/>
-        <Route path='/secrupsinglepage/:id' element={<MainLayout><Secrupsingl/></MainLayout>}/>
+        <Route path='/category/diye/secrup' element={<MainLayout><Secrup/></MainLayout>}/>
+        <Route path='/product/secrup/:id' element={<MainLayout><Secrupsingl/></MainLayout>}/>
 
-        <Route path='/shortage' element={<MainLayout><Shortage/></MainLayout>}/>
-        <Route path='/shortagesinglepage/:id' element={<MainLayout><Shortagesingl/></MainLayout>}/>
+        <Route path='/category/diye/shortage' element={<MainLayout><Shortage/></MainLayout>}/>
+        <Route path='/product/shortage/:id' element={<MainLayout><Shortagesingl/></MainLayout>}/>
         
-        <Route path='/soudal' element={<MainLayout><Soudal/></MainLayout>}/>
-        <Route path='/soudalsinglepage/:id' element={<MainLayout><Soudalsingl/></MainLayout>}/> 
+        <Route path='/category/diye/soudal' element={<MainLayout><Soudal/></MainLayout>}/>
+        <Route path='/product/soudal/:id' element={<MainLayout><Soudalsingl/></MainLayout>}/> 
         
-        <Route path='/starpak' element={<MainLayout><Starpack/></MainLayout>}/>
-        <Route path='/starpaksinglepage/:id' element={<MainLayout><Starpacksingl/></MainLayout>}/> 
+        <Route path='/category/diye/starpak' element={<MainLayout><Starpack/></MainLayout>}/>
+        <Route path='/product/starpak/:id' element={<MainLayout><Starpacksingl/></MainLayout>}/> 
         
-        <Route path='/sterling' element={<MainLayout><Sterling/></MainLayout>}/>
-        <Route path='/sterlingsinglepage/:id' element={<MainLayout><Sterlingsingl/></MainLayout>}/>  
+        <Route path='/category/diye/sterling' element={<MainLayout><Sterling/></MainLayout>}/>
+        <Route path='/product/sterling/:id' element={<MainLayout><Sterlingsingl/></MainLayout>}/>  
         
-        <Route path='/tableaue' element={<MainLayout><Tableaue/></MainLayout>}/>
-        <Route path='/tableauesinglepage/:id' element={<MainLayout><Tableauesingl/></MainLayout>}/>
+        <Route path='/category/diye/tableaue' element={<MainLayout><Tableaue/></MainLayout>}/>
+        <Route path='/product/tableaue/:id' element={<MainLayout><Tableauesingl/></MainLayout>}/>
         
-        <Route path='/tricycle' element={<MainLayout><Tricycle/></MainLayout>}/>
-        <Route path='/tricyclesinglepage/:id' element={<MainLayout><Tricyclesingl/></MainLayout>}/>
+        <Route path='/category/diye/tricycle' element={<MainLayout><Tricycle/></MainLayout>}/>
+        <Route path='/product/tricycle/:id' element={<MainLayout><Tricyclesingl/></MainLayout>}/>
          
-        <Route path='/ultratrap' element={<MainLayout><Ultratrape/></MainLayout>}/>
-        <Route path='/ultratrapsinglepage/:id' element={<MainLayout><Ultratrapesingl/></MainLayout>}/>
+        <Route path='/category/diye/ultratrap' element={<MainLayout><Ultratrape/></MainLayout>}/>
+        <Route path='/product/ultratrap/:id' element={<MainLayout><Ultratrapesingl/></MainLayout>}/>
         
-        <Route path='/vacuum' element={<MainLayout><Vacuum/></MainLayout>}/>
-        <Route path='/vacuumsinglepage/:id' element={<MainLayout><Vacuumsingl/></MainLayout>}/> 
+        <Route path='/category/diye/vacuum' element={<MainLayout><Vacuum/></MainLayout>}/>
+        <Route path='/product/vacuum/:id' element={<MainLayout><Vacuumsingl/></MainLayout>}/> 
         
-        <Route path='/velcro' element={<MainLayout><Velcro/></MainLayout>}/>
-        <Route path='/velcrosinglepage/:id' element={<MainLayout><Velcrosingl/></MainLayout>}/>
+        <Route path='/category/diye/velcro' element={<MainLayout><Velcro/></MainLayout>}/>
+        <Route path='/product/velcro/:id' element={<MainLayout><Velcrosingl/></MainLayout>}/>
         
-        <Route path='/vfmpaint' element={<MainLayout><VfmPaints/></MainLayout>}/>
-        <Route path='/vfmpaintsinglepage/:id' element={<MainLayout><VfmPaintssingl/></MainLayout>}/>
+        <Route path='/category/diye/vfmpaint' element={<MainLayout><VfmPaints/></MainLayout>}/>
+        <Route path='/product/vfmpaint/:id' element={<MainLayout><VfmPaintssingl/></MainLayout>}/>
         
-        <Route path='/wd40' element={<MainLayout><Wd40/></MainLayout>}/>
-        <Route path='/wd40singlepage/:id' element={<MainLayout><Wd40singl/></MainLayout>}/>
+        <Route path='/category/diye/wd40' element={<MainLayout><Wd40/></MainLayout>}/>
+        <Route path='/product/wd40/:id' element={<MainLayout><Wd40singl/></MainLayout>}/>
         
-        <Route path='/werner' element={<MainLayout><Werner/></MainLayout>}/>
-        <Route path='/wernersinglepage/:id' element={<MainLayout><Wernersingl/></MainLayout>}/>
+        <Route path='/category/diye/werner' element={<MainLayout><Werner/></MainLayout>}/>
+        <Route path='/product/werner/:id' element={<MainLayout><Wernersingl/></MainLayout>}/>
         
-        <Route path='/yelelock' element={<MainLayout><Yelelock/></MainLayout>}/>
-        <Route path='/yelelocksinglepage/:id' element={<MainLayout><Yelelocksingl/></MainLayout>}/>
+        <Route path='/category/diye/yelelock' element={<MainLayout><Yelelock/></MainLayout>}/>
+        <Route path='/product/yelelock/:id' element={<MainLayout><Yelelocksingl/></MainLayout>}/>
         
-        <Route path='/unicon' element={<MainLayout><Unicon/></MainLayout>}/>
-        <Route path='/uniconsinglepage/:id' element={<MainLayout><Uniconsingl/></MainLayout>}/>
+        <Route path='/category/diye/unicon' element={<MainLayout><Unicon/></MainLayout>}/>
+        <Route path='/product/unicon/:id' element={<MainLayout><Uniconsingl/></MainLayout>}/>
         
-        <Route path='/amtech' element={<MainLayout><Amtech/></MainLayout>}/>
-        <Route path='/amtechsinglepage/:id' element={<MainLayout><Amtechsingle/></MainLayout>}/>
+        <Route path='/category/diye/amtech' element={<MainLayout><Amtech/></MainLayout>}/>
+        <Route path='/product/amtech/:id' element={<MainLayout><Amtechsingle/></MainLayout>}/>
         
-        <Route path='/antiqux' element={<MainLayout><Antiqux/></MainLayout>}/>
-        <Route path='/antiquxsinglepage/:id' element={<MainLayout><Antiquxsingle/></MainLayout>}/>
+        <Route path='/category/diye/antiqux' element={<MainLayout><Antiqux/></MainLayout>}/>
+        <Route path='/product/antiqux/:id' element={<MainLayout><Antiquxsingle/></MainLayout>}/>
         
-        <Route path='/chrom' element={<MainLayout><Chrome/></MainLayout>}/>
-        <Route path='/chromsinglepage/:id' element={<MainLayout><Chromesingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/chrom' element={<MainLayout><Chrome/></MainLayout>}/>
+        <Route path='/product/chrom/:id' element={<MainLayout><Chromesingl/></MainLayout>}/>
         
-        <Route path='/cookwar' element={<MainLayout><Cookwar/></MainLayout>}/>
-        <Route path='/cookwarsinglepage/:id' element={<MainLayout><Cookwarsingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/cookwar' element={<MainLayout><Cookwar/></MainLayout>}/>
+        <Route path='/product/cookwar/:id' element={<MainLayout><Cookwarsingl/></MainLayout>}/>
         
-        <Route path='/kettles' element={<MainLayout><Kettles/></MainLayout>}/>
-        <Route path='/kettlessinglepage/:id' element={<MainLayout><Kettlessingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/kettles' element={<MainLayout><Kettles/></MainLayout>}/>
+        <Route path='/product/kettles/:id' element={<MainLayout><Kettlessingl/></MainLayout>}/>
         
-        <Route path='/cultery' element={<MainLayout><Cutlery/></MainLayout>}/>
-        <Route path='/culterysinglepage/:id' element={<MainLayout><Cutlerysingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/cultery' element={<MainLayout><Cutlery/></MainLayout>}/>
+        <Route path='/product/cultery/:id' element={<MainLayout><Cutlerysingl/></MainLayout>}/>
         
-        <Route path='/kitechenacc' element={<MainLayout><KitchenACC/></MainLayout>}/>
-        <Route path='/kitechenaccsinglepage/:id' element={<MainLayout><KitchenACCsingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/kitechenacc' element={<MainLayout><KitchenACC/></MainLayout>}/>
+        <Route path='/product/kitechenacc/:id' element={<MainLayout><KitchenACCsingl/></MainLayout>}/>
         
-        <Route path='/kitechenbin' element={<MainLayout><Kitechenbin/></MainLayout>}/>
-        <Route path='/kitechenbinsinglepage/:id' element={<MainLayout><Kitechenbinsingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/kitechenbin' element={<MainLayout><Kitechenbin/></MainLayout>}/>
+        <Route path='/product/kitechenbin/:id' element={<MainLayout><Kitechenbinsingl/></MainLayout>}/>
         
-        <Route path='/kitechenkni' element={<MainLayout><KitechenKni/></MainLayout>}/>
-        <Route path='/kitechenknisinglepage/:id' element={<MainLayout><KitechenKnisingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/kitechenkni' element={<MainLayout><KitechenKni/></MainLayout>}/>
+        <Route path='/product/kitechenkni/:id' element={<MainLayout><KitechenKnisingl/></MainLayout>}/>
         
-        <Route path='/scalekitechen' element={<MainLayout><Scaleski/></MainLayout>}/>
-        <Route path='/scalekitechensinglepage/:id' element={<MainLayout><Scaleskisingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/scalekitechen' element={<MainLayout><Scaleski/></MainLayout>}/>
+        <Route path='/product/scalekitechen/:id' element={<MainLayout><Scaleskisingl/></MainLayout>}/>
         
-        <Route path='/plastickitechen' element={<MainLayout><Plasticki/></MainLayout>}/>
-        <Route path='/plastickitechensinglepage/:id' element={<MainLayout><Plastickisingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/plastickitechen' element={<MainLayout><Plasticki/></MainLayout>}/>
+        <Route path='/product/plastickitechen/:id' element={<MainLayout><Plastickisingl/></MainLayout>}/>
         
-        <Route path='/simplehuman' element={<MainLayout><Simplehu/></MainLayout>}/>
-        <Route path='/simplehumansinglepage/:id' element={<MainLayout><Simplehusingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/simplehuman' element={<MainLayout><Simplehu/></MainLayout>}/>
+        <Route path='/product/simplehuman/:id' element={<MainLayout><Simplehusingl/></MainLayout>}/>
         
-        <Route path='/bread' element={<MainLayout><Bread/></MainLayout>}/>
-        <Route path='/breadsinglepage/:id' element={<MainLayout><Breadsingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/bread' element={<MainLayout><Bread/></MainLayout>}/>
+        <Route path='/product/bread/:id' element={<MainLayout><Breadsingl/></MainLayout>}/>
         
-        <Route path='/tea' element={<MainLayout><Tea/></MainLayout>}/>
-        <Route path='/teasinglepage/:id' element={<MainLayout><Teasingl/></MainLayout>}/>  
+        <Route path='/category/kitechenwear/tea' element={<MainLayout><Tea/></MainLayout>}/>
+        <Route path='/product/tea/:id' element={<MainLayout><Teasingl/></MainLayout>}/>  
         
-        <Route path='/tray' element={<MainLayout><Trays/></MainLayout>}/>
-        <Route path='/traysinglepage/:id' element={<MainLayout><Trayssingl/></MainLayout>}/>
+        <Route path='/category/kitechenwear/tray' element={<MainLayout><Trays/></MainLayout>}/>
+        <Route path='/product/tray/:id' element={<MainLayout><Trayssingl/></MainLayout>}/>
         
-        <Route path='/water' element={<MainLayout><Water/></MainLayout>}/>
-        <Route path='/watersinglepage/:id' element={<MainLayout><Watersingl/></MainLayout>}/> 
+        <Route path='/category/kitechenwear/water' element={<MainLayout><Water/></MainLayout>}/>
+        <Route path='/product/water/:id' element={<MainLayout><Watersingl/></MainLayout>}/> 
         
-        <Route path='/wooden' element={<MainLayout><Wooden/></MainLayout>}/>
-        <Route path='/woodensinglepage/:id' element={<MainLayout><Woodensingl/></MainLayout>}/> 
+        <Route path='/category/kitechenwear/wooden' element={<MainLayout><Wooden/></MainLayout>}/>
+        <Route path='/product/wooden/:id' element={<MainLayout><Woodensingl/></MainLayout>}/> 
         
-        <Route path='/catering' element={<MainLayout><Catering/></MainLayout>}/>
-        <Route path='/cateringsinglepage/:id' element={<MainLayout><Cateringsingl/></MainLayout>}/> 
+        <Route path='/category/kitechenwear/catering' element={<MainLayout><Catering/></MainLayout>}/>
+        <Route path='/product/catering/:id' element={<MainLayout><Cateringsingl/></MainLayout>}/> 
         
-        <Route path='/camping' element={<MainLayout><Camping/></MainLayout>}/>
-        <Route path='/campingsinglepage/:id' element={<MainLayout><Campingsingle/></MainLayout>}/> 
         
-        <Route path='/fertilizer' element={<MainLayout><Fertilizer/></MainLayout>}/>
-        <Route path='/fertilizersinglepage/:id' element={<MainLayout><Fertilizersingle/></MainLayout>}/> 
-        
-        <Route path='/furnitur' element={<MainLayout><Furnitur/></MainLayout>}/>
-        <Route path='/furnitursinglepage/:id' element={<MainLayout><Furnituresingle/></MainLayout>}/> 
-        
-        <Route path='/giftware' element={<MainLayout><Giftware/></MainLayout>}/>
-        <Route path='/giftwaresinglepage/:id' element={<MainLayout><Giftwaresingle/></MainLayout>}/>  
-        
-        <Route path='/growing' element={<MainLayout><Growing/></MainLayout>}/>
-        <Route path='/growingsinglepage/:id' element={<MainLayout><Growingsingle/></MainLayout>}/>
-        
-        <Route path='/lightening' element={<MainLayout><Lightening/></MainLayout>}/>
-        <Route path='/lighteningsinglepage/:id' element={<MainLayout><Lighteningsingle/></MainLayout>}/>
-        
-        <Route path='/planters' element={<MainLayout><Planters/></MainLayout>}/>
-        <Route path='/planterssinglepage/:id' element={<MainLayout><Planterssingle/></MainLayout>}/>
-        
-        <Route path='/tools' element={<MainLayout><Toolsacce/></MainLayout>}/>
-        <Route path='/toolssinglepage/:id' element={<MainLayout><Toolsaccesingle/></MainLayout>}/>
-        
-        <Route path='/watering' element={<MainLayout><Watering/></MainLayout>}/>
-        <Route path='/wateringsinglepage/:id' element={<MainLayout><Wateringsingle/></MainLayout>}/>
-        
-        <Route path='/winterfules' element={<MainLayout><Winterfules/></MainLayout>}/>
-        <Route path='/winterfulessinglepage/:id' element={<MainLayout><Winterfulessingle/></MainLayout>}/>
-        
-        <Route path='/giftsets' element={<MainLayout><Giftsets/></MainLayout>}/>
-        <Route path='/giftsetssinglepage/:id' element={<MainLayout><Giftsetssingle/></MainLayout>}/>
-        
-        <Route path='/hair' element={<MainLayout><Hair/></MainLayout>}/>
-        <Route path='/hairsinglepage/:id' element={<MainLayout><Hairsingle/></MainLayout>}/>
-        
-        <Route path='/hand' element={<MainLayout><Hand/></MainLayout>}/>
-        <Route path='/handsinglepage/:id' element={<MainLayout><Handsingle/></MainLayout>}/>
-        
-        <Route path='/health' element={<MainLayout><Healthcare/></MainLayout>}/>
-        <Route path='/healthsinglepage/:id' element={<MainLayout><Healthcaresingle/></MainLayout>}/>
-        
-        <Route path='/mouthwash' element={<MainLayout><Mouthwash/></MainLayout>}/>
-        <Route path='/mouthwashsinglepage/:id' element={<MainLayout><Mouthwashsingle/></MainLayout>}/>
-        
-        <Route path='/perfumes' element={<MainLayout><Perfumes/></MainLayout>}/>
-        <Route path='/perfumessinglepage/:id' element={<MainLayout><Perfumessingle/></MainLayout>}/>
-        
-        <Route path='/sanitary' element={<MainLayout><Sanitary/></MainLayout>}/>
-        <Route path='/sanitarysinglepage/:id' element={<MainLayout><Sanitarysingle/></MainLayout>}/>
-        
-        <Route path='/saving' element={<MainLayout><Saving/></MainLayout>}/>
-        <Route path='/savingsinglepage/:id' element={<MainLayout><Savingsingle/></MainLayout>}/>
-        
-        <Route path='/skincare' element={<MainLayout><Skincare/></MainLayout>}/>
-        <Route path='/skincaresinglepage/:id' element={<MainLayout><Skincaresingle/></MainLayout>}/>
-        
-        <Route path='/shampo' element={<MainLayout><Shampo/></MainLayout>}/>
-        <Route path='/shamposinglepage/:id' element={<MainLayout><Shamposingle/></MainLayout>}/>
-        
-        <Route path='/showerge' element={<MainLayout><Showergel/></MainLayout>}/>
-        <Route path='/showergesinglepage/:id' element={<MainLayout><Showergelsingle/></MainLayout>}/>
-        
-        <Route path='/soapbar' element={<MainLayout><Soapbar/></MainLayout>}/>
-        <Route path='/soapbarsinglepage/:id' element={<MainLayout><Soapbarsingle/></MainLayout>}/>
-        
-        <Route path='/toothbrush' element={<MainLayout><Toothbrush/></MainLayout>}/>
-        <Route path='/toothbrushsinglepage/:id' element={<MainLayout><Toothbrushsingle/></MainLayout>}/>
-         
-        <Route path='/toothpast' element={<MainLayout><Toothpast/></MainLayout>}/>
-        <Route path='/toothpastsinglepage/:id' element={<MainLayout><Toothpastsingle/></MainLayout>}/>
-         
-        <Route path='/deodrant' element={<MainLayout><Deodrant/></MainLayout>}/>
-        <Route path='/deodrantsinglepage/:id' element={<MainLayout><Deodrantsingle/></MainLayout>}/>
+        <Route path='/category/kitechenwear/kitechenga' element={<MainLayout><Kitechenga/></MainLayout>}/>
+        <Route path='/product/kitechenga/:id' element={<MainLayout><Kitechengasingl/></MainLayout>}/> 
 
-        <Route path='/africa' element={<MainLayout><Africa/></MainLayout>}/>
-        <Route path='/africasinglepage/:id' element={<MainLayout><Africasingle/></MainLayout>}/>
+        <Route path='/category/gardening/camping' element={<MainLayout><Camping/></MainLayout>}/>
+        <Route path='/product/camping/:id' element={<MainLayout><Campingsingle/></MainLayout>}/> 
         
-        <Route path='/fathersday' element={<MainLayout><Fatherdays/></MainLayout>}/>
-        <Route path='/fathersdaysinglepage/:id' element={<MainLayout><Fatherdayssingl/></MainLayout>}/> 
+        <Route path='/category/gardening/fertilizer' element={<MainLayout><Fertilizer/></MainLayout>}/>
+        <Route path='/product/fertilizer/:id' element={<MainLayout><Fertilizersingle/></MainLayout>}/> 
         
-        <Route path='/framsmirror' element={<MainLayout><Framsmirror/></MainLayout>}/>
-        <Route path='/framsmirrorsinglepage/:id' element={<MainLayout><Framsmirrorsingl/></MainLayout>}/> 
+        <Route path='/category/gardening/furnitur' element={<MainLayout><Furnitur/></MainLayout>}/>
+        <Route path='/product/furnitur/:id' element={<MainLayout><Furnituresingle/></MainLayout>}/> 
         
-        <Route path='/giftwareh' element={<MainLayout><Giftwarehome/></MainLayout>}/>
-        <Route path='/giftwarehsinglepage/:id' element={<MainLayout><Giftwarehomesingl/></MainLayout>}/> 
+        <Route path='/category/gardening/giftware' element={<MainLayout><Giftware/></MainLayout>}/>
+        <Route path='/product/giftware/:id' element={<MainLayout><Giftwaresingle/></MainLayout>}/>  
         
-        <Route path='/incense' element={<MainLayout><Incense/></MainLayout>}/>
-        <Route path='/incensesinglepage/:id' element={<MainLayout><Incensesingl/></MainLayout>}/>
+        <Route path='/category/gardening/growing' element={<MainLayout><Growing/></MainLayout>}/>
+        <Route path='/product/growing/:id' element={<MainLayout><Growingsingle/></MainLayout>}/>
         
-        <Route path='/memorial' element={<MainLayout><Memorials/></MainLayout>}/>
-        <Route path='/memorialsinglepage/:id' element={<MainLayout><Memorialssingl/></MainLayout>}/>
+        <Route path='/category/gardening/lightening' element={<MainLayout><Lightening/></MainLayout>}/>
+        <Route path='/product/lightening/:id' element={<MainLayout><Lighteningsingle/></MainLayout>}/>
         
-        <Route path='/souvenirs' element={<MainLayout><Souvenirs/></MainLayout>}/>
-        <Route path='/souvenirssinglepage/:id' element={<MainLayout><Souvenirssingl/></MainLayout>}/>
+        <Route path='/category/gardening/planters' element={<MainLayout><Planters/></MainLayout>}/>
+        <Route path='/product/planters/:id' element={<MainLayout><Planterssingle/></MainLayout>}/>
         
-        <Route path='/wedding' element={<MainLayout><Weeding/></MainLayout>}/>
-        <Route path='/weddingsinglepage/:id' element={<MainLayout><Weedingsingal/></MainLayout>}/>  
+        <Route path='/category/gardening/tools' element={<MainLayout><Toolsacce/></MainLayout>}/>
+        <Route path='/product/tools/:id' element={<MainLayout><Toolsaccesingle/></MainLayout>}/>
         
-        <Route path='/garland' element={<MainLayout><Garlands/></MainLayout>}/>
-        <Route path='/garlandsinglepage/:id' element={<MainLayout><Garlandssingl/></MainLayout>}/> 
+        <Route path='/category/gardening/watering' element={<MainLayout><Watering/></MainLayout>}/>
+        <Route path='/product/watering/:id' element={<MainLayout><Wateringsingle/></MainLayout>}/>
+        
+        <Route path='/category/gardening/winterfules' element={<MainLayout><Winterfules/></MainLayout>}/>
+        <Route path='/product/winterfules/:id' element={<MainLayout><Winterfulessingle/></MainLayout>}/>
+        
+        <Route path='/category/toiletries' element={<MainLayout><Tolitriesmain/></MainLayout>} />
+      <Route path='/category/toiletries'>
+        <Route path='cotton' element={<MainLayout><Cotton/></MainLayout>} />
+        <Route path='cotton/:id' element={<MainLayout><Cottonsingle/></MainLayout>} />
+        
+        <Route path='baby' element={<MainLayout><Babycare/></MainLayout>} />
+        <Route path='baby/:id' element={<MainLayout><Babaysingle/></MainLayout>} />
+        
+        <Route path='giftsets' element={<MainLayout><Giftsets/></MainLayout>} />
+        <Route path='giftsets/:id' element={<MainLayout><Giftsetssingle/></MainLayout>} />
+        
+        <Route path='hair' element={<MainLayout><Hair/></MainLayout>} />
+        <Route path='hair/:id' element={<MainLayout><Hairsingle/></MainLayout>} />
+        
+        <Route path='hand' element={<MainLayout><Hand/></MainLayout>} />
+        <Route path='hand/:id' element={<MainLayout><Handsingle/></MainLayout>} />
+        
+        <Route path='health' element={<MainLayout><Healthcare/></MainLayout>} />
+        <Route path='health/:id' element={<MainLayout><Healthcaresingle/></MainLayout>} />
+        
+        <Route path='mouthwash' element={<MainLayout><Mouthwash/></MainLayout>} />
+        <Route path='mouthwash/:id' element={<MainLayout><Mouthwashsingle/></MainLayout>} />
+        
+        <Route path='perfumes' element={<MainLayout><Perfumes/></MainLayout>} />
+        <Route path='perfumes/:id' element={<MainLayout><Perfumessingle/></MainLayout>} />
+        
+        <Route path='sanitary' element={<MainLayout><Sanitary/></MainLayout>} />
+        <Route path='sanitary/:id' element={<MainLayout><Sanitarysingle/></MainLayout>} />
+        
+        <Route path='saving' element={<MainLayout><Saving/></MainLayout>} />
+        <Route path='saving/:id' element={<MainLayout><Savingsingle/></MainLayout>} />
+        
+        <Route path='skincare' element={<MainLayout><Skincare/></MainLayout>} />
+        <Route path='skincare/:id' element={<MainLayout><Skincaresingle/></MainLayout>} />
+        
+        <Route path='shampo' element={<MainLayout><Shampo/></MainLayout>} />
+        <Route path='shampo/:id' element={<MainLayout><Shamposingle/></MainLayout>} />
+        
+        <Route path='showerge' element={<MainLayout><Showergel/></MainLayout>} />
+        <Route path='showerge/:id' element={<MainLayout><Showergelsingle/></MainLayout>} />
+        
+        <Route path='soapbar' element={<MainLayout><Soapbar/></MainLayout>} />
+        <Route path='soapbar/:id' element={<MainLayout><Soapbarsingle/></MainLayout>} />
+        
+        <Route path='toothbrush' element={<MainLayout><Toothbrush/></MainLayout>} />
+        <Route path='toothbrush/:id' element={<MainLayout><Toothbrushsingle/></MainLayout>} />
+        
+        <Route path='toothpast' element={<MainLayout><Toothpast/></MainLayout>} />
+        <Route path='toothpast/:id' element={<MainLayout><Toothpastsingle/></MainLayout>} />
+        
+        <Route path='deodrant' element={<MainLayout><Deodrant/></MainLayout>} />
+        <Route path='deodrant/:id' element={<MainLayout><Deodrantsingle/></MainLayout>} />
+        
+        <Route path='africa' element={<MainLayout><Africa/></MainLayout>} />
+        <Route path='africasinglepage/:id' element={<MainLayout><Africasingle/></MainLayout>} />
+      </Route>
+        
+        <Route path='/category/homedecore/candel' element={<MainLayout><Candel/></MainLayout>}/>
+        <Route path='/product/candel/:id' element={<MainLayout><Candelsingl/></MainLayout>}/>
+
+        <Route path='/category/homedecore/st' element={<MainLayout><St/></MainLayout>}/>
+        <Route path='/product/st/:id' element={<MainLayout><Stsingal/></MainLayout>}/>
+
+        <Route path='/category/homedecore/fathersday' element={<MainLayout><Fatherdays/></MainLayout>}/>
+        <Route path='/product/fathersday/:id' element={<MainLayout><Fatherdayssingl/></MainLayout>}/> 
+        
+        <Route path='/category/homedecore/framsmirror' element={<MainLayout><Framsmirror/></MainLayout>}/>
+        <Route path='/product/framsmirror/:id' element={<MainLayout><Framsmirrorsingl/></MainLayout>}/> 
+        
+        <Route path='/category/homedecore/giftwareh' element={<MainLayout><Giftwarehome/></MainLayout>}/>
+        <Route path='/product/giftwareh/:id' element={<MainLayout><Giftwarehomesingl/></MainLayout>}/> 
+        
+        <Route path='/category/homedecore/incense' element={<MainLayout><Incense/></MainLayout>}/>
+        <Route path='/product/incense/:id' element={<MainLayout><Incensesingl/></MainLayout>}/>
+        
+        <Route path='/category/homedecore/memorial' element={<MainLayout><Memorials/></MainLayout>}/>
+        <Route path='/product/memorial/:id' element={<MainLayout><Memorialssingl/></MainLayout>}/>
+        
+        <Route path='/category/homedecore/souvenirs' element={<MainLayout><Souvenirs/></MainLayout>}/>
+        <Route path='/product/souvenirs/:id' element={<MainLayout><Souvenirssingl/></MainLayout>}/>
+        
+        <Route path='/category/homedecore/wedding' element={<MainLayout><Weeding/></MainLayout>}/>
+        <Route path='/product/wedding/:id' element={<MainLayout><Weedingsingal/></MainLayout>}/>  
+        
+        <Route path='/category/flowers/garland' element={<MainLayout><Garlands/></MainLayout>}/>
+        <Route path='/product/garland/:id' element={<MainLayout><Garlandssingl/></MainLayout>}/> 
 
         <Route path='/checkout' element={<MainLayout><Checkout/></MainLayout>}/>
         
-        <Route path='/singlestem' element={<MainLayout><Singlestem/></MainLayout>}/>
-        <Route path='/singlestemsinglepage/:id' element={<MainLayout><Singlestemsingl/></MainLayout>}/> 
+        <Route path='/category/flowers/singlestem' element={<MainLayout><Singlestem/></MainLayout>}/>
+        <Route path='/product/singlestem/:id' element={<MainLayout><Singlestemsingl/></MainLayout>}/> 
         
-        <Route path='/wreaths' element={<MainLayout><Wreaths/></MainLayout>}/>
-        <Route path='/wreathssinglepage/:id' element={<MainLayout><Wreathssingl/></MainLayout>}/> 
+        <Route path='/category/flowers/wreaths' element={<MainLayout><Wreaths/></MainLayout>}/>
+        <Route path='/product/wreaths/:id' element={<MainLayout><Wreathssingl/></MainLayout>}/> 
         
-        <Route path='/diaries' element={<MainLayout><Diaries/></MainLayout>}/>
-        <Route path='/diariessinglepage/:id' element={<MainLayout><Diariessingle/></MainLayout>}/> 
+        <Route path='/category/stationery/diaries' element={<MainLayout><Diaries/></MainLayout>}/>
+        <Route path='/product/diaries/:id' element={<MainLayout><Diariessingle/></MainLayout>}/> 
         
-        <Route path='/kids' element={<MainLayout><Kids/></MainLayout>}/>
-        <Route path='/kidssinglepage/:id' element={<MainLayout><Kidssingle/></MainLayout>}/> 
+        <Route path='/category/stationery/kids' element={<MainLayout><Kids/></MainLayout>}/>
+        <Route path='/product/kids/:id' element={<MainLayout><Kidssingle/></MainLayout>}/> 
         
-        <Route path='/mailing' element={<MainLayout><Mailing/></MainLayout>}/>
-        <Route path='/mailingsinglepage/:id' element={<MainLayout><Mailingsingle/></MainLayout>}/>
+        <Route path='/category/kidsproduct/charater' element={<MainLayout><Kidschar/></MainLayout>}/>
+        <Route path='/product/charater/:id' element={<MainLayout><Kidschasingl/></MainLayout>}/> 
+
+        <Route path='/category/stationery/mailing' element={<MainLayout><Mailing/></MainLayout>}/>
+        <Route path='/product/mailing/:id' element={<MainLayout><Mailingsingle/></MainLayout>}/>
         
-        <Route path='/office/home' element={<MainLayout><Office/></MainLayout>}/>
-        <Route path='/office/homesinglepage/:id' element={<MainLayout><Officesingle/></MainLayout>}/>
+        <Route path='/category/stationery/officehome' element={<MainLayout><Office/></MainLayout>}/>
+        <Route path='/product/officehome/:id' element={<MainLayout><Officesingle/></MainLayout>}/>
         
-        <Route path='/curtains' element={<MainLayout><Curtains/></MainLayout>}/>
-        <Route path='/curtainssinglepage/:id' element={<MainLayout><Curtainssingle/></MainLayout>}/>
+        <Route path='/category/textilesaccessories/curtains' element={<MainLayout><Curtains/></MainLayout>}/>
+        <Route path='/product/curtains/:id' element={<MainLayout><Curtainssingle/></MainLayout>}/>
         
-        <Route path='/tablecover' element={<MainLayout><Tablecover/></MainLayout>}/>
-        <Route path='/tablecoversinglepage/:id' element={<MainLayout><Tablecoversingle/></MainLayout>}/> 
+        <Route path='/category/textilesaccessories/tablecover' element={<MainLayout><Tablecover/></MainLayout>}/>
+        <Route path='/product/tablecover/:id' element={<MainLayout><Tablecoversingle/></MainLayout>}/> 
         
         <Route path='/teatowel' element={<MainLayout><Teactowel/></MainLayout>}/>
         <Route path='/teatowelsinglepage/:id' element={<MainLayout><Teactowelsingle/></MainLayout>}/> 
         
-        <Route path='/towelaccessories' element={<MainLayout><Towelaccess/></MainLayout>}/>
-        <Route path='/towelaccessoriessinglepage/:id' element={<MainLayout><Towelaccesssingle/></MainLayout>}/> 
+        <Route path='/category/textilesaccessories/towelaccessories' element={<MainLayout><Towelaccess/></MainLayout>}/>
+        <Route path='/product/towelaccessories/:id' element={<MainLayout><Towelaccesssingle/></MainLayout>}/> 
         
         <Route path='/melmanioutdoor' element={<MainLayout><MelamineOutdoor/></MainLayout>}/>
         <Route path='/melmanioutdoorsinglepage/:id' element={<MainLayout><MelamineOutdoorsingl/></MainLayout>}/>  
@@ -3075,110 +3098,111 @@ const App = () => {
         <Route path='/plastistoragebox' element={<MainLayout><Healthcaree/></MainLayout>}/>
         <Route path='/healthcareesinglepage/:id' element={<MainLayout><Healthcareesingl/></MainLayout>}/> 
         
-        <Route path='/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
-        <Route path='/drinkingglasssinglepage/:id' element={<MainLayout><DrinkingGlasssingel/></MainLayout>}/>
+        <Route path='/category/glassweare/drinkingglass' element={<MainLayout><DrinkingGlass/></MainLayout>}/>
+        <Route path='/product/drinkingglass/:id' element={<MainLayout><DrinkingGlasssingel/></MainLayout>}/>
 
-         <Route path='/glasstablewear' element={<MainLayout><GlassTablewear/></MainLayout>}/>
-        <Route path='/glasstablewearsinglepage/:id' element={<MainLayout><GlassTablewearsingel/></MainLayout>}/>
+         <Route path='/category/chinaproducts/glasstablewear' element={<MainLayout><GlassTablewear/></MainLayout>}/>
+        <Route path='/product/glasstablewear/:id' element={<MainLayout><GlassTablewearsingel/></MainLayout>}/>
         
-        <Route path='/homebaking' element={<MainLayout><HomeBaking/></MainLayout>}/>
-        <Route path='/homebakingsinglepage/:id' element={<MainLayout><HomeBakingsingel/></MainLayout>}/> 
+        <Route path='/category/chinaproducts/homebaking' element={<MainLayout><HomeBaking/></MainLayout>}/>
+        <Route path='/product/homebaking/:id' element={<MainLayout><HomeBakingsingel/></MainLayout>}/> 
         
-        <Route path='/mugcups' element={<MainLayout><Mugscups/></MainLayout>}/>
-        <Route path='/mugcupssinglepage/:id' element={<MainLayout><Mugscupssingel/></MainLayout>}/> 
+        <Route path='/category/chinaproducts/mugcups' element={<MainLayout><Mugscups/></MainLayout>}/>
+        <Route path='/product/mugcups/:id' element={<MainLayout><Mugscupssingel/></MainLayout>}/> 
         
-        <Route path='/storageaccessories' element={<MainLayout><Storageaccessories/></MainLayout>}/>
-        <Route path='/storageaccessoriessinglepage/:id' element={<MainLayout><Storageaccessoriessingel/></MainLayout>}/>   
+        <Route path='/category/chinaproducts/storageaccessories' element={<MainLayout><Storageaccessories/></MainLayout>}/>
+        <Route path='/product/storageaccessories/:id' element={<MainLayout><Storageaccessoriessingel/></MainLayout>}/>   
         
-        <Route path='/metalbuck' element={<MainLayout><Metalbuck/></MainLayout>}/>
-        <Route path='/metalbucksinglepage/:id' element={<MainLayout><Metalbucksingel/></MainLayout>}/> 
+        <Route path='/category/hardware/metalbuck' element={<MainLayout><Metalbuck/></MainLayout>}/>
+        <Route path='/product/metalbuck/:id' element={<MainLayout><Metalbucksingel/></MainLayout>}/> 
         
-        <Route path='/hotwaterr' element={<MainLayout><Hotwaterr/></MainLayout>}/>
-        <Route path='/hotwaterrsinglepage/:id' element={<MainLayout><Hotwatersingel/></MainLayout>}/> 
+        <Route path='/category/seasonalsports/hotwaterr' element={<MainLayout><Hotwaterr/></MainLayout>}/>
+        <Route path='/product/hotwaterr/:id' element={<MainLayout><Hotwatersingel/></MainLayout>}/> 
         
-        <Route path='/picnic' element={<MainLayout><Picnic/></MainLayout>}/>
-        <Route path='/picnicsinglepage/:id' element={<MainLayout><Picnicsingel/></MainLayout>}/>  
+        <Route path='/category/seasonalsports/picnic' element={<MainLayout><Picnic/></MainLayout>}/>
+        <Route path='/product/picnic/:id' element={<MainLayout><Picnicsingel/></MainLayout>}/>  
         
-        <Route path='/sportbootel' element={<MainLayout><Sportsbottel/></MainLayout>}/>
-        <Route path='/sportbootelsinglepage/:id' element={<MainLayout><Sportsbottelsingel/></MainLayout>}/>  
+        <Route path='/category/seasonalsports/sportbootel' element={<MainLayout><Sportsbottel/></MainLayout>}/>
+        <Route path='/product/sportbootel/:id' element={<MainLayout><Sportsbottelsingel/></MainLayout>}/>  
         
-        <Route path='/umbrella' element={<MainLayout><Umbrella/></MainLayout>}/>
-        <Route path='/umbrellasinglepage/:id' element={<MainLayout><Umbrellasingel/></MainLayout>}/> 
+        <Route path='/category/seasonalsports/umbrella' element={<MainLayout><Umbrella/></MainLayout>}/>
+        <Route path='/product/umbrella/:id' element={<MainLayout><Umbrellasingel/></MainLayout>}/> 
         
-        <Route path='/towelssport' element={<MainLayout><Towelssport/></MainLayout>}/>
-        <Route path='/towelssportsinglepage/:id' element={<MainLayout><Towelssportsingel/></MainLayout>}/> 
+        <Route path='/category/seasonalsports/towelssport' element={<MainLayout><Towelssport/></MainLayout>}/>
+        <Route path='/product/towelssport/:id' element={<MainLayout><Towelssportsingel/></MainLayout>}/> 
         
-        <Route path='/crokery' element={<MainLayout><Crokery/></MainLayout>}/>
-        <Route path='/crokerysinglepage/:id' element={<MainLayout><Crokerysingl/></MainLayout>}/>
+        <Route path='/category/glassweare/crokery' element={<MainLayout><Crokery/></MainLayout>}/>
+        <Route path='/product/crokery/:id' element={<MainLayout><Crokerysingl/></MainLayout>}/>
            
-        <Route path='/glassdecorative' element={<MainLayout><GlassDecorative/></MainLayout>}/>
-        <Route path='/glassdecorativesinglepage/:id' element={<MainLayout><GlassDecorativesingl/></MainLayout>}/> 
+        <Route path='/category/glassweare/glassdecorative' element={<MainLayout><GlassDecorative/></MainLayout>}/>
+        <Route path='/product/glassdecorative/:id' element={<MainLayout><GlassDecorativesingl/></MainLayout>}/> 
 
-         <Route path='/glasstumbler' element={<MainLayout><GlassTumbler/></MainLayout>}/>
-        <Route path='/glasstumblersinglepage/:id' element={<MainLayout><GlassTumblersingl/></MainLayout>}/> 
+         <Route path='/category/glassweare/glasstumbler' element={<MainLayout><GlassTumbler/></MainLayout>}/>
+        <Route path='/product/glasstumbler/:id' element={<MainLayout><GlassTumblersingl/></MainLayout>}/> 
         
-         <Route path='/glassvass' element={<MainLayout><Glassvass/></MainLayout>}/>
-        <Route path='/glassvasssinglepage/:id' element={<MainLayout><Glassvasssingl/></MainLayout>}/> 
+         <Route path='/category/glassweare/glassvass' element={<MainLayout><Glassvass/></MainLayout>}/>
+        <Route path='/product/glassvass/:id' element={<MainLayout><Glassvasssingl/></MainLayout>}/> 
 
-         <Route path='/glassstorage' element={<MainLayout><GlassStorage/></MainLayout>}/>
-        <Route path='/glassstoragesinglepage/:id' element={<MainLayout><GlassStoragesingl/></MainLayout>}/> 
+         <Route path='/category/glassweare/glassstorage' element={<MainLayout><GlassStorage/></MainLayout>}/>
+        <Route path='/product/glassstorage/:id' element={<MainLayout><GlassStoragesingl/></MainLayout>}/> 
 
-   <Route path='/glasstableware' element={<MainLayout><Glasstableware/></MainLayout>}/>
-        <Route path='/glasstablewaresinglepage/:id' element={<MainLayout><Glasstablewaresingl/></MainLayout>}/> 
+   <Route path='/category/glassweare/glasstableware' element={<MainLayout><Glasstableware/></MainLayout>}/>
+        <Route path='/product/glasstableware/:id' element={<MainLayout><Glasstablewaresingl/></MainLayout>}/> 
 
-   <Route path='/kliner' element={<MainLayout><Kliner/></MainLayout>}/>
-        <Route path='/klinersinglepage/:id' element={<MainLayout><Klinersingl/></MainLayout>}/> 
+   <Route path='/category/glassweare/kliner' element={<MainLayout><Kliner/></MainLayout>}/>
+        <Route path='/product/kliner/:id' element={<MainLayout><Klinersingl/></MainLayout>}/> 
 
-   <Route path='/pyrex' element={<MainLayout><Pyrex/></MainLayout>}/>
-        <Route path='/pyrexsinglepage/:id' element={<MainLayout><Pyrexsingl/></MainLayout>}/> 
+   <Route path='/category/glassweare/pyrex' element={<MainLayout><Pyrex/></MainLayout>}/>
+        <Route path='/product/pyrex/:id' element={<MainLayout><Pyrexsingl/></MainLayout>}/> 
 
-     <Route path='/electricalaccesso' element={<MainLayout><ElectricalAccess/></MainLayout>}/>
-        <Route path='/electricalaccessosinglepage/:id' element={<MainLayout><ElectricalAccesssingle/></MainLayout>}/> 
+     <Route path='/category/electricalde/electricalaccesso' element={<MainLayout><ElectricalAccess/></MainLayout>}/>
+        <Route path='/product/electricalaccesso/:id' element={<MainLayout><ElectricalAccesssingle/></MainLayout>}/> 
 
-     <Route path='/ironele' element={<MainLayout><Ironele/></MainLayout>}/>
-        <Route path='/ironelesinglepage/:id' element={<MainLayout><Ironelesingle/></MainLayout>}/> 
+     <Route path='/category/electricalde/ironele' element={<MainLayout><Ironele/></MainLayout>}/>
+        <Route path='/product/ironele/:id' element={<MainLayout><Ironelesingle/></MainLayout>}/> 
 
-     <Route path='/dorbells' element={<MainLayout><Dorbells/></MainLayout>}/>
-     <Route path='/dorbellssinglepage/:id' element={<MainLayout><Dorbellssingle/></MainLayout>}/> 
+     <Route path='/category/electricalde/dorbells' element={<MainLayout><Dorbells/></MainLayout>}/>
+     <Route path='/product/dorbells/:id' element={<MainLayout><Dorbellssingle/></MainLayout>}/> 
    
-     <Route path='/earephone' element={<MainLayout><Earphone/></MainLayout>}/>
-     <Route path='/earephonesinglepage/:id' element={<MainLayout><Earphonesingle/></MainLayout>}/> 
+     <Route path='/category/electricalde/earephone' element={<MainLayout><Earphone/></MainLayout>}/>
+     <Route path='/product/earephone/:id' element={<MainLayout><Earphonesingle/></MainLayout>}/> 
    
-     <Route path='/hairbody' element={<MainLayout><Hairbody/></MainLayout>}/>
-     <Route path='/hairbodysinglepage/:id' element={<MainLayout><Hairbodysingle/></MainLayout>}/> 
+     <Route path='/category/electricalde/hairbody' element={<MainLayout><Hairbody/></MainLayout>}/>
+     <Route path='/product/hairbody/:id' element={<MainLayout><Hairbodysingle/></MainLayout>}/> 
 
-     <Route path='/birthdaybadge' element={<MainLayout><Badge/></MainLayout>}/>
-     <Route path='/birthdaybadgesinglepage/:id' element={<MainLayout><Badgesigle/></MainLayout>}/>
+     <Route path='/category/partyware/birthdaybadge' element={<MainLayout><Badge/></MainLayout>}/>
+     <Route path='/product/birthdaybadge/:id' element={<MainLayout><Badgesigle/></MainLayout>}/>
 
-     <Route path='/bowsribbon' element={<MainLayout><Bowsribbon/></MainLayout>}/>
-     <Route path='/bowsribbonsinglepage/:id' element={<MainLayout><Bowsribbonsingl/></MainLayout>}/>
+     <Route path='/category/partyware/bowsribbon' element={<MainLayout><Bowsribbon/></MainLayout>}/>
+     <Route path='/product/bowsribbon/:id' element={<MainLayout><Bowsribbonsingl/></MainLayout>}/>
 
-     <Route path='/fancydress' element={<MainLayout><Fancydress/></MainLayout>}/>
-     <Route path='/fancydresssinglepage/:id' element={<MainLayout><Fancydresssingl/></MainLayout>}/>
+     <Route path='/category/partyware/fancydress' element={<MainLayout><Fancydress/></MainLayout>}/>
+     <Route path='/product/fancydress/:id' element={<MainLayout><Fancydresssingl/></MainLayout>}/>
 
-     <Route path='/tissuepaper' element={<MainLayout><Tissuepaper/></MainLayout>}/>
-     <Route path='/tissuepapersinglepage/:id' element={<MainLayout><Tissuepapersingl/></MainLayout>}/>
+     <Route path='/category/partyware/tissuepaper' element={<MainLayout><Tissuepaper/></MainLayout>}/>
+     <Route path='/product/tissuepaper/:id' element={<MainLayout><Tissuepapersingl/></MainLayout>}/>
 
-     <Route path='/candeles' element={<MainLayout><Candles/></MainLayout>}/>
-     <Route path='/candelessinglepage/:id' element={<MainLayout><Candlessingl/></MainLayout>}/>
+     <Route path='/category/partyware/candeles' element={<MainLayout><Candles/></MainLayout>}/>
+     <Route path='/product/candeles/:id' element={<MainLayout><Candlessingl/></MainLayout>}/>
      
-     <Route path='/giftbags' element={<MainLayout><Giftbags/></MainLayout>}/>
-     <Route path='/giftbagssinglepage/:id' element={<MainLayout><Giftbagssingl/></MainLayout>}/>
+     <Route path='/category/partyware/giftbags' element={<MainLayout><Giftbags/></MainLayout>}/>
+     <Route path='/product/giftbags/:id' element={<MainLayout><Giftbagssingl/></MainLayout>}/>
      
-     <Route path='/weding' element={<MainLayout><Weding/></MainLayout>}/>
-     <Route path='/wedingsinglepage/:id' element={<MainLayout><Wedingsingl/></MainLayout>}/>
+     <Route path='/category/partyware/weding' element={<MainLayout><Weding/></MainLayout>}/>
+     <Route path='/product/weding/:id' element={<MainLayout><Wedingsingl/></MainLayout>}/>
      
-     <Route path='/partycards' element={<MainLayout><Pcards/></MainLayout>}/>
-     <Route path='/partycardssinglepage/:id' element={<MainLayout><Pcardssingl/></MainLayout>}/>
+     <Route path='/category/partyware/partycards' element={<MainLayout><Pcards/></MainLayout>}/>
+     <Route path='/product/partycards/:id' element={<MainLayout><Pcardssingl/></MainLayout>}/>
     
-     <Route path='/partyaccessories' element={<MainLayout><Partyaccessories/></MainLayout>}/>
-     <Route path='/partyaccessoriessinglepage/:id' element={<MainLayout><Partyaccessoriessingl/></MainLayout>}/>
+     <Route path='/category/partyware/partyaccessories' element={<MainLayout><Partyaccessories/></MainLayout>}/>
+     <Route path='/product/partyaccessories/:id' element={<MainLayout><Partyaccessoriessingl/></MainLayout>}/>
 
-     <Route path='/cellowrap' element={<MainLayout><Cellowrap/></MainLayout>}/>
-     <Route path='/cellowrapsinglepage/:id' element={<MainLayout><Cellowrapsingl/></MainLayout>}/>
+     <Route path='/category/partyware/cellowrap' element={<MainLayout><Cellowrap/></MainLayout>}/>
+     <Route path='/product/cellowrap/:id' element={<MainLayout><Cellowrapsingl/></MainLayout>}/>
 
-     <Route path='/partypoppers' element={<MainLayout><Partypopper/></MainLayout>}/>
-     <Route path='/partypopperssinglepage/:id' element={<MainLayout><Partypoppersingl/></MainLayout>}/>
+     <Route path='/category/partyware/partypoppers' element={<MainLayout><Partypopper/></MainLayout>}/>
+     <Route path='/product/partypoppers/:id' element={<MainLayout><Partypoppersingl/></MainLayout>}/>
+
       <Route path='/faq' element={<MainLayout><FAQ/></MainLayout>}/>
 
      <Route path='/category/poundline/hoiserypound' element={<MainLayout><Hosiery/></MainLayout>}/>

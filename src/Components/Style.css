@@ -288,24 +288,34 @@
 .reviews{
     padding-top: 30px;
 }
-.star-rating {
-    direction: rtl;
-    unicode-bidi: bidi-override;
-    font-size: 14.46px;
-    text-align: center;
-    margin-left: 20px;
-    /* margin: 20px; */
+.dropdown-item:hover{
+ background-color: #5369f8 !important;
+ color: #fefdfd !important;
+
+}
+.ratings{
+    margin-right:10px;  
+    margin-left: 19px;
 }
 
-.star-rating input {
-    display: none;
+.ratings i{
+    
+    color:#cecece;
+    font-size:23px;
+}
+.rating-text{
+    padding: 3px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 0;
+    font-size: 15px;
+   
 }
 
-.star-rating label {
-    color: #ddd;
-    cursor: pointer;
-    font-size: 2em;
+.rating-color{
+    color:#fbc634 !important;
 }
+
 
 .registerform{
     font-size: 18px;
@@ -1097,6 +1107,7 @@ padding-bottom: 5px;
         font-size: 14.46px;
         text-align: center;
         margin-left: 20px;
+        color: yellow !important;
        
         }
         
@@ -1105,7 +1116,7 @@ padding-bottom: 5px;
         }
         
         .star-rating label {
-        color: #ddd;
+        color: #232121;
         cursor: pointer;
         font-size: 2em;
         }

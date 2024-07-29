@@ -43,7 +43,7 @@ const Rentokil = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/rentokilsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/rentokil" />
         ))}
       </div>
     </div>

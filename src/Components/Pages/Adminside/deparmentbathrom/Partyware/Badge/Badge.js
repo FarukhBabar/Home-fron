@@ -42,7 +42,7 @@ const Badge = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/obsticalsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/badge" />
         ))}
       </div>
     </div>

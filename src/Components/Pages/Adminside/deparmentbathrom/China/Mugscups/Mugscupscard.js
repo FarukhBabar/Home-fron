@@ -5,7 +5,9 @@ const Mugscupscards = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/mugcupssinglepage/id`, { state: { id: user._id } });
+    // Replace spaces with hyphens and remove any non-alphanumeric characters to create a URL-friendly product name
+    const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/mugcups/${productName}`, { state: { id: user._id } });
   };
 
   return (

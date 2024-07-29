@@ -3,9 +3,12 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const GlassTablewearcards = ({ user }) => {
   const navigate = useNavigate();
-  const handleImageClick = () => {
-    navigate(`/glasstablewearsinglepage/id`, { state: { id: user._id } });
+   const handleImageClick = () => {
+    // Replace spaces with hyphens and remove any non-alphanumeric characters to create a URL-friendly product name
+    const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/glasstablewear/${productName}`, { state: { id: user._id } });
   };
+  
 
   return (
     <div className="col-6 col-sm-2 col-md-4 col-lg-3 mt-4">

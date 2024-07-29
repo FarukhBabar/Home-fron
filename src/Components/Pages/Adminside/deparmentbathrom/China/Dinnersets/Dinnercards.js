@@ -4,8 +4,10 @@ import { Link, useNavigate } from 'react-router-dom';
 const  Dinnercards = ({ user }) => {
   const navigate = useNavigate();
 
-  const handleImageClick = () => {
-    navigate(`/Supersunday/id`, { state: { id: user._id } });
+   const handleImageClick = () => {
+    // Replace spaces with hyphens and remove any non-alphanumeric characters to create a URL-friendly product name
+    const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/dinner/${productName}`, { state: { id: user._id } });
   };
 
   return (

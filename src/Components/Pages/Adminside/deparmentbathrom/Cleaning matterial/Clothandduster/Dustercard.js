@@ -5,7 +5,7 @@ const Dustercard = ({ user }) => {
    const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/dustersinglepage/id`, { state: { id: user._id } });
+    navigate(`/product/duster/id`, { state: { id: user._id } });
   };
 
   return (

@@ -7,7 +7,7 @@ const Birdcard = ({ user }) => {
   const handleImageClick = () => {
    
     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
-    navigate(`/birdinglepage/${productName}`, { state: { id: user._id } });
+    navigate(`/product/bird/${productName}`, { state: { id: user._id } });
   };
 
   return (

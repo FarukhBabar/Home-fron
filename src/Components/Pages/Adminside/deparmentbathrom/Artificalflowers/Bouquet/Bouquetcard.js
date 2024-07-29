@@ -5,7 +5,9 @@ const Bouquetcard = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/Supersunday/id`, { state: { id: user._id } });
+    // navigate(`/Supersunday/id`, { state: { id: user._id } });
+      const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/bouquet/${productName}`, { state: { id: user._id } });
   };
 
   return (

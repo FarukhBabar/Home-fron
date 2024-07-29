@@ -5,7 +5,7 @@ const Brushwarecards = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/brushwaresinglepage/id`, { state: { id: user._id } });
+    navigate(`/product/brushware/id`, { state: { id: user._id } });
   };
 
   return (

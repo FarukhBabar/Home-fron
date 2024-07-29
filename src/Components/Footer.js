@@ -33,9 +33,10 @@ const Footer = () => {
               <h5 className="text-black footer-title-01">Contact Us</h5>
              {/* <Link to='/faqs'><h5 className="text-black footer-title-01">FAQ</h5></Link>   */}
               <ul className="list-unstyled footer-link-01 m-0">
-                <li><a className="tex text-black text-opacity-75" href="#">29 Mollison Avenue, Brimsdown, Enfield, EN3 7NL</a></li>
-                <li><a className="tex text-black text-opacity-75" href="#">E:enquiries@fdd3wea.co.uk</a></li>
-                <li><a className="tex text-black text-opacity-75" href="#">T: 0208 12 12123</a></li>
+                <li><a className="tex text-black text-opacity-75" href="#">10-16 tiller road,
+canary wharf, E14 8PX</a></li>
+                <li><a className="tex text-black text-opacity-75" href="#">E:support@homeessentialshive.co.uk</a></li>
+                <li><a  className="tex text-black text-opacity-75" href="Tel:+442035041721">T: +442035041721</a></li>
                 {/* <li><a className="text-white text-opacity-75" href="#">Get the app</a></li>
                 <li><a className="text-white text-opacity-75" href="#">Store locator</a></li> */}
               </ul>

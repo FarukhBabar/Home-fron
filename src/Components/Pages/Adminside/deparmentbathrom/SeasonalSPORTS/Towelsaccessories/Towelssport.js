@@ -43,7 +43,7 @@ const Towelssport = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/umbrellasinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/umbrella" />
         ))}
       </div>
     </div>

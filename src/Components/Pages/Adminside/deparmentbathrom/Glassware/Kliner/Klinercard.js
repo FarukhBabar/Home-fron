@@ -7,7 +7,7 @@ const Klinercard = ({ user }) => {
   const handleImageClick = () => {
     
     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
-    navigate(`/klinersinglepage/${productName}`, { state: { id: user._id } });
+    navigate(`/product/kliner/${productName}`, { state: { id: user._id } });
   };
 
   return (

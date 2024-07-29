@@ -5,7 +5,9 @@ const  Hairbodycard = ({ user }) => {
    const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/hairbodysinglepage/id`, { state: { id: user._id } });
+   
+     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/hairbody/${productName}`, { state: { id: user._id } });
   };
 
   return (

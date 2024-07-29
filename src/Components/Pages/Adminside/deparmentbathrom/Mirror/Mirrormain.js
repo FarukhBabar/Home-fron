@@ -16,7 +16,7 @@ const Mirrormain = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/mirrorsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/mirrorsinglepage" />
         ))}
       </div>
     </div>

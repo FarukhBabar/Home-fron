@@ -44,7 +44,7 @@ const Fancydress = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/bannersinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/banner" />
         ))}
       </div>
     </div>

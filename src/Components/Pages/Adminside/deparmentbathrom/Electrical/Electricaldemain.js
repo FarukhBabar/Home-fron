@@ -10,44 +10,44 @@ const Electricaldemain = () => {
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/electricalaccesso"><img src="/Images/Electrical/Electrical (1).jpg" alt className="img" /></Link>   
+        <Link to="/category/electricalde/electricalaccesso"><img src="/Images/Electrical/Electrical (1).jpg" alt className="img" /></Link>   
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/ironele"><img src="/Images/Electrical/Electrical (2).jpg" alt className="img1" /></Link> 
+        <Link to="/category/electricalde/ironele"><img src="/Images/Electrical/Electrical (2).jpg" alt className="img1" /></Link> 
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to="/clock"> <img src="/Images/Electrical/Electrical.jpg" alt className="img2" /></Link>
+        <Link to="/category/electricalde/clock"> <img src="/Images/Electrical/Electrical.jpg" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/digital'><img src="/Images/Electrical/Electrical-1.jpg" alt className="img3" /></Link>   
+        <Link to='/category/electricalde/digital'><img src="/Images/Electrical/Electrical-1.jpg" alt className="img3" /></Link>   
       </div>
     </div>
   </div>
   <div className="row justify-content-center mt-3">
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/dorbells'><img src="/Images/Electrical/Electrical-7.jpg" alt className="img" /></Link>
+        <Link to='/category/electricalde/dorbells'><img src="/Images/Electrical/Electrical-7.jpg" alt className="img" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/cameras'> <img src="/Images/Electrical/Electrical-3.jpg" alt className="img1" /></Link>
+        <Link to='/category/electricalde/cameras'> <img src="/Images/Electrical/Electrical-3.jpg" alt className="img1" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/earephone'><img src="/Images/Electrical/Electrical-4.jpg" alt className="img2" /></Link>
+        <Link to='/category/electricalde/earephone'><img src="/Images/Electrical/Electrical-4.jpg" alt className="img2" /></Link>
       </div>
     </div>
     <div className="col-lg-3 col-md-6 col-sm-12">
       <div>
-        <Link to='/hairbody'><img src="/Images/Electrical/Electrical-5.jpg" alt className="img3" /></Link>
+        <Link to='/category/electricalde/hairbody'><img src="/Images/Electrical/Electrical-5.jpg" alt className="img3" /></Link>
       </div>
     </div>
   </div>

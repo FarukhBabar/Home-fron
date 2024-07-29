@@ -5,7 +5,7 @@ const Bathacessoriescard = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/Supersunday/id`, { state: { id: user._id } });
+    navigate(`/product/bathacesssinglepage/id`, { state: { id: user._id } });
   };
 
   return (

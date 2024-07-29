@@ -43,7 +43,7 @@ const Aprons = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/apronssinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/aprons" />
         ))}
       </div>
     </div>

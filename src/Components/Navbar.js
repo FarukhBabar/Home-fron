@@ -36,7 +36,7 @@ useEffect(() => {
       <img src="/Images/logo.png" alt className="logo" />
     </div>
     <div className="phone ">
-      <a href=''><i className="bi bi-telephone" />0208 805 5756</a>
+      <a href='Tel:+442035041721'><i className="bi bi-telephone" />+442035041721</a>
     </div>
    
   </div>

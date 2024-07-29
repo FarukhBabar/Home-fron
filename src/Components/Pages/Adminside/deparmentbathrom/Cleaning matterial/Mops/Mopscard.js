@@ -5,7 +5,7 @@ const Mopscard = ({ user }) => {
    const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/mopssinglepage/id`, { state: { id: user._id } });
+    navigate(`/product/mops/id`, { state: { id: user._id } });
   };
 
   return (

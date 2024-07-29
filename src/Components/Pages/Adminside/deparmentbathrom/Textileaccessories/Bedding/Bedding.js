@@ -43,7 +43,7 @@ const Mailing = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/beddingsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/bedding" />
         ))}
       </div>
     </div>

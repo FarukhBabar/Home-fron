@@ -43,7 +43,7 @@ const Ironingpage = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/ioriningsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/iorining" />
         ))}
       </div>
     </div>

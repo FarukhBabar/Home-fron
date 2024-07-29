@@ -5,7 +5,7 @@ const Glovescard = ({ user }) => {
   const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/glovessinglepage/id`, { state: { id: user._id } });
+    navigate(`/product/gloves/id`, { state: { id: user._id } });
   };
 
   return (

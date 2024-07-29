@@ -6,7 +6,7 @@ const Kettlescard = ({ user }) => {
   const handleImageClick = () => {
     // Replace spaces with hyphens and remove any non-alphanumeric characters to create a URL-friendly product name
     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
-    navigate(`/kettlessinglepage/${productName}`, { state: { id: user._id } });
+    navigate(`/product/kettles/${productName}`, { state: { id: user._id } });
   };
 
   return (

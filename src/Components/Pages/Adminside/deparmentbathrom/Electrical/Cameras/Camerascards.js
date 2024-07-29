@@ -5,7 +5,9 @@ const Camerascards = ({ user }) => {
     const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/camerassinglepage/id`, { state: { id: user._id } });
+   
+     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/cameras/${productName}`, { state: { id: user._id } });
   };
 
   return (

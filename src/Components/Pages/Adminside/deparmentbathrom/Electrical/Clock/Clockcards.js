@@ -5,7 +5,9 @@ const Clockcards = ({ user }) => {
     const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/clocksinglepage/id`, { state: { id: user._id } });
+   
+     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/clock/${productName}`, { state: { id: user._id } });
   };
 
   return (

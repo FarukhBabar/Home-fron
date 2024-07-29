@@ -5,7 +5,9 @@ const  Dorbellscard = ({ user }) => {
     const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/dorbellssinglepage/id`, { state: { id: user._id } });
+ 
+     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+    navigate(`/product/dorbells/${productName}`, { state: { id: user._id } });
   };
 
   return (

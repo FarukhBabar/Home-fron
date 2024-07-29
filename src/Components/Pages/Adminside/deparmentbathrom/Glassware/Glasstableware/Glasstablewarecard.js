@@ -7,7 +7,7 @@ const Glasstablewarecard = ({ user }) => {
   const handleImageClick = () => {
     // Replace spaces with hyphens and remove any non-alphanumeric characters to create a URL-friendly product name
     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
-    navigate(`/glasstablewaresinglepage/${productName}`, { state: { id: user._id } });
+    navigate(`/product/glasstableware/${productName}`, { state: { id: user._id } });
   };
 
   return (

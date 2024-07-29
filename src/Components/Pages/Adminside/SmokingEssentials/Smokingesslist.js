@@ -63,7 +63,7 @@ const Smokingesslist = () => {
             <tr key={ele._id}>
               <td>{ind + 1}</td>
               <td>{ele.name}</td>
-              <td>{ele.title}</td>
+             <td dangerouslySetInnerHTML={{ __html: ele.title }}></td>
               <td>{ele.price}</td>
               <td>
                 {ele.image && (

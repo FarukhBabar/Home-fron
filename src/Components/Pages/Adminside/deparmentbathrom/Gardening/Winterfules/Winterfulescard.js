@@ -7,7 +7,7 @@ const Winterfulescard = ({ user }) => {
   const handleImageClick = () => {
     
     const productName = user.name.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
-    navigate(`/winterfulessinglepage/${productName}`, { state: { id: user._id } });
+    navigate(`/product/winterfules/${productName}`, { state: { id: user._id } });
   };
 
   return (

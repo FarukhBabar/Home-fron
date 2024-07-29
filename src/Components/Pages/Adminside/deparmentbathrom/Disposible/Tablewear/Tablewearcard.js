@@ -5,7 +5,7 @@ const Tablewearcard = ({ user }) => {
    const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/tablewearsinglepage/id`, { state: { id: user._id } });
+    navigate(`/product/tablewear/id`, { state: { id: user._id } });
   };
 
   return (

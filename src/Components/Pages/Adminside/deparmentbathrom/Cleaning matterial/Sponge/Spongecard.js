@@ -5,7 +5,7 @@ const Spongecard = ({ user }) => {
    const navigate = useNavigate();
 
   const handleImageClick = () => {
-    navigate(`/spongesinglepage/id`, { state: { id: user._id } });
+    navigate(`/product/sponge/id`, { state: { id: user._id } });
   };
 
   return (

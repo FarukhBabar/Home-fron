@@ -43,7 +43,7 @@ const Showheadpage = () => {
     <div className="container mt-1">
       <div className="row">
         {users.map(user => (
-          <CardNew key={user._id} user={user} baseUrl="/showerheadsinglepage" />
+          <CardNew key={user._id} user={user} baseUrl="/product/showerheadsinglepage" />
         ))}
       </div>
     </div>

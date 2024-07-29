@@ -7,8 +7,24 @@ import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import { Pagination } from "swiper";
+import MostSellingProductsCarousel from '../MostSellingProductsCarousel'
 import "swiper/css/pagination";
+import axios from 'axios';
 const Home = () => {
+   const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get('https://homeessential-fdca5e469865.herokuapp.com/api/products/most-selling');
+        setProducts(response.data);
+      } catch (error) {
+        console.error('Error fetching most selling products:', error);
+      }
+    };
+
+    fetchProducts();
+  }, []);
 
   const nevigate=useNavigate()
  
@@ -21,6 +37,39 @@ const Home = () => {
           }
         }
       }, [nevigate]);
+  //     const products = [
+  //   {
+  //     name: 'Product 1',
+  //     price: 29.99,
+  //     image: '/Images/Link → rsz_0_400_1e1f0_156089.JPG.png',
+  //     link: '#',
+  //   },
+  //   {
+  //     name: 'Product 2',
+  //     price: 39.99,
+  //     image: '/Images/rsz_0_400_9d725_131308.jpg',
+  //     link: '#',
+  //   },
+  //   {
+  //     name: 'Product 3',
+  //     price: 49.99,
+  //     image: '/Images/rsz_0_400_43eec_066410.jpg',
+  //     link: '#',
+  //   },
+  //    {
+  //     name: 'Product 4',
+  //     price: 49.99,
+  //     image: '/Images/rsz_0_400_930e1_003261.jpeg',
+  //     link: '#',
+  //   },
+  //    {
+  //     name: 'Product 5',
+  //     price: 49.99,
+  //     image: '/Images/Sponge.png',
+  //     link: '#',
+  //   },
+  //   // Add more products as needed
+  // ];
    
 const reviews = [
   {
@@ -100,13 +149,20 @@ const reviews = [
           {reviews.map((review, index) => (
             <SwiperSlide key={index}>
               <div className="card" style={{ width: "16rem", height: 169 }}>
-                <div className="star-rating">
+                {/* <div className="star-rating">
                   <input type="radio" id="star5" name={`rating-${index}`} defaultValue={5} /><label htmlFor="star5" title="5 stars">☆</label>
                   <input type="radio" id="star4" name={`rating-${index}`} defaultValue={4} /><label htmlFor="star4" title="4 stars">☆</label>
                   <input type="radio" id="star3" name={`rating-${index}`} defaultValue={3} /><label htmlFor="star3" title="3 stars">☆</label>
                   <input type="radio" id="star2" name={`rating-${index}`} defaultValue={2} /><label htmlFor="star2" title="2 stars">☆</label>
                   <input type="radio" id="star1" name={`rating-${index}`} defaultValue={1} /><label htmlFor="star1" title="1 star">☆</label>
                   <span className="verified-badge">Verified</span>
+                </div> */}
+                <div class="ratings">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
                 </div>
                 <div className="card-body">
                   <h6 className="card-title">{review.name}</h6>
@@ -122,15 +178,17 @@ const reviews = [
       {/* Grid layout for larger screens */}
       <div className="row rrr d-none d-md-flex">
   {reviews.map((review, index) => (
-    <div key={index} className="col-lg-2 col-md-3 col-sm-12 card ms-3 mt-3" style={{ width: "16rem", height: 169 }}>
-      <div className="star-rating">
-        <input type="radio" id={`star5-${index}`} name={`rating-lg-${index}`} defaultValue={5} /><label htmlFor={`star5-${index}`} title="5 stars">☆</label>
-        <input type="radio" id={`star4-${index}`} name={`rating-lg-${index}`} defaultValue={4} /><label htmlFor={`star4-${index}`} title="4 stars">☆</label>
-        <input type="radio" id={`star3-${index}`} name={`rating-lg-${index}`} defaultValue={3} /><label htmlFor={`star3-${index}`} title="3 stars">☆</label>
-        <input type="radio" id={`star2-${index}`} name={`rating-lg-${index}`} defaultValue={2} /><label htmlFor={`star2-${index}`} title="2 stars">☆</label>
-        <input type="radio" id={`star1-${index}`} name={`rating-lg-${index}`} defaultValue={1} /><label htmlFor={`star1-${index}`} title="1 star">☆</label>
-        <span className="verified-badge">Verified</span>
-      </div>
+    <div key={index} className="col-lg-3 col-md-3 col-sm-12 card ms-3 mt-3" style={{ width: "16rem", height: 169 }}>
+        <div class="d-flex justify-content-center align-items-center">
+            <div class="ratings ">
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star rating-color"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <h5 class="rating-text bg-success">verified</h5>
+            </div>
       <div className="card-body">
         <h6 className="card-title">{review.name}</h6>
         <h6 className="card-subtitle mb-2 text-muted">{review.review}</h6>
@@ -204,7 +262,7 @@ const reviews = [
     <Link to='/deparments'>  <img src="/Images/Homepag/all departements.png" className="caa" alt /></Link>
     </div>
   </div>
-  
+   <MostSellingProductsCarousel products={products} />
   <div>
     <div className="mt-2 reviews">
       <p className="title1">Your reliable source of home supplies </p>
@@ -219,32 +277,7 @@ const reviews = [
 
     </p>
   </div>
-  {/* <div className="row">
-    <div className="col-lg-4 col-md-6 col-sm-12 form1">
-      <center><h3 className="registerform text-white">CREATE AN ACCOUNT</h3></center>
-      <p className="te ms-3">PLEASE CLICK ON THE REGISTER BUTTON BELOW TO CREATE AN ACCOUNT</p>
-      <center><Link to="/Register"><button className=" mb-3 registerbuton ">REGISTER</button></Link></center>
-    </div>
-    <div className="col-lg-4 col-md-6 col-sm-12  homeage ">
-      <center><h3 className="registerform text-white">EMAIL</h3></center>
-      <div className="">
-        <div>
-          <label className="ms-2">EMAIL</label>
-          <input type="email"  name='email' value={email} onChange={(e)=>setemail(e.target.value)}  className="  homelogin" placeholder="Type Your Email" />
-        </div>
-        <div className='pashome'>
-        <label className="">PASSWORD</label>
-          <input type="password"  name='password' value={password} onChange={(e)=>setpassword(e.target.value)} className="homelogin" placeholder="Type Your Email" />
-        </div>
-      </div>     
-      <div className=" d-flex">
-        <div className="forgot mb-3">  <Link to="/forget">FORGOT PASSWORD</Link></div>
-        <div>
-          <button className="mb-3 sizebutton1 ms-2 registerbuto " onClick={registeruser} >LOGIN</button>
-        </div>
-      </div>
-    </div>
-  </div> */}
+
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12 mt-2 reviews">
       <p className="title">FEATURED BRANDS</p>
