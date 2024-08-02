@@ -107,11 +107,14 @@
 // };
 
 // export default Listoflighter;
+
 import React, { useState, useEffect } from 'react';
 import StaticListComponent from '../../../Staticlist'; // Adjust the path as needed
+import { useNavigate } from 'react-router-dom';
 
 const Listoflighter = () => {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch data here
@@ -150,9 +153,11 @@ const Listoflighter = () => {
       onDelete={handleDelete}
       onEdit={handleEdit}
       editUrlBase='/listlighter'  // Set the base URL for editing
+      addProductUrl='/lighterform'  // Set the URL for adding a new product
     />
   );
 };
 
 export default Listoflighter;
+
 

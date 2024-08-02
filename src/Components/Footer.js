@@ -13,30 +13,30 @@ const Footer = () => {
             <div className="col-6 col-lg-4">
               <h5 className="text-black footer-title-01">CUSTOMER SERVICE</h5>
               <ul className="list-unstyled footer-link-01 m-0">
-                <li><Link className="tex text-black text-opacity-75" to="/contact">Contact Us</Link></li>
-                <li><Link className="tex text-black text-opacity-75" to="/aboutus">About Us</Link></li>
-                <li><Link className="tex text-black text-opacity-75" to="/delivery">Delivery</Link></li>
+                <li><Link className="h6  tex text-black text-opacity-75" to="/contact">Contact Us</Link></li>
+                <li><Link className="h6 tex text-black text-opacity-75" to="/aboutus">About Us</Link></li>
+                <li><Link className="h6 tex text-black text-opacity-75" to="/delivery">Delivery</Link></li>
                 {/* <li><Link className="tex text-black text-opacity-75" to="/export">Export</Link></li> */}
-                <li><Link className="tex text-black text-opacity-75" to="/faq">Help / FAQ</Link></li>
+                <li><Link className="h6 tex text-black text-opacity-75" to="/faq">Help / FAQ</Link></li>
               </ul>
             </div>
             <div className="col-6 col-lg-3">
               <h5 className="text-black footer-title-01">Website</h5>
               <ul className="list-unstyled footer-link-01 m-0">
-                <li><Link className="tex text-black text-opacity-75" to="/blog">Blog</Link></li>
-                <li><a className="tex text-black text-opacity-75" href="/privacy">Privacy Policy</a></li>
-                <li><Link to='/faqs'><a className="tex text-black text-opacity-75" href="/cookies">FAQ</a></Link></li>
-                <li><a className="tex text-black text-opacity-75" href="/termscondition">Terms &amp; Conditions</a></li>
+                <li><Link className="h6 tex text-black text-opacity-75" to="/blog">Blog</Link></li>
+                <li><a className="h6 tex text-black text-opacity-75" href="/privacy">Privacy Policy</a></li>
+                <li><Link to='/faqs'><a className="h6 tex text-black text-opacity-75" href="/cookies">FAQ</a></Link></li>
+                <li><a className="h6 tex text-black text-opacity-75" href="/termscondition">Terms &amp; Conditions</a></li>
               </ul>
             </div>
             <div className="col-6 col-lg-4">
               <h5 className="text-black footer-title-01">Contact Us</h5>
              {/* <Link to='/faqs'><h5 className="text-black footer-title-01">FAQ</h5></Link>   */}
               <ul className="list-unstyled footer-link-01 m-0">
-                <li><a className="tex text-black text-opacity-75" href="#">10-16 tiller road,
+                <li><a className="h6 tex text-black text-opacity-75" href="#">10-16 tiller road,
 canary wharf, E14 8PX</a></li>
-                <li><a className="tex text-black text-opacity-75" href="#">E:support@homeessentialshive.co.uk</a></li>
-                <li><a  className="tex text-black text-opacity-75" href="Tel:+442035041721">T: +442035041721</a></li>
+                <li><a className="h6 tex text-black text-opacity-75" href="#">E:support@homeessentialshive.co.uk</a></li>
+                <li><a  className="h6 tex text-black text-opacity-75" href="Tel:+442035041721">T: +442035041721</a></li>
                 {/* <li><a className="text-white text-opacity-75" href="#">Get the app</a></li>
                 <li><a className="text-white text-opacity-75" href="#">Store locator</a></li> */}
               </ul>
@@ -57,7 +57,7 @@ canary wharf, E14 8PX</a></li>
     <div className="container">
       <div className="row">
         <div className="col-md-6 text-center text-md-start py-1">
-          <p className="m-0 text-black text-opacity-75">© 2022 copyright by <a className="text-reset" href="#">homeessentialhive.co.uk</a></p>
+          <p className="h6 m-0 text-black text-opacity-75">© 2022 copyright by <a className="h6 text-reset" href="#">homeessentialhive.co.uk</a></p>
         </div>
         {/* <div className="col-md-6 text-center text-md-end py-1">
           <ul className="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0">

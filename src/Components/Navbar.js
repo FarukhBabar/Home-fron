@@ -33,7 +33,7 @@ useEffect(() => {
    
     <div className>
     
-      <img src="/Images/logo.png" alt className="logo" />
+     <Link to='/' ><img src="/Images/logo.png" alt className="logo" /></Link>
     </div>
     <div className="phone ">
       <a href='Tel:+442035041721'><i className="bi bi-telephone" />+442035041721</a>
@@ -64,60 +64,60 @@ useEffect(() => {
     <div className="d-flex flex-wrap">
       <div className="d-flex flex-column flex-md-row ">
         <div className="me-5 mb-3 mb-md-0 ">
-       <Link to='/batteries' className='foodsnv' ><p className="foodsnv ms-3 d-inline">Batteries</p> </Link>  <br/><br/>
+       <Link to='/category/batteries' className='foodsnv' ><p className="foodsnv ms-3 d-inline">Batteries</p> </Link>  <br/><br/>
           <p className="foodsnv ms-3 d-inline">FOOD&DRINK</p>
-          <Link className="dropdown-item" to="/drinks">
+          <Link className="dropdown-item" to="/category/foodanddrinks/drinks">
             DRINK
           </Link>
-          <Link className="dropdown-item" to="/foods">
+          <Link className="dropdown-item" to="/category/foodanddrinks/foods">
             FOOD
           </Link>
           <p className="foodsnv ms-3 d-inline">SmokingProducts</p>
 
-          <Link className="dropdown-item" to="/lighter">
+          <Link className="dropdown-item" to="/category/smoking/lighter">
             Lighter & Matches
           </Link>
-          <Link className="dropdown-item" to="/electrical">
+          <Link className="dropdown-item" to="/category/smoking/electrical">
             Electrical
           </Link>
-          <Link className="dropdown-item" to="/essentional">
+          <Link className="dropdown-item" to="/category/smoking/essentional">
             Smoking Essential
           </Link>
 
           <p className="foodsnv ms-3 d-inline">Bathroom</p>
-          <Link className="dropdown-item" to="/bathroommain">
+          <Link className="dropdown-item" to="/category/bathroom/bathroommain">
             Bathroom Scale
           </Link>
-          <Link className="dropdown-item" to="/mirrormain">
+          <Link className="dropdown-item" to="/category/bathroom/mirrormain">
             Mirror
           </Link>
-          <Link className="dropdown-item" to="/showermain">
+          <Link className="dropdown-item" to="/category/bathroom/showermain">
             Shower Curtains
           </Link>
           <Link className="dropdown-item" to="/category/bathroom">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Pound Line</p>
-          <Link className="dropdown-item" to="/bathroombeauty">
+          <Link className="dropdown-item" to="/category/poundline/bathroombeauty">
             Bathroom/Cosmetics
           </Link>
-          <Link className="dropdown-item" to="/electric">
+          <Link className="dropdown-item" to="/category/poundline/electric">
             Electrical
           </Link>
-          <Link className="dropdown-item" to="/firstaid">
+          <Link className="dropdown-item" to="/category/poundline/firstaid">
             First Aid/Pharmacy
           </Link>
           <Link className="dropdown-item" to="/category/poundline">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Textile</p>
-          <Link className="dropdown-item" to="/aprons">
+          <Link className="dropdown-item" to="/category/textilesaccessories/aprons">
             Aprons
           </Link>
-          <Link className="dropdown-item" to="/bedding">
+          <Link className="dropdown-item" to="/category/textilesaccessories/bedding">
             Bedding
           </Link>
-          <Link className="dropdown-item" to="/clothing">
+          <Link className="dropdown-item" to="/category/textilesaccessories/clothing">
             Clothing
           </Link>
           <Link className="dropdown-item" to="/category/textiles-Accessories">
@@ -127,10 +127,10 @@ useEffect(() => {
         <div className="me-5 mb-3 mb-md-0">
         <Link to='/phoneaccessories' ><p className="foodsnv ms-3 d-inline">Phone Accessories</p></Link> <br/> <br/>
         <p className="foodsnv ms-3 d-inline">Diy</p>
-          <Link className="dropdown-item" to="/freshner">
+          <Link className="dropdown-item" to="/category/diye/freshner">
             Air Freshners
           </Link>
-          <Link className="dropdown-item" to="/akonobol">
+          <Link className="dropdown-item" to="/category/diye/akonobol">
             Akzonobel
           </Link>
           
@@ -139,13 +139,13 @@ useEffect(() => {
           </Link>
 
           <p className="foodsnv ms-3 d-inline">Electrical</p>
-          <Link className="dropdown-item" to="/clock">
+          <Link className="dropdown-item" to="/category/electricalde/clock">
             COLCKS
           </Link>
-          <Link className="dropdown-item" to="/cameras">
+          <Link className="dropdown-item" to="/category/electricalde/cameras">
             DUMMY CAMERAS
           </Link>
-          <Link className="dropdown-item" to="/digital">
+          <Link className="dropdown-item" to="/category/electricalde/digital">
             DIGITAL ACCESSORIES
           </Link>
           <Link className="dropdown-item" to="/category/electricalde">
@@ -153,30 +153,30 @@ useEffect(() => {
           </Link>
 
           <p className="foodsnv ms-3 d-inline">CHINA</p>
-          <Link className="dropdown-item" to="/cookware">
+          <Link className="dropdown-item" to="/category/chinaproducts/cookware">
             COOKWARE
           </Link>
-          <Link className="dropdown-item" to="/crockery">
+          <Link className="dropdown-item" to="/category/chinaproducts/crockery">
             CROCKERY
           </Link>
-          <Link className="dropdown-item" to="/dinner">
+          <Link className="dropdown-item" to="/category/chinaproducts/dinner">
             DINNER SETS
           </Link>
           <Link className="dropdown-item" to="/category/chinaproducts">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Pest Control</p>
-          <Link className="dropdown-item" to="/rentokil">
+          <Link className="dropdown-item" to="/category/pestcontrol/rentokil">
             RENTOKIL
           </Link>
-          <Link className="dropdown-item" to="/stv">
+          <Link className="dropdown-item" to="/category/pestcontrol/stv">
            STV INTERNATIONAL
           </Link>
           <p className="foodsnv ms-3 d-inline">Toiletries</p>
-          <Link className="dropdown-item" to="/babay">
+          <Link className="dropdown-item" to="/category/toiletries/babay">
             Baby Care
           </Link>
-          <Link className="dropdown-item" to="/cotton">
+          <Link className="dropdown-item" to="/category/toiletries/cotton">
             Cotton Wool
           </Link>
          
@@ -190,23 +190,23 @@ useEffect(() => {
         <div className="me-5 mb-3 mb-md-0">
         <Link to='/category/obstical'><p className="foodsnv ms-3 d-inline">OBSOLETE</p> </Link><br/> <br/>
         <p className="foodsnv ms-3 d-inline">HOUSE HOLD</p>
-          <Link className="dropdown-item" to="/freshn">
+          <Link className="dropdown-item" to="/category/householdcleaners/freshn">
             Air Freshner
           </Link>
-          <Link className="dropdown-item" to="/car">
+          <Link className="dropdown-item" to="/category/householdcleaners/car">
             Car Care
           </Link>
-          <Link className="dropdown-item" to="/bleech">
+          <Link className="dropdown-item" to="/category/householdcleaners/bleech">
             Bleach
           </Link>
           <Link className="dropdown-item" to="/category/householdcleaners">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Kitchenware</p>
-          <Link className="dropdown-item" to="/bakeware">
+          <Link className="dropdown-item" to="/category/kitechenwear/bakeware">
             Bakeware
           </Link>
-          <Link className="dropdown-item" to="/bareware">
+          <Link className="dropdown-item" to="/category/kitechenwear/bareware">
            Bareware
           </Link>
           
@@ -215,10 +215,10 @@ useEffect(() => {
           </Link>
 
           <p className="foodsnv ms-3 d-inline">Pet Products</p>
-          <Link className="dropdown-item" to="/birds">
+          <Link className="dropdown-item" to="/category/petproducts/birds">
             Bird Products
           </Link>
-          <Link className="dropdown-item" to="/cat">
+          <Link className="dropdown-item" to="/category/petproducts/cat">
             Cat Products
           </Link>
          
@@ -226,20 +226,20 @@ useEffect(() => {
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Kids Products</p>
-          <Link className="dropdown-item" to="/babyproducts">
+          <Link className="dropdown-item" to="/category/kidsproduct/babyproducts">
             Baby Products
           </Link>
-          <Link className="dropdown-item" to="/kidssto">
+          <Link className="dropdown-item" to="/category/kidsproduct/kidssto">
            Kids Storage
           </Link>
           <Link className="dropdown-item" to="/category/kidsproduct">
            View all
           </Link>
           <p className="foodsnv ms-3 d-inline">Gardening</p>
-          <Link className="dropdown-item" to="/bbq">
+          <Link className="dropdown-item" to="/category/gardening/bbq">
             Bbq
           </Link>
-          <Link className="dropdown-item" to="/bird">
+          <Link className="dropdown-item" to="/category/gardening/bird">
            Birdcare
           </Link>
          
@@ -253,10 +253,10 @@ useEffect(() => {
           <Link className="dropdown-item" to="/baloon">
             Balloon Weights
           </Link>
-          <Link className="dropdown-item" to="/pumps">
+          <Link className="dropdown-item" to="/category/partyware/pumps">
            Baloons Pumps
           </Link>
-          <Link className="dropdown-item" to="/banner">
+          <Link className="dropdown-item" to="/category/partyware/banner">
             Banners
           </Link>
           <Link className="dropdown-item" to="/category/partyware">
@@ -264,10 +264,10 @@ useEffect(() => {
           </Link>
           
           <p className="foodsnv ms-3 d-inline">Glassware</p>
-          <Link className="dropdown-item" to="/cakes">
+          <Link className="dropdown-item" to="/category/glassweare/cakes">
             Cakestands
           </Link>
-          <Link className="dropdown-item" to="/crystal">
+          <Link className="dropdown-item" to="/category/glassweare/crystal">
             Crystal
           </Link>
          
@@ -275,30 +275,30 @@ useEffect(() => {
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Hardware</p>
-          <Link className="dropdown-item" to="/furniture">
+          <Link className="dropdown-item" to="/category/hardware/furniture">
             Furniture
           </Link>
-          <Link className="dropdown-item" to="/mats">
+          <Link className="dropdown-item" to="/category/hardware/mats">
            Mats & Rugs
           </Link>
           <Link className="dropdown-item" to="/category/hardware">
            View all
           </Link>
           <p className="foodsnv ms-3 d-inline">Home & Decore</p>
-          <Link className="dropdown-item" to="/st">
+          <Link className="dropdown-item" to="/category/homedecore/st">
             St George
           </Link>
-          <Link className="dropdown-item" to="/candel">
+          <Link className="dropdown-item" to="/category/homedecore/candel">
             Candels
           </Link>
           <Link className="dropdown-item" to="/category/homedecore">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Disposable Bags</p>
-          <Link className="dropdown-item" to="/disposible">
+          <Link className="dropdown-item" to="/category/disposible/disposible">
             Bin Bag
           </Link>
-          <Link className="dropdown-item" to="/tablewear">
+          <Link className="dropdown-item" to="/category/disposible/tablewear">
             Disposible Tablewear
           </Link>
           <Link className="dropdown-item" to="/category/disposible">
@@ -308,10 +308,10 @@ useEffect(() => {
         <div className="me-5 mb-3 mb-md-0">
         
           <p className="foodsnv ms-3 d-inline">Plastic Houseware</p>
-          <Link className="dropdown-item" to="/foodcon">
+          <Link className="dropdown-item" to="/category/plastichousewares/foodcon">
             Food Containers
           </Link>
-          <Link className="dropdown-item" to="/kidsplas">
+          <Link className="dropdown-item" to="/category/plastichousewares/kidsplas">
            Kids Plastic Products
           </Link>
           
@@ -320,10 +320,10 @@ useEffect(() => {
           </Link>
 
           <p className="foodsnv ms-3 d-inline">Seasonal Sports</p>
-          <Link className="dropdown-item" to="/cooler">
+          <Link className="dropdown-item" to="/category/seasonalsports/cooler">
             Cooler Bags
           </Link>
-          <Link className="dropdown-item" to="/flask">
+          <Link className="dropdown-item" to="/category/seasonalsports/flask">
             Flasks
           </Link>
          
@@ -331,30 +331,30 @@ useEffect(() => {
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Stationery</p>
-          <Link className="dropdown-item" to="/art&craft">
+          <Link className="dropdown-item" to="/category/stationery/art&craft">
             Art & Craft
           </Link>
-          <Link className="dropdown-item" to="/books">
+          <Link className="dropdown-item" to="/category/stationery/books">
            Books
           </Link>
           <Link className="dropdown-item" to="/category/stationery">
            View all
           </Link>
           <p className="foodsnv ms-3 d-inline">Cleaning Matterials</p>
-          <Link className="dropdown-item" to="/brushware">
+          <Link className="dropdown-item" to="/category/cleaning/brushware">
             Brushware
           </Link>
-          <Link className="dropdown-item" to="/duster">
+          <Link className="dropdown-item" to="/category/cleaning/duster">
             Cloths And Dusters
           </Link>
           <Link className="dropdown-item" to="/category/cleaning">
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Artifical Flower</p>
-          <Link className="dropdown-item" to="/artifical">
+          <Link className="dropdown-item" to="/category/flowers/artifical">
             Artifical Trees
           </Link>
-          <Link className="dropdown-item" to="/bouquet">
+          <Link className="dropdown-item" to="/category/flowers/bouquet">
             Bouquets
           </Link>
           <Link className="dropdown-item" to="/category/flowers">

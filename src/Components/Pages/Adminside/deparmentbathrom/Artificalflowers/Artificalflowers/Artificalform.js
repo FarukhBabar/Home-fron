@@ -1,111 +1,176 @@
+// import React, { useEffect, useState } from 'react';
+// import { Link, useNavigate } from 'react-router-dom';
+// import 'froala-editor/css/froala_style.min.css';
+// import 'froala-editor/css/froala_editor.pkgd.min.css';
+// import FroalaEditorComponent from 'react-froala-wysiwyg';
+// import "../../../admin.css";
+
+// const Artificalform = () => {
+//   const [Image, setImage] = useState(null);
+//   const [name, setName] = useState('');
+//   const [title, setTitle] = useState('');
+//   const [price, setPrice] = useState('');
+//   const [ImageError, setImageError] = useState(false);
+//   const [nameError, setNameError] = useState(false);
+//   const [titleError, setTitleError] = useState(false);
+//   const [priceError, setPriceError] = useState(false);
+//   const navigate = useNavigate();
+
+//   const handleDescriptionChange = (model) => {
+//     setTitle(model);
+//   };
+
+//   const handleSubmit = async (e) => {
+//     e.preventDefault();
+
+//     let formData = new FormData();
+//     formData.append('name', name);
+//     formData.append('title', title);
+//     formData.append('price', price);
+//     formData.append('image', Image);
+
+//     if (!name || !title || !price) {
+//       if (!name) setNameError(true);
+//       if (!title) setTitleError(true);
+//       if (!price) setPriceError(true);
+//       if (!Image) setImageError(true);
+//       return;
+//     }
+
+//     try {
+//       let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/artificalproducts", {
+//         method: "POST",
+//         body: formData,
+//       });
+//       result = await result.json();
+//       if (result) {
+//         navigate("/listobstical");
+//         alert("Product added successfully");
+//       } else {
+//         alert("Error in connection");
+//       }
+//     } catch (error) {
+//       console.log("ERROR IN DB");
+//     }
+//   };
+
+//   return (
+//     <div>
+//       <Link to="/listartifical" className="btn btn-success mss mt-2">Product-list</Link>
+//       <form className='marr'>
+//         <div className="mb-3 maa">
+//           <label className="form-label mt-2">Item Name</label>
+//           <input
+//             type="text"
+//             className={`form-control ${nameError ? 'is-invalid' : ''}`}
+//             name='name'
+//             value={name}
+//             onChange={(e) => setName(e.target.value)}
+//             placeholder='Enter your Item name'
+//           />
+//           {nameError && <div className="invalid-feedback">Please enter your name</div>}
+//         </div>
+//         <div className="mb-3 maa">
+//           <label className="form-label">Description</label>
+//           <FroalaEditorComponent
+//             tag='textarea'
+//             model={title}
+//             onModelChange={handleDescriptionChange}
+//           />
+//           {titleError && <div className="invalid-feedback">Please enter your title</div>}
+//         </div>
+//         <div className="mb-3 maa">
+//           <label className="form-label">Price</label>
+//           <input
+//             type="text"
+//             className={`form-control form-control-lg ${priceError ? 'is-invalid' : ''}`}
+//             name='price'
+//             value={price}
+//             onChange={(e) => setPrice(e.target.value)}
+//             placeholder='Enter your Item title'
+//           />
+//           {priceError && <div className="invalid-feedback">Please enter your price</div>}
+//         </div>
+//         <div className="mb-3 maa">
+//           <label className="form-label">Image</label>
+//           <input
+//             type="file"
+//             className={`form-control form-control-lg ${ImageError ? 'is-invalid' : ''}`}
+//             name='Image'
+//             onChange={(e) => setImage(e.target.files[0])}
+//             placeholder='Enter your Item title'
+//           />
+//           {ImageError && <div className="invalid-feedback">Please enter your price</div>}
+//         </div>
+//         <button type="submit" className="btn btn-success mss" onClick={handleSubmit}>Add Product</button>
+//       </form>
+//     </div>
+//   );
+// };
+
+// export default Artificalform;
+
+
 import React, { useEffect, useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import 'froala-editor/css/froala_style.min.css';
-import 'froala-editor/css/froala_editor.pkgd.min.css';
-import FroalaEditorComponent from 'react-froala-wysiwyg';
-import "../../../admin.css";
-
+import { useNavigate } from 'react-router-dom';
+import StaticForm from '../../../../../FormPage1';
 const Artificalform = () => {
-  const [Image, setImage] = useState(null);
   const [name, setName] = useState('');
-  const [title, setTitle] = useState('');
-  const [price, setPrice] = useState('');
-  const [ImageError, setImageError] = useState(false);
-  const [nameError, setNameError] = useState(false);
-  const [titleError, setTitleError] = useState(false);
-  const [priceError, setPriceError] = useState(false);
-  const navigate = useNavigate();
+    const [title, setTitle] = useState('');
+    const [price, setPrice] = useState('');
+    const [image, setImage] = useState(null);
+const navigate = useNavigate();
+    const handleNameChange = (e) => setName(e.target.value);
+    const handleTitleChange = (model) => setTitle(model);
+    const handlePriceChange = (e) => setPrice(e.target.value);
+    const handleFileChange = (e) => setImage(e.target.files[0]);
 
-  const handleDescriptionChange = (model) => {
-    setTitle(model);
-  };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+        let formData = new FormData();
+        formData.append('name', name);
+        formData.append('title', title);
+        formData.append('price', price);
+        if (image) {
+            formData.append('image', image);
+        }
 
-    let formData = new FormData();
-    formData.append('name', name);
-    formData.append('title', title);
-    formData.append('price', price);
-    formData.append('image', Image);
+        try {
+            let response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/artificalproducts', {
+                method: 'POST',
+                body: formData
+            });
 
-    if (!name || !title || !price) {
-      if (!name) setNameError(true);
-      if (!title) setTitleError(true);
-      if (!price) setPriceError(true);
-      if (!Image) setImageError(true);
-      return;
-    }
+            if (!response.ok) throw new Error('Network response was not ok');
 
-    try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/artificalproducts", {
-        method: "POST",
-        body: formData,
-      });
-      result = await result.json();
-      if (result) {
-        navigate("/listobstical");
-        alert("Product added successfully");
-      } else {
-        alert("Error in connection");
-      }
-    } catch (error) {
-      console.log("ERROR IN DB");
-    }
-  };
+            let result = await response.json();
+            if (result) {
+                alert('Product added successfully');
+                navigate('/listartifical')
+               
+            } else {
+                alert('Error in connection');
+            }
+        } catch (error) {
+            console.error('Error adding data:', error);
+        }
+    };
 
-  return (
-    <div>
-      <Link to="/listartifical" className="btn btn-success mss mt-2">Product-list</Link>
-      <form className='marr'>
-        <div className="mb-3 maa">
-          <label className="form-label mt-2">Item Name</label>
-          <input
-            type="text"
-            className={`form-control ${nameError ? 'is-invalid' : ''}`}
-            name='name'
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder='Enter your Item name'
-          />
-          {nameError && <div className="invalid-feedback">Please enter your name</div>}
-        </div>
-        <div className="mb-3 maa">
-          <label className="form-label">Description</label>
-          <FroalaEditorComponent
-            tag='textarea'
-            model={title}
-            onModelChange={handleDescriptionChange}
-          />
-          {titleError && <div className="invalid-feedback">Please enter your title</div>}
-        </div>
-        <div className="mb-3 maa">
-          <label className="form-label">Price</label>
-          <input
-            type="text"
-            className={`form-control form-control-lg ${priceError ? 'is-invalid' : ''}`}
-            name='price'
-            value={price}
-            onChange={(e) => setPrice(e.target.value)}
-            placeholder='Enter your Item title'
-          />
-          {priceError && <div className="invalid-feedback">Please enter your price</div>}
-        </div>
-        <div className="mb-3 maa">
-          <label className="form-label">Image</label>
-          <input
-            type="file"
-            className={`form-control form-control-lg ${ImageError ? 'is-invalid' : ''}`}
-            name='Image'
-            onChange={(e) => setImage(e.target.files[0])}
-            placeholder='Enter your Item title'
-          />
-          {ImageError && <div className="invalid-feedback">Please enter your price</div>}
-        </div>
-        <button type="submit" className="btn btn-success mss" onClick={handleSubmit}>Add Product</button>
-      </form>
-    </div>
-  );
+    return (
+        <StaticForm
+            name={name}
+            title={title}
+            price={price}
+            onNameChange={handleNameChange}
+            onTitleChange={handleTitleChange}
+            onPriceChange={handlePriceChange}
+            onFileChange={handleFileChange}
+            onSubmit={handleSubmit}
+            buttonLabel="Add Product"
+            listUrl="/listartifical" 
+        />
+    );
 };
 
-export default Artificalform;
+export default Artificalform

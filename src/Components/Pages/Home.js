@@ -37,40 +37,7 @@ const Home = () => {
           }
         }
       }, [nevigate]);
-  //     const products = [
-  //   {
-  //     name: 'Product 1',
-  //     price: 29.99,
-  //     image: '/Images/Link → rsz_0_400_1e1f0_156089.JPG.png',
-  //     link: '#',
-  //   },
-  //   {
-  //     name: 'Product 2',
-  //     price: 39.99,
-  //     image: '/Images/rsz_0_400_9d725_131308.jpg',
-  //     link: '#',
-  //   },
-  //   {
-  //     name: 'Product 3',
-  //     price: 49.99,
-  //     image: '/Images/rsz_0_400_43eec_066410.jpg',
-  //     link: '#',
-  //   },
-  //    {
-  //     name: 'Product 4',
-  //     price: 49.99,
-  //     image: '/Images/rsz_0_400_930e1_003261.jpeg',
-  //     link: '#',
-  //   },
-  //    {
-  //     name: 'Product 5',
-  //     price: 49.99,
-  //     image: '/Images/Sponge.png',
-  //     link: '#',
-  //   },
-  //   // Add more products as needed
-  // ];
-   
+ 
 const reviews = [
   {
     name: "Samantha Clark",
@@ -149,21 +116,16 @@ const reviews = [
           {reviews.map((review, index) => (
             <SwiperSlide key={index}>
               <div className="card" style={{ width: "16rem", height: 169 }}>
-                {/* <div className="star-rating">
-                  <input type="radio" id="star5" name={`rating-${index}`} defaultValue={5} /><label htmlFor="star5" title="5 stars">☆</label>
-                  <input type="radio" id="star4" name={`rating-${index}`} defaultValue={4} /><label htmlFor="star4" title="4 stars">☆</label>
-                  <input type="radio" id="star3" name={`rating-${index}`} defaultValue={3} /><label htmlFor="star3" title="3 stars">☆</label>
-                  <input type="radio" id="star2" name={`rating-${index}`} defaultValue={2} /><label htmlFor="star2" title="2 stars">☆</label>
-                  <input type="radio" id="star1" name={`rating-${index}`} defaultValue={1} /><label htmlFor="star1" title="1 star">☆</label>
-                  <span className="verified-badge">Verified</span>
-                </div> */}
-                <div class="ratings">
+              <div class="d-flex justify-content-center align-items-center">
+            <div class="ratings ">
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
-                <i class="fa fa-star"></i>
-                </div>
+                <i class="fa fa-star rating-color"></i>
+            </div>
+            <h5 class="rating-text bg-success">verified</h5>
+            </div>
                 <div className="card-body">
                   <h6 className="card-title">{review.name}</h6>
                   <h6 className="card-subtitle mb-2 text-muted">{review.review}</h6>
@@ -185,7 +147,7 @@ const reviews = [
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
-                <i class="fa fa-star"></i>
+                <i class="fa fa-star rating-color"></i>
             </div>
             <h5 class="rating-text bg-success">verified</h5>
             </div>

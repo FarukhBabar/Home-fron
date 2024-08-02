@@ -1332,6 +1332,11 @@ import Kidschalist from './Components/Pages/Adminside/deparmentbathrom/Kidsprodu
 import Kidschaupdate from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschaupdate';
 import Kidschar from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschar';
 import Kidschasingl from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschasingl';
+import MostSellingProductsCarousel from './Components/MostSellingProductsCarousel';
+import ProductDetail from './Components/Pages/Productdetails';
+import Error from './ErrorPage';
+import ErrorPage from './ErrorPage';
+import ThankYouPage from './Components/Thankyoupage';
 const AdminLayout = ({ children }) => (
   
   <>
@@ -2408,11 +2413,11 @@ const App = () => {
         <Route path='/delivery' element={<MainLayout><Delivery/></MainLayout>} />
         <Route path='/export' element={<MainLayout><Export/></MainLayout>} />
         <Route path='/faq' element={<MainLayout><Faq/></MainLayout>} />
-        <Route path='/product/Supersunday/:slug' element={<MainLayout><Sundayoffersinglr/></MainLayout>}/>
+        <Route path='/product/Sunday/:slug' element={<MainLayout><Sundayoffersinglr/></MainLayout>}/>
         <Route path='/product/essentional/:id' element={<MainLayout><Smokingsinglepage/></MainLayout>}/>
         <Route path='/product/lighter/:id' element={<MainLayout><Lightersinglepage/></MainLayout>}/>
         <Route path='/product/bathroom/:id' element={<MainLayout><Bathroomsingle/></MainLayout>}/>
-        <Route path='/palletsingle/:id' element={<MainLayout><Palletsingle/></MainLayout>}/>
+        <Route path='/product/pallet/:slug' element={<MainLayout><Palletsingle/></MainLayout>}/>
         <Route path='/newarrsingle/:id' element={<MainLayout><Newarrivalsingr/></MainLayout>}/>
         <Route path='/product/foods/:id' element={<MainLayout><Foodssingle/></MainLayout>}/>
         <Route path='/product/electrical/:id' element={<MainLayout><Electricalsinglepage/></MainLayout>}/>
@@ -3208,6 +3213,10 @@ const App = () => {
      <Route path='/category/poundline/hoiserypound' element={<MainLayout><Hosiery/></MainLayout>}/>
      <Route path='/product/hoisery' element={<MainLayout><Hosierysingl/></MainLayout>}/>
 
+      {/* <Route path="/" element={<Home products={products} />} /> */}
+      <Route path="/product/:name" element={<MainLayout><ProductDetail/></MainLayout>} />
+       <Route path='*' element={<ErrorPage/>} />
+       <Route path="/thank-you" element={<ThankYouPage />} />
       </Routes>
       </CartProvider>
     </>
