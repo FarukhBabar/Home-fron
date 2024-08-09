@@ -14,7 +14,7 @@
 
 //   const GetSingleData = async () => {
 //     try {
-//       const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/bartolinsingle/${params.id}`);
+//       const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/bartolinsingle/${params.id}`);
 //       const result = await response.json();
 //       setProduct(result);
 //     } catch (error) {
@@ -84,7 +84,7 @@
 //               <div className="white-box text-center mt-3">
 //                 {product.image && (
 //                   <img
-//                     src={`https://homeessential-fdca5e469865.herokuapp.com/${product.image.replace(/\\/g, '/')}`}
+//                     src={`http://srv577826.hstgr.cloud:8002/${product.image.replace(/\\/g, '/')}`}
 //                     alt={product.name}
 //                     className='singleimg'
 //                   />
@@ -128,6 +128,6 @@
 import withDataFetching from '../../../../../withDataFetching';
 import SinglePage from '../../../../../SinglePage';
 
-const Bartolinsingle = withDataFetching(SinglePage, 'https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/bartolinsingle');
+const Bartolinsingle = withDataFetching(SinglePage, 'http://srv577826.hstgr.cloud:8002/api/v1/data/bartolinsingle');
 
 export default Bartolinsingle;

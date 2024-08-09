@@ -7,7 +7,7 @@
     
 
 //     const setUsersData = async() =>{
-//         let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/healthcareeuser")
+//         let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/healthcareeuser")
 //         result = await result.json()       
 //         setUsers(result)        
 //         console.log(result)
@@ -20,7 +20,7 @@
 //       const deleteuser = async(id)=>{
 //           // console.log(id)
 //           try {
-//               let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/healthcareeuserid/${id}`,{
+//               let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/healthcareeuserid/${id}`,{
 //             method:"delete"
          
 //           })
@@ -66,7 +66,7 @@
 //                                          <td>{ele.price}</td>
 //                                          <td> {ele.image && (
 //                               <img 
-//                             src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
+//                             src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
 //                                      alt={ele.name} 
 //                                          className='img-fluid' 
 //                                     style={{ height: '70px', width: '100px' }}
@@ -96,9 +96,54 @@
 // export default Healthcareelist; 
 
 
-import withDataFetching from '../../../../../withDataFetching';
-import SinglePage from '../../../../../SinglePage';
+import React, { useState, useEffect } from 'react';
+import StaticListComponent from '../../../../../Staticlist'; // Adjust the path as needed
+import { useNavigate } from 'react-router-dom';
 
-const Healthcareelist = withDataFetching(SinglePage, 'https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/healthcareeuser');
+const Healthcareelist = () => {
+  const [data, setData] = useState([]);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Fetch data here
+    const fetchData = async () => {
+      try {
+        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/healthcareeuser');
+        if (!response.ok) throw new Error('Network response was not ok');
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  const handleDelete = async (id) => {
+    try {
+      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/healthcareeuserid/${id}`, {
+        method: 'DELETE',
+      });
+      setData(data.filter(item => item._id !== id));
+    } catch (error) {
+      console.error('Error deleting data:', error);
+    }
+  };
+
+  const handleEdit = (id) => {
+    // Handle edit logic here, if needed
+  };
+
+  return (
+    <StaticListComponent
+      data={data}
+      onDelete={handleDelete}
+      onEdit={handleEdit}
+      editUrlBase='/listhealthcaree'  // Set the base URL for editing
+      addProductUrl='/healthcareeform'  // Set the URL for adding a new product
+    />
+  );
+};
 
 export default Healthcareelist;

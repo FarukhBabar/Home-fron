@@ -39,7 +39,7 @@ const Form = () => {
         }
 
         try {
-            let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/freedel", {
+            let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/freedel", {
                 method: "post",
                 body: formData
             });

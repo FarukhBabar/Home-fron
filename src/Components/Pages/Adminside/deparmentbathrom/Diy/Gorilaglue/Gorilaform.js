@@ -40,7 +40,7 @@ const Gorilaform = () => {
       return;
     }
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/gorilaproducts" , {
+      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/gorilaproducts" , {
         method: "post",
         body :formdata
       

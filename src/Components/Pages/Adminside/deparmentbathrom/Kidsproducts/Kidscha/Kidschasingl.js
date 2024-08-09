@@ -2,6 +2,6 @@
 import withDataFetching from '../../../../../withDataFetching';
 import SinglePage from '../../../../../SinglePage';
 
-const Kidschasingl = withDataFetching(SinglePage, 'https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/newarrsingle');
+const Kidschasingl = withDataFetching(SinglePage, 'http://srv577826.hstgr.cloud:8002/api/v1/data/newarrsingle');
 
 export default Kidschasingl;

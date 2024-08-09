@@ -8,7 +8,7 @@ const Pyrex = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/pyrexfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/pyrexfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

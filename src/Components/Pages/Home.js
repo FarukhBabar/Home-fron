@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('https://homeessential-fdca5e469865.herokuapp.com/api/products/most-selling');
+        const response = await axios.get('http://srv577826.hstgr.cloud:8002/api/products/most-selling');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching most selling products:', error);

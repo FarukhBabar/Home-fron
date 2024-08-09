@@ -12,7 +12,7 @@ const Contactus = () => {
     const registerUser = async(e) =>{
       e.preventDefault();
       
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/contact",{
+      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/contact",{
           method: 'post',
           body: JSON.stringify({name,  phone,email, message}),
           headers:{

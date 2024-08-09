@@ -13,7 +13,7 @@ const Carpoupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/carposingle/${params.id}`);
+                const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/carposingle/${params.id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -47,7 +47,7 @@ const Carpoupdate = () => {
         }
 
         try {
-            let response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/carposingle/${params.id}`, {
+            let response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/carposingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

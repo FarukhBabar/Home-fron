@@ -14,7 +14,7 @@ const Umbrellasingel = () => {
 
   const GetSingleData = async () => {
     try {
-      const response = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/umbrella2single/${params.id}`);
+      const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/umbrella2single/${params.id}`);
       const result = await response.json();
       setProduct(result);
     } catch (error) {
@@ -84,7 +84,7 @@ const Umbrellasingel = () => {
               <div className="white-box text-center mt-3">
                 {product.image && (
                   <img
-                    src={`https://homeessential-fdca5e469865.herokuapp.com/${product.image.replace(/\\/g, '/')}`}
+                    src={`http://srv577826.hstgr.cloud:8002/${product.image.replace(/\\/g, '/')}`}
                     alt={product.name}
                     className='singleimg'
                   />

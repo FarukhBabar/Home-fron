@@ -37,7 +37,7 @@
 //       const totalAmount = parseFloat(calculateTotal()) + 25 + 18.20;
 //       try {
 //         // Create payment intent on the server
-//         const paymentIntentResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/payment_intents', {
+//         const paymentIntentResponse = await axios.post('http://srv577826.hstgr.cloud:8002/api/payment_intents', {
 //           amount: totalAmount
 //         });
 //         const { clientSecret } = paymentIntentResponse.data;
@@ -65,7 +65,7 @@
 //           alert(`Payment failed: ${paymentResult.error.message}`);
 //         } else if (paymentResult.paymentIntent.status === 'succeeded') {
 //           // Save the order in the database
-//           const orderResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/orders', {
+//           const orderResponse = await axios.post('http://srv577826.hstgr.cloud:8002/api/orders', {
 //             ...values,
 //             cartItems,
 //             quantities,
@@ -268,7 +268,7 @@
 //                         <tr key={item.id}>
 //                           <th scope="row">
 //                             <img
-//                               src={`https://homeessential-fdca5e469865.herokuapp.com/${item.image.replace(/\\/g, '/')}`}
+//                               src={`http://srv577826.hstgr.cloud:8002/${item.image.replace(/\\/g, '/')}`}
 //                               alt={item.name}
 //                               className="singleimg"
 //                               style={{ width: '80px', height: '80px' }}
@@ -368,7 +368,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
     onSubmit: async values => {
       const totalAmount = parseFloat(calculateTotal()) + 25 + 18.20;
       try {
-        const paymentIntentResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/payment_intents', {
+        const paymentIntentResponse = await axios.post('http://srv577826.hstgr.cloud:8002/api/payment_intents', {
           amount: totalAmount
         });
         const { clientSecret } = paymentIntentResponse.data;
@@ -394,7 +394,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
         if (paymentResult.error) {
           alert(`Payment failed: ${paymentResult.error.message}`);
         } else if (paymentResult.paymentIntent.status === 'succeeded') {
-          const orderResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/orders', {
+          const orderResponse = await axios.post('http://srv577826.hstgr.cloud:8002/api/orders', {
             ...values,
             cartItems,
             quantities,
@@ -552,7 +552,7 @@ const Checkout = () => {
                     <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
                       <div>
                         <img
-                          src={`https://homeessential-fdca5e469865.herokuapp.com/${item.image.replace(/\\/g, '/')}`}
+                          src={`http://srv577826.hstgr.cloud:8002/${item.image.replace(/\\/g, '/')}`}
                           alt={item.name}
                           className="singleimg"
                           style={{ width: '80px', height: '80px' }}

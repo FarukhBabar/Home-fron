@@ -1,40 +1,4 @@
 
-// import React, { useState, useEffect } from 'react';
-// import axios from 'axios';
-// import Foodcards from './Foodcards';
-// import { Link } from 'react-router-dom';
-
-// const  Foodspage = () => {
-//   const [users, setUsers] = useState([]);
-// const [showFullText, setShowFullText] = useState(false);
-
-//   const toggleText = () => {
-//     setShowFullText(!showFullText);
-//   };
-//   useEffect(() => {
-//     axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/foodfreedelivery")
-//       .then(response => setUsers(response.data))
-//       .catch(error => console.log(error));
-//   }, []);
-
-//   return (
-//     <>
-     
-   
-//     <div className="container  mt-1">
-//       <div className="row">
-//         {users.map(user => (
-//           <Foodcards key={user._id} user={user} />
-//         ))}
-//       </div>
-//     </div>
-//      </>
-//   );
-// }
-
-// export default  Foodspage;
-
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import CardNew from '../../../Cardsnew'; // Make sure the path is correct
@@ -49,7 +13,7 @@ const Foodspage = () => {
     setShowFullText(!showFullText);
   };
   useEffect(() => {
-    axios.get("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/foodfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/foodfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

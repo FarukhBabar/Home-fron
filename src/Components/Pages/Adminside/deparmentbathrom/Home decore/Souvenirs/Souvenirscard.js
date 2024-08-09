@@ -17,7 +17,7 @@ const Souvenirscard = ({ user }) => {
           <div onClick={handleImageClick} className="btn">
             {user.image && (
               <img
-                src={`https://homeessential-fdca5e469865.herokuapp.com/${user.image}`}
+                src={`http://srv577826.hstgr.cloud:8002/${user.image}`}
                 alt={user.name}
                 className="img-fluid border"
                 style={{ height: '60%', width: '99%' }}

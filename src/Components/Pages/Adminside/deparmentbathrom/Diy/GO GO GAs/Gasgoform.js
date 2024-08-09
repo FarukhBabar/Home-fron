@@ -40,7 +40,7 @@ const Gasgoform = () => {
       return;
     }
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/gassysproducts" , {
+      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/gassysproducts" , {
         method: "post",
         body :formdata
       

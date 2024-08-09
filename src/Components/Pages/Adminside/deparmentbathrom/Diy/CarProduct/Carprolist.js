@@ -7,7 +7,7 @@ const Carprolist = () => {
     
 
     const setUsersData = async() =>{
-        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/carprouser")
+        let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/carprouser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Carprolist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/carprouserid/${id}`,{
+              let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/carprouserid/${id}`,{
             method:"delete"
          
           })
@@ -66,7 +66,7 @@ const Carprolist = () => {
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 
-                            src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
+                            src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
                                      alt={ele.name} 
                                          className='img-fluid' 
                                     style={{ height: '70px', width: '100px' }}

@@ -7,7 +7,7 @@ const Kilroklist = () => {
     
 
     const setUsersData = async() =>{
-        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/kilrockuser")
+        let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/kilrockuser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Kilroklist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/kilrockuserid/${id}`,{
+              let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/kilrockuserid/${id}`,{
             method:"delete"
          
           })
@@ -66,7 +66,7 @@ const Kilroklist = () => {
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 
-                            src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
+                            src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
                                      alt={ele.name} 
                                          className='img-fluid' 
                                     style={{ height: '70px', width: '100px' }}

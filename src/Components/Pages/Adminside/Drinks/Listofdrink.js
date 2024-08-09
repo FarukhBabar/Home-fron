@@ -9,7 +9,7 @@
 
 //     const setUsersData = async () => {
 //         try {
-//             let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/driuser");
+//             let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/driuser");
 //             result = await result.json();
 //             setUsers(result);
 //         } catch (error) {
@@ -23,7 +23,7 @@
 
 //     const deleteuser = async (id) => {
 //         try {
-//             let result = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/driuserid/${id}`, {
+//             let result = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/driuserid/${id}`, {
 //                 method: "DELETE"
 //             });
 //             result = await result.json();
@@ -72,7 +72,7 @@
 //                                 <td>
 //                                     {user.image && (
 //                                         <img
-//                                             src={`https://homeessential-fdca5e469865.herokuapp.com/${user.image}`}
+//                                             src={`http://srv577826.hstgr.cloud:8002/${user.image}`}
 //                                             alt={user.name}
 //                                             className="img-fluid"
 //                                             style={{ height: '70px', width: '100px' }}
@@ -127,7 +127,7 @@ const Listofdrink = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/driuser');
+        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/driuser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -141,7 +141,7 @@ const Listofdrink = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/driuserid/${id}`, {
+      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/driuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

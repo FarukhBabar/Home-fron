@@ -21,7 +21,7 @@ const Login = () => {
   const registeruser = async (e) => {
     e.preventDefault();
     try {
-      let result = await fetch('https://homeessential-fdca5e469865.herokuapp.com/login', {
+      let result = await fetch('http://srv577826.hstgr.cloud:8002/login', {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

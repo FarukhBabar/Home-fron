@@ -10,7 +10,7 @@ const Readinglist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/readinguser');
+        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/readinguser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -24,7 +24,7 @@ const Readinglist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/readinguserid/${id}`, {
+      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/readinguserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from '../Footer'
+import { Link } from 'react-router-dom'
 
 const Privacy = () => {
   return (
@@ -8,33 +9,35 @@ const Privacy = () => {
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <center>
-        <h4>Privacy Policy</h4>
+        <h4>Privacy Policy of Home Essentials Hive </h4>
         <hr className="line" />
       </center>
     </div>
   </div>
   <div className="row">
-    <div className="col-lg-12 col-md-12 col-sm-12">
+    {/* <div className="col-lg-12 col-md-12 col-sm-12">
       <b>
         <p>Privacy Policy</p>
       </b>
-    </div>
+    </div> */}
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
-      <p><b>Securing your personal information on our website </b></p>
-    </div>
-  </div>
-  <div className="row">
-    <div className="col-lg-12 col-md-12 col-sm-12">
-      <p>
-        Home Essentials Hive realizes that you are concerned about your personal information and how it is utilized and shared. We appreciate your trust in us and your willingness to share your personal data with us.</p>
+      {/* <p><b>Securing your personal information on our website </b></p> */}
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <p>
-        By visiting our website, you agree to our privacy policy, which is mentioned in this privacy policy section. Home Essential safeguards your data according to the guidelines mentioned in the Data Protection Act 1998, and we are providing you with a customized service that fulfils the requirements in a way that secures your personal data. This policy section defines how we collect your data, how we use it, in which circumstances we share it, and what measures we take to ensure its security. You should read this privacy policy section to understand our procedure for securing your data. 
+        As an e-commerce site, Home Essentials Hive is committed to protecting your data and maintaining your privacy. This privacy policy will help you understand how we collect, use, and protect your data following the UK General Data Protection Regulation (GDPR). <br/>
+       
+        </p>
+    </div>
+  </div>
+  <div className="row">
+    <div className="col-lg-12 col-md-12 col-sm-12">
+      <p>
+         We design the website following the General Data Protection Regulation (GDPR), respect your privacy, and carefully handle your personal data to facilitate shopping. Visit our site for confirmation: <Link to='/' >home essentials hive</Link>. You have full rights and control over your personal information, account, and privacy. 
 </p>
     </div>
   </div>
@@ -42,90 +45,155 @@ const Privacy = () => {
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <u><b>
-          <p>GDPR COMPLIANCE</p>
+          <p>Informed Consent </p>
         </b></u>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <p>
-        The following statement is placed to provide clarity to our customers that the company is developing the website for compliance with GDPR. </p>
+       When customers create their accounts on the site, they will receive consent that informs them about how their data is collected, used, or shared and how the company protects it. The consent form is provided electronically and mentions all processes. </p>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <u><b>
-          <p>CONCENT</p>
+          <p>Control over data</p>
         </b></u>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <p>
-        When logging in to our website, the user gives his consent to agree with our privacy policy.</p>
+        Users have the right to confirm where they want their personal information to be used or not used. They may also obtain a copy of their personal information electronically at no charge. 
+</p>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <u><b>
-          <p>Right, to erase all the data.</p>
+          <p>Control over remove </p>
         </b></u>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <p>
-        Customers can request the company erase all data from its systems to protect themselves from uneven circumstances. You can also delete your data from the website by going to the My Account page. </p>
+        Customers can remove or delete their data, even their accounts, whenever they want. The company also deletes all user' data at their request.</p>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <u><b>
-          <p>Data Flexibility </p>
+          <p>Control overshare </p>
         </b></u>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <p>
-        The customer can demand a machine-readable copy of his data. He can also share this data with third parties. </p>
+        The customer has the right to share their personal information with the third-party controller. </p>
     </div>
   </div>
  
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <b>
-        <p>1. Gathering the data</p>
+        <h3>Data Collection</h3>
       </b>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <p>
-        We gather your information through various means <br />
-       1.1   through your bank details along with products and services 
-        <br /><br />
-       1.2   from you when you contact our customer care staff.
-        <br /><br />
-        1.3   From publicly available documents like electoral registration. </p>
+      <b>Personal Information:</b>
+      We need your personal identification information, including your name, address, email address, and phone number.
+         <b>Financial information:</b>
+       for completing the process of placing an order, financial information is necessary needs payment details, billing address
+       <b>Communication Data:</b>
+      To improve the website services, we need technical data such as data usage, browser type, and IP address.
+      
+       </p>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <b>
-        <p>2  Personal information usage.</p>
+        <h3>Data Usage</h3>
       </b>
     </div>
   </div>
   <div className="row">
     <div className="col-lg-12 col-md-12 col-sm-12">
       <p>
-        2.1 Customer personal data is an essential part of the company's records, and this data is used for the following purposes. After that, it will be deleted from our record  <br />
-       2.1.1 To assist us in recognising you when you enquired our customer staff.
-       <br />
-       2.1.2 to assist us in verifying your accounts and products that you have purchased and that you can buy in the future. For this, we can use automatic means, like.
+        We use your data for initial processes to advanced ones, such as 
+        <ul>
+          <li>
+            Helps to connect with you,
+          </li>
+          <li>
+            Processing your order,
+          </li>
+          <li>
+           Delivering your order, 
+          </li>
+          <li>
+            Maintaining your account,
+          </li>
+          <li>
+            Help in the analysis of sales 
+          </li>
+          <li>
+           Record the communication,
+          </li>
+          <li>
+            Customer support, 
+          </li>
+           <li>
+           Sharing legal documents, including contracts and consent,  
+          </li>
+           <li>
+            Legal obligations. 
+          </li>
+           <li>
+            Protect from the scam. 
+          </li>
+        </ul>
+     
        </p>
     </div>
+  </div>
+  <div className='row'>
+     <div className="col-lg-12 col-md-12 col-sm-12">
+      <h3>Data Sharing</h3>
+      <p>
+        We share your data with our service provider to form a contract or payment process, complete the agreement requirement, comply with applicable laws and regulations, and manage the order operations. <br></br>
+
+We also share your personal information with the person who delivers your product to your home or recommended places and use it to create invoices. 
+<br></br>
+We also share your info to assist with the sale, quality of service and review of our services.
+      <h4>Third-party involvement </h4>
+      <p>Home Essential Hive never share your data with any third party except by following this privacy policy. 
+<br></br>
+We share your data with service providers, employees, and companies to fulfil orders, delivery processes, communications, data analysis, marketing analysis, payment processing, and customer services on our behalf. All third parties are strictly bound by our Privacy Policy and Data Protection Act 1998. Any misuse will be subject to legal action as per policy and law.
+<h4>Record of Data</h4>
+<p>
+  We record all information to prevent loss, scams, and any type of fraud. Every single detail has been recorded, from placing the order to communication, payment, and delivery. This information saves customers from trouble.
+  <h4>Data Protection</h4>
+  We secure your data using the secure sockets layer software, which encrypts your information.
+<br></br>
+
+On the other hand, customers need to protect their information with strong passwords and sign off of the account before leaving the device. 
+<br></br>
+
+We use the five digits of your credit card to confirm your order, but the entire card number must be transmitted to the company during order processing. 
+<h4>Cookies</h4>
+We are not using any cookies on our site. 
+
+</p>
+</p>
+      </p>
+     </div>
   </div>
  
 </div>

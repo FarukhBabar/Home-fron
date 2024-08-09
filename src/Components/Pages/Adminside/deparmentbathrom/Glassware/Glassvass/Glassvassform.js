@@ -40,7 +40,7 @@
 //       return;
 //     }
 //     try {
-//       let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/glassvassproducts" , {
+//       let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/glassvassproducts" , {
 //         method: "post",
 //         body :formdata
       
@@ -123,7 +123,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/glassvassproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/glassvassproducts', {
                 method: 'POST',
                 body: formData
             });

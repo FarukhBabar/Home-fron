@@ -67,7 +67,7 @@ console.log(product);
                 <div className="white-box text-center mt-3">
                   {product.image && (
                     <img
-                      src={`https://homeessential-fdca5e469865.herokuapp.com/${product.image.replace(/\\/g, '/')}`}
+                      src={`http://srv577826.hstgr.cloud:8002/${product.image.replace(/\\/g, '/')}`}
                       alt={product.name}
                       className='singleimg'
                     />

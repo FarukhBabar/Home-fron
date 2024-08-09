@@ -5,7 +5,7 @@ import './Listofproducts.css'; // Import a custom CSS file for additional styles
 const Listofproducts = () => {
     const [user, setUsers] = useState([]);
     const setUsersData = async () => {
-        let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/user")
+        let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/user")
         result = await result.json()
         setUsers(result)
         console.log(result)
@@ -17,7 +17,7 @@ const Listofproducts = () => {
 
     const deleteuser = async (id) => {
         try {
-            let result = await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/userid/${id}`, {
+            let result = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/userid/${id}`, {
                 method: "delete"
             })
             result = await result.json()
@@ -56,7 +56,7 @@ const Listofproducts = () => {
                             <td>
                                 {ele.image && (
                                     <img 
-                                        src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
+                                        src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
                                         alt={ele.name} 
                                         className="img-fluid product-image"
                                     />

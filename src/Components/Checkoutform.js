@@ -35,7 +35,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
       const totalAmount = parseFloat(calculateTotal()) + 25 + 18.20;
       try {
         // Create payment intent on the server
-        const paymentIntentResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/payment_intents', {
+        const paymentIntentResponse = await axios.post('http://srv577826.hstgr.cloud:8002/api/payment_intents', {
           amount: totalAmount
         });
         const { clientSecret } = paymentIntentResponse.data;
@@ -63,7 +63,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
           alert(`Payment failed: ${paymentResult.error.message}`);
         } else if (paymentResult.paymentIntent.status === 'succeeded') {
           // Save the order in the database
-          const orderResponse = await axios.post('https://homeessential-fdca5e469865.herokuapp.com/api/orders', {
+          const orderResponse = await axios.post('http://srv577826.hstgr.cloud:8002/api/orders', {
             ...values,
             cartItems,
             quantities,

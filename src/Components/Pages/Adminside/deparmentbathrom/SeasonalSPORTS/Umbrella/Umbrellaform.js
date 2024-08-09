@@ -38,7 +38,7 @@ const Umbrellaform = () => {
     }
 
     try {
-      let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/umbrella2products", {
+      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/umbrella2products", {
         method: "POST",
         body: formData,
       });

@@ -38,7 +38,7 @@
 //     }
 
 //     try {
-//       let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/artificalproducts", {
+//       let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/artificalproducts", {
 //         method: "POST",
 //         body: formData,
 //       });
@@ -137,7 +137,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/artificalproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/artificalproducts', {
                 method: 'POST',
                 body: formData
             });

@@ -38,9 +38,7 @@ const Adminnavbar = () => {
             </a>
             <ul className="dropdown-menu adminside">
               
-              <li>
-               
-              </li>
+            
               <li className="nav-item dropend">
                 <a className="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                  FoodandDrink

@@ -24,7 +24,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/householclproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/householclproducts', {
                 method: 'POST',
                 body: formData
             });

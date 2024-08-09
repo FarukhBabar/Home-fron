@@ -7,7 +7,7 @@
     
 
 //     const setUsersData = async() =>{
-//         let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/dinneruser")
+//         let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/dinneruser")
 //         result = await result.json()       
 //         setUsers(result)        
 //         console.log(result)
@@ -20,7 +20,7 @@
 //       const deleteuser = async(id)=>{
 //           // console.log(id)
 //           try {
-//               let result= await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/dinneruserid/${id}`,{
+//               let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/dinneruserid/${id}`,{
 //             method:"delete"
          
 //           })
@@ -66,7 +66,7 @@
 //                                          <td>{ele.price}</td>
 //                                          <td> {ele.image && (
 //                               <img 
-//                             src={`https://homeessential-fdca5e469865.herokuapp.com/${ele.image}`} 
+//                             src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
 //                                      alt={ele.name} 
 //                                          className='img-fluid' 
 //                                     style={{ height: '70px', width: '100px' }}
@@ -107,7 +107,7 @@ const Dinnerlist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/dinneruser');
+        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/dinneruser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -121,7 +121,7 @@ const Dinnerlist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`https://homeessential-fdca5e469865.herokuapp.com/api/v1/data/dinneruserid/${id}`, {
+      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/dinneruserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

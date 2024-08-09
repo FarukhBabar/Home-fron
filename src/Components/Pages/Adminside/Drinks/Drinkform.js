@@ -31,7 +31,7 @@
 //         formData.append('image', Image);
 
 //         try {
-//             let result = await fetch("https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/driproducts", {
+//             let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/driproducts", {
 //                 method: "POST",
 //                 body: formData
 //             });
@@ -134,7 +134,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('https://homeessential-fdca5e469865.herokuapp.com/api/v1/auth/driproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/driproducts', {
                 method: 'POST',
                 body: formData
             });

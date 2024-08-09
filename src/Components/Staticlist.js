@@ -46,7 +46,7 @@ const StaticListComponent = ({ data, onDelete, onEdit, editUrlBase, addProductUr
               <td>
                 {item.image && (
                   <img
-                    src={`https://homeessential-fdca5e469865.herokuapp.com/${item.image}`}  // Ensure this is the correct image path
+                    src={`http://srv577826.hstgr.cloud:8002/${item.image}`}  // Ensure this is the correct image path
                     alt={item.name}
                     className='img-fluid'
                     style={{ height: '70px', width: '100px' }}

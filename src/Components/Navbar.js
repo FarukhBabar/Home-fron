@@ -393,8 +393,9 @@ useEffect(() => {
       </div>
     </div>
   </nav>
-  <div className="d-flex freedd">
-    <div className="d-flex">
+  {/* <div className="container ">
+    <div className='row d-flex freedd'>
+    <div className=" col-lg-2 col-md-2 col-sm-12 d-flex">
       <a href className="text-decoration-none mt-1 ms-4">
         <img src="https://www.efghousewares.co.uk/Content/14/images/Deliverybanner/d111f8175d1341dc869b9e957676bdfb.png" className="freedel mt-1" alt />
       </a>
@@ -403,7 +404,7 @@ useEffect(() => {
         </a>
       </div>
     </div>
-    <div className="export d-flex">
+    <div className=" col-lg-2 col-md-2 col-sm-12 export d-flex ">
       <a href className="text-decoration-none mt-1">
         <img src="https://www.efghousewares.co.uk/Content/14/images/Deliverybanner/491b00b8e0974e549fb58b25678df23a.png" className="freedel mt-1" alt />
       </a>
@@ -411,7 +412,7 @@ useEffect(() => {
         <a href className="text-decoration-none"> EXPORT &amp; FMCG SALES INFO</a>
       </div>
     </div>
-    <div className="export d-flex">
+    <div className=" col-lg-2 col-md-2 col-sm-12 export d-flex">
       <a href className="text-decoration-none mt-1 ms-4">
         <img src="https://www.efghousewares.co.uk/Content/14/images/Deliverybanner/df15fb3cb3c44772b63088dd8b72acea.png" className="freedel mt-1" alt />
       </a>
@@ -419,7 +420,7 @@ useEffect(() => {
         <a href className="text-decoration-none">AMAZON &amp; EBAY SELLER GUIDE</a>
       </div>
     </div>
-    <div className="export d-flex">
+    <div className=" col-lg-2 col-md-2 col-sm-12 export d-flex">
       <a href className="text-decoration-none mt-1 ms-4">
         <img src="https://www.efghousewares.co.uk/Content/14/images/Deliverybanner/2b8af9cd62a84861b239107437c01880.png" className="freedel mt-1" alt />
       </a>
@@ -428,6 +429,7 @@ useEffect(() => {
       </div>
     </div>
   </div>
+  </div> */}
 </div>
 
     </div>
