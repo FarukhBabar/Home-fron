@@ -21,7 +21,7 @@ const Login = () => {
   const registeruser = async (e) => {
     e.preventDefault();
     try {
-      let result = await fetch('https://backend.homeessentialshive.co.uk:8001/login', {
+      let result = await fetch(`${process.env.REACT_APP_API_URL}/login`, {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {
