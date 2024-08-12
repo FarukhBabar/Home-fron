@@ -13,7 +13,7 @@
 
 //   const getSingleUser = async () => {
 //     try {
-//       const response = await fetch(`http://srv577826.hstgr.cloud:8001/smokingsingalepage/${params.id}`);
+//       const response = await fetch(`https://api.homeessentialshive.co.uk/smokingsingalepage/${params.id}`);
 //       const result = await response.json();
 //       setProduct(result);
 //     } catch (error) {
@@ -83,7 +83,7 @@
 //               <div className="white-box text-center mt-3">
 //                 {product.image && (
 //                   <img
-//                     src={`http://srv577826.hstgr.cloud:8001/${product.image.replace(/\\/g, '/')}`}
+//                     src={`https://api.homeessentialshive.co.uk/${product.image.replace(/\\/g, '/')}`}
 //                     alt={product.name}
 //                     className='singleimg'
 //                   />
@@ -127,6 +127,6 @@
 import withDataFetching from '../../../withDataFetching';
 import SinglePage from '../../../SinglePage';
 
-const Smokingsinglepage = withDataFetching(SinglePage, 'http://srv577826.hstgr.cloud:8001/smokingsingalepage');
+const Smokingsinglepage = withDataFetching(SinglePage, 'https://api.homeessentialshive.co.uk/smokingsingalepage');
 
 export default Smokingsinglepage;

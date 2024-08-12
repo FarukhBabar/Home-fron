@@ -7,7 +7,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/cottonfreedelivery")
+//     axios.get("https://api.homeessentialshive.co.uk/api/v1/data/cottonfreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -34,7 +34,7 @@ const Cotton = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/cottonfreedelivery")
+    axios.get("https://api.homeessentialshive.co.uk/api/v1/data/cottonfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

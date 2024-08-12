@@ -12,7 +12,7 @@
 //     setShowFullText(!showFullText);}
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/Batteriesfreedelivery")
+//     axios.get("https://api.homeessentialshive.co.uk/api/v1/data/Batteriesfreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -90,7 +90,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/drifreedelivery")
+//     axios.get("https://api.homeessentialshive.co.uk/api/v1/data/drifreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -117,7 +117,7 @@ const Batteriesmain = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/Batteriesfreedelivery")
+    axios.get("https://api.homeessentialshive.co.uk/api/v1/data/Batteriesfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

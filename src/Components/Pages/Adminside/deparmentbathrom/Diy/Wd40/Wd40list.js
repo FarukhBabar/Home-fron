@@ -7,7 +7,7 @@ const Wd40list = () => {
     
 
     const setUsersData = async() =>{
-        let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/data/wd40user")
+        let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/data/wd40user")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Wd40list = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/wd40userid/${id}`,{
+              let result= await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/wd40userid/${id}`,{
             method:"delete"
          
           })
@@ -66,7 +66,7 @@ const Wd40list = () => {
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 
-                            src={`http://srv577826.hstgr.cloud:8001/${ele.image}`} 
+                            src={`https://api.homeessentialshive.co.uk/${ele.image}`} 
                                      alt={ele.name} 
                                          className='img-fluid' 
                                     style={{ height: '70px', width: '100px' }}

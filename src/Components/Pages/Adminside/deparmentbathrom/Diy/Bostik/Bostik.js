@@ -8,7 +8,7 @@ const Bostik = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/bostikfreedelivery")
+    axios.get("https://api.homeessentialshive.co.uk/api/v1/data/bostikfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

@@ -10,7 +10,7 @@ const Listofproducts = () => {
   const [selectedUserId, setSelectedUserId] = useState(null);
 
   const setUsersData = async () => {
-    let result = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/user');
+    let result = await fetch('https://api.homeessentialshive.co.uk/api/v1/data/user');
     result = await result.json();
     setUsers(result);
     console.log(result);
@@ -22,7 +22,7 @@ const Listofproducts = () => {
 
   const handleDelete = async () => {
     try {
-      let result = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/userid/${selectedUserId}`, {
+      let result = await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/userid/${selectedUserId}`, {
         method: 'DELETE',
       });
       result = await result.json();
@@ -69,7 +69,7 @@ const Listofproducts = () => {
               <td>
                 {ele.image && (
                   <img
-                    src={`http://srv577826.hstgr.cloud:8001/${ele.image}`}
+                    src={`https://api.homeessentialshive.co.uk/${ele.image}`}
                     alt={ele.name}
                     className='img-fluid'
                     style={{ height: '70px', width: '100px' }}

@@ -7,7 +7,7 @@ const Akonobol = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/Akonobolfreedelivery")
+    axios.get("https://api.homeessentialshive.co.uk/api/v1/data/Akonobolfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

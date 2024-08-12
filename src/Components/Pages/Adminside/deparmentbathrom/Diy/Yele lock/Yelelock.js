@@ -7,7 +7,7 @@ const Yelelock = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/yelelockfreedelivery")
+    axios.get("https://api.homeessentialshive.co.uk/api/v1/data/yelelockfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

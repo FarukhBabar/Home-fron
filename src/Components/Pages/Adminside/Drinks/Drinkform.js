@@ -31,7 +31,7 @@
 //         formData.append('image', Image);
 
 //         try {
-//             let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/driproducts", {
+//             let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/auth/driproducts", {
 //                 method: "POST",
 //                 body: formData
 //             });
@@ -134,7 +134,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/driproducts', {
+            let response = await fetch('https://api.homeessentialshive.co.uk/api/v1/auth/driproducts', {
                 method: 'POST',
                 body: formData
             });

@@ -55,7 +55,7 @@
 //         {products.map((product) => (
 //           <div className="item" key={product._id} onClick={() => handleProductClick(product.name)}>
 //             <div className="card" style={{ width: '11rem' }}>
-//               <img src={`http://srv577826.hstgr.cloud:8001/${product.image.replace(/\\/g, '/')}`} className="card-img-top" alt={product.name} />
+//               <img src={`https://api.homeessentialshive.co.uk/${product.image.replace(/\\/g, '/')}`} className="card-img-top" alt={product.name} />
 //               <div className="card-body text-center">
 //                 <h5 className="card-title">{product.name}</h5>
 //                 <p className="card-text">${product.price}</p>
@@ -134,7 +134,7 @@ const MostSellingProductsCarousel = ({ products }) => {
           <div className="item" key={product._id} onClick={() => handleProductClick(product)}>
             <div className="card  " style={{ width: '16rem' }}>
               <img
-                src={`http://srv577826.hstgr.cloud:8001/${product.image.replace(/\\/g, '/')}`}
+                src={`https://api.homeessentialshive.co.uk/${product.image.replace(/\\/g, '/')}`}
                 className="card-img-top mostseling"
                 alt={product.name}
               />

@@ -40,7 +40,7 @@
 //       return;
 //     }
 //     try {
-//       let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/bleechproducts" , {
+//       let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/auth/bleechproducts" , {
 //         method: "post",
 //         body :formdata
       
@@ -123,7 +123,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/bleechproducts', {
+            let response = await fetch('https://api.homeessentialshive.co.uk/api/v1/auth/bleechproducts', {
                 method: 'POST',
                 body: formData
             });

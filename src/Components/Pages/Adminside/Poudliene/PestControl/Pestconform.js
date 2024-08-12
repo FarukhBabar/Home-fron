@@ -24,7 +24,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/pestconproducts', {
+            let response = await fetch('https://api.homeessentialshive.co.uk/api/v1/auth/pestconproducts', {
                 method: 'POST',
                 body: formData
             });

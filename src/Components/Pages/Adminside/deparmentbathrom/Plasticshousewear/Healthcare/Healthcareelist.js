@@ -7,7 +7,7 @@
     
 
 //     const setUsersData = async() =>{
-//         let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/data/healthcareeuser")
+//         let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/data/healthcareeuser")
 //         result = await result.json()       
 //         setUsers(result)        
 //         console.log(result)
@@ -20,7 +20,7 @@
 //       const deleteuser = async(id)=>{
 //           // console.log(id)
 //           try {
-//               let result= await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/healthcareeuserid/${id}`,{
+//               let result= await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/healthcareeuserid/${id}`,{
 //             method:"delete"
          
 //           })
@@ -66,7 +66,7 @@
 //                                          <td>{ele.price}</td>
 //                                          <td> {ele.image && (
 //                               <img 
-//                             src={`http://srv577826.hstgr.cloud:8001/${ele.image}`} 
+//                             src={`https://api.homeessentialshive.co.uk/${ele.image}`} 
 //                                      alt={ele.name} 
 //                                          className='img-fluid' 
 //                                     style={{ height: '70px', width: '100px' }}
@@ -108,7 +108,7 @@ const Healthcareelist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/healthcareeuser');
+        const response = await fetch('https://api.homeessentialshive.co.uk/api/v1/data/healthcareeuser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -122,7 +122,7 @@ const Healthcareelist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/healthcareeuserid/${id}`, {
+      await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/healthcareeuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

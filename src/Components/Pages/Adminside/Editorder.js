@@ -19,7 +19,7 @@ const EditOrder = () => {
   useEffect(() => {
     const fetchOrder = async () => {
       try {
-        const response = await axios.get(`http://srv577826.hstgr.cloud:8001/orderuserde/${id}`);
+        const response = await axios.get(`https://api.homeessentialshive.co.uk/orderuserde/${id}`);
         setOrder(response.data);
         setLoading(false);
       } catch (error) {
@@ -39,7 +39,7 @@ const EditOrder = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://srv577826.hstgr.cloud:8001/orderuserde/${id}`, order);
+      await axios.put(`https://api.homeessentialshive.co.uk/orderuserde/${id}`, order);
       alert('Order updated successfully.');
       navigate('/oderslist'); // Redirect to the order list
     } catch (error) {

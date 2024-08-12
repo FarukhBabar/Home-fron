@@ -13,7 +13,7 @@ const Lightergasupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/lightergassingle/${params.id}`);
+                const response = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/lightergassingle/${params.id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -47,7 +47,7 @@ const Lightergasupdate = () => {
         }
 
         try {
-            let response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/lightergassingle/${params.id}`, {
+            let response = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/lightergassingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

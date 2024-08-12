@@ -12,7 +12,7 @@ const UsersTable = () => {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const response = await axios.get('http://srv577826.hstgr.cloud:8001/users');
+                const response = await axios.get('https://api.homeessentialshive.co.uk/users');
                 setUsers(response.data);
             } catch (error) {
                 console.error("Error fetching users:", error);
@@ -24,7 +24,7 @@ const UsersTable = () => {
 
     const handleDelete = async (userId) => {
         try {
-            await axios.delete(`http://srv577826.hstgr.cloud:8001/users/${userId}`);
+            await axios.delete(`https://api.homeessentialshive.co.uk/users/${userId}`);
             setUsers(users.filter(user => user._id !== userId));
         } catch (error) {
             console.error("Error deleting user:", error);
@@ -57,7 +57,7 @@ const UsersTable = () => {
     const handleUpdate = async (e) => {
         e.preventDefault();
         try {
-            await axios.put(`http://srv577826.hstgr.cloud:8001/users/${editUserId}`, formData);
+            await axios.put(`https://api.homeessentialshive.co.uk/users/${editUserId}`, formData);
             setUsers(users.map(user => (user._id === editUserId ? formData : user)));
             setEditUserId(null);
             setShow(false);

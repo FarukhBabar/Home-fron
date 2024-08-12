@@ -2,6 +2,6 @@
 import withDataFetching from '../../../../../withDataFetching';
 import SinglePage from '../../../../../SinglePage';
 
-const Partyaccessoriessingl = withDataFetching(SinglePage, 'http://srv577826.hstgr.cloud:8001/api/v1/data/bannersingle');
+const Partyaccessoriessingl = withDataFetching(SinglePage, 'https://api.homeessentialshive.co.uk/api/v1/data/bannersingle');
 
 export default Partyaccessoriessingl;

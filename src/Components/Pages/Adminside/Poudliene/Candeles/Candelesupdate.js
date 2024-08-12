@@ -15,7 +15,7 @@
 //     useEffect(() => {
 //         const fetchData = async () => {
 //             try {
-//                 const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/candelessingle/${params.id}`);
+//                 const response = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/candelessingle/${params.id}`);
 //                 const result = await response.json();
 //                 setName(result.name);
 //                 setTitle(result.title);
@@ -38,7 +38,7 @@
 //                 formdata.append('title' , title)
 //                 formdata.append('image' , image)
 //                 try {
-//                     let result = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/candelessingle/${params.id}` , {
+//                     let result = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/candelessingle/${params.id}` , {
 //         method: "put",
 //         body :formdata
       
@@ -103,7 +103,7 @@ const Candelesupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/candelessingle/${params.id}`);
+                const response = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/candelessingle/${params.id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -137,7 +137,7 @@ const Candelesupdate = () => {
         }
 
         try {
-            let response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/candelessingle/${params.id}`, {
+            let response = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/candelessingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

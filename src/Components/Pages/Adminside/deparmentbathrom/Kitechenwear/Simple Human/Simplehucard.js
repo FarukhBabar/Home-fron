@@ -11,7 +11,7 @@ const Simplehucard = ({ user }) => {
             {user.image && (
               <a href=''>
               <img
-                src={`http://srv577826.hstgr.cloud:8001/${user.image}`}
+                src={`https://api.homeessentialshive.co.uk/${user.image}`}
                 alt={user.name}
                 className="img-fluid border"
                 style={{ height: '60%', width: '99%' }}

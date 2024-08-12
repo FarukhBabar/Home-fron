@@ -9,7 +9,7 @@
 //   const [selectedUserId, setSelectedUserId] = useState(null);
 
 //   const setUsersData = async () => {
-//     let result = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/liguser');
+//     let result = await fetch('https://api.homeessentialshive.co.uk/api/v1/data/liguser');
 //     result = await result.json();
 //     setUsers(result);
 //     console.log(result);
@@ -21,7 +21,7 @@
 
 //   const handleDelete = async () => {
 //     try {
-//       let result = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/lighuserid/${selectedUserId}`, {
+//       let result = await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/lighuserid/${selectedUserId}`, {
 //         method: 'DELETE',
 //       });
 //       result = await result.json();
@@ -68,7 +68,7 @@
 //               <td>
 //                 {ele.image && (
 //                   <img
-//                     src={`http://srv577826.hstgr.cloud:8001/${ele.image}`}
+//                     src={`https://api.homeessentialshive.co.uk/${ele.image}`}
 //                     alt={ele.name}
 //                     className='img-fluid'
 //                     style={{ height: '70px', width: '100px' }}
@@ -120,7 +120,7 @@ const Listoflighter = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/liguser');
+        const response = await fetch('https://api.homeessentialshive.co.uk/api/v1/data/liguser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -134,7 +134,7 @@ const Listoflighter = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/lighuserid/${id}`, {
+      await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/lighuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

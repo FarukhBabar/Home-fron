@@ -7,7 +7,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/hotwaterfreedelivery")
+//     axios.get("https://api.homeessentialshive.co.uk/api/v1/data/hotwaterfreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -34,7 +34,7 @@ const Hotwaterr = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/hotwaterfreedelivery")
+    axios.get("https://api.homeessentialshive.co.uk/api/v1/data/hotwaterfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

@@ -13,7 +13,7 @@ const Disposibleupdatepo = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/disposiblsingle/${params.id}`);
+                const response = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/disposiblsingle/${params.id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -47,7 +47,7 @@ const Disposibleupdatepo = () => {
         }
 
         try {
-            let response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/disposiblsingle/${params.id}`, {
+            let response = await fetch(`https://api.homeessentialshive.co.uk/api/v1/auth/disposiblsingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

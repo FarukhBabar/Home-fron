@@ -38,7 +38,7 @@
 //       const totalAmount = parseFloat(calculateTotal()) + 25 + 18.20;
 //       try {
 //         // Create PaymentIntent
-//         const paymentIntentResponse = await axios.post('http://srv577826.hstgr.cloud:8001/api/payment_intents', {
+//         const paymentIntentResponse = await axios.post('https://api.homeessentialshive.co.uk/api/payment_intents', {
 //           amount: totalAmount
 //         });
 //         const { clientSecret } = paymentIntentResponse.data;
@@ -226,7 +226,7 @@
 //                     <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
 //                       <div>
 //                         <img
-//                           src={`http://srv577826.hstgr.cloud:8001/${item.image.replace(/\\/g, '/')}`}
+//                           src={`https://api.homeessentialshive.co.uk/${item.image.replace(/\\/g, '/')}`}
 //                           alt={item.name}
 //                           className="singleimg"
 //                           style={{ width: '80px', height: '80px' }}
@@ -304,7 +304,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
       try {
         if (paymentMethod === 'card') {
           // Create PaymentIntent
-          const paymentIntentResponse = await axios.post('http://srv577826.hstgr.cloud:8001/api/payment_intents', {
+          const paymentIntentResponse = await axios.post('https://api.homeessentialshive.co.uk/api/payment_intents', {
             amount: totalAmount
           });
           const { clientSecret } = paymentIntentResponse.data;
@@ -332,7 +332,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
             alert(`Payment failed: ${paymentResult.error.message}`);
           } else if (paymentResult.paymentIntent.status === 'succeeded') {
             // Save the order in the database
-            const orderResponse = await axios.post('http://srv577826.hstgr.cloud:8001/api/orders', {
+            const orderResponse = await axios.post('https://api.homeessentialshive.co.uk/api/orders', {
               ...values,
               cartItems,
               quantities,
@@ -345,7 +345,7 @@ const CheckoutForm = ({ cartItems, quantities, calculateTotal }) => {
           }
         } else {
           // Handle Cash on Delivery
-          const orderResponse = await axios.post('http://srv577826.hstgr.cloud:8001/api/orders', {
+          const orderResponse = await axios.post('https://api.homeessentialshive.co.uk/api/orders', {
             ...values,
             cartItems,
             quantities,
@@ -537,7 +537,7 @@ const Checkout = () => {
                     <li key={item.id} className="list-group-item d-flex justify-content-between align-items-center">
                       <div>
                         <img
-                          src={`http://srv577826.hstgr.cloud:8001/${item.image.replace(/\\/g, '/')}`}
+                          src={`https://api.homeessentialshive.co.uk/${item.image.replace(/\\/g, '/')}`}
                           alt={item.name}
                           className="singleimg"
                           style={{ width: '80px', height: '80px' }}

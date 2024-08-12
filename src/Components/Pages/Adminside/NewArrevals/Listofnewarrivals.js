@@ -10,7 +10,7 @@ const Listofnewarrivals = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/newuser');
+        const response = await fetch('https://api.homeessentialshive.co.uk/api/v1/data/newuser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -24,7 +24,7 @@ const Listofnewarrivals = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/newuserid/${id}`, {
+      await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/newuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

@@ -10,7 +10,7 @@ const Craftlist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/craftuser');
+        const response = await fetch('https://api.homeessentialshive.co.uk/api/v1/data/craftuser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -24,7 +24,7 @@ const Craftlist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/craftuserid/${id}`, {
+      await fetch(`https://api.homeessentialshive.co.uk/api/v1/data/craftuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

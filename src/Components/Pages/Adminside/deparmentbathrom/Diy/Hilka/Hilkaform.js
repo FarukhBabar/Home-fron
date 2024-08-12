@@ -40,7 +40,7 @@ const Hilkaform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/hilkaproducts" , {
+      let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/auth/hilkaproducts" , {
         method: "post",
         body :formdata
       

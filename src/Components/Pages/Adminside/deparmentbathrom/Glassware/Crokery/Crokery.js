@@ -8,7 +8,7 @@ const Crokery = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/crokeryfreedelivery")
+    axios.get("https://api.homeessentialshive.co.uk/api/v1/data/crokeryfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

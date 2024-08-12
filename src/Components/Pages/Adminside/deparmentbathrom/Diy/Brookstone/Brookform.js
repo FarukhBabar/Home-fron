@@ -40,7 +40,7 @@ const Brookform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/brookproducts" , {
+      let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/auth/brookproducts" , {
         method: "post",
         body :formdata
       

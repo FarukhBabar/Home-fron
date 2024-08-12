@@ -40,7 +40,7 @@
 //       return;
 //     }
 //     try {
-//       let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/weddingproducts" , {
+//       let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/auth/weddingproducts" , {
 //         method: "post",
 //         body :formdata
       
@@ -123,7 +123,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/weddingproducts', {
+            let response = await fetch('https://api.homeessentialshive.co.uk/api/v1/auth/weddingproducts', {
                 method: 'POST',
                 body: formData
             });

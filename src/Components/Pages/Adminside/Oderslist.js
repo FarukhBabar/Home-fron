@@ -12,7 +12,7 @@ const OrderList = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('http://srv577826.hstgr.cloud:8001/orderuserde'); // Ensure this endpoint is correct
+        const response = await axios.get('https://api.homeessentialshive.co.uk/orderuserde'); // Ensure this endpoint is correct
         setOrders(response.data);
       } catch (error) {
         console.error('Error fetching orders:', error);
@@ -25,7 +25,7 @@ const OrderList = () => {
   const handleDelete = async (orderId) => {
     if (window.confirm('Are you sure you want to delete this order?')) {
       try {
-        await axios.delete(`http://srv577826.hstgr.cloud:8001/orderuserde/${orderId}`);
+        await axios.delete(`https://api.homeessentialshive.co.uk/orderuserde/${orderId}`);
         setOrders(orders.filter(order => order._id !== orderId));
         alert('Order deleted successfully.');
       } catch (error) {
@@ -64,7 +64,7 @@ const OrderList = () => {
                     {order.cartItems.map((item, index) => (
                       <li key={index}>
                        { <img
-                          src={`http://srv577826.hstgr.cloud:8001/${item.image.replace(/\\/g, '/')}`}
+                          src={`https://api.homeessentialshive.co.uk/${item.image.replace(/\\/g, '/')}`}
                           alt={item.name}
                           className="singleimg"
                           style={{ width: '80px', height: '80px' }}

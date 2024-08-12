@@ -40,7 +40,7 @@ const Secureitform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/securitproducts" , {
+      let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/auth/securitproducts" , {
         method: "post",
         body :formdata
       

@@ -40,7 +40,7 @@ const Ladderform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/ladderproducts" , {
+      let result = await fetch("https://api.homeessentialshive.co.uk/api/v1/auth/ladderproducts" , {
         method: "post",
         body :formdata
       
