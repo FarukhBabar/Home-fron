@@ -7,7 +7,7 @@ const Dektonlist = () => {
     
 
     const setUsersData = async() =>{
-        let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/dektonuser")
+        let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/data/dektonuser")
         result = await result.json()       
         setUsers(result)        
         console.log(result)
@@ -20,7 +20,7 @@ const Dektonlist = () => {
       const deleteuser = async(id)=>{
           // console.log(id)
           try {
-              let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/dektonuserid/${id}`,{
+              let result= await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/dektonuserid/${id}`,{
             method:"delete"
          
           })
@@ -66,7 +66,7 @@ const Dektonlist = () => {
                                          <td>{ele.price}</td>
                                          <td> {ele.image && (
                               <img 
-                            src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
+                            src={`http://srv577826.hstgr.cloud:8001/${ele.image}`} 
                                      alt={ele.name} 
                                          className='img-fluid' 
                                     style={{ height: '70px', width: '100px' }}

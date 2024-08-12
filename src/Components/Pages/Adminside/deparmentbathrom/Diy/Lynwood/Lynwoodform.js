@@ -40,7 +40,7 @@ const Lynwoodform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/lynwoodproducts" , {
+      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/lynwoodproducts" , {
         method: "post",
         body :formdata
       

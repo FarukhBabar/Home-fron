@@ -40,7 +40,7 @@ const Freshnerform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/Freshnerproducts" , {
+      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/Freshnerproducts" , {
         method: "post",
         body :formdata
       

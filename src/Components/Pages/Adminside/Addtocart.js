@@ -45,7 +45,7 @@ const Addtocart = () => {
           <div className="col-md-4 mb-4" key={item.id}>
             <div className="card p-3 h-100">
               <img
-                src={`http://srv577826.hstgr.cloud:8002/${item.image.replace(/\\/g, '/')}`}
+                src={`http://srv577826.hstgr.cloud:8001/${item.image.replace(/\\/g, '/')}`}
                 alt={item.name}
                 className="card-img-top"
                 style={{ width: '100%', height: '150px', objectFit: 'cover' }}

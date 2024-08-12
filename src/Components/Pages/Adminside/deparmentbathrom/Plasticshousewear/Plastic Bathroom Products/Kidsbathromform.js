@@ -40,7 +40,7 @@
 //       return;
 //     }
 //     try {
-//       let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/plasticbathroomproducts" , {
+//       let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/plasticbathroomproducts" , {
 //         method: "post",
 //         body :formdata
       
@@ -123,7 +123,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/plasticbathroomproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/plasticbathroomproducts', {
                 method: 'POST',
                 body: formData
             });

@@ -14,7 +14,7 @@ const Airersupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/Airerssingle/${params.id}`);
+                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/Airerssingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(result.title);
@@ -37,7 +37,7 @@ const Airersupdate = () => {
                 formdata.append('title' , title)
                 formdata.append('image' , image)
                 try {
-                    let result = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/Airerssingle/${params.id}` , {
+                    let result = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/Airerssingle/${params.id}` , {
         method: "put",
         body :formdata
       

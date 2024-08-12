@@ -7,7 +7,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/craftfreedelivery")
+//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/craftfreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -33,7 +33,7 @@ const Craftpo = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/craftfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/craftfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

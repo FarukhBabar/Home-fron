@@ -7,7 +7,7 @@
     
 
 //     const setUsersData = async() =>{
-//         let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/Apronsuser")
+//         let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/data/Apronsuser")
 //         result = await result.json()       
 //         setUsers(result)        
 //         console.log(result)
@@ -20,7 +20,7 @@
 //       const deleteuser = async(id)=>{
 //           // console.log(id)
 //           try {
-//               let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/Apronsuserid/${id}`,{
+//               let result= await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/Apronsuserid/${id}`,{
 //             method:"delete"
          
 //           })
@@ -66,7 +66,7 @@
 //                                          <td>{ele.price}</td>
 //                                          <td> {ele.image && (
 //                               <img 
-//                             src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
+//                             src={`http://srv577826.hstgr.cloud:8001/${ele.image}`} 
 //                                      alt={ele.name} 
 //                                          className='img-fluid' 
 //                                     style={{ height: '70px', width: '100px' }}
@@ -108,7 +108,7 @@ const Firstaidlist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/Apronsuser');
+        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/Apronsuser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -122,7 +122,7 @@ const Firstaidlist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/Apronsuserid/${id}`, {
+      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/Apronsuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

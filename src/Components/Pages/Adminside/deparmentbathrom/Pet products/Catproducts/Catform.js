@@ -40,7 +40,7 @@
 //       return;
 //     }
 //     try {
-//       let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/catproducts" , {
+//       let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/catproducts" , {
 //         method: "post",
 //         body :formdata
       
@@ -122,7 +122,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/catproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/catproducts', {
                 method: 'POST',
                 body: formData
             });

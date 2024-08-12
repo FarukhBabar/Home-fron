@@ -530,6 +530,11 @@ const Adminnavbar = () => {
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                  <li>
+                  <Link className="dropdown-item" to="/oderslist">
+                    Oders List
+                  </Link>
+                </li>
+                 <li>
                   <Link className="dropdown-item" to="/listcontact">
                     Contact Users
                   </Link>

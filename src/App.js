@@ -1337,6 +1337,8 @@ import ProductDetail from './Components/Pages/Productdetails';
 import Error from './ErrorPage';
 import ErrorPage from './ErrorPage';
 import ThankYouPage from './Components/Thankyoupage';
+import OrderList from './Components/Pages/Adminside/Oderslist';
+import Editorder from './Components/Pages/Adminside/Editorder';
 const AdminLayout = ({ children }) => (
   
   <>
@@ -1357,6 +1359,8 @@ const App = () => {
      <CartProvider>
       <Routes>
         <Route element={<ProtectedRoutes/>}>
+        <Route path='/oderslist' element={<AdminLayout><OrderList/></AdminLayout>} />
+         <Route path='/edit-order/:id' element={<AdminLayout><Editorder/></AdminLayout>} />
         <Route path='/adminpanal' element={<AdminLayout><Adminside /></AdminLayout>} />
         <Route path='/adminsunday' element={<AdminLayout><Form /></AdminLayout>} />
         <Route path='/adminpanal' element={<AdminLayout><Listofproducts/></AdminLayout>} />
@@ -3215,7 +3219,7 @@ const App = () => {
 
       {/* <Route path="/" element={<Home products={products} />} /> */}
       <Route path="/product/:name" element={<MainLayout><ProductDetail/></MainLayout>} />
-       <Route path='*' element={<ErrorPage/>} />
+       {/* <Route path='*' element={<ErrorPage/>} /> */}
        <Route path="/thank-you" element={<ThankYouPage />} />
       </Routes>
       </CartProvider>

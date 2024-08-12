@@ -23,7 +23,7 @@ const Register = () => {
 
   const register = async (e) => {
     e.preventDefault();
-    let result = await fetch('http://srv577826.hstgr.cloud:8002/register-user', {
+    let result = await fetch('http://srv577826.hstgr.cloud:8001/register-user', {
       method: 'post',
       body: JSON.stringify({
         // Companynname,

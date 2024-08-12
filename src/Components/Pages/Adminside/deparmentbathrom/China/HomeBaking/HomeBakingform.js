@@ -38,7 +38,7 @@ const HomeBakingform = () => {
     }
 
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/homebakingproducts", {
+      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/homebakingproducts", {
         method: "POST",
         body: formData,
       });

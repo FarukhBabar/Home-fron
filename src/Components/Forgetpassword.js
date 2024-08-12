@@ -9,7 +9,7 @@ const Forgetpassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://srv577826.hstgr.cloud:8002/request-reset-password', { email });
+      const response = await axios.post('http://srv577826.hstgr.cloud:8001/request-reset-password', { email });
       alert(response.data.Message);
       navigate("/verifyotp")
     } catch (error) {

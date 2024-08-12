@@ -7,7 +7,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/hairfreedelivery")
+//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/hairfreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -34,7 +34,7 @@ const Hair = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/hairfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/hairfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

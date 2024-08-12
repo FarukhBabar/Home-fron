@@ -7,7 +7,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/householdprfreedelivery")
+//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/householdprfreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -34,7 +34,7 @@ const Pestcon = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/householdprfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/householdprfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

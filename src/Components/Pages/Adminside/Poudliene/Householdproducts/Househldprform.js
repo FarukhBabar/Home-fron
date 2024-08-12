@@ -24,7 +24,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/householdprproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/householdprproducts', {
                 method: 'POST',
                 body: formData
             });

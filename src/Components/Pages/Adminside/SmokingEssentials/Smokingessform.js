@@ -15,7 +15,7 @@ const Smokingessform = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                let response = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/smokinproducts");
+                let response = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/smokinproducts");
                 let result = await response.json();
                 setData({
                     name: result.name,
@@ -62,7 +62,7 @@ const Smokingessform = () => {
         }
 
         try {
-            let response = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/smokinproducts", {
+            let response = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/smokinproducts", {
                 method: "POST",
                 body: formData
             });

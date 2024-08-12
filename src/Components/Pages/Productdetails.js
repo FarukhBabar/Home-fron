@@ -17,7 +17,7 @@
 //   useEffect(() => {
 //     const fetchProduct = async () => {
 //       try {
-//         const response = await axios.get(`http://srv577826.hstgr.cloud:8002/api/products/most-selling/${id}`);
+//         const response = await axios.get(`http://srv577826.hstgr.cloud:8001/api/products/most-selling/${id}`);
 //         setProduct(response.data);
 //       } catch (error) {
 //         console.error('Error fetching product details:', error);
@@ -90,7 +90,7 @@
 //                 <div className="white-box text-center mt-3">
 //                   {product.image && (
 //                     <img
-//                       src={`http://srv577826.hstgr.cloud:8002/${product.image.replace(/\\/g, '/')}`}
+//                       src={`http://srv577826.hstgr.cloud:8001/${product.image.replace(/\\/g, '/')}`}
 //                       alt={product.name}
 //                       className='singleimg img-fluid rounded'
 //                     />
@@ -166,7 +166,7 @@ const SingleProductPage = () => {
           .replace(/^-+/, '')
           .replace(/-+$/, '');
           
-        const response = await axios.get(`http://srv577826.hstgr.cloud:8002/api/products/most-selling/${formattedName}`);
+        const response = await axios.get(`http://srv577826.hstgr.cloud:8001/api/products/most-selling/${formattedName}`);
         setProduct(response.data);
       } catch (error) {
         console.error('Error fetching product details:', error);
@@ -239,7 +239,7 @@ const SingleProductPage = () => {
                 <div className="white-box text-center mt-3">
                   {product.image && (
                     <img
-                      src={`http://srv577826.hstgr.cloud:8002/${product.image.replace(/\\/g, '/')}`}
+                      src={`http://srv577826.hstgr.cloud:8001/${product.image.replace(/\\/g, '/')}`}
                       alt={product.name}
                       className='singleimg img-fluid rounded'
                     />

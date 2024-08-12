@@ -24,7 +24,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/craftproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/craftproducts', {
                 method: 'POST',
                 body: formData
             });

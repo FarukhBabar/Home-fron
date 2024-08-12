@@ -7,7 +7,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/shampofreedelivery")
+//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/shampofreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -35,7 +35,7 @@ const Shampo = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/shampofreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/shampofreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

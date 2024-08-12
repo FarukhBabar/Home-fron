@@ -7,7 +7,7 @@
 //   const [users, setUsers] = useState([]);
 
 //   useEffect(() => {
-//     axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/catfreedelivery")
+//     axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/catfreedelivery")
 //       .then(response => setUsers(response.data))
 //       .catch(error => console.log(error));
 //   }, []);
@@ -34,7 +34,7 @@ const Cat = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/catfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/catfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

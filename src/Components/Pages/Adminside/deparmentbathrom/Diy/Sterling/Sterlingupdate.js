@@ -14,7 +14,7 @@ const Sterlingupdtae = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/sterlingsingle/${params.id}`);
+                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/sterlingsingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(result.title);
@@ -37,7 +37,7 @@ const Sterlingupdtae = () => {
                 formdata.append('title' , title)
                 formdata.append('image' , image)
                 try {
-                    let result = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/sterlingsingle/${params.id}` , {
+                    let result = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/sterlingsingle/${params.id}` , {
         method: "put",
         body :formdata
       

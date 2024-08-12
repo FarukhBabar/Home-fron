@@ -21,7 +21,7 @@ const Login = () => {
   const registeruser = async (e) => {
     e.preventDefault();
     try {
-      let result = await fetch('http://srv577826.hstgr.cloud:8002/login', {
+      let result = await fetch('https://backend.homeessentialshive.co.uk:8001/login', {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

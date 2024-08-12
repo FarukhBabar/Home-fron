@@ -14,7 +14,7 @@ function VerifyOtp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://srv577826.hstgr.cloud:8002/verifyotp', { email, otp, password });
+      const response = await axios.post('http://srv577826.hstgr.cloud:8001/verifyotp', { email, otp, password });
       alert(response.data.Message);
         navigate('/log')
     } catch (error) {

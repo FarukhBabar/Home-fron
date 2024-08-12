@@ -14,7 +14,7 @@
 //     useEffect(() => {
 //         const fetchData = async () => {
 //             try {
-//                 let response = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/ligproducts");
+//                 let response = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/ligproducts");
 //                 let result = await response.json();
 //                 setData({
 //                     name: result.name,
@@ -61,7 +61,7 @@
 //         }
 
 //         try {
-//             let response = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/ligproducts", {
+//             let response = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/ligproducts", {
 //                 method: "POST",
 //                 body: formData
 //             });
@@ -123,7 +123,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/ligproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/ligproducts', {
                 method: 'POST',
                 body: formData
             });

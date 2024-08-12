@@ -18,7 +18,7 @@ const Towelssportupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/umbrellasingle/${params.id}`);
+                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/umbrellasingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(stripHTML(result.title)); // Strip HTML tags from title
@@ -44,7 +44,7 @@ const Towelssportupdate = () => {
         }
 
         try {
-            let response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/umbrellasingle/${params.id}`, {
+            let response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/umbrellasingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

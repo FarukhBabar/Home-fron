@@ -7,7 +7,7 @@ const Ever = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/everfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/everfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

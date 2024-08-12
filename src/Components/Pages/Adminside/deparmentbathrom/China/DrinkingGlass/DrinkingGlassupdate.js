@@ -14,7 +14,7 @@
 //     useEffect(() => {
 //         const fetchData = async () => {
 //             try {
-//                 const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/drinkingglasssingle/${params.id}`);
+//                 const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/drinkingglasssingle/${params.id}`);
 //                 const result = await response.json();
 //                 setName(result.name);
 //                 setTitle(result.title);
@@ -37,7 +37,7 @@
 //                 formdata.append('title' , title)
 //                 formdata.append('image' , image)
 //                 try {
-//                     let result = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/drinkingglasssingle/${params.id}` , {
+//                     let result = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/drinkingglasssingle/${params.id}` , {
 //         method: "put",
 //         body :formdata
       
@@ -105,7 +105,7 @@ const DrinkingGlassupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/drinkingglasssingle/${params.id}`);
+                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/drinkingglasssingle/${params.id}`);
                 const result = await response.json();
                 setName(result.name);
                 setTitle(stripHTML(result.title)); // Strip HTML tags from title
@@ -131,7 +131,7 @@ const DrinkingGlassupdate = () => {
         }
 
         try {
-            let response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/drinkingglasssingle/${params.id}`, {
+            let response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/drinkingglasssingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

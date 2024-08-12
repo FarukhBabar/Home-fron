@@ -40,7 +40,7 @@
 //       return;
 //     }
 //     try {
-//       let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/kettlesproducts" , {
+//       let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/kettlesproducts" , {
 //         method: "post",
 //         body :formdata
       
@@ -62,7 +62,7 @@
 
 //     <div>
       
-//       <Link to="/http://srv577826.hstgr.cloud:8002/api/v1/auth/kettlesproducts" className="btn btn-success mss mt-2" >Product-list</Link>
+//       <Link to="/http://srv577826.hstgr.cloud:8001/api/v1/auth/kettlesproducts" className="btn btn-success mss mt-2" >Product-list</Link>
 //       <form className='marr '>
 //   <div className="mb-3 maa ">
 //     <label  className="form-label mt-2">ITem Name</label>
@@ -123,7 +123,7 @@ const navigate = useNavigate();
         }
 
         try {
-            let response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/auth/kettlesproducts', {
+            let response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/auth/kettlesproducts', {
                 method: 'POST',
                 body: formData
             });

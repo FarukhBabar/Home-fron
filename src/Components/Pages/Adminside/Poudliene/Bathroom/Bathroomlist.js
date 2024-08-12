@@ -11,7 +11,7 @@ const Bathroomlist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/bathuser');
+        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/bathuser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -25,7 +25,7 @@ const Bathroomlist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/bathuserid/${id}`, {
+      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/bathuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

@@ -13,7 +13,7 @@ const Hosieryupdate = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/hoiserypsingle/${params.id}`);
+                const response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/hoiserypsingle/${params.id}`);
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -47,7 +47,7 @@ const Hosieryupdate = () => {
         }
 
         try {
-            let response = await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/auth/hoiserypsingle/${params.id}`, {
+            let response = await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/auth/hoiserypsingle/${params.id}`, {
                 method: "PUT",
                 body: formData
             });

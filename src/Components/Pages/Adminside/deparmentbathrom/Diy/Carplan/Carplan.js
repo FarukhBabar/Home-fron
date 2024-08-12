@@ -7,7 +7,7 @@ const Carplan = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    axios.get("http://srv577826.hstgr.cloud:8002/api/v1/data/carplanfreedelivery")
+    axios.get("http://srv577826.hstgr.cloud:8001/api/v1/data/carplanfreedelivery")
       .then(response => setUsers(response.data))
       .catch(error => console.log(error));
   }, []);

@@ -8,7 +8,7 @@
     
       
 //     const setUsersData = async() =>{
-//         let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/candelesuser")
+//         let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/data/candelesuser")
 //         result = await result.json()       
 //         setUsers(result)        
 //         console.log(result)
@@ -21,7 +21,7 @@
 //       const deleteuser = async(id)=>{
 //           // console.log(id)
 //           try {
-//               let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/candelesuserid/${id}`,{
+//               let result= await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/candelesuserid/${id}`,{
 //             method:"delete"
          
 //           })
@@ -69,7 +69,7 @@
 //                                          <td>{ele.price}</td>
 //                                          <td> {ele.image && (
 //                               <img 
-//                             src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
+//                             src={`http://srv577826.hstgr.cloud:8001/${ele.image}`} 
 //                                      alt={ele.name} 
 //                                          className='img-fluid' 
 //                                     style={{ height: '70px', width: '100px' }}
@@ -109,7 +109,7 @@ const Candeleslist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/candelesuser');
+        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/candelesuser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -123,7 +123,7 @@ const Candeleslist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/candelesuserid/${id}`, {
+      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/candelesuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

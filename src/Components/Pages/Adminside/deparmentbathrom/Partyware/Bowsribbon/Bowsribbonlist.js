@@ -7,7 +7,7 @@
     
 
 //     const setUsersData = async() =>{
-//         let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/data/banneruser")
+//         let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/data/banneruser")
 //         result = await result.json()       
 //         setUsers(result)        
 //         console.log(result)
@@ -20,7 +20,7 @@
 //       const deleteuser = async(id)=>{
 //           // console.log(id)
 //           try {
-//               let result= await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/banneruserid/${id}`,{
+//               let result= await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/banneruserid/${id}`,{
 //             method:"delete"
          
 //           })
@@ -66,7 +66,7 @@
 //                                          <td>{ele.price}</td>
 //                                          <td> {ele.image && (
 //                               <img 
-//                             src={`http://srv577826.hstgr.cloud:8002/${ele.image}`} 
+//                             src={`http://srv577826.hstgr.cloud:8001/${ele.image}`} 
 //                                      alt={ele.name} 
 //                                          className='img-fluid' 
 //                                     style={{ height: '70px', width: '100px' }}
@@ -108,7 +108,7 @@ const Bowsribbonlist = () => {
     // Fetch data here
     const fetchData = async () => {
       try {
-        const response = await fetch('http://srv577826.hstgr.cloud:8002/api/v1/data/banneruser');
+        const response = await fetch('http://srv577826.hstgr.cloud:8001/api/v1/data/banneruser');
         if (!response.ok) throw new Error('Network response was not ok');
         const result = await response.json();
         setData(result);
@@ -122,7 +122,7 @@ const Bowsribbonlist = () => {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://srv577826.hstgr.cloud:8002/api/v1/data/pumpsuserid/${id}`, {
+      await fetch(`http://srv577826.hstgr.cloud:8001/api/v1/data/pumpsuserid/${id}`, {
         method: 'DELETE',
       });
       setData(data.filter(item => item._id !== id));

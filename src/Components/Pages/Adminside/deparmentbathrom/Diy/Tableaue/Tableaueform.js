@@ -40,7 +40,7 @@ const Tableaueform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/tableauproducts" , {
+      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/tableauproducts" , {
         method: "post",
         body :formdata
       

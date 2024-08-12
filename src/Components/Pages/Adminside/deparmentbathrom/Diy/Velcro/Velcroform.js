@@ -40,7 +40,7 @@ const Velcroform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/velcroproducts" , {
+      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/velcroproducts" , {
         method: "post",
         body :formdata
       

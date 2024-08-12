@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await axios.get('http://srv577826.hstgr.cloud:8002/api/products/most-selling');
+        const response = await axios.get('https://82.180.154.205:8001/api/products/most-selling');
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching most selling products:', error);
@@ -175,10 +175,10 @@ const reviews = [
 
   <div className="row mt-5">
     <div className="col-lg-6 col-md-6 col-sm-12">
-    <Link to='/diye'><img src="/Images/Homepag/Diy range.png" alt className="ca" /></Link>  
+    <Link to='/category/diye'><img src="/Images/Homepag/Diy range.png" alt className="ca" /></Link>  
     </div>
     <div className="col-lg-6 col-md-6 col-sm-12">
-    <Link to='/poundline'><img src="/Images/Homepag/Poundlines range.png" alt className="ca" /></Link>  
+    <Link to='/category/poundline'><img src="/Images/Homepag/Poundlines range.png" alt className="ca" /></Link>  
     </div>
   </div>
   {/* ------- */}
@@ -204,10 +204,10 @@ const reviews = [
     <Link to='/category/kitechenwear' ><img src="/Images/Homepag/Kitchen Utensils.png" className="caa " alt /></Link> 
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/cookwar'><img src="/Images/Homepag/Cookware.png" className="caa" alt /></Link>  
+    <Link to='/category/kitechenwear/cookwar'><img src="/Images/Homepag/Cookware.png" className="caa" alt /></Link>  
     </div>
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/bakeware'  ><img src="/Images/Homepag/Bakeware.png" className="caa" alt /></Link>  
+    <Link to='/category/kitechenwear/bakeware'  ><img src="/Images/Homepag/Bakeware.png" className="caa" alt /></Link>  
     </div>
   </div>
   <div className="row  ">

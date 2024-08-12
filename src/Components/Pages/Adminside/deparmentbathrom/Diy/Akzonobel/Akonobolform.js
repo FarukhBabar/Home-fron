@@ -40,7 +40,7 @@ const Akonobolform = () => {
       return;
     }
     try {
-      let result = await fetch("http://srv577826.hstgr.cloud:8002/api/v1/auth/aknobolproducts" , {
+      let result = await fetch("http://srv577826.hstgr.cloud:8001/api/v1/auth/aknobolproducts" , {
         method: "post",
         body :formdata
       
