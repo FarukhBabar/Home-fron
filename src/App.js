@@ -802,7 +802,6 @@ import Yelelockform from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele
 import Yelelocklist from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele lock/Yelelocklist';
 import Yelelockupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Yele lock/Yelelockupdate';
 import Uniconform from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconform';
-import Uniconcard from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconcard';
 import Uniconlist from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconlist';
 import Uniconupdtae from './Components/Pages/Adminside/deparmentbathrom/Diy/Unicon/Uniconupdate';
 import Amtechform from './Components/Pages/Adminside/deparmentbathrom/Diy/Amtech tools/Amtechform';
@@ -1358,6 +1357,8 @@ const App = () => {
     <>
      <CartProvider>
       <Routes>
+        <Route path='/log' element={<Login />} />
+        <Route path='/Register' element={<Register />} />
         <Route element={<ProtectedRoutes/>}>
         <Route path='/oderslist' element={<AdminLayout><OrderList/></AdminLayout>} />
          <Route path='/edit-order/:id' element={<AdminLayout><Editorder/></AdminLayout>} />
@@ -2405,8 +2406,7 @@ const App = () => {
         <Route path='/newarriv' element={<MainLayout><Newarrivals /></MainLayout>} />
         <Route path='/Giftmakercard' element={<MainLayout><Giftcard /></MainLayout>} />
         <Route path='/Brighthomly' element={<MainLayout><Giftcard /></MainLayout>} />
-        <Route path='/log' element={<MainLayout><Login /></MainLayout>} />
-        <Route path='/Register' element={<MainLayout><Register /></MainLayout>} />
+        
         <Route path='/blog' element={<MainLayout><Blog /></MainLayout>} />
         <Route path='/hotwater' element={<MainLayout><Hotwater/></MainLayout>} />
         <Route path='/privacy' element={<MainLayout><Privacy/></MainLayout>} />
@@ -3219,7 +3219,7 @@ const App = () => {
 
       {/* <Route path="/" element={<Home products={products} />} /> */}
       <Route path="/product/:name" element={<MainLayout><ProductDetail/></MainLayout>} />
-       {/* <Route path='*' element={<ErrorPage/>} /> */}
+       <Route path='*' element={<ErrorPage/>} />
        <Route path="/thank-you" element={<ThankYouPage />} />
       </Routes>
       </CartProvider>

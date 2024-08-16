@@ -8,20 +8,20 @@ const Login = () => {
   const [ password  , setpassword]  = useState()
   const nevigate=useNavigate()
   
-  useEffect(() => {
-        const user = localStorage.getItem('user');
-        if (user) {
-          const userData = JSON.parse(user);
-          if (userData.role === 'user') {
-            nevigate('/');
-          }
-        }
-      }, [nevigate]);
+  // useEffect(() => {
+  //       const user = localStorage.getItem('user');
+  //       if (user) {
+  //         const userData = JSON.parse(user);
+  //         if (userData.role === 'user') {
+  //           nevigate('/');
+  //         }
+  //       }
+  //     }, [nevigate]);
     // const role = user ? JSON.parse(user).role : null
   const registeruser = async (e) => {
     e.preventDefault();
     try {
-      let result = await fetch(`${process.env.REACT_APP_API_URL}/login`, {
+      let result = await fetch("https://api.homeessentialshive.co.uk/login", {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

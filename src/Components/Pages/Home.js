@@ -16,7 +16,7 @@ const Home = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/most-selling`);
+         const response = await axios.get("https://api.homeessentialshive.co.uk/api/products/most-selling");
         setProducts(response.data);
       } catch (error) {
         console.error('Error fetching most selling products:', error);
