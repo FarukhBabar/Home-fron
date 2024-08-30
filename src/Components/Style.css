@@ -39,13 +39,7 @@
     margin-left: 0px !important;
     margin-top: 5px !important;
    }
-   .banner{
-    width: auto !important;
-    margin-top: 5px !important;
-    margin-right: 20px !important;
-    margin-left: 0px !important;
-    height: 62px !important;
-   }
+ 
    .title{
     text-align: center !important;
     margin: auto !important;
@@ -77,12 +71,7 @@
     height: auto !important;
    
    }
-   .ca{
-        width: auto !important;
-        margin-left: 0px !important;
-        margin-top: 15px !important;
-        height: 92px !important;
-    }
+  
     .title1::before{
         content:"" !important;
         width:0px !important;
@@ -170,38 +159,83 @@
    .rating{
     margin-left: 0px !important;
    }
- .pallet{
-   
-        width: 370px !important;
-        margin-left: 10px;
-        margin-top: 8px;
-        padding-left: 0px !important;
-    }
- .search-container{
+  .search-container{
     display: none;
  }
+ .icon{
+    margin-left: 0px;
+    margin-top: 30px;
+   
+}
+.navbarsa{
+    font-size: 13px !important;
+    margin-top: 1.4px;
+    margin-left: 35px !important;
+}
+    .input2{
+    width: 220px;
+    height: 30px;
+}
+    .input222{
+        width: 130px;
+        height: 30px;
+        margin-left: 3px !important;
+        background-color: rgba(126, 161, 253, 1);
+        border: none;
+        border-radius: 4px;
+        color: white;
+        }
+    
+    .input22{
+        margin-top: 10px;
+        margin-left: 40px !important;
+    }
+  
+.first{
+    margin-left: 50px !important;
+}
+    .sunadycards{
+    margin-left: 0px !important;
+    margin-top: 20px;
+    }
+    .sunadycard1{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .sunadycards12{
+        margin-left: 0px !important;
+        margin-top: 20px;
+    }
+    .caaa{
+        width: 240px;
+        height: 370px;
+        margin-top: 20px;
+    }
+   
+    .rrr{
+        margin-top: 30px; 
+        margin-left: 30px !important;
+        }
+    .freedd{
+        display: none !important;
+    }
+    .logo{
+        width: 150px;
+        height: 40px;
+        align-items: center;
+        margin-left: 0px !important;
+        margin-top: 7px;
+        }
 }
 
 .lax{
     margin-bottom:  620px !important;
 }
-/* .logo{
-    width: 100px;
-    height: 10px;
-    align-items: center;
-    /* margin-left: 350px;
-    
-    margin-top: 7px;
-} */
 .login{
     margin-top: 7.3px;
     font-size: 14px;
     margin-left: 35px !important;
 }
-/* .phone{
-   margin-left: 0px;
-   margin-top: 15px;
-} */
 .search-container {
     position: relative;
 }
@@ -227,9 +261,6 @@
     background-color: #7EA1FD;
 
 }
-/* .nav-link{
-   justify-content: space-between;
-} */
 .freedel{
     
     height: 25px;
@@ -248,11 +279,7 @@
     margin-left: 2px;
     margin-top: 5px;
 }
-.banner{
-    width: 565px;
-    margin-top: 5px;
-    margin-right: 20px;
-}
+
 /* ------------ */
 .title{
     text-align: center;
@@ -386,14 +413,7 @@
 .card{
     box-shadow: 0px 1px 0px 0px rgba(182, 196, 210, 0.4);
 }
-.ca{
-    width: 560px;
-    margin-left: 10px;
-}
-.caa{
-    margin-left: 5px;
-    margin-top: 15px;
-}
+
 .title1{
 
     text-align: center;
@@ -446,17 +466,6 @@
     width: 162.5px;
     margin-left: 40px;
 }
-
-.sunday{
-    width: 1250px;
-    margin-left: 7px;
-    margin-top: 8px;
-}
-.pallet{
-    width: 1250px;
-    margin-left: 10px;
-    margin-top: 8px;
-}
 .sunadycards{
    margin-left: 100px !important;
    margin-top: 20px;
@@ -488,14 +497,6 @@
 .department{
     background-color: rgba(126, 161, 253, 1);
 }
-/* .caag{
-    margin-left: 20px;
-}
-.caab{
-    
-    width: 260px;
-    margin: 10px !important;
-} */
 .caab {
     width: 100%;
     height: auto;
@@ -731,72 +732,10 @@ padding-bottom: 5px;
     color: white;
 }
 @media screen and (max-width : 480px) {
-    .freedd{
-    display: none !important;
-}
-}
-/* -------------Departments---------------------- */
-.img{
-    width: 270px;
-    /* margin-left: 20px; */
-    margin-top: 20px;
-}
-.img1{
-    width: 270px;
-    margin-left: 20px;
-    margin-top: 20px;
-   
-}
-.img2{
-    width: 270px;
-    margin-left: 20px;
-    margin-top: 20px;
-    
-}
-.img3{
-    width: 270px;
-    margin-left: 20px;
-    margin-top: 20px;
-}
-.img:hover{
-    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
-}
-.img1:hover{
-    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
-}
-.img2:hover{
-    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
-}
-.img3:hover{
-    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
-}
-@media screen and (max-width : 480px) {
-    .freedd{
-    display: none !important;
-}
 
-.img{
-    width: 95%;
-    margin-left: 10px;
-    margin-top: 20px;
-}
-.img1{
-    width: 95%;
-   
-    margin-left: 10px;
-    margin-top: 20px;
-   
-}
-.img2{
-    width: 95%;
-    margin-left: 10px;
-    margin-top: 20px;
     
-}
-.img3{
-    width: 95%; 
-    margin-left: 10px;
-    margin-top: 20px;
+    .freedd{
+    display: none !important;
 }
 
 .input22{
@@ -821,94 +760,20 @@ padding-bottom: 5px;
     display: none;
 }
 }
+/* -------------Departments---------------------- */
+.img:hover{
+    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
+}
+.img1:hover{
+    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
+}
+.img2:hover{
+    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
+}
+.img3:hover{
+    transform: rotateX(0.1deg) rotateY(0.1deg) rotateZ(0.1deg) scaleX(1.1) scaleY(1.1) scaleZ(1.1);
+}
 /* --------------Supersunday----------------- */
-@media  (max-width : 768px){
-.icon{
-    margin-left: 0px;
-    margin-top: 30px;
-   
-}
-.navbarsa{
-    font-size: 13px !important;
-    margin-top: 1.4px;
-    margin-left: 35px !important;
-}
-    .input2{
-    width: 220px;
-    height: 30px;
-}
-    .input222{
-        width: 130px;
-        height: 30px;
-        margin-left: 3px !important;
-        background-color: rgba(126, 161, 253, 1);
-        border: none;
-        border-radius: 4px;
-        color: white;
-        }
-    
-    .input22{
-        margin-top: 10px;
-        margin-left: 40px !important;
-    }
-  
-.first{
-    margin-left: 50px !important;
-}
-.sunday{
-    width: 290px;
-    margin-left: 0px;
-    margin-top: 8px;
-   
-}
-.ban{
-    padding-left: 0px !important;
-}
-.sunday{
-        width: 370px;
-        margin-left: 10px;
-        margin-top: 8px;
-        padding-left: 0px !important;
-    }
-    .sunadycards{
-    margin-left: 0px !important;
-    margin-top: 20px;
-    }
-    .sunadycard1{
-        margin-left: 0px;
-        margin-top: 20px;
-    }
-    .sunadycards12{
-        margin-left: 0px !important;
-        margin-top: 20px;
-    }
-    .caaa{
-        width: 240px;
-        height: 370px;
-        margin-top: 20px;
-    }
-    .caa{
-        margin-left: 5px !important;
-        margin-top: 15px;
-        width: auto !important;
-        height: 180px !important;
-        }
-    .rrr{
-        margin-top: 30px; 
-        margin-left: 30px !important;
-        }
-    .freedd{
-        display: none !important;
-    }
-    .logo{
-        width: 150px;
-        height: 40px;
-        align-items: center;
-        margin-left: 0px !important;
-        margin-top: 7px;
-        }
-    
-}
 /* --------------login--------- */
 .text-theme {
     color: #5369f8 !important;
@@ -919,71 +784,7 @@ padding-bottom: 5px;
     border-color: #5369f8;
     color: #fff;
 }
-/* Sign up form */
-.gradient-custom-3 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
-    }
-    .gradient-custom-4 {
-    /* fallback for old browsers */
-    background: #84fab0;
-    
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
-    
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
-    }
-    .account-block {
-        padding: 0;
-        background-image: url(https://bootdey.com/img/Content/bg1.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100%;
-        position: relative;
-    }
-    .account-block .overlay {
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-color: rgba(0, 0, 0, 0.4);
-    }
-    .account-block .account-testimonial {
-        text-align: center;
-        color: #fff;
-        position: absolute;
-        margin: 0 auto;
-        padding: 0 1.75rem;
-        bottom: 3rem;
-        left: 0;
-        right: 0;
-    }
-
-    
-    .note{
-        background-color: rgb(92, 51, 189);
-        color: azure;
-        font-size: 14px;
-        height: 24px;
-        }
-        .ligh{
-        margin-bottom: 1250px !important;
-        }
-        .lig{
-        margin-bottom: 1450px !important;
-        }
-        .lax{
+      .lax{
         margin-bottom:  620px !important;
         }
         .logo{
@@ -999,24 +800,13 @@ padding-bottom: 5px;
         width: 150px;
         height: 70px;
         align-items: center;
-        /* margin-left: 350px !important; */
+      
         margin-top: 7px;
         }
         }
-
-        /* .login{
-        margin-top: 15px;
-        font-size: 14px;
-        } */
-        /* .phone{
-        margin-left: 0px;
-        margin-top: 15px;
-        } */
         .search-container {
         position: relative;
         }
-        
-        
         .search-input {
         border: none;
         border-bottom: 2px solid #000; 
@@ -1056,11 +846,7 @@ padding-bottom: 5px;
         margin-left: 2px;
         margin-top: 5px;
         }
-        .banner{
-        width: 565px;
-        margin-top: 5px;
-        margin-right: 20px;
-        }
+      
         
         .title{
         text-align: center;
@@ -1094,10 +880,7 @@ padding-bottom: 5px;
         
         
         }
-        .ban{
-            padding-left: 0px !important;
-            margin-left: 0px !important;
-        }
+       
         .reviews{
         padding-top: 30px;
         }
@@ -1188,15 +971,8 @@ padding-bottom: 5px;
         .card{
         box-shadow: 0px 1px 0px 0px rgba(182, 196, 210, 0.4);
         }
-        .ca{
-        width: 560px;
-        margin-left: 0px;
-        }
-        .caa{
-        margin-left: 0px;
-        margin-top: 15px;
-        width: 265px;
-        }
+        
+        
         .title1{
         
         text-align: center;

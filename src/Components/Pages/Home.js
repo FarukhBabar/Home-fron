@@ -6,10 +6,9 @@ import Navbar from '../Navbar'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
-import { Pagination } from "swiper";
 import MostSellingProductsCarousel from '../MostSellingProductsCarousel'
-import "swiper/css/pagination";
 import axios from 'axios';
+
 const Home = () => {
    const [products, setProducts] = useState([]);
 
@@ -65,6 +64,7 @@ const reviews = [
   return (
     <>
     <Navbar/>
+   
    <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
   <div className="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to={0} className="active" aria-current="true" aria-label="Slide 1" />
@@ -97,10 +97,10 @@ const reviews = [
 
    <div className="container">
   
-  <div className="row ">
-    <div className="col-lg-6 col-md-6 col-sm-12"><Link to='/Palletdeals'><img src="/Images/Homepag/banners-mediumpallet.jpg" alt className="banner" /></Link></div>
-    <div className="col-lg-6 col-md-6 col-sm-12">
-    <Link to='/Supersunday'><img src="/Images/Homepag/banners-medium.jpg" alt className="banner" /></Link>  
+  <div className="row pt-2 ">
+    <div className="col-lg-6 col-md-6 col-sm-10"><Link className=' col-md-6 col-10 ' to='/Palletdeals'><img className='h-100 w-100 ' src="/Images/Homepag/banners-mediumpallet.jpg" alt  /></Link></div>
+    <div className="col-lg-6 col-md-6 col-sm-10 mt-md-0 mt-2 ">
+    <Link className=' col-md-6 col-10 ' to='/Supersunday'><img className='h-100 w-100 ' src="/Images/Homepag/banners-medium.jpg" alt  /></Link>  
     </div>
   </div>
       <div className="reviews">
@@ -138,10 +138,10 @@ const reviews = [
       </div>
 
       {/* Grid layout for larger screens */}
-      <div className="row rrr d-none d-md-flex">
+      <div className="row rrr d-none d-md-flex justify-content-center ">
   {reviews.map((review, index) => (
-    <div key={index} className="col-lg-3 col-md-3 col-sm-12 card ms-3 mt-3" style={{ width: "16rem", height: 169 }}>
-        <div class="d-flex justify-content-center align-items-center">
+    <div key={index} className="col-md-3 col-sm-12 card ms-3 mt-3 " style={{ width: "16rem", height: 169 }}>
+        <div class="d-flex justify-content-center align-items-center ">
             <div class="ratings ">
                 <i class="fa fa-star rating-color"></i>
                 <i class="fa fa-star rating-color"></i>
@@ -151,7 +151,7 @@ const reviews = [
             </div>
             <h5 class="rating-text bg-success">verified</h5>
             </div>
-      <div className="card-body">
+      <div className="card-body ">
         <h6 className="card-title">{review.name}</h6>
         <h6 className="card-subtitle mb-2 text-muted">{review.review}</h6>
         <p className="time">{review.time}</p>
@@ -175,53 +175,53 @@ const reviews = [
 
   <div className="row mt-5">
     <div className="col-lg-6 col-md-6 col-sm-12">
-    <Link to='/category/diye'><img src="/Images/Homepag/Diy range.png" alt className="ca" /></Link>  
+    <Link to='/category/diye'><img src="/Images/Homepag/Diy range.png" alt className=" h-100 w-100" /></Link>  
     </div>
-    <div className="col-lg-6 col-md-6 col-sm-12">
-    <Link to='/category/poundline'><img src="/Images/Homepag/Poundlines range.png" alt className="ca" /></Link>  
+    <div className="col-lg-6 col-md-6 col-sm-12 mt-md-0 mt-2">
+    <Link to='/category/poundline'><img src="/Images/Homepag/Poundlines range.png" alt className="h-100 w-100" /></Link>  
     </div>
   </div>
   {/* ------- */}
-  <div className="row">
+  <div className="row mt-4">
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link  to='/category/disposible' ><img src="/Images/Homepag/disposables.png" className="caa" alt /></Link>
+    <Link  to='/category/disposible' ><img src="/Images/Homepag/disposables.png" className="h-100 w-100" alt /></Link>
     </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-     <Link to= '/category/householdcleaners'><img src="/Images/Homepag/Household Cleaners.png" className="caa" alt /></Link> 
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-2 mt-md-0 mt-2">
+     <Link to= '/category/householdcleaners'><img src="/Images/Homepag/Household Cleaners.png" className="h-100 w-100" alt /></Link> 
     </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-   <Link to= '/category/cleaning' ><img src="/Images/Homepag/Cleaning Materials.png" alt className="caa" /></Link>  
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+   <Link to= '/category/cleaning' ><img src="/Images/Homepag/Cleaning Materials.png" alt className="h-100 w-100" /></Link>  
     </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to= '/category/plastichousewares' > <img src="/Images/Homepag/Plastics.png" alt className="caa" /></Link>
-    </div>
-  </div>
-  <div className="row  ">
-    <div className="col-lg-3 col-md-4 col-sm-12">
-     <Link to='/category/partyware'><img src="/Images/Homepag/Partyware.png" className="caa " alt /></Link> 
-    </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/category/kitechenwear' ><img src="/Images/Homepag/Kitchen Utensils.png" className="caa " alt /></Link> 
-    </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/category/kitechenwear/cookwar'><img src="/Images/Homepag/Cookware.png" className="caa" alt /></Link>  
-    </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/category/kitechenwear/bakeware'  ><img src="/Images/Homepag/Bakeware.png" className="caa" alt /></Link>  
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+    <Link to= '/category/plastichousewares' > <img src="/Images/Homepag/Plastics.png" alt className="h-100 w-100" /></Link>
     </div>
   </div>
-  <div className="row  ">
+  <div className="row mt-4 ">
     <div className="col-lg-3 col-md-4 col-sm-12">
-   <Link to = '/category/toiletries' ><img src="/Images/Homepag/Toiletries.png" className="caa" alt /></Link> 
+     <Link to='/category/partyware'><img src="/Images/Homepag/Partyware.png" className="h-100 w-100 " alt /></Link> 
     </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/category/petproducts'><img src="/Images/Homepag/Pet Products.png" className="caa" alt /></Link>  
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+    <Link to='/category/kitechenwear' ><img src="/Images/Homepag/Kitchen Utensils.png" className="h-100 w-100 " alt /></Link> 
     </div>
-    <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/category/stationery'><img src="/Images/Homepag/Stationeries.png" className="caa" alt /></Link>  
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+    <Link to='/category/kitechenwear/cookwar'><img src="/Images/Homepag/Cookware.png" className="h-100 w-100" alt /></Link>  
     </div>
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+    <Link to='/category/kitechenwear/bakeware'  ><img src="/Images/Homepag/Bakeware.png" className="h-100 w-100" alt /></Link>  
+    </div>
+  </div>
+  <div className="row mt-4 ">
     <div className="col-lg-3 col-md-4 col-sm-12">
-    <Link to='/deparments'>  <img src="/Images/Homepag/all departements.png" className="caa" alt /></Link>
+   <Link to = '/category/toiletries' ><img src="/Images/Homepag/Toiletries.png" className="h-100 w-100" alt /></Link> 
+    </div>
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+    <Link to='/category/petproducts'><img src="/Images/Homepag/Pet Products.png" className="h-100 w-100" alt /></Link>  
+    </div>
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+    <Link to='/category/stationery'><img src="/Images/Homepag/Stationeries.png" className="h-100 w-100" alt /></Link>  
+    </div>
+    <div className="col-lg-3 col-md-4 col-sm-12 mt-md-0 mt-2">
+    <Link to='/deparments'>  <img src="/Images/Homepag/all departements.png" className="h-100 w-100" alt /></Link>
     </div>
   </div>
    <MostSellingProductsCarousel products={products} />

@@ -3,18 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import '../../App.css';
 
 const Register = () => {
-  // const [Companynname, setCompanyName] = useState('');
-  // const [CompanyRegistration, setCompanyRegistration] = useState('');
-  // const [CompanyVat, setCompanyVat] = useState('');
-  // const [Address1, setAddress1] = useState('');
-  // const [Address2, setAddress2] = useState('');
-  // const [Address3, setAddress3] = useState('');
-  // const [Postcode, setPostcode] = useState('');
-  // const [City, setCity] = useState('');
-  // const [County, setCounty] = useState('');
-  // const [Country, setCountry] = useState('');
-  // const [Title, setTitle] = useState('');
-  const [FirstName, setFirstName] = useState('');
+   const [FirstName, setFirstName] = useState('');
   const [LastName, setLastName] = useState('');
   const [PhoneNumber, setPhoneNumber] = useState('');
   const [email, setEmail] = useState('');

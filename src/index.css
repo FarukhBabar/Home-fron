@@ -365,3 +365,14 @@ display: none !important;
   height: 200px;
   margin: 0px !important;
 }
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}

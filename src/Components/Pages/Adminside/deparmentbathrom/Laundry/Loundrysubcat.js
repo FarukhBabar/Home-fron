@@ -13,34 +13,34 @@ const Loundrysubcat = () => {
   <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/loundry/airers"><img src="/Images/laundry storage and luggage/1.jpg" alt className="img" /></Link>   
+          <Link to="/category/loundry/airers"><img src="/Images/laundry storage and luggage/1.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>   
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/loundry/iorining"><img src="/Images/laundry storage and luggage/2.jpg" alt className="img1" /></Link> 
+          <Link to="/category/loundry/iorining"><img src="/Images/laundry storage and luggage/2.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/loundry/laacess"> <img src="/Images/laundry storage and luggage/3.jpg" alt className="img2" /></Link>
+          <Link to="/category/loundry/laacess"> <img src="/Images/laundry storage and luggage/3.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/loundry/bagsl"><img src="/Images/laundry storage and luggage/4.jpg" alt className="img3" /></Link>   
+          <Link to="/category/loundry/bagsl"><img src="/Images/laundry storage and luggage/4.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>   
         </div>
       </div>
     </div>
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/loundry/bascketst"><img src="/Images/laundry storage and luggage/5.jpg" alt className="img" /></Link>   
+          <Link to="/category/loundry/bascketst"><img src="/Images/laundry storage and luggage/5.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>   
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/loundry/luggage"><img src="/Images/laundry storage and luggage/6.jpg" alt className="img1" /></Link> 
+          <Link to="/category/loundry/luggage"><img src="/Images/laundry storage and luggage/6.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
         </div>
       </div>
       

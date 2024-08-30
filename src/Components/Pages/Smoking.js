@@ -13,17 +13,17 @@ const Smoking = () => {
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12 mt-3">
         <Link to="/category/smoking/lighter">
-          <img src="../Images/smoking product/1.jpg" className="img" alt />
+          <img src="../Images/smoking product/1.jpg" className="h-100 w-100 mt-md-0 mt-2" alt />
         </Link>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12 ms-3 mt-3">
         <Link to="/category/smoking/electrical">
-          <img src="../Images/smoking product/3.jpg" className="img1" alt />
+          <img src="../Images/smoking product/3.jpg" className="h-100 w-100 mt-md-0 mt-2" alt />
         </Link>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12 ms-3 mt-3">
         <Link to="/category/smoking/essentional">
-          <img src="../Images/smoking product/2.jpg" className="img1" alt />
+          <img src="../Images/smoking product/2.jpg" className="h-100 w-100 mt-md-0 mt-2" alt />
         </Link>
       </div>
     </div>

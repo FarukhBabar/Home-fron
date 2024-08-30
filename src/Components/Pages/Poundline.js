@@ -15,110 +15,110 @@ const Poundline = () => {
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/poundline/bathroombeauty"><img src="/Images/pound lines/1.jpg" alt className="img" /></Link>   
+          <Link to="/category/poundline/bathroombeauty"><img src="/Images/pound lines/1.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>   
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/poundline/firstaid"><img src="/Images/pound lines/8.jpg" alt className="img1" /></Link> 
+          <Link to="/category/poundline/firstaid"><img src="/Images/pound lines/8.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/poundline/electric"> <img src="/Images/pound lines/7.jpg" alt className="img2" /></Link>
+          <Link to="/category/poundline/electric"> <img src="/Images/pound lines/7.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/poundline/diytools"><img src="/Images/pound lines/6.jpg" alt className="img3" /></Link>   
-        </div>
-      </div>
-    </div>
-    <div className="row justify-content-center mt-3">
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to="/category/poundline/disposiblepo"><img src="/Images/pound lines/5.jpg" alt className="img" /></Link>
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to="/category/poundline/craftpo"> <img src="/Images/pound lines/4.jpg" alt className="img1" /></Link>
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to="/category/poundline/Carpo"><img src="/Images/pound lines/3.jpg" alt className="img2" /></Link>
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to="/category/poundline/candeles"><img src="/Images/pound lines/2.jpg" alt className="img3" /></Link>
+          <Link to="/category/poundline/diytools"><img src="/Images/pound lines/6.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>   
         </div>
       </div>
     </div>
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/poundline/foodpound"><img src="/Images/pound lines/9.jpg" alt className="img" /></Link> 
+          <Link to="/category/poundline/disposiblepo"><img src="/Images/pound lines/5.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to='/category/poundline/shoecare'><img src="/Images/pound lines/18.jpg" alt className="img1" /></Link> 
+          <Link to="/category/poundline/craftpo"> <img src="/Images/pound lines/4.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to='/category/poundline/stationerypo'><img src="/Images/pound lines/19.jpg" alt className="img2" /></Link>
+          <Link to="/category/poundline/Carpo"><img src="/Images/pound lines/3.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to='/category/poundline/potoy'><img src="/Images/pound lines/20.jpg" alt className="img3" /></Link>
-        </div>
-      </div>
-    </div>
-    <div className="row justify-content-center mt-3">
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to='/category/poundline/pestcon'><img src="/Images/pound lines/16.jpg" alt className="img" /></Link> 
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to='/category/poundline/lightergas'><img src="/Images/pound lines/15.jpg" alt className="img1" /></Link>
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to='/category/poundline/loundryiron'><img src="/Images/pound lines/14.jpg" alt className="img2" /></Link> 
-        </div>
-      </div>
-      <div className="col-lg-3 col-md-6 col-sm-12">
-        <div>
-          <Link to='/category/poundline/kitchenwearpound'><img src="/Images/pound lines/Item → Link (12).png" alt className="img3" /></Link>
+          <Link to="/category/poundline/candeles"><img src="/Images/pound lines/2.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
     </div>
     <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to='/category/poundline/hoiserypound'><img src="/Images/pound lines/10.jpg" alt className="img" /></Link>
+          <Link to="/category/poundline/foodpound"><img src="/Images/pound lines/9.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to='/category/poundline/householdclpound'> <img src="/Images/pound lines/11.jpg" alt className="img1" /></Link>
+          <Link to='/category/poundline/shoecare'><img src="/Images/pound lines/18.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to='/category/poundline/householdpr'><img src="/Images/pound lines/12.jpg" alt className="img2" /></Link>
+          <Link to='/category/poundline/stationerypo'><img src="/Images/pound lines/19.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to='/category/poundline/reading'><img src="/Images/pound lines/17.jpg" alt className="img3" /></Link>
+          <Link to='/category/poundline/potoy'><img src="/Images/pound lines/20.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
+        </div>
+      </div>
+    </div>
+    <div className="row justify-content-center mt-3">
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/pestcon'><img src="/Images/pound lines/16.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/lightergas'><img src="/Images/pound lines/15.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/loundryiron'><img src="/Images/pound lines/14.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/kitchenwearpound'><img src="/Images/pound lines/Item → Link (12).png" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
+        </div>
+      </div>
+    </div>
+    <div className="row justify-content-center mt-3">
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/hoiserypound'><img src="/Images/pound lines/10.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/householdclpound'> <img src="/Images/pound lines/11.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/householdpr'><img src="/Images/pound lines/12.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
+        </div>
+      </div>
+      <div className="col-lg-3 col-md-6 col-sm-12">
+        <div>
+          <Link to='/category/poundline/reading'><img src="/Images/pound lines/17.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>
         </div>
       </div>
     </div>

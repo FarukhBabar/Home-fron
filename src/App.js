@@ -1331,13 +1331,13 @@ import Kidschalist from './Components/Pages/Adminside/deparmentbathrom/Kidsprodu
 import Kidschaupdate from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschaupdate';
 import Kidschar from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschar';
 import Kidschasingl from './Components/Pages/Adminside/deparmentbathrom/Kidsproducts/Kidscha/Kidschasingl';
-import MostSellingProductsCarousel from './Components/MostSellingProductsCarousel';
 import ProductDetail from './Components/Pages/Productdetails';
-import Error from './ErrorPage';
 import ErrorPage from './ErrorPage';
 import ThankYouPage from './Components/Thankyoupage';
 import OrderList from './Components/Pages/Adminside/Oderslist';
 import Editorder from './Components/Pages/Adminside/Editorder';
+import AllProducts from './Components/Pages/AllProducts';
+import AllPRoductspage from './Components/Pages/AllPRoductspage';
 const AdminLayout = ({ children }) => (
   
   <>
@@ -2478,10 +2478,10 @@ const App = () => {
         <Route path='/category/poundline/firstaid' element={<MainLayout><Firstaidmain/></MainLayout>}/>
         <Route path='/product/firstaid/:id' element={<MainLayout><Firstaidsingle/></MainLayout>}/>
 
-        <Route path='/freshner' element={<MainLayout><Freshner/></MainLayout>}/>
+        <Route path='/category/diye/freshner' element={<MainLayout><Freshner/></MainLayout>}/>
         <Route path='/freshnersinglepage/:id' element={<MainLayout><Freshnersingle/></MainLayout>}/>
 
-        <Route path='/akonobol' element={<MainLayout><Akonobol/></MainLayout>}/>
+        <Route path='/category/diye/akonobol' element={<MainLayout><Akonobol/></MainLayout>}/>
         <Route path='/akonobolsinglepage/:id' element={<MainLayout><Akonobolsingle/></MainLayout>}/>
         
         <Route path='/category/electricalde/clock' element={<MainLayout><Clock/></MainLayout>}/>
@@ -2503,10 +2503,10 @@ const App = () => {
         <Route path='/product/dinner/:id' element={<MainLayout><Dinnersingel/></MainLayout>}/>
 
         
-        <Route path='/freshn' element={<MainLayout><Freshn/></MainLayout>}/>
+        <Route path='/category/householdcleaners/freshn' element={<MainLayout><Freshn/></MainLayout>}/>
         <Route path='/freshnsinglepage/:id' element={<MainLayout><Freshnsingle/></MainLayout>}/>
 
-        <Route path='/bleech' element={<MainLayout><Bleech/></MainLayout>}/>
+        <Route path='/category/householdcleaners/bleech' element={<MainLayout><Bleech/></MainLayout>}/>
         <Route path='/bleechsinglepage/:id' element={<MainLayout><Bleechsingl/></MainLayout>}/>
 
         <Route path='/category/kidsproduct/kidssto' element={<MainLayout><Kidssto/></MainLayout>}/>
@@ -2552,7 +2552,7 @@ const App = () => {
         <Route path='/category/pestcontrol/stv' element={<MainLayout><Stv/></MainLayout>}/>
         <Route path='/product/stv/:id' element={<MainLayout><StvSingle/></MainLayout>}/>
 
-        <Route path='/car' element={<MainLayout><Car/></MainLayout>}/>
+        <Route path='/category/householdcleaners/car' element={<MainLayout><Car/></MainLayout>}/>
         <Route path='/carsinglepage/:id' element={<MainLayout><Carsingle/></MainLayout>}/>
 
         <Route path='/category/kitechenwear/bakeware' element={<MainLayout><Bakeware/></MainLayout>}/>
@@ -2613,10 +2613,10 @@ const App = () => {
         <Route path='/category/hardware/mats' element={<MainLayout><Mats/></MainLayout>}/>
         <Route path='product/mats/:id' element={<MainLayout><Matssingl/></MainLayout>}/>
 
-        <Route path='/foodcon' element={<MainLayout><Foodcon/></MainLayout>}/>
+        <Route path='/category/plastichousewares/foodcon' element={<MainLayout><Foodcon/></MainLayout>}/>
         <Route path='/foodconsinglepage/:id' element={<MainLayout><Foodconsingl/></MainLayout>}/>
 
-        <Route path='/kidsplas' element={<MainLayout><Kidsplas/></MainLayout>}/>
+        <Route path='/category/plastichousewares/kidsplas' element={<MainLayout><Kidsplas/></MainLayout>}/>
         <Route path='/kidsplassinglepage/:id' element={<MainLayout><Kidsplassingl/></MainLayout>}/>
         <Route path='/forget' element={<Forgetpassword/>}  />
         <Route path='/verifyotp' element={<VerifyOtp/>}/>
@@ -2975,7 +2975,7 @@ const App = () => {
         <Route path='cotton' element={<MainLayout><Cotton/></MainLayout>} />
         <Route path='cotton/:id' element={<MainLayout><Cottonsingle/></MainLayout>} />
         
-        <Route path='baby' element={<MainLayout><Babycare/></MainLayout>} />
+        <Route path='/category/toiletries/baby' element={<MainLayout><Babycare/></MainLayout>} />
         <Route path='baby/:id' element={<MainLayout><Babaysingle/></MainLayout>} />
         
         <Route path='giftsets' element={<MainLayout><Giftsets/></MainLayout>} />
@@ -3220,6 +3220,8 @@ const App = () => {
       {/* <Route path="/" element={<Home products={products} />} /> */}
       <Route path="/product/:name" element={<MainLayout><ProductDetail/></MainLayout>} />
        <Route path='*' element={<ErrorPage/>} />
+       <Route path="/all-products" element={<MainLayout><AllProducts /></MainLayout>} />
+        <Route path='/product/:productName' element={<MainLayout><AllPRoductspage/></MainLayout>}/>
        <Route path="/thank-you" element={<ThankYouPage />} />
       </Routes>
       </CartProvider>

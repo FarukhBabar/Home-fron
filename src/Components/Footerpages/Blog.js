@@ -15,7 +15,7 @@ const Blog = () => {
   </div>
   <div className="row">
     <div className="col-lg-4 col-md-4 col-sm-12">
-      <img src="./Images/img1.png" alt className="img" />
+      <img src="./Images/img1.png" alt className="h-100 w-100 mt-md-0 mt-2" />
     </div>
     <div className="col-lg-8 col-md-8 col-sm-12">
       <Link to="/hotwater"><h3 className="text-primary">Wholesale Hot Water Bottles at low trade prices</h3></Link>
@@ -34,13 +34,13 @@ const Blog = () => {
         Christmas 2022</p>
     </div>
     <div className="col-lg-4 col-md-4 col-sm-12  mt-3">
-      <img src="./Images/img2.png" alt className="img" />
+      <img src="./Images/img2.png" alt className="h-100 w-100 mt-md-0 mt-2" />
     </div>
     <hr className="mt-4" />
   </div>
   <div className="row">
     <div className="col-lg-4 col-md-4 col-sm-12  mt-3">
-      <img src="./Images/img3.png" alt className="img" />
+      <img src="./Images/img3.png" alt className="h-100 w-100 mt-md-0 mt-2" />
     </div>
     <div className="col-lg-8 col-md-8 col-sm-12 mt-3">
       <a href><h3 className="text-primary">Awesome Adhesives at Amazing Wholesale Prices</h3></a>
@@ -58,7 +58,7 @@ const Blog = () => {
         our latest blog, we pick out some of the best options from our range</p>
     </div>
     <div className="col-lg-4 col-md-4 col-sm-12  mt-3">
-      <img src="./Images/img4.png" alt className="img" />
+      <img src="./Images/img4.png" alt className="h-100 w-100 mt-md-0 mt-2" />
     </div>
   </div>
 </div>

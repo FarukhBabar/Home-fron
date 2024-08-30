@@ -13,12 +13,12 @@ const Disposiblecat = () => {
   <div className="row justify-content-center mt-3">
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/disposible/disposible"><img src="/Images/116.jpg" alt className="img" /></Link>   
+          <Link to="/category/disposible/disposible"><img src="/Images/116.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link>   
                   </div>
       </div>
       <div className="col-lg-3 col-md-6 col-sm-12">
         <div>
-          <Link to="/category/disposible/tablewear"><img src="/Images/20.jpg" alt className="img1" /></Link> 
+          <Link to="/category/disposible/tablewear"><img src="/Images/20.jpg" alt className="h-100 w-100 mt-md-0 mt-2" /></Link> 
         </div>
       </div>
     </div>

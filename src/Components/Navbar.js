@@ -3,6 +3,7 @@ import './Style.css'
 import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import { useCart } from './Pages/Adminside/CartContext'
+import SearchComponent from "./SearchComponent "
 const Navbar = () => {
   const userlogin = localStorage.getItem("user");
   const navigate = useNavigate();
@@ -29,16 +30,25 @@ useEffect(() => {
         lines.</p>
     </center>
   </div>
-  <div className="d-flex">
+  <div className="container">
+    <div className='row'>
+      <div className='col col-lg-12 col-md-12 col-sm-12'>
+         <SearchComponent/>
+      </div>
+    </div> 
+  </div>
+  <div className='conainer'>
+  <div className=" row d-flex m-0 p-0">
    
-    <div className>
+    <div className='col-lg-6 col-md-6 col-6'>
     
      <Link to='/' ><img src="/Images/logo.png" alt className="logo" /></Link>
     </div>
-    <div className="phone ">
+    <div align='right' className="col-lg-6 col-md-6 col-6 p-0  ">
       <a href='Tel:+442035041721'><i className="bi bi-telephone" />+442035041721</a>
     </div>
    
+  </div>
   </div>
   <nav className="navbar navbar-expand-lg navbar-light ">
     <div className="container-fluid">
@@ -173,7 +183,7 @@ useEffect(() => {
            STV INTERNATIONAL
           </Link>
           <p className="foodsnv ms-3 d-inline">Toiletries</p>
-          <Link className="dropdown-item" to="/category/toiletries/babay">
+          <Link className="dropdown-item" to="/category/toiletries/baby">
             Baby Care
           </Link>
           <Link className="dropdown-item" to="/category/toiletries/cotton">
@@ -250,7 +260,7 @@ useEffect(() => {
         </div>
         <div className="me-5 mb-3 mb-md-0">
         <p className="foodsnv ms-3 d-inline">Party Ware</p>
-          <Link className="dropdown-item" to="/baloon">
+          <Link className="dropdown-item" to="/category/partyware/baloon">
             Balloon Weights
           </Link>
           <Link className="dropdown-item" to="/category/partyware/pumps">
@@ -331,7 +341,7 @@ useEffect(() => {
             view all
           </Link>
           <p className="foodsnv ms-3 d-inline">Stationery</p>
-          <Link className="dropdown-item" to="/category/stationery/art&craft">
+          <Link className="dropdown-item" to="/category/stationery/artcraft">
             Art & Craft
           </Link>
           <Link className="dropdown-item" to="/category/stationery/books">

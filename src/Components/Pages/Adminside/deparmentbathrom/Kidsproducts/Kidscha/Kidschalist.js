@@ -1,11 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
 import StaticListComponent from '../../../../../Staticlist'; // Adjust the path as needed
-import { useNavigate } from 'react-router-dom';
 
 const Kidschalist = () => {
   const [data, setData] = useState([]);
-  const navigate = useNavigate();
 
   useEffect(() => {
     // Fetch data here
